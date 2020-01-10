@@ -1,0 +1,122 @@
+// Base styling for the navbar
+#mainNav {
+  box-shadow: $box-shadow;
+  background-color: $purple;
+  transition: background-color 0.2s ease;
+  .navbar-brand {
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-bold;
+    color: $secondary;
+    &:active,
+    &:hover {
+      color: $primary;
+    }
+  }
+  .navbar-toggler {
+    background: $primary;
+    &:active,
+    &:hover {
+      background: $primary;
+    }
+  }
+  .navbar-toggler-icon {
+    color: $white;
+    &:active,
+    &:hover {
+      color: $primary;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      &.active {
+        .nav-link {
+          color: $primary !important;
+        }
+      }
+
+      .nav-link {
+        color: $white;
+        font-family: $font-family-sans-serif;
+        font-weight: $font-weight-bold;
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0.75rem 0;
+        &:hover,
+        &:active {
+          color: $primary;
+        }
+        &::after {
+          content: ''; /* This is necessary for the pseudo element to work. */
+          display: block; /* This will put the pseudo element on its own line. */
+          margin: 0 auto; /* This will center the border. */
+          width: 50%; /* Change this to whatever width you want. */
+          padding-top: 20px; /* This creates some space between the element and the border. */
+          border-bottom: 1px solid $primary; /* This creates the border. Replace black with whatever color you want. */
+        }
+      }
+    }
+  }
+  @include media-breakpoint-up(lg) {
+    // Base styling for the navbar - screen sizes greater than the large breakpoint
+    box-shadow: none;
+    background-color: transparent;
+    .navbar-brand {
+      color: $secondary;
+      font-size: 1.5em;
+      &:active,
+      &:hover {
+        color: $primary;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $white;
+          padding: 0 1rem;
+          font-size: 1rem;
+          &:hover {
+            color: $primary;
+          }
+          &::after {
+            content: none; /* This is necessary for the pseudo element to work. */
+            display: block; /* This will put the pseudo element on its own line. */
+            margin: 0; /* This will center the border. */
+            width: 50%; /* Change this to whatever width you want. */
+            padding-top: 0; /* This creates some space between the element and the border. */
+            border-bottom: none; /* This creates the border. Replace black with whatever color you want. */
+          }
+        }
+        &:last-child {
+          .nav-link {
+            padding-right: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  // Navbar styling applied when the page is scrolled
+  .site-container.navbar-scrolled #mainNav {
+    box-shadow: $box-shadow;
+    background-color: $purple;
+    .navbar-brand {
+      color: $secondary;
+      &:active,
+      &:hover {
+        color: $primary;
+      }
+    }
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          color: $white;
+          &:hover {
+            color: $primary;
+          }
+        }
+      }
+    }
+  }
+}

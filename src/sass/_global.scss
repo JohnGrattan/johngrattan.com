@@ -1,0 +1,147 @@
+// Global styling for this template
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+// Typography
+.text-white-75 {
+  color: fade-out($white, 0.25);
+}
+
+.text-purple {
+  color: $purple !important;
+  a {
+    color: $purple !important;
+  }
+}
+
+.bg-purple {
+  background-color: $purple;
+}
+
+.bg-dark-blue {
+  background-color: $darkBlue;
+}
+
+.bg-light-gray {
+  background-color: $lightGray;
+}
+
+// Custom horizontal rules
+hr.divider {
+  max-width: 3.25rem;
+  border-width: 0.2rem;
+  border-color: $primary;
+}
+
+hr.divider-long {
+  max-width: 25vw;
+  border-width: 0.2rem;
+  border-color: $primary;
+}
+
+hr.light {
+  border-color: $secondary;
+  width: 16rem;
+}
+
+// Button restyling
+.btn {
+  font-family: $font-family-sans-serif;
+}
+
+.btn-xl {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+}
+
+.btn-xl-outline {
+  padding: 1.2rem 2.2rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 10rem;
+}
+
+.btn-nav {
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  border: none !important;
+  border-radius: 10rem !important;
+  color: $purple !important;
+  &:active,
+  &:hover {
+    color: $purple !important;
+  }
+}
+
+// Page section padding
+.page-section {
+  padding: 8rem 0;
+}
+
+// Modal
+.modal-backdrop {
+  background-color: #0b0b0b;
+}
+
+.modal-backdrop.show {
+  opacity: 0.8;
+}
+
+.drop-shadow {
+  filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.2));
+}
+
+.drop-shadow-dark {
+  filter: drop-shadow(5px 5px 3px rgba(0, 0, 0, 0.5));
+}
+
+.svg-size {
+  width: 100%;
+  height: 100%;
+}
+
+.bg-texture-1 {
+  background-color: $white;
+  background-image: url('../images/textures/gradient-squares.png');
+  width: 100%;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.bg-texture-2 {
+  background-color: $white;
+  background-image: url('../images/textures/brilliant.png');
+  width: 100%;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.bg-texture-3 {
+  background-color: $white;
+  background-image: url('https://www.transparenttextures.com/patterns/diamond-eyes.png');
+  width: 100%;
+  /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+}
+
+.clip-triangle-down {
+  clip-path: polygon(0 90%, 0 0, 500% 0, 50vw 100%);
+}
+
+@include media-breakpoint-up(lg) {
+  hr.light {
+    width: 12rem;
+  }
+}
+
+@media screen and (max-width: 372px) {
+  .hide-xs {
+    display: none;
+  }
+}

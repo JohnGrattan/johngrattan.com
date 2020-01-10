@@ -1,0 +1,20 @@
+// Styling for the masthead
+.bg-img-process {
+  background: linear-gradient(
+      to bottom,
+      #{fade-out($purple, 0.1)} 0%,
+      #{fade-out($purple, 0.1)} 100%
+    ),
+    url('../images/bg-img-process.jpg');
+  background-position: top;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: auto;
+
+  @include media-breakpoint-up(md) {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
