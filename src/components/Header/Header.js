@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'gatsby';
 import Scrollspy from 'react-scrollspy';
 import { Navbar, Nav } from 'react-bootstrap';
-import Scroller from './scroller';
+import Scroller from '../scroller';
 
-import ImgJgGreen from './image-jg-headshot-green';
+import Button from '../Button/Button';
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -40,61 +40,35 @@ export default class Header extends React.Component {
                   offset={-75}
                 >
                   <li className="nav-item">
-                    <Nav.Link
-                      className={'js-scroll-trigger'}
-                      href="#about"
-                      onClick={Scroller.handleAnchorScroll}
-                    >
+                    <Link className="nav-link text-uppercase" to="/about">
                       About
-                    </Nav.Link>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link
-                      className={'js-scroll-trigger'}
-                      href="#services"
-                      onClick={Scroller.handleAnchorScroll}
-                    >
+                    <Link className="nav-link text-uppercase" to="/services">
                       Services
-                    </Nav.Link>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link
-                      className={'js-scroll-trigger'}
-                      href="#portfolio"
-                      onClick={Scroller.handleAnchorScroll}
-                    >
+                    <Link className="nav-link text-uppercase" to="/process">
+                      Process
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link text-uppercase" to="/portfolio">
                       Portfolio
-                    </Nav.Link>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link
-                      className={'js-scroll-trigger'}
-                      href="#portfolio"
-                      onClick={Scroller.handleAnchorScroll}
-                    >
+                    <Link className="nav-link text-uppercase" to="/blog">
                       Blog
-                    </Nav.Link>
+                    </Link>
                   </li>
                   <li className="nav-item">
-                    <Nav.Link
-                      className={'js-scroll-trigger'}
-                      href="#contact"
-                      onClick={Scroller.handleAnchorScroll}
-                    >
-                      Contact Me
-                    </Nav.Link>
+                    <Link className="nav-link text-uppercase" to="/contact">
+                      Contact
+                    </Link>
                   </li>
-                  {/* <li className="nav-item">
-                    <Nav.Link
-                      className={
-                        'js-scroll-trigger btn btn-primary btn-nav p-lg-3 ml-lg-5 shadow text-uppercase'
-                      }
-                      href="#contact"
-                      onClick={Scroller.handleAnchorScroll}
-                    >
-                      Contact Me
-                    </Nav.Link>
-                  </li> */}
                 </Scrollspy>
               </Nav>
             </Navbar.Collapse>
@@ -104,12 +78,12 @@ export default class Header extends React.Component {
           <div className="container h-100">
             <div className="row h-100 align-items-center justify-content-center text-center">
               <div className="col-lg-10 align-self-end">
-                <h1 className="text-uppercase text-white font-weight-bold border border-primary rounded p-sm-5 p-3 drop-shadow-dark">
+                <h2 className="text-white font-weight-bold border border-primary rounded p-sm-5 p-3 drop-shadow-dark text-lg">
                   Rank your website.
                   <span className="d-block">
                     Beat your <span className="text-break">competitors</span>
                   </span>
-                </h1>
+                </h2>
               </div>
               <div className="col-lg-8 align-self-baseline mt-3 drop-shadow-dark">
                 <p className="text-white font-weight-light mb-5">
@@ -123,20 +97,18 @@ export default class Header extends React.Component {
                     .
                   </span>
                 </p>
-                <a
-                  className="btn btn-primary btn-xl js-scroll-trigger shadow text-purple"
-                  href="#contact"
-                  onClick={Scroller.handleAnchorScroll}
-                >
-                  Contact Me
-                </a>
-                <a
-                  className="btn btn-outline-light btn-xl-outline js-scroll-trigger ml-4 hide-xs drop-shadow-dark"
-                  href="#about"
-                  onClick={Scroller.handleAnchorScroll}
-                >
-                  Learn How
-                </a>
+                <Button
+                  btnlink="/contact"
+                  btnlabel="Contact Me"
+                  btnsolid={true}
+                />
+                <div className="d-inline-flex ml-4 hide-xs">
+                  <Button
+                    btnlink="/process"
+                    btnlabel="Learn How"
+                    btnsolid={false}
+                  />
+                </div>
               </div>
             </div>
           </div>

@@ -47,41 +47,6 @@ hr.light {
   width: 16rem;
 }
 
-// Button restyling
-.btn {
-  font-family: $font-family-sans-serif;
-}
-
-.btn-xl {
-  padding: 1.25rem 2.25rem;
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 10rem;
-}
-
-.btn-xl-outline {
-  padding: 1.2rem 2.2rem;
-  font-size: 0.85rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  border: 1px solid white;
-  border-radius: 10rem;
-}
-
-.btn-nav {
-  font-weight: 700 !important;
-  text-transform: uppercase !important;
-  border: none !important;
-  border-radius: 10rem !important;
-  color: $purple !important;
-  &:active,
-  &:hover {
-    color: $purple !important;
-  }
-}
-
 // Page section padding
 .page-section {
   padding: 8rem 0;
@@ -134,6 +99,20 @@ hr.light {
   clip-path: polygon(0 90%, 0 0, 500% 0, 50vw 100%);
 }
 
+.bg-img {
+  background-position: top;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: auto;
+
+  @include media-breakpoint-up(md) {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
 @include media-breakpoint-up(lg) {
   hr.light {
     width: 12rem;
@@ -142,6 +121,9 @@ hr.light {
 
 @media screen and (max-width: 372px) {
   .hide-xs {
-    display: none;
+    margin: 0 !important;
+    a {
+      display: none;
+    }
   }
 }

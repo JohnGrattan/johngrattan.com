@@ -7,9 +7,9 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from './header';
-import Footer from './footer';
-import './layout.scss';
+import Header from './Header/Header';
+import Footer from './Footer/Footer';
+import './Layout.scss';
 
 const getScrollNode = element => {
   return (

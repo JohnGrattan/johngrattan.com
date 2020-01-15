@@ -1,0 +1,33 @@
+.btn {
+  font-family: $font-family-sans-serif;
+}
+
+.btn-xl {
+  padding: 1.25rem 2.25rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 10rem;
+}
+
+.btn-xl-outline {
+  padding: 1.2rem 2.2rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 1px solid white;
+  border-radius: 10rem;
+}
+
+.btn-nav {
+  font-weight: 700 !important;
+  text-transform: uppercase !important;
+  border: none !important;
+  border-radius: 10rem !important;
+  color: $purple !important;
+  &:active,
+  &:hover {
+    color: $purple !important;
+  }
+}
