@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import { Carousel } from 'react-bootstrap';
 import Img from 'gatsby-image';
 
-import './carousel.scss';
+import './Carousel.scss';
 
 const PortfolioCarousel = ({ images, current }) => {
   const carouselItems = images.map((image, index) => (

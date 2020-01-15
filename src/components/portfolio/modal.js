@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal } from 'react-bootstrap';
 
-import './modal.scss';
+import './Modal.scss';
 
 const PortfolioModal = ({ show, onHide, children }) => {
   return (
