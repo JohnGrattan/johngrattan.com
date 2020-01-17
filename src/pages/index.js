@@ -1,9 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import { graphql } from 'gatsby';
+import { graphql, StaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
-
-import BackgroundImage from 'gatsby-background-image';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
@@ -12,6 +10,7 @@ import ImgBg from '../components/image-bg';
 import ImgJgGreen from '../components/image-jg-headshot-green';
 import Button from '../components/Button/Button';
 import Card from '../components/Card/Card';
+import BgImgHome from '../components/BgImgHome/BgImgHome';
 
 const IndexPage = () => {
   return (
@@ -20,10 +19,49 @@ const IndexPage = () => {
         title="John Grattan: Freelance Digital Marketing - Offering SEO, SEM, Web Design, Web Development Services | Boston, MA & Plymouth, MA"
         description="Hi, I'm John Grattan. I offer affordable freelance Digital Marketing services such as SEO, SEM, Web Design & Development to local businesses in Massachusetts."
       />
+      <BgImgHome Tag="header" className="bg-img-home" />
+      {/* <header className="masthead">
+        <div className="container h-100">
+          <div className="row h-100 align-items-center justify-content-center text-center">
+            <div className="col-lg-10 align-self-end">
+              <h2 className="text-white font-weight-bold border border-primary rounded p-sm-5 p-3 drop-shadow-dark text-lg">
+                Rank your website.
+                <span className="d-block">
+                  Beat your <span className="text-break">competitors.</span>
+                </span>
+              </h2>
+            </div>
+            <div className="col-lg-8 align-self-baseline mt-3 drop-shadow-dark">
+              <p className="text-white font-weight-light mb-5">
+                Showcase your industry expertise to{' '}
+                <strong className="text-secondary">build an audience</strong>{' '}
+                and <strong className="text-secondary">drive traffic</strong>.
+                <span className="d-block mt-2">
+                  Establish trust as a valuable source and{' '}
+                  <strong className="text-secondary">convert leads</strong> to{' '}
+                  <strong className="text-secondary">paying customers</strong>.
+                </span>
+              </p>
+              <Button
+                btnlink="/contact"
+                btnlabel="Contact Me"
+                btnsolid={true}
+              />
+              <div className="d-inline-flex ml-4 hide-xs">
+                <Button
+                  btnlink="/process"
+                  btnlabel="Learn How"
+                  btnsolid={false}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </header> */}
 
-      <section className="page-section bg-texture-1">
+      <section className="page-section bg-texture-1 pb-md-5">
         <div className="container">
-          <div className="row justify-content-center align-items-center">
+          <div className="row justify-content-center align-items-center neg-margin-top">
             <div className="col-lg-5 col-md-6 order-md-2 drop-shadow-dark">
               <div className="container-md">
                 <ImgJgGreen className="border border-primary" />

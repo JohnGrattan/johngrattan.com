@@ -17,7 +17,7 @@ const ImgJGHeadshotGreen = () => {
   const data = useStaticQuery(graphql`
     query ImgJGHeadshotGreenQ {
       image: file(
-        relativePath: { eq: "john-grattan-circle-headshot-green.png" }
+        relativePath: { eq: "images/john-grattan-circle-headshot-green.png" }
       ) {
         id
         childImageSharp {

@@ -16,7 +16,7 @@ import Img from 'gatsby-image';
 const ImgResponsiveDevices = () => {
   const data = useStaticQuery(graphql`
     query ImgResponsiveDevicesQ {
-      image: file(relativePath: { eq: "responsive-devices-sp.jpg" }) {
+      image: file(relativePath: { eq: "images/responsive-devices-sp.jpg" }) {
         id
         childImageSharp {
           fixed {

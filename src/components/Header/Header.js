@@ -74,45 +74,6 @@ export default class Header extends React.Component {
             </Navbar.Collapse>
           </div>
         </Navbar>
-        <header className="masthead">
-          <div className="container h-100">
-            <div className="row h-100 align-items-center justify-content-center text-center">
-              <div className="col-lg-10 align-self-end">
-                <h2 className="text-white font-weight-bold border border-primary rounded p-sm-5 p-3 drop-shadow-dark text-lg">
-                  Rank your website.
-                  <span className="d-block">
-                    Beat your <span className="text-break">competitors</span>
-                  </span>
-                </h2>
-              </div>
-              <div className="col-lg-8 align-self-baseline mt-3 drop-shadow-dark">
-                <p className="text-white font-weight-light mb-5">
-                  Showcase your industry expertise to{' '}
-                  <strong className="text-secondary">build an audience</strong>{' '}
-                  and <strong className="text-secondary">drive traffic</strong>.
-                  <span className="d-block mt-2">
-                    Establish trust as a valuable source and{' '}
-                    <strong className="text-secondary">convert leads</strong> to{' '}
-                    <strong className="text-secondary">paying customers</strong>
-                    .
-                  </span>
-                </p>
-                <Button
-                  btnlink="/contact"
-                  btnlabel="Contact Me"
-                  btnsolid={true}
-                />
-                <div className="d-inline-flex ml-4 hide-xs">
-                  <Button
-                    btnlink="/process"
-                    btnlabel="Learn How"
-                    btnsolid={false}
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </header>
       </>
     );
   }

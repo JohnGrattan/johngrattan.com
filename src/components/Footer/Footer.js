@@ -1,8 +1,18 @@
 import React from 'react';
-import { Link } from 'gatsby';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 import ContactForm from '../ContactForm/ContactForm';
 
 const Footer = () => {
+  const data = useStaticQuery(graphql`
+    query AuthorQ {
+      site {
+        siteMetadata {
+          author
+        }
+      }
+    }
+  `);
+
   return (
     <footer>
       <section className="page-section">
@@ -52,9 +62,10 @@ const Footer = () => {
       <section className="bg-purple">
         <div className=" container py-5">
           <div className="small text-center text-white">
-            <p>Copyright &copy; 2020 John Grattan</p>
+            <p>Copyright &copy; 2020 {data.site.siteMetadata.author}</p>
             <p>
-              Designed & Developed by <Link to="/">John Grattan</Link>
+              Designed & Developed by{' '}
+              <Link to="/">{data.site.siteMetadata.author}</Link>
             </p>
           </div>
         </div>

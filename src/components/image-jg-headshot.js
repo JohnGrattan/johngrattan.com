@@ -16,7 +16,9 @@ import Img from 'gatsby-image';
 const ImgJGHeadshot = () => {
   const data = useStaticQuery(graphql`
     query ImgJGHeadshotQ {
-      image: file(relativePath: { eq: "john-grattan-circle-headshot.png" }) {
+      image: file(
+        relativePath: { eq: "images/john-grattan-circle-headshot.png" }
+      ) {
         id
         childImageSharp {
           fixed {

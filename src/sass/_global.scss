@@ -119,6 +119,18 @@ hr.light {
   }
 }
 
+@include media-breakpoint-up(md) {
+  .neg-margin-top {
+    margin-top: -170px !important;
+    padding-bottom: 3em !important;
+    background-color: #fff !important;
+    border: 1px solid #dee2e6 !important;
+    border-radius: 0.25rem !important;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+    position: relative;
+  }
+}
+
 @media screen and (max-width: 372px) {
   .hide-xs {
     margin: 0 !important;

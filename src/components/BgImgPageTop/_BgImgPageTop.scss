@@ -1,15 +1,13 @@
-// Styling for the masthead
-.masthead {
+.bg-img-page-top {
+  height: 50%;
   padding-top: 10rem;
   padding-bottom: calc(10rem - #{$navbar-height});
-  // replace the masthead.jpg image in the /img directory to change the image
-  // if the image name change, make sure to update the url path below!
   background: linear-gradient(
     to bottom,
     #{fade-out($purple, 0.1)} 0%,
     #{fade-out($purple, 0.1)} 100%
   );
-  // url('../images/bg-masthead.jpg');
+
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -18,22 +16,12 @@
   h1 {
     font-size: 2.25rem;
   }
-  h2 {
-    font-size: 2.25rem;
-  }
 
   @include media-breakpoint-up(lg) {
-    height: 100vh;
-    min-height: 40rem;
-    padding-top: $navbar-height;
-    padding-bottom: 0;
     p {
       font-size: 1.15rem;
     }
     h1 {
-      font-size: 3rem;
-    }
-    h2 {
       font-size: 3rem;
     }
   }
@@ -41,14 +29,5 @@
     h1 {
       font-size: 3.5rem;
     }
-    h2 {
-      font-size: 3.5rem;
-    }
-  }
-}
-
-@include media-breakpoint-up(md) {
-  .masthead {
-    padding-bottom: calc(11rem - #{$navbar-height});
   }
 }

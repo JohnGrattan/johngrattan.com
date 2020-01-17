@@ -13,43 +13,57 @@ const ContactForm = ({ formname }) => {
     >
       <Form.Row>
         <Form.Group as={Col} controlId="formFirstName">
-          <Form.Label>First Name</Form.Label>
+          <Form.Label>
+            First Name <span className="text-danger">*</span>
+          </Form.Label>
           <Form.Control type="text" required />
         </Form.Group>
 
         <Form.Group as={Col} controlId="formLastName">
-          <Form.Label>Last Name</Form.Label>
+          <Form.Label>
+            Last Name <span className="text-danger">*</span>
+          </Form.Label>
           <Form.Control type="text" required />
         </Form.Group>
       </Form.Row>
       <Form.Row>
         <Form.Group as={Col} controlId="formPhone">
-          <Form.Label>Phone Number</Form.Label>
+          <Form.Label>
+            Phone Number <span className="text-danger">*</span>
+          </Form.Label>
           <Form.Control type="tel" />
         </Form.Group>
         <Form.Group as={Col} controlId="formEmail">
-          <Form.Label>Business Email</Form.Label>
+          <Form.Label>
+            Business Email <span className="text-danger">*</span>
+          </Form.Label>
           <Form.Control type="email" required />
         </Form.Group>
       </Form.Row>
 
       <Form.Row>
         <Form.Group as={Col} controlId="formCompanyName">
-          <Form.Label>Company Name</Form.Label>
+          <Form.Label>
+            Company Name <span className="text-danger">*</span>
+          </Form.Label>
           <Form.Control type="text" required />
         </Form.Group>
 
         <Form.Group as={Col} controlId="formJobTitle">
-          <Form.Label>Job Title</Form.Label>
+          <Form.Label>
+            Job Title <span className="text-danger">*</span>
+          </Form.Label>
           <Form.Control type="text" required />
         </Form.Group>
       </Form.Row>
 
       <Form.Row>
         <Form.Group as={Col} controlId="formService">
-          <Form.Label>Service of Interest</Form.Label>
-          <Form.Control as="select" required>
-            <option value="" disabled defaultValue hidden>
+          <Form.Label>
+            Service of Interest <span className="text-danger">*</span>
+          </Form.Label>
+          <Form.Control as="select" defaultValue={''} required>
+            <option value="" disabled hidden>
               Choose One...
             </option>
             <option value="0">Package 1: Website Only</option>
@@ -59,9 +73,11 @@ const ContactForm = ({ formname }) => {
         </Form.Group>
 
         <Form.Group as={Col} controlId="formIndustry">
-          <Form.Label>Industry</Form.Label>
-          <Form.Control as="select" required>
-            <option value="" disabled defaultValue hidden>
+          <Form.Label>
+            Industry <span className="text-danger">*</span>
+          </Form.Label>
+          <Form.Control as="select" defaultValue={''} required>
+            <option value="" disabled hidden>
               Choose One...
             </option>
             <option value="0">Home Services</option>
@@ -75,9 +91,7 @@ const ContactForm = ({ formname }) => {
         </Form.Group>
       </Form.Row>
 
-      <Form.Text className="text-danger small mb-3">
-        * All form fields are required and must be completed.
-      </Form.Text>
+      <Form.Text className="text-danger small mb-3">* Required</Form.Text>
       <Form.Text className="text-muted small mb-3">
         Your information will never be shared with anyone else.
       </Form.Text>
