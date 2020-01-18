@@ -71,7 +71,7 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/strategy-and-planning"
+                  btnlink="/services/digital-marketing-strategy"
                   btnlabel="See My Strategy"
                   btnsolid={true}
                 />
