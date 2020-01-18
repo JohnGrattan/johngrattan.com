@@ -10,11 +10,9 @@
 
 // Import custom styles
 @import '../sass/global';
-@import './Header/Navbar';
-@import './Header/Header';
-@import '../sass/bg-img-process';
+@import './Navbar/Navbar';
 @import './Button/Button';
 @import './ContactForm/ContactForm';
-@import './BgImgHome/BgImgHome';
-@import './BgImgPageTop/BgImgPageTop';
-@import './BgImgServices/BgImgServices';
+@import './HeaderHome/HeaderHome';
+@import './AboutSectionHome/AboutSectionHome';
+@import './ServicesSectionHome/ServicesSectionHome';

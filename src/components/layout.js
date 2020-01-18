@@ -7,9 +7,9 @@
 
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from './Header/Header';
+import Navbar from './Navbar/Navbar';
 import Footer from './Footer/Footer';
-import './layout.scss';
+import './Layout.scss';
 
 const getScrollNode = element => {
   return (
@@ -59,7 +59,7 @@ export default class Layout extends React.Component {
 
     return (
       <div className={className} ref={this.siteContainer} id="page-top">
-        <Header />
+        <Navbar />
         <main>{this.props.children}</main>
         <Footer />
       </div>
