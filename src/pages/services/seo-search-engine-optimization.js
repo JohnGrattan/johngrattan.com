@@ -5,7 +5,7 @@ import Layout from '../../components/Layout';
 import SEO from '../../components/seo';
 import BgImgPageTop from '../../components/BgImgPageTop/BgImgPageTop';
 
-const SeoPage = () => (
+const SeoSearchEngineOptimization = () => (
   <Layout>
     <SEO title="SEO - Search Engine Optimization" />
     <BgImgPageTop
@@ -20,4 +20,4 @@ const SeoPage = () => (
   </Layout>
 );
 
-export default SeoPage;
+export default SeoSearchEngineOptimization;
