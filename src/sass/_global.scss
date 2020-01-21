@@ -47,6 +47,10 @@ hr.light {
   width: 16rem;
 }
 
+hr.secondary {
+  border-color: $secondary;
+}
+
 // Page section padding
 .page-section {
   padding: 8rem 0;

@@ -45,22 +45,28 @@ export default class Header extends React.Component {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-uppercase" to="/services">
+                    <Link
+                      className="nav-link text-uppercase"
+                      to="/seo-services"
+                    >
                       Services
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-uppercase" to="/process">
+                    <Link className="nav-link text-uppercase" to="/seo-process">
                       Process
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-uppercase" to="/portfolio">
+                    <Link
+                      className="nav-link text-uppercase"
+                      to="/web-developer-portfolio"
+                    >
                       Portfolio
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-uppercase" to="/blog">
+                    <Link className="nav-link text-uppercase" to="/seo-blog">
                       Blog
                     </Link>
                   </li>

@@ -25,18 +25,18 @@ const ServicesSectionHome = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="digital marketing services background"
+      alt="seo services background"
     >
       <div className="container">
         <h2 className="text-center mt-0 text-white drop-shadow-dark">
-          Digital Marketing Services
+          SEO Services
         </h2>
-        <hr className="divider mt-4" />
+        <hr className="divider mt-4 drop-shadow-dark" />
         <div className="row">
           <div className="col-md-6 text-center justify-content-center align-items-center">
             <div className="my-5 border shadow p-3 bg-texture-2">
               <i className="fas fa-4x fa-chess text-primary mb-4 drop-shadow"></i>
-              <h3 className="h4 mb-2">Strategy & Planning</h3>
+              <h3 className="h4 mb-2">SEO Strategy</h3>
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
@@ -71,7 +71,7 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/digital-marketing-strategy"
+                  btnlink="/services/seo-strategy"
                   btnlabel="See My Strategy"
                   btnsolid={true}
                 />
@@ -81,7 +81,7 @@ const ServicesSectionHome = ({ className }) => {
           <div className="col-md-6 text-center justify-content-center align-items-center">
             <div className="my-5 border shadow p-3 bg-texture-2">
               <i className="fas fa-4x fa-drafting-compass text-primary mb-4 drop-shadow"></i>
-              <h3 className="h4 mb-2">Professional Design</h3>
+              <h3 className="h4 mb-2">Professional Web Design</h3>
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
@@ -116,7 +116,7 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/web-design"
+                  btnlink="/services/freelance-web-design"
                   btnlabel="How I Design"
                   btnsolid={true}
                 />
@@ -128,7 +128,7 @@ const ServicesSectionHome = ({ className }) => {
           <div className="col-md-6 text-center justify-content-center align-items-center">
             <div className="mt-5 border shadow p-3 bg-texture-2">
               <i className="fas fa-4x fa-laptop-code text-primary mb-4 drop-shadow"></i>
-              <h3 className="h4 mb-2">Custom Development</h3>
+              <h3 className="h4 mb-2">Custom Web Development</h3>
               <hr className="light" />
               <div className="text-muted mb-3 text-left my-3">
                 <p>
@@ -167,7 +167,7 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/web-development"
+                  btnlink="/services/freelance-web-developer"
                   btnlabel="Modern Benefits"
                   btnsolid={true}
                 />
@@ -177,7 +177,7 @@ const ServicesSectionHome = ({ className }) => {
           <div className="col-md-6 text-center justify-content-center align-items-center">
             <div className="mt-5 border shadow p-3 bg-texture-2">
               <i className="fas fa-4x fa-chart-line text-primary mb-4 drop-shadow"></i>
-              <h3 className="h4 mb-2">SEO & SEM Marketing</h3>
+              <h3 className="h4 mb-2">SEO Optimization</h3>
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
@@ -216,7 +216,7 @@ const ServicesSectionHome = ({ className }) => {
               <div className="my-3">
                 <Button
                   btnlink="/services/seo"
-                  btnlabel="SEO & SEM Tips"
+                  btnlabel="What Is SEO?"
                   btnsolid={true}
                 />
               </div>

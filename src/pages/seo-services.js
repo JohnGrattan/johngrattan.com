@@ -1,18 +1,16 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import BgImgPageTop from '../components/BgImgPageTop/BgImgPageTop';
+import HeaderServices from '../components/HeaderServices/HeaderServices';
 
-const Blog = () => (
+const SeoServices = () => (
   <Layout>
-    <SEO title="Digital Marketing Blog" />
-    <BgImgPageTop
+    <SEO title="SEO Services" />
+    <HeaderServices
       Tag="header"
       className="bg-img-page-top"
-      hOne="Digital Marketing Blog"
-      pText="This is a test"
+      hOne="SEO Services"
     />
     <section className="page-section">
       <div className="container"></div>
@@ -20,4 +18,4 @@ const Blog = () => (
   </Layout>
 );
 
-export default Blog;
+export default SeoServices;

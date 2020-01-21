@@ -5,13 +5,13 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BgImgPageTop from '../components/BgImgPageTop/BgImgPageTop';
 
-const Process = () => (
+const WebDeveloperPortfolio = () => (
   <Layout>
-    <SEO title="Digital Marketing Process" />
+    <SEO title="Web Developer Portfolio" />
     <BgImgPageTop
       Tag="header"
       className="bg-img-page-top"
-      hOne="Digital Marketing Process"
+      hOne="Web Developer Portfolio"
       pText="This is a test"
     />
     <section className="page-section">
@@ -20,4 +20,4 @@ const Process = () => (
   </Layout>
 );
 
-export default Process;
+export default WebDeveloperPortfolio;

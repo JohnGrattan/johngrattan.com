@@ -5,7 +5,7 @@ import BackgroundImage from 'gatsby-background-image';
 import ImgJgGreen from '../ImageComps/image-jg-headshot-green';
 import Button from '../Button/Button';
 
-const AboutSectionHome = ({ className, backgroundRepeat, backgroundSize }) => {
+const AboutSectionHome = ({ className }) => {
   const data = useStaticQuery(graphql`
     query AboutSectionHomeQ {
       texture: file(

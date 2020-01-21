@@ -1,17 +1,16 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
 
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 import BgImgPageTop from '../../components/BgImgPageTop/BgImgPageTop';
 
-const DigitalMarketingStrategy = () => (
+const SEOStrategy = () => (
   <Layout>
-    <SEO title="Digital Marketing Strategy" />
+    <SEO title="SEO Strategy" />
     <BgImgPageTop
       Tag="header"
       className="bg-img-page-top"
-      hOne="Digital Marketing Strategy"
+      hOne="SEO Strategy"
       pText="This is a test"
     />
     <section className="page-section">
@@ -20,4 +19,4 @@ const DigitalMarketingStrategy = () => (
   </Layout>
 );
 
-export default DigitalMarketingStrategy;
+export default SEOStrategy;

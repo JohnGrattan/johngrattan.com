@@ -1,17 +1,16 @@
 import React from 'react';
-import { Link, graphql } from 'gatsby';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BgImgPageTop from '../components/BgImgPageTop/BgImgPageTop';
 
-const Portfolio = () => (
+const SeoBlog = () => (
   <Layout>
-    <SEO title="Digital Marketing Portfolio" />
+    <SEO title="SEO Blog" />
     <BgImgPageTop
       Tag="header"
       className="bg-img-page-top"
-      hOne="Digital Marketing Portfolio"
+      hOne="SEO Blog"
       pText="This is a test"
     />
     <section className="page-section">
@@ -20,4 +19,4 @@ const Portfolio = () => (
   </Layout>
 );
 
-export default Portfolio;
+export default SeoBlog;
