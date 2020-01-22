@@ -1,0 +1,19 @@
+.seo-blog {
+  h3 {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-24 {
+    flex: 0 0 24% !important;
+    max-width: 25% !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .col-md-48 {
+    flex: 0 0 48%;
+    max-width: 50%;
+  }
+}

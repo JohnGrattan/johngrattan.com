@@ -4,6 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import HeaderHome from '../components/HeaderHome/HeaderHome';
 import AboutSectionHome from '../components/AboutSectionHome/AboutSectionHome';
+import BlogSectionBgHome from '../components/BlogSectionHome/BlogSectionBgHome';
 import ServicesSectionHome from '../components/ServicesSectionHome/ServicesSectionHome';
 import StatsSectionHome from '../components/StatsSectionHome/StatsSectionHome';
 import ProcessSectionHome from '../components/ProcessSectionHome/ProcessSectionHome';
@@ -17,8 +18,8 @@ const IndexPage = () => {
       />
       <HeaderHome className="bg-img-home" />
       <AboutSectionHome className="page-section bg-texture-1 pb-md-5" />
-      <ServicesSectionHome className="page-section bg-img-services" />
-      <StatsSectionHome />
+      <BlogSectionBgHome className="page-section border-bottom border-secondary bg-img-blog" />
+      <ServicesSectionHome className="page-section border-bottom border-secondary bg-img-services" />
       <ProcessSectionHome className="page-section bg-img-process" />
     </Layout>
   );

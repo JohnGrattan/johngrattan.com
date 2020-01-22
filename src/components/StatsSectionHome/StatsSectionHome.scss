@@ -1,3 +1,38 @@
 .border-size-5 {
   border-width: 5px !important;
 }
+
+.neg-margin-top-stats {
+  margin-top: -195px !important;
+  margin-bottom: 5rem !important;
+  position: relative;
+}
+
+@include media-breakpoint-up(sm) {
+  .neg-margin-top-stats {
+    margin-top: -195px !important;
+    margin-bottom: 5rem !important;
+    position: relative;
+  }
+}
+@include media-breakpoint-up(md) {
+  .neg-margin-top-stats {
+    margin-top: -220px !important;
+    margin-bottom: 5rem !important;
+    position: relative;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .neg-margin-top-stats {
+    margin-top: -205px !important;
+    margin-bottom: 5rem !important;
+    position: relative;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .neg-margin-top-stats {
+    margin-top: -205px !important;
+    margin-bottom: 5rem !important;
+    position: relative;
+  }
+}

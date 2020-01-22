@@ -46,7 +46,7 @@ const AboutSectionHome = ({ className }) => {
             </h1>
             <hr className="divider-long primary my-4" />
             <p className="text-dark mb-5 text-left px-3 px-md-0">
-              I help businesses adapt to the latest technologies by
+              I help small businesses adapt to the latest technologies by
               personalizing digital marketing strategies —{' '}
               <strong className="text-secondary">
                 centered on custom, responsive websites

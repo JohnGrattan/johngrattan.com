@@ -1,0 +1,12 @@
+.bg-img-blog {
+  background: linear-gradient(
+    to bottom,
+    #{fade-out($purple, 0.1)} 0%,
+    #{fade-out($purple, 0.1)} 100%
+  );
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  opacity: 1 !important;
+}

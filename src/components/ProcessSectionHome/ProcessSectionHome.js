@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
+import StatsSectionHome from '../StatsSectionHome/StatsSectionHome';
 
 import Button from '../Button/Button';
 
@@ -28,6 +29,11 @@ const ProcessSectionHome = ({ className }) => {
       alt="seo process background"
     >
       <div className="container">
+        <StatsSectionHome
+          stat="In 2019, 52% of all worldwide online traffic comes from mobile, 45% from desktop."
+          srcUrl="https://gs.statcounter.com/platform-market-share/desktop-mobile-tablet/worldwide"
+          srcText="StatCounter"
+        />
         <h2 className="text-center mt-0 text-white drop-shadow-dark">
           SEO Process
         </h2>

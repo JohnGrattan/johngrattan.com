@@ -2,6 +2,8 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
+import StatsSectionHome from '../StatsSectionHome/StatsSectionHome';
+
 import Button from '../Button/Button';
 
 const ServicesSectionHome = ({ className }) => {
@@ -28,6 +30,11 @@ const ServicesSectionHome = ({ className }) => {
       alt="seo services background"
     >
       <div className="container">
+        <StatsSectionHome
+          stat="72% of consumers who did a local search visited a store within five miles."
+          srcUrl="https://www.wordstream.com/blog/ws/2015/10/06/smx-east"
+          srcText="WordStream"
+        />
         <h2 className="text-center mt-0 text-white drop-shadow-dark">
           SEO Services
         </h2>
@@ -175,7 +182,7 @@ const ServicesSectionHome = ({ className }) => {
             </div>
           </div>
           <div className="col-md-6 text-center justify-content-center align-items-center">
-            <div className="mt-5 border shadow p-3 bg-texture-2">
+            <div className="my-5 border shadow p-3 bg-texture-2">
               <i className="fas fa-4x fa-chart-line text-primary mb-4 drop-shadow"></i>
               <h3 className="h4 mb-2">SEO Optimization</h3>
               <hr className="light" />
