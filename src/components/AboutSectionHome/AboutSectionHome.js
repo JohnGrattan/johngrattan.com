@@ -4,6 +4,7 @@ import BackgroundImage from 'gatsby-background-image';
 
 import ImgJgGreen from '../ImageComps/image-jg-headshot-green';
 import Button from '../Button/Button';
+import FormEmail from '../FormEmail/FormEmail';
 
 const AboutSectionHome = ({ className }) => {
   const data = useStaticQuery(graphql`
@@ -31,7 +32,10 @@ const AboutSectionHome = ({ className }) => {
       alt="about John Grattan background"
     >
       <div className="container">
-        <div className="row justify-content-center align-items-center neg-margin-top">
+        <div className="container col-md-7 neg-margin-top-email-form">
+          <FormEmail formname="form-email-homepage" />
+        </div>
+        <div className="row justify-content-center align-items-center border bg-white shadow rounded pb-5 pt-5 pt-lg-2">
           <div className="col-lg-5 col-md-6 order-md-2">
             <div className="container-md">
               <ImgJgGreen />
@@ -44,7 +48,7 @@ const AboutSectionHome = ({ className }) => {
               <span className="d-block text-secondary">Digital Marketing</span>
               <span className="d-block text-secondary">Agency</span>
             </h1>
-            <hr className="divider-long primary my-4" />
+            <hr className="divider-long shadow primary my-4" />
             <p className="text-dark mb-5 text-left px-3 px-md-0">
               I help small businesses adapt to the latest technologies by
               personalizing digital marketing strategies —{' '}

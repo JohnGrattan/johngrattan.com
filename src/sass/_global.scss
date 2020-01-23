@@ -5,6 +5,10 @@ html {
   height: 100%;
 }
 
+*:focus {
+  outline: none;
+}
+
 // Typography
 .text-white-75 {
   color: fade-out($white, 0.25);

@@ -1,0 +1,34 @@
+.neg-margin-top-email-form {
+  margin-top: -195px !important;
+  margin-bottom: 5rem !important;
+  position: relative;
+}
+
+@include media-breakpoint-up(sm) {
+  .neg-margin-top-email-form {
+    margin-top: -195px !important;
+    margin-bottom: 5rem !important;
+    position: relative;
+  }
+}
+@include media-breakpoint-up(md) {
+  .neg-margin-top-email-form {
+    margin-top: -230px !important;
+    margin-bottom: 5rem !important;
+    position: relative;
+  }
+}
+@include media-breakpoint-up(lg) {
+  .neg-margin-top-email-form {
+    margin-top: -230px !important;
+    margin-bottom: 5rem !important;
+    position: relative;
+  }
+}
+@include media-breakpoint-up(xl) {
+  .neg-margin-top-email-form {
+    margin-top: -230px !important;
+    margin-bottom: 5rem !important;
+    position: relative;
+  }
+}

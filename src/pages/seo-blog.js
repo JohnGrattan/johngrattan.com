@@ -4,13 +4,13 @@ import Img from 'gatsby-image';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import BgImgPageTop from '../components/BgImgPageTop/BgImgPageTop';
+import HeaderBlog from '../components/HeaderBlog/HeaderBlog';
 import ImgJgBlogPic from '../components/ImageComps/image-jg-blog-pic';
 
 const SeoBlog = ({ data }) => (
   <Layout>
     <SEO title="SEO Blog" />
-    <BgImgPageTop
+    <HeaderBlog
       Tag="header"
       className="bg-img-page-top"
       hOne="SEO Blog"

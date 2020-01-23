@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import PropTypes from 'prop-types';
 import Button from '../Button/Button';
 import BackgroundImage from 'gatsby-background-image';
+import FormEmail from '../FormEmail/FormEmail';
 
 const BgImgHome = ({ className }) => {
   const data = useStaticQuery(graphql`
@@ -37,24 +38,16 @@ const BgImgHome = ({ className }) => {
             </h2>
           </div>
           <div className="col-lg-8 align-self-baseline mt-3 drop-shadow-dark">
-            <p className="text-white font-weight-light mb-5">
+            <p className="text-white font-weight-light mb-4">
               Showcase your industry expertise to{' '}
               <strong className="text-secondary">build an audience</strong> and{' '}
               <strong className="text-secondary">drive traffic</strong>.
-              <span className="d-block mt-2">
+              <span className="d-block mt-3">
                 Establish trust as a valuable source and{' '}
                 <strong className="text-secondary">convert leads</strong> to{' '}
                 <strong className="text-secondary">paying customers</strong>.
               </span>
             </p>
-            <Button btnlink="/contact" btnlabel="Contact Me" btnsolid={true} />
-            <div className="d-inline-flex ml-4 hide-xs">
-              <Button
-                btnlink="/process"
-                btnlabel="Learn How"
-                btnsolid={false}
-              />
-            </div>
           </div>
         </div>
       </div>

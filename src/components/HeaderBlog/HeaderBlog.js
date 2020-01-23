@@ -2,12 +2,10 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const HeaderServices = ({ className, hOne }) => {
+const HeaderBlog = ({ className, hOne }) => {
   const data = useStaticQuery(graphql`
-    query HeaderServicesQ {
-      masthead: file(
-        relativePath: { eq: "images/bg-img-services-header.jpg" }
-      ) {
+    query HeaderBlogQ {
+      masthead: file(relativePath: { eq: "images/bg-img-blog.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -26,7 +24,7 @@ const HeaderServices = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo services background"
+      alt="seo blog background"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">
@@ -41,4 +39,4 @@ const HeaderServices = ({ className, hOne }) => {
   );
 };
 
-export default HeaderServices;
+export default HeaderBlog;

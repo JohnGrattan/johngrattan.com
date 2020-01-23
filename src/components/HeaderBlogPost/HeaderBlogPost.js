@@ -1,13 +1,12 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
+import ImgJgBlogPic from '../ImageComps/image-jg-blog-pic';
 
-const HeaderServices = ({ className, hOne }) => {
+const HeaderBlogPost = ({ className, hOne, author, date, timeToRead }) => {
   const data = useStaticQuery(graphql`
-    query HeaderServicesQ {
-      masthead: file(
-        relativePath: { eq: "images/bg-img-services-header.jpg" }
-      ) {
+    query HeaderBlogPostQ {
+      masthead: file(relativePath: { eq: "images/bg-img-blog.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -26,7 +25,10 @@ const HeaderServices = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo services background"
+      author={author}
+      date={date}
+      timeToRead={timeToRead}
+      alt="seo blog post background"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">
@@ -34,6 +36,12 @@ const HeaderServices = ({ className, hOne }) => {
             <h1 className="text-white font-weight-bold border border-primary rounded p-md-5 p-3 drop-shadow-dark text-lg">
               {hOne}
             </h1>
+            <div className="row justify-content-center text-white mt-3">
+              <ImgJgBlogPic className="mr-2 mt-1" />
+              <p>
+                {author} • {date} • {timeToRead} min read
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -41,4 +49,4 @@ const HeaderServices = ({ className, hOne }) => {
   );
 };
 
-export default HeaderServices;
+export default HeaderBlogPost;

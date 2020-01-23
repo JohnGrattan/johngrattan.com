@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import ContactForm from '../ContactForm/ContactForm';
+import FormContact from '../FormContact/FormContact';
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -54,7 +54,7 @@ const Footer = () => {
           </div>
           <div className="row mt-4">
             <div className="container col-md-8 my-5">
-              <ContactForm formname="contact-form-homepage" />
+              <FormContact formname="form-contact-homepage" />
             </div>
           </div>
         </div>

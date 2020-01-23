@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Form, Button, Col, Row } from 'react-bootstrap';
 
-const ContactForm = ({ formname }) => {
+const FormContact = ({ formname }) => {
   return (
     <Form
       name={formname}
@@ -111,4 +111,4 @@ Button.propTypes = {
   formname: PropTypes.string,
 };
 
-export default ContactForm;
+export default FormContact;
