@@ -9,7 +9,7 @@ const FormContact = ({ formname }) => {
       name={formname}
       method="POST"
       data-netlify="true"
-      className="border rounded shadow p-5 bg-texture-2"
+      className="border border-secondary rounded shadow p-2 p-md-5 bg-texture-2"
     >
       <Form.Row>
         <Form.Group as={Col} controlId="formFirstName">
@@ -44,7 +44,7 @@ const FormContact = ({ formname }) => {
       <Form.Row>
         <Form.Group as={Col} controlId="formCompanyName">
           <Form.Label>
-            Company Name <span className="text-danger">*</span>
+            Company <span className="text-danger">*</span>
           </Form.Label>
           <Form.Control type="text" required />
         </Form.Group>
@@ -74,7 +74,7 @@ const FormContact = ({ formname }) => {
 
         <Form.Group as={Col} controlId="formIndustry">
           <Form.Label>
-            Industry <span className="text-danger">*</span>
+            Business Industry <span className="text-danger">*</span>
           </Form.Label>
           <Form.Control as="select" defaultValue={''} required>
             <option value="" disabled hidden>
@@ -96,7 +96,7 @@ const FormContact = ({ formname }) => {
         Your information will never be shared with anyone else.
       </Form.Text>
 
-      <Button variant="primary" type="submit">
+      <Button className="drop-shadow-dark" variant="primary" type="submit">
         Submit
       </Button>
     </Form>

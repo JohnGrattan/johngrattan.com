@@ -14,8 +14,8 @@ const FormEmail = ({ formname }) => {
       <Form.Text className="mb-4 text-center">
         <span className="lead">
           Receive your{' '}
-          <strong className="text-secondary">
-            <u>FREE</u> SEO Checklist
+          <strong className="text-secondary text-uppercase">
+            <u>FREE SEO Checklist</u>
           </strong>{' '}
           for small businesses!
         </span>

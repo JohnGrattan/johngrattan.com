@@ -11,11 +11,7 @@ const StatsSectionHome = ({ stat, srcUrl, srcText }) => {
               <span className="ml-2">
                 {stat}
                 <span className="d-block">
-                  (Source:{' '}
-                  <a className="text-secondary" href={srcUrl}>
-                    {srcText}
-                  </a>
-                  )
+                  (Source: <a href={srcUrl}>{srcText}</a>)
                 </span>
               </span>
             </span>

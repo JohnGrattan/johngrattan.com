@@ -40,13 +40,13 @@ const ProcessSectionHome = ({ className }) => {
         <hr className="divider mt-4 drop-shadow-dark" />
         <div className="timeline container mt-5">
           <div className="content-container left">
-            <div className="content">
+            <div className="content bg-texture-2">
               <h3>
                 <i className="fas fa-handshake mr-3 text-secondary"></i>
                 Learning Phase
               </h3>
               <hr className="secondary" />
-              <p>
+              <p className="text-muted">
                 It's my job to learn and understand every aspect of your
                 business. From{' '}
                 <strong className="text-secondary">your brand</strong> and{' '}
@@ -66,14 +66,14 @@ const ProcessSectionHome = ({ className }) => {
             </div>
           </div>
           <div className="content-container right">
-            <div className="content">
+            <div className="content bg-texture-2">
               <h3>
                 <i className="fas fa-stethoscope mr-3 text-secondary"></i>
                 Diagnostic Phase
               </h3>
 
               <hr className="secondary" />
-              <p>
+              <p className="text-muted">
                 This is where we focus on{' '}
                 <strong className="text-secondary">your goals</strong> and{' '}
                 <strong className="text-secondary">your challenges</strong> to
@@ -96,14 +96,14 @@ const ProcessSectionHome = ({ className }) => {
             </div>
           </div>
           <div className="content-container left">
-            <div className="content">
+            <div className="content bg-texture-2">
               <h3>
                 {' '}
                 <i className="fas fa-pencil-ruler mr-3 text-secondary"></i>
                 Blueprint Phase
               </h3>
               <hr className="secondary" />
-              <p>
+              <p className="text-muted">
                 Now that we know what we're working with, it's time to{' '}
                 <strong className="text-secondary">
                   benchmark your current metrics
@@ -127,13 +127,13 @@ const ProcessSectionHome = ({ className }) => {
             </div>
           </div>
           <div className="content-container right">
-            <div className="content">
+            <div className="content bg-texture-2">
               <h3>
                 <i className="fas fa-palette mr-3 text-secondary"></i>Design
                 Phase
               </h3>
               <hr className="secondary" />
-              <p>
+              <p className="text-muted">
                 We'll browse through different layouts to figure out what{' '}
                 <strong className="text-secondary">
                   designs, features and functionalities really stand out to you
@@ -155,13 +155,13 @@ const ProcessSectionHome = ({ className }) => {
             </div>
           </div>
           <div className="content-container left">
-            <div className="content">
+            <div className="content bg-texture-2">
               <h3>
                 <i className="fab fa-react mr-3 text-secondary"></i>Development
                 Phase
               </h3>
               <hr className="secondary" />
-              <p>
+              <p className="text-muted">
                 Here we start turning ideas into reality as I{' '}
                 <strong className="text-secondary">
                   hand code your design into a functioning website
@@ -181,13 +181,13 @@ const ProcessSectionHome = ({ className }) => {
             </div>
           </div>
           <div className="content-container right">
-            <div className="content">
+            <div className="content bg-texture-2">
               <h3>
                 <i className="fas fa-search-dollar mr-3 text-secondary"></i>SEO
                 Phase
               </h3>
               <hr className="secondary" />
-              <p>
+              <p className="text-muted">
                 This is where the{' '}
                 <strong className="text-secondary">long term SEO</strong> and{' '}
                 <strong className="text-secondary">short term SEM</strong>{' '}
@@ -211,13 +211,13 @@ const ProcessSectionHome = ({ className }) => {
             </div>
           </div>
           <div className="content-container left">
-            <div className="content">
+            <div className="content bg-texture-2">
               <h3>
                 <i className="fas fa-sync-alt mr-3 text-secondary"></i>
                 Refinement Phase
               </h3>
               <hr className="secondary" />
-              <p>
+              <p className="text-muted">
                 Ongoing metric analysis and data monitoring will often result in
                 <strong className="text-secondary">
                   strategy adaptation and refinement
