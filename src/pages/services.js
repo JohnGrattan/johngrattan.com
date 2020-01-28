@@ -4,18 +4,14 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import HeaderServices from '../components/HeaderServices/HeaderServices';
 
-const SeoServices = () => (
+const ServicesPage = () => (
   <Layout>
-    <SEO title="SEO Services" />
-    <HeaderServices
-      Tag="header"
-      className="bg-img-page-top"
-      hOne="SEO Services"
-    />
+    <SEO title="SEO & Web Design Services" />
+    <HeaderServices Tag="header" className="bg-img-page-top" hOne="Services" />
     <section className="page-section">
       <div className="container"></div>
     </section>
   </Layout>
 );
 
-export default SeoServices;
+export default ServicesPage;

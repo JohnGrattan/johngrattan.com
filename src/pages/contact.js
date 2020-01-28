@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BgImgPageTop from '../components/BgImgPageTop/BgImgPageTop';
 
-const Contact = () => (
+const ContactPage = () => (
   <Layout>
     <SEO title="Contact Me" />
     <BgImgPageTop
@@ -19,4 +19,4 @@ const Contact = () => (
   </Layout>
 );
 
-export default Contact;
+export default ContactPage;

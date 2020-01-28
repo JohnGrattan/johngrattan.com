@@ -12,14 +12,14 @@ const FormContact = ({ formname }) => {
       className="border border-secondary rounded shadow p-2 p-md-5 bg-texture-2"
     >
       <Form.Row>
-        <Form.Group as={Col} controlId="formFirstName">
+        <Form.Group as={Col} controlId="formContactFirstName">
           <Form.Label>
             First Name <span className="text-danger">*</span>
           </Form.Label>
           <Form.Control type="text" required />
         </Form.Group>
 
-        <Form.Group as={Col} controlId="formLastName">
+        <Form.Group as={Col} controlId="formContactLastName">
           <Form.Label>
             Last Name <span className="text-danger">*</span>
           </Form.Label>
@@ -27,13 +27,13 @@ const FormContact = ({ formname }) => {
         </Form.Group>
       </Form.Row>
       <Form.Row>
-        <Form.Group as={Col} controlId="formPhone">
+        <Form.Group as={Col} controlId="formContactPhone">
           <Form.Label>
             Phone Number <span className="text-danger">*</span>
           </Form.Label>
           <Form.Control type="tel" />
         </Form.Group>
-        <Form.Group as={Col} controlId="formEmail">
+        <Form.Group as={Col} controlId="formContactEmail">
           <Form.Label>
             Business Email <span className="text-danger">*</span>
           </Form.Label>
@@ -42,14 +42,14 @@ const FormContact = ({ formname }) => {
       </Form.Row>
 
       <Form.Row>
-        <Form.Group as={Col} controlId="formCompanyName">
+        <Form.Group as={Col} controlId="formContactCompanyName">
           <Form.Label>
             Company <span className="text-danger">*</span>
           </Form.Label>
           <Form.Control type="text" required />
         </Form.Group>
 
-        <Form.Group as={Col} controlId="formJobTitle">
+        <Form.Group as={Col} controlId="formContactJobTitle">
           <Form.Label>
             Job Title <span className="text-danger">*</span>
           </Form.Label>
@@ -58,7 +58,7 @@ const FormContact = ({ formname }) => {
       </Form.Row>
 
       <Form.Row>
-        <Form.Group as={Col} controlId="formService">
+        <Form.Group as={Col} controlId="formContactService">
           <Form.Label>
             Service of Interest <span className="text-danger">*</span>
           </Form.Label>
@@ -72,7 +72,7 @@ const FormContact = ({ formname }) => {
           </Form.Control>
         </Form.Group>
 
-        <Form.Group as={Col} controlId="formIndustry">
+        <Form.Group as={Col} controlId="formContactIndustry">
           <Form.Label>
             Business Industry <span className="text-danger">*</span>
           </Form.Label>

@@ -4,7 +4,7 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BgImgPageTop from '../components/BgImgPageTop/BgImgPageTop';
 
-const About = () => (
+const AboutPage = () => (
   <Layout>
     <SEO title="About Me" />
     <BgImgPageTop
@@ -19,4 +19,4 @@ const About = () => (
   </Layout>
 );
 
-export default About;
+export default AboutPage;

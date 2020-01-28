@@ -3,7 +3,6 @@ import { Link } from 'gatsby';
 import Scrollspy from 'react-scrollspy';
 import { Navbar, Nav } from 'react-bootstrap';
 import Scroller from '../scroller';
-
 import Button from '../Button/Button';
 
 export default class Header extends React.Component {
@@ -45,24 +44,26 @@ export default class Header extends React.Component {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link
-                      className="nav-link text-uppercase"
-                      to="/seo-services"
-                    >
+                    <Link className="nav-link text-uppercase" to="/services">
                       Services
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-uppercase" to="/seo-process">
+                    <Link className="nav-link text-uppercase" to="/process">
                       Process
+                    </Link>
+                  </li>
+                  <li className="nav-item">
+                    <Link className="nav-link text-uppercase" to="/pricing">
+                      Pricing
                     </Link>
                   </li>
                   <li className="nav-item">
                     <Link
                       className="nav-link text-uppercase"
-                      to="/web-developer-portfolio"
+                      to="/case-studies"
                     >
-                      Portfolio
+                      Case Studies
                     </Link>
                   </li>
                   <li className="nav-item">

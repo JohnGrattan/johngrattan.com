@@ -1,8 +1,8 @@
 module.exports = {
-  pathPrefix: `/gatsby-creative`,
+  pathPrefix: `/`,
   siteMetadata: {
-    title: `John Grattan: Freelance Digital Marketing`,
-    description: `Hi, I'm John Grattan. I offer affordable freelance Digital Marketing services such as SEO, SEM, Web Design & Development to local businesses in Massachusetts.`,
+    title: `John Grattan SEO & Web Design`,
+    description: `Hi, I'm John Grattan. I offer affordable Digital Marketing services such as SEO, SEM, Web Design and Web Development to small businesses in Massachusetts.`,
     author: `John Grattan`,
   },
   plugins: [
@@ -29,11 +29,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `john-grattan-site`,
+        short_name: `john-grattan-site`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#1a1b41`,
+        theme_color: `#baff29`,
         display: `minimal-ui`,
         icon: `src/images/john-grattan-icon.png`, // This path is relative to the root of the site.
       },

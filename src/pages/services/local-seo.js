@@ -4,13 +4,13 @@ import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 import BgImgPageTop from '../../components/BgImgPageTop/BgImgPageTop';
 
-const FreelanceWebDeveloperPage = () => (
+const LocalSeoPage = () => (
   <Layout>
-    <SEO title="Freelance Web Developer" />
+    <SEO title="Local SEO" />
     <BgImgPageTop
       Tag="header"
       className="bg-img-page-top"
-      hOne="Freelance Web Developer"
+      hOne="Local SEO"
       pText="This is a test"
     />
     <section className="page-section">
@@ -19,4 +19,4 @@ const FreelanceWebDeveloperPage = () => (
   </Layout>
 );
 
-export default FreelanceWebDeveloperPage;
+export default LocalSeoPage;

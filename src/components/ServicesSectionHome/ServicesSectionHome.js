@@ -32,7 +32,7 @@ const ServicesSectionHome = ({ className }) => {
       <div className="container">
         <StatsSectionHome
           stat="72% of consumers who did a local search visited a store within five miles."
-          srcUrl="https://www.wordstream.com/blog/ws/2015/10/06/smx-east"
+          srcUrl={'https://www.wordstream.com/blog/ws/2015/10/06/smx-east'}
           srcText="WordStream"
         />
         <h2 className="text-center mt-0 text-white drop-shadow-dark">
@@ -123,7 +123,7 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/freelance-web-design"
+                  btnlink="/services/web-design"
                   btnlabel="How I Design"
                   btnsolid={true}
                 />
@@ -174,7 +174,7 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/freelance-web-developer"
+                  btnlink="/services/web-development"
                   btnlabel="Modern Benefits"
                   btnsolid={true}
                 />
@@ -222,7 +222,7 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/seo"
+                  btnlink="/services/local-seo"
                   btnlabel="What Is SEO?"
                   btnsolid={true}
                 />

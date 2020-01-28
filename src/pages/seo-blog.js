@@ -7,7 +7,7 @@ import SEO from '../components/seo';
 import HeaderBlog from '../components/HeaderBlog/HeaderBlog';
 import ImgJgBlogPic from '../components/ImageComps/image-jg-blog-pic';
 
-const SeoBlog = ({ data }) => (
+const SeoBlogPage = ({ data }) => (
   <Layout>
     <SEO title="SEO Blog" />
     <HeaderBlog
@@ -91,4 +91,4 @@ export const pageQuery = graphql`
   }
 `;
 
-export default SeoBlog;
+export default SeoBlogPage;

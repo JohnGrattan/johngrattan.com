@@ -4,13 +4,13 @@ import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 import BgImgPageTop from '../../components/BgImgPageTop/BgImgPageTop';
 
-const SeoSearchEngineOptimization = () => (
+const WebDevelopmentPage = () => (
   <Layout>
-    <SEO title="SEO - Search Engine Optimization" />
+    <SEO title="Web Development" />
     <BgImgPageTop
       Tag="header"
       className="bg-img-page-top"
-      hOne="SEO - Search Engine Optimization"
+      hOne="Web Development"
       pText="This is a test"
     />
     <section className="page-section">
@@ -19,4 +19,4 @@ const SeoSearchEngineOptimization = () => (
   </Layout>
 );
 
-export default SeoSearchEngineOptimization;
+export default WebDevelopmentPage;

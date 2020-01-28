@@ -21,7 +21,7 @@ const FormEmail = ({ formname }) => {
         </span>
       </Form.Text>
       <Form.Row>
-        <Form.Group as={Col} controlId="formEmail">
+        <Form.Group as={Col} controlId="formEmailBusinessEmail">
           <Col sm="12">
             <Form.Control type="email" placeholder="Business Email" required />
           </Col>

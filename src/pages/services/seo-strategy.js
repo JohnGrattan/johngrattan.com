@@ -4,7 +4,7 @@ import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 import BgImgPageTop from '../../components/BgImgPageTop/BgImgPageTop';
 
-const SEOStrategy = () => (
+const SEOStrategyPage = () => (
   <Layout>
     <SEO title="SEO Strategy" />
     <BgImgPageTop
@@ -19,4 +19,4 @@ const SEOStrategy = () => (
   </Layout>
 );
 
-export default SEOStrategy;
+export default SEOStrategyPage;
