@@ -1,9 +1,11 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
+import FullServiceSeoSectionPrices from '../FullServiceSeoSectionPrices/FullServiceSeoSectionPrices';
 
 import { Card, ListGroup, ListGroupItem, Table } from 'react-bootstrap';
 
+// BG Query
 const PricingSectionPage = ({ className }) => {
   const data = useStaticQuery(graphql`
     query PricingSectionPageQ {
@@ -31,14 +33,16 @@ const PricingSectionPage = ({ className }) => {
     >
       <div className="container">
         <div className="row justify-content-center align-items-center border bg-white shadow rounded">
+          {/* Pricing Structures Container */}
           <div className="container py-3">
             <div className="py-3 px-5">
               <h2 className="mt-2 text-center">Pricing Structures</h2>
               <hr className="divider my-4" />
             </div>
+            {/* Options Overview Container */}
             <div className="container col-md-8 py-3 my-2 text-white bg-info drop-shadow">
               <p className="m-3 mb-5 text-center drop-shadow">
-                Get more clients with these options:
+                Get more leads with these options:
               </p>
               <div className="row justify-content-around align-items-end my-4">
                 <div className="col-md-4 mb-5 mb-md-0 text-center drop-shadow">
@@ -57,499 +61,542 @@ const PricingSectionPage = ({ className }) => {
                   <span>One-Time Services</span>
                 </div>
               </div>
-              {/* <p className="m-3">
-                Every business is unique and must meet their customers' needs
-                accordingly. Therefore, no two packages are the same.
-              </p>
-              <p className="m-3">
-                This makes it difficult to pinpoint an exact number without
-                going through the proper quoting process.
-              </p>
-              <p className="m-3">
-                In order to be as transparent as possible, here is a general
-                pricing guide to give you an idea of the costs.
-              </p> */}
             </div>
           </div>
+          {/* Full-Service SEO Container */}
           <div className="container bg-dark my-5 mx-3 border rounded shadow">
             <div className="text-center pt-5 drop-shadow-dark">
+              <i className="fas fa-3x fa-rocket mb-3 text-primary"></i>
               <h3 className="mt-2 text-white">Full-Service SEO</h3>
               <hr className="divider mt-4" />
             </div>
-            <div className="row justify-content-center align-items-baseline py-3 py-md-5">
-              <div className="container">
-                <p className="text-white text-center">
-                  This option is a complete digital optimization for your
-                  business!
+            <div className="row justify-content-center align-items-baseline pt-5 p-3">
+              <div className="container text-center border border-secondary col-md-7 pt-3 drop-shadow">
+                <p className="text-white">
+                  Are you looking for a long term marketing plan
+                  <br />
+                  to drive new leads to your business website?
                 </p>
+                <p className="text-primary">This package is for you!</p>
               </div>
-              <div className="text-center pt-md-5 col-md-3 drop-shadow">
-                <p className="mt-2 p-3 lead text-white bg-purple border border-white">
+            </div>
+            <div className="row justify-content-center align-items-baseline py-5 px-md-3">
+              {/* Step 1: Website Container */}
+              <div className="container col-md-4">
+                <p className="mt-2 p-3 lead text-center text-white bg-purple border border-white">
                   <span className="text-secondary">Step 1:</span> Website
                 </p>
+                <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
+                  <div className="text-center pt-5">
+                    <i className="fas fa-3x fa-laptop-code text-secondary mb-4 d-block"></i>
+                    <h3 className="mt-2">
+                      Web Design &<br />
+                      Development
+                    </h3>
+                    <div className="container border mt-3 py-3">
+                      <small className="d-block text-info">
+                        Full-Service SEO Package
+                      </small>
+                      <span className="d-block text-muted lead">
+                        $2,000 flat rate
+                      </span>
+                      <span className="d-block text-primary bg-purple mt-4">
+                        Save $4,760!
+                      </span>
+                      <small className="d-block text-muted mt-2 px-2">
+                        (Compared to{' '}
+                        <a
+                          className="text-info"
+                          href="https://www.websitebuilderexpert.com/building-websites/how-much-should-a-website-cost/"
+                        >
+                          average website cost
+                        </a>
+                        )
+                      </small>
+                    </div>
+                    <div className="container py-4 text-left">
+                      <span className="d-flex my-2 mb-2">
+                        <strong className="mb-3">Includes:</strong>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          <strong>Setup</strong> all the technical stuff
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          <strong>Discover</strong> exactly what you want
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          <strong>Strategy</strong> for long term success
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          <strong>Design</strong> for your users
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          <strong>Develop</strong> with the highest standards
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          <strong>Testing</strong> for quality assurance
+                        </span>
+                      </span>
+                      <div className="text-danger mt-5">
+                        <small>Recurring Payments:</small>
+                        <small className="d-flex mt-3">
+                          - New Domain: $10/month
+                        </small>
+                        <small className="d-flex mt-1">
+                          - Hosting Plan: $10/month
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div className="text-center pt-md-5 col-md-3 drop-shadow">
-                <p className="mt-2 p-3 lead text-white bg-purple border border-white">
+              {/* Step 2: SEO Container */}
+              <div className="container col-md-4">
+                <p className="mt-2 p-3 lead text-center text-white bg-purple border border-white">
                   <span className="text-secondary">Step 2:</span> SEO
                 </p>
-              </div>
-              <div className="text-center pt-md-5 col-md-3 drop-shadow">
-                <p className="mt-2 p-3 lead text-white bg-purple border border-white">
-                  <span className="text-secondary">Step 3:</span> Results
-                </p>
-              </div>
-            </div>
-            <div className="row justify-content-center align-items-baseline py-5">
-              <div className="container col-md-10 mx-3 mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
-                <div className="text-center pt-5">
-                  <i className="fas fa-3x fa-award text-secondary mb-4 d-block"></i>
-                  <h3 className="mt-2">Web Design & Development</h3>
-                  <div className="container col-md-8 border mx-auto mt-3 py-3">
-                    <small className="d-block text-secondary">
-                      SEO Package
-                    </small>
-                    <span className="d-block text-muted lead">
-                      $1,500 flat rate
-                    </span>
-                    <span className="d-block text-primary bg-purple mt-4">
-                      Save $2,000!
-                    </span>
-                    <small className="d-block text-muted mt-2 px-2">
-                      (Compared to the Website 'Gold Package' with 5-pages)
-                    </small>
-                  </div>
-                  <p className="container py-4 text-left">
-                    <span className="d-flex my-2 mb-2">
-                      <strong className="mb-3">
-                        Includes Everything in the Website 'Gold Package':
-                      </strong>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        <strong>Setup</strong>: Domain
-                        <span className="text-danger">*</span>, Hosting
-                        <span className="text-danger">**</span>, Staging, DNS,
-                        SSL, CDN, Git, Headless CMS
+                <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
+                  <div className="text-center pt-5">
+                    <i className="fas fa-3x fa-search-location text-secondary mb-4 d-block"></i>
+                    <h3 className="mt-2">
+                      Local SEO
+                      <br />
+                      Marketing
+                    </h3>
+                    <div className="container border mt-3 py-3">
+                      <small className="d-block text-info">
+                        Full-Service SEO Package
+                      </small>
+                      <span className="d-block text-muted lead">
+                        $500/month
                       </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        <strong>Discovery</strong>: User Needs & Experience,
-                        Features, Functions, Branding, Color Palette, Content,
-                        Images
+                      <span className="d-block text-primary bg-purple mt-4">
+                        Save $1,000!
                       </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        <strong>Strategy</strong>: Sales Funnel, Clear
-                        Call-to-Action, Information Architecture, Conversion
-                        Rate Optimization
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        <strong>Design</strong>: Bespoke Layouts, 100%
-                        Responsive, Universal Design Principles, Consistency
-                        Across Pages, Engaging Animations
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        <strong>Development</strong>: Efficiently Hand Coded,
-                        Built Mobile First, High Performance Front-End, Secure
-                        Back-End, Server Side Rendering, Maintainable, Scalable,
-                        Accessibility
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        <strong>Testing</strong>: Efficiently Hand Coded, Built
-                        Mobile First, High Performance Front-End, Secure
-                        Back-End, Server Side Rendering, Maintainable, Scalable,
-                        Accessibility
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Google Map Pack Optimization</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Google My Business Optimization
-                      </span>
-                    </span>
-                    <div className="text-danger mt-5">
-                      <p>
-                        * Purchasing a new domain comes with a recurring payment
-                        of $10/month
-                      </p>
-                      <p>
-                        ** Hosting comes with a recurring payment of $10/month
-                      </p>
+                      <small className="d-block text-muted mt-2 px-2">
+                        (Compared to{' '}
+                        <a
+                          className="text-info"
+                          href="https://www.rankpay.com/seo-cost/"
+                        >
+                          average SEO cost
+                        </a>
+                        )
+                      </small>
                     </div>
-                  </p>
+                    <p className="container py-4 text-left">
+                      <span className="d-flex my-2">
+                        <strong className="mb-3">Includes:</strong>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Monthly SEO Strategy</span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Competitor & Keyword Research
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Technical SEO</span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">On-Page & Off-Page SEO</span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Service & Location Landing Pages
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Google Map Pack Optimization
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Google My Business Optimization
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Review App Optimization</span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Citation Building</span>
+                      </span>
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="text-center pt-5">
-              <p className="mt-2 p-3 lead text-white bg-purple border border-white">
-                Choose a Marketing Package:
-              </p>
-            </div>
-            <div className="row justify-content-center align-items-baseline py-5">
-              <div className="container col-md-3 mx-3 mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
-                <div className="text-center pt-5">
-                  <i className="fas fa-2x fa-award text-bronze mb-4 d-block"></i>
-                  <h3 className="mt-2">Local SEO</h3>
-                  <div className="border mx-3 mt-3 py-1">
-                    <small className="d-block text-bronze">
-                      Bronze Package
-                    </small>
-                    <span className="d-block text-muted lead">$500/month</span>
+              {/* Step 3: Add-Ons Container */}
+              <div className="container col-md-4">
+                <p className="mt-2 p-3 lead text-center text-white bg-purple border border-white">
+                  <span className="text-secondary">Step 3:</span> Add-Ons
+                </p>
+                <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
+                  <div className="text-center pt-5">
+                    <i className="fas fa-3x fa-user-plus text-secondary mb-4 d-block"></i>
+                    <h3 className="mt-2">
+                      Optional
+                      <br />
+                      Add-Ons
+                    </h3>
+                    <div className="container border mt-3 py-3">
+                      <small className="d-block text-info">
+                        Full-Service SEO Package
+                      </small>
+                      <span className="d-block text-muted lead">
+                        $1,500 flat rate
+                      </span>
+                      <span className="d-block text-primary bg-purple mt-4">
+                        Save $2,000!
+                      </span>
+                      <small className="d-block text-muted mt-2 px-2">
+                        (Compared to{' '}
+                        <a
+                          className="text-info"
+                          href="https://www.websitebuilderexpert.com/building-websites/how-much-should-a-website-cost/"
+                        >
+                          average ?????? cost
+                        </a>
+                        )
+                      </small>
+                    </div>
+                    <p className="container py-4 text-left">
+                      <span className="d-flex my-2">
+                        <strong className="mb-3">Options:</strong>
+                      </span>
+                      <span className="d-flex mb-4">
+                        <i className="fas fa-chevron-circle-right text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Pay-Per-Click (PPC) Google AdWords
+                          <span className="mt-1 d-block text-muted">
+                            <strong className="text-secondary">Price</strong>:
+                            20% of Budget
+                          </span>
+                        </span>
+                      </span>
+                      <span className="d-flex mb-4">
+                        <i className="fas fa-chevron-circle-right text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Facebook Ads Campaign
+                          <span className="mt-1 d-block text-muted">
+                            <strong className="text-secondary">Price</strong>:
+                            20% of Budget
+                          </span>
+                        </span>
+                      </span>
+                      <span className="d-flex mb-4">
+                        <i className="fas fa-chevron-circle-right text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Email Marketing Campaign
+                          <span className="mt-1 d-block text-muted">
+                            <strong className="text-secondary">Price</strong>:
+                            20% of Budget
+                          </span>
+                        </span>
+                      </span>
+                    </p>
                   </div>
-                  <p className="container py-4 text-left">
-                    <span className="d-flex my-2">
-                      <strong className="mb-3">Includes:</strong>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Monthly SEO Strategy</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Competitor & Keyword Research
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Technical SEO</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">On-Page & Off-Page SEO</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Service & Location Landing Pages
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Google Map Pack Optimization</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Google My Business Optimization
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Review App Optimization</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Citation Building</span>
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div className="container col-md-3 mx-3 mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
-                <div className="text-center pt-5">
-                  <i className="fas fa-2x fa-award text-silver mb-4 d-block"></i>
-                  <h3 className="mt-2">SEO + PPC</h3>
-                  <div className="border mx-3 mt-3 py-1">
-                    <small className="d-block text-muted">Silver Package</small>
-                    <span className="d-block text-muted lead">
-                      $1,000/month
-                    </span>
-                  </div>
-                  <p className="container py-4 text-left">
-                    <span className="d-flex my-2">
-                      <strong className="mb-3">Includes Bronze Plus:</strong>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Monthly SEO Strategy</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Competitor & Keyword Research
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Technical SEO</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">On-Page & Off-Page SEO</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Service & Location Landing Pages
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Google Map Pack Optimization</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Google My Business Optimization
-                      </span>
-                    </span>
-                  </p>
-                </div>
-              </div>
-              <div className="container col-md-3 mx-3 mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
-                <div className="text-center pt-5">
-                  <i className="fas fa-2x fa-award text-gold mb-4 d-block"></i>
-                  <h3 className="mt-2">Plus Social Media</h3>
-                  <div className="border mx-3 mt-3 py-1">
-                    <small className="d-block text-gold">Gold Package</small>
-                    <span className="d-block text-muted lead">
-                      $1,500/month
-                    </span>
-                  </div>
-                  <p className="container py-4 text-left">
-                    <span className="d-flex my-2">
-                      <strong className="mb-3">Bronze & Silver Plus:</strong>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Monthly SEO Strategy</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Competitor & Keyword Research
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Technical SEO</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">On-Page & Off-Page SEO</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Service & Location Landing Pages
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Google Map Pack Optimization</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Google My Business Optimization
-                      </span>
-                    </span>
-                  </p>
                 </div>
               </div>
             </div>
           </div>
+          {/* Website Only Container */}
           <div className="container bg-dark my-5 mx-3 border rounded shadow">
             <div className="text-center pt-5 drop-shadow-dark">
-              <h3 className="mt-2 text-white">Website Packages</h3>
+              <i className="fas fa-3x fa-globe mb-3 text-primary"></i>
+              <h3 className="mt-2 text-white">Website Only</h3>
               <hr className="divider mt-4" />
             </div>
-            <div className="row justify-content-center align-items-baseline py-5">
-              <div className="container col-md-3 mx-2 mb-3 p-2 border border-secondary drop-shadow bg-texture-2">
-                <div className="text-center pt-5">
-                  <i className="fas fa-2x fa-award text-bronze mb-4 d-block"></i>
-                  <h3 className="mt-2">Web Design & Development</h3>
-                  <div className="border mx-3 mt-3 py-1">
-                    <small className="d-block text-bronze">
-                      Bronze Package
-                    </small>
-                    <span className="d-block text-muted lead">$1,000 base</span>
-                    <span className="d-block text-muted">+ $300/page</span>
-                    <small className="d-block text-muted mt-2 px-2">
-                      Example: 5 page website (Home, About, Services, Blog,
-                      Contact) would cost $2,500
-                    </small>
+            <div className="row justify-content-center align-items-baseline pt-5 p-3">
+              <div className="container text-center border border-secondary col-md-7 pt-3 drop-shadow">
+                <p className="text-white">
+                  Just need a modern business website you can share across all
+                  devices?
+                </p>
+                <p className="text-primary">This package is for you!</p>
+              </div>
+            </div>
+            <div className="row justify-content-center align-items-baseline py-5 px-md-3">
+              {/* Step 1: Website Container */}
+              <div className="container col-md-4">
+                <p className="mt-2 p-3 lead text-center text-white bg-purple border border-white">
+                  <span className="text-secondary">Step 1:</span> Website
+                </p>
+                <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
+                  <div className="text-center pt-5">
+                    <i className="fas fa-3x fa-laptop-code text-secondary mb-4 d-block"></i>
+                    <h3 className="mt-2">
+                      Web Design &<br />
+                      Development
+                    </h3>
+                    <div className="container border mt-3 py-3">
+                      <small className="d-block text-info">
+                        Website Only Package
+                      </small>
+                      <span className="d-block text-muted lead">
+                        $2,000 base rate
+                      </span>
+                      <small className="d-block text-muted">
+                        + $300 per page
+                      </small>
+                      <span className="d-block text-primary bg-purple mt-4">
+                        Save $4,760!
+                      </span>
+                      <small className="d-block text-muted mt-2 px-2">
+                        (Compared to{' '}
+                        <a
+                          className="text-info"
+                          href="https://www.websitebuilderexpert.com/building-websites/how-much-should-a-website-cost/"
+                        >
+                          average website cost
+                        </a>
+                        )
+                      </small>
+                    </div>
+                    <div className="container py-4 text-left">
+                      <span className="d-flex my-2 mb-2">
+                        <strong className="mb-3">Includes:</strong>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          <strong>Setup</strong> all the technical stuff
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          <strong>Discover</strong> exactly what you want
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          <strong>Strategy</strong> for long term success
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          <strong>Design</strong> for your users
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          <strong>Develop</strong> with the highest standards
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          <strong>Testing</strong> for quality assurance
+                        </span>
+                      </span>
+                      <div className="text-danger mt-5">
+                        <small>Recurring Payments:</small>
+                        <small className="d-flex mt-3">
+                          - New Domain: $10/month
+                        </small>
+                        <small className="d-flex mt-1">
+                          - Hosting Plan: $10/month
+                        </small>
+                      </div>
+                    </div>
                   </div>
-                  <p className="container py-4 text-left">
-                    <span className="d-flex my-2">
-                      <strong className="mb-3">Includes:</strong>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        <strong>Setup</strong>: domain, hosting, DNS, SSL, CDN,
-                        Git, staging site
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        <strong>Discovery</strong>: user needs & experience,
-                        features, functions, branding, color palette, content,
-                        images
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        <strong>Design</strong>: responsive layouts for all
-                        devices, adheres to universal design principles, clear
-                        call-to-actions and navigation to optimize conversions
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">On-Page & Off-Page SEO</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Service & Location Landing Pages
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Google Map Pack Optimization</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Google My Business Optimization
-                      </span>
-                    </span>
-                  </p>
                 </div>
               </div>
-              <div className="container col-md-3 mx-2 mb-3 p-2 border border-secondary drop-shadow bg-texture-2">
-                <div className="text-center py-5">
-                  <i className="fas fa-2x fa-award text-silver mb-4 d-block"></i>
-                  <h3 className="mt-2">Web Design & Development</h3>
-                  <div className="border mx-3 mt-3 py-1">
-                    <small className="d-block text-muted">Silver Package</small>
-                    <span className="d-block text-muted lead">$1,500 base</span>
-                    <span className="d-block text-muted">+ $300/page</span>
-                    <small className="d-block text-muted mt-2 px-2">
-                      Example: 5 page website (Home, About, Services, Blog,
-                      Contact) would cost $3,000
-                    </small>
+              {/* Step 2: Maintenance Container */}
+              <div className="container col-md-4">
+                <p className="mt-2 p-3 lead text-center text-white bg-purple border border-white">
+                  <span className="text-secondary">Step 2:</span> Maintenance
+                </p>
+                <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
+                  <div className="text-center pt-5">
+                    <i className="fas fa-3x fa-tools text-secondary mb-4 d-block"></i>
+                    <h3 className="mt-2">
+                      Maintenance
+                      <br />
+                      Program
+                    </h3>
+                    <div className="container border mt-3 py-3">
+                      <small className="d-block text-info">
+                        Website Only Package
+                      </small>
+                      <span className="d-block text-muted lead">$30/month</span>
+                      <small className="d-block text-muted">
+                        Cancel anytime
+                      </small>
+                      <span className="d-block text-primary bg-purple mt-4">
+                        Save $1,000!
+                      </span>
+                      <small className="d-block text-muted mt-2 px-2">
+                        (Compared to{' '}
+                        <a
+                          className="text-info"
+                          href="https://www.rankpay.com/seo-cost/"
+                        >
+                          average SEO cost
+                        </a>
+                        )
+                      </small>
+                    </div>
+                    <p className="container py-4 text-left">
+                      <span className="d-flex my-2">
+                        <strong className="mb-3">Includes:</strong>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Monthly SEO Strategy</span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Competitor & Keyword Research
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Technical SEO</span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">On-Page & Off-Page SEO</span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Service & Location Landing Pages
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Google Map Pack Optimization
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Google My Business Optimization
+                        </span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Review App Optimization</span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Citation Building</span>
+                      </span>
+                    </p>
                   </div>
-                  <p className="container py-4 text-left">
-                    <span className="d-flex my-2">
-                      <strong className="mb-3">Includes Bronze Plus:</strong>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Monthly SEO Strategy</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Competitor & Keyword Research
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Technical SEO</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">On-Page & Off-Page SEO</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Service & Location Landing Pages
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Google Map Pack Optimization</span>
-                    </span>
-                    <span className="d-flex">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Google My Business Optimization
-                      </span>
-                    </span>
-                  </p>
                 </div>
               </div>
-              <div className="container col-md-3 mx-2 mb-3 p-2 border border-secondary drop-shadow bg-texture-2">
-                <div className="text-center py-5">
-                  <i className="fas fa-2x fa-award text-gold mb-4 d-block"></i>
-                  <h3 className="mt-2">Web Design & Development</h3>
-                  <div className="border mx-3 mt-3 py-1">
-                    <small className="d-block text-gold">Gold Package</small>
-                    <span className="d-block text-muted lead">$2,000 base</span>
-                    <span className="d-block text-muted">+ $300/page</span>
-                    <small className="d-block text-muted mt-2 px-2">
-                      Example: 5 page website (Home, About, Services, Blog,
-                      Contact) would cost $3,500
-                    </small>
+              {/* Step 3: Add-Ons Container */}
+              <div className="container col-md-4">
+                <p className="mt-2 p-3 lead text-center text-white bg-purple border border-white">
+                  <span className="text-secondary">Step 3:</span> Add-Ons
+                </p>
+                <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
+                  <div className="text-center pt-5">
+                    <i className="fas fa-3x fa-user-plus text-secondary mb-4 d-block"></i>
+                    <h3 className="mt-2">
+                      Optional
+                      <br />
+                      Add-Ons
+                    </h3>
+                    <div className="container border mt-3 py-3">
+                      <small className="d-block text-info">
+                        Website Only Package
+                      </small>
+                      <span className="d-block text-muted lead">
+                        $1,500 flat rate
+                      </span>
+                      <span className="d-block text-primary bg-purple mt-4">
+                        Save $2,000!
+                      </span>
+                      <small className="d-block text-muted mt-2 px-2">
+                        (Compared to{' '}
+                        <a
+                          className="text-info"
+                          href="https://www.websitebuilderexpert.com/building-websites/how-much-should-a-website-cost/"
+                        >
+                          average ?????? cost
+                        </a>
+                        )
+                      </small>
+                    </div>
+                    <p className="container py-4 text-left">
+                      <span className="d-flex my-2">
+                        <strong className="mb-3">Options:</strong>
+                      </span>
+                      <span className="d-flex mb-4">
+                        <i className="fas fa-chevron-circle-right text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Pay-Per-Click (PPC) Google AdWords
+                          <span className="mt-1 d-block text-muted">
+                            <strong className="text-secondary">Price</strong>:
+                            20% of Budget
+                          </span>
+                        </span>
+                      </span>
+                      <span className="d-flex mb-4">
+                        <i className="fas fa-chevron-circle-right text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Facebook Ads Campaign
+                          <span className="mt-1 d-block text-muted">
+                            <strong className="text-secondary">Price</strong>:
+                            20% of Budget
+                          </span>
+                        </span>
+                      </span>
+                      <span className="d-flex mb-4">
+                        <i className="fas fa-chevron-circle-right text-secondary mt-1"></i>
+                        <span className="ml-2">
+                          Email Marketing Campaign
+                          <span className="mt-1 d-block text-muted">
+                            <strong className="text-secondary">Price</strong>:
+                            20% of Budget
+                          </span>
+                        </span>
+                      </span>
+                    </p>
                   </div>
-                  <p className="container py-4 text-left">
-                    <span className="d-flex my-2">
-                      <strong className="mb-3">Bronze & Silver Plus:</strong>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Monthly SEO Strategy</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Competitor & Keyword Research
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Technical SEO</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">On-Page & Off-Page SEO</span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Service & Location Landing Pages
-                      </span>
-                    </span>
-                    <span className="d-flex mb-2">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">Google Map Pack Optimization</span>
-                    </span>
-                    <span className="d-flex">
-                      <i className="far fa-check-square text-secondary mt-1"></i>
-                      <span className="ml-2">
-                        Google My Business Optimization
-                      </span>
-                    </span>
-                  </p>
                 </div>
               </div>
             </div>
           </div>
           <div className="container bg-texture-2 m-5 border rounded shadow">
             <div className="text-center pt-5">
+              <i className="fas fa-3x fa-thumbs-up mb-3 text-primary"></i>
               <h2 className="mt-2">One-Time Services</h2>
               <hr className="divider mt-4" />
             </div>
