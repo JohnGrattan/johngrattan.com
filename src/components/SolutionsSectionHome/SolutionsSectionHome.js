@@ -6,10 +6,10 @@ import StatsSectionHome from '../StatsSectionHome/StatsSectionHome';
 
 import Button from '../Button/Button';
 
-const ServicesSectionHome = ({ className }) => {
+const SolutionsSectionHome = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query ServicesSectionHomeQ {
-      masthead: file(relativePath: { eq: "images/bg-img-services.jpg" }) {
+    query SolutionsSectionHomeQ {
+      masthead: file(relativePath: { eq: "images/bg-img-solutions.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -27,7 +27,7 @@ const ServicesSectionHome = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="seo services background"
+      alt="seo solutions for small businesses background"
     >
       <div className="container">
         <StatsSectionHome
@@ -36,7 +36,7 @@ const ServicesSectionHome = ({ className }) => {
           srcText="WordStream"
         />
         <h2 className="text-center mt-0 text-white drop-shadow-dark">
-          SEO Services
+          SEO Solutions for Small Businesses
         </h2>
         <hr className="divider mt-4 drop-shadow-dark" />
         <div className="row">
@@ -78,7 +78,7 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/seo-strategy"
+                  btnlink="/solutions/seo-strategy"
                   btnlabel="See My Strategy"
                   btnsolid={true}
                 />
@@ -123,7 +123,7 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/web-design"
+                  btnlink="/solutions/web-design"
                   btnlabel="How I Design"
                   btnsolid={true}
                 />
@@ -174,7 +174,7 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/web-development"
+                  btnlink="/solutions/web-development"
                   btnlabel="Modern Benefits"
                   btnsolid={true}
                 />
@@ -222,7 +222,7 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/local-seo"
+                  btnlink="/solutions/local-seo"
                   btnlabel="What Is SEO?"
                   btnsolid={true}
                 />
@@ -235,4 +235,4 @@ const ServicesSectionHome = ({ className }) => {
   );
 };
 
-export default ServicesSectionHome;
+export default SolutionsSectionHome;

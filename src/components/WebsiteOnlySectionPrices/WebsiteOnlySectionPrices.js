@@ -116,9 +116,9 @@ const WebsiteOnlySectionPrices = ({ className }) => {
                 </span>
                 <div className="text-danger mt-5">
                   <small>Recurring Payments:</small>
-                  <small className="d-flex mt-3">- New Domain: $10/month</small>
+                  <small className="d-flex mt-3">- New Domain: $15/year</small>
                   <small className="d-flex mt-1">
-                    - Hosting Plan: $10/month
+                    - Hosting Plan: $15/month
                   </small>
                 </div>
               </div>

@@ -116,9 +116,9 @@ const FullServiceSeoSectionPrices = ({ className }) => {
                 </span>
                 <div className="text-danger mt-5">
                   <small>Recurring Payments:</small>
-                  <small className="d-flex mt-3">- New Domain: $10/month</small>
+                  <small className="d-flex mt-3">- New Domain: $15/year</small>
                   <small className="d-flex mt-1">
-                    - Hosting Plan: $10/month
+                    - Hosting Plan: $15/month
                   </small>
                 </div>
               </div>
@@ -218,9 +218,7 @@ const FullServiceSeoSectionPrices = ({ className }) => {
                 <small className="d-block text-info">
                   Full-Service SEO Package
                 </small>
-                <span className="d-block text-muted lead">
-                  $1,500 flat rate
-                </span>
+                <span className="d-block text-muted lead">Rates Vary</span>
                 <span className="d-block text-primary bg-purple mt-4">
                   Save $2,000!
                 </span>
@@ -239,33 +237,84 @@ const FullServiceSeoSectionPrices = ({ className }) => {
                 <span className="d-flex my-2">
                   <strong className="mb-3">Options:</strong>
                 </span>
-                <span className="d-flex mb-4">
+                <span className="d-flex mb-5">
                   <i className="fas fa-chevron-circle-right text-secondary mt-1"></i>
                   <span className="ml-2">
-                    Pay-Per-Click (PPC) Google AdWords
-                    <span className="mt-1 d-block text-muted">
-                      <strong className="text-secondary">Price</strong>: 20% of
-                      Budget
+                    Pay-Per-Click (PPC) with Google Ads
+                    <span className="mt-1 d-block">
+                      <span className="d-flex my-3">
+                        <strong>Includes:</strong>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Keyword Research</span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Keyword Testing</span>
+                      </span>
+                      <span className="d-flex mb-4">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Landing Page Creation</span>
+                      </span>
+                      <span className="text-secondary border border-primary rounded p-2">
+                        <strong className="text-dark">Price</strong>: 20% of
+                        Budget
+                      </span>
                     </span>
                   </span>
                 </span>
-                <span className="d-flex mb-4">
+                <span className="d-flex mb-5">
                   <i className="fas fa-chevron-circle-right text-secondary mt-1"></i>
                   <span className="ml-2">
                     Facebook Ads Campaign
-                    <span className="mt-1 d-block text-muted">
-                      <strong className="text-secondary">Price</strong>: 20% of
-                      Budget
+                    <span className="mt-1 d-block">
+                      <span className="d-flex my-3">
+                        <strong>Includes:</strong>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Keyword Research</span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Demographic Testing</span>
+                      </span>
+                      <span className="d-flex mb-4">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Landing Page Creation</span>
+                      </span>
+                      <span className="text-secondary border border-primary rounded p-2">
+                        <strong className="text-dark">Price</strong>: 20% of
+                        Budget
+                      </span>
                     </span>
                   </span>
                 </span>
                 <span className="d-flex mb-4">
                   <i className="fas fa-chevron-circle-right text-secondary mt-1"></i>
                   <span className="ml-2">
-                    Email Marketing Campaign
-                    <span className="mt-1 d-block text-muted">
-                      <strong className="text-secondary">Price</strong>: 20% of
-                      Budget
+                    Email Marketing
+                    <span className="mt-1 d-block">
+                      <span className="d-flex my-3">
+                        <strong>Includes:</strong>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Email Setup</span>
+                      </span>
+                      <span className="d-flex mb-2">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Email Creation</span>
+                      </span>
+                      <span className="d-flex mb-4">
+                        <i className="far fa-check-square text-secondary mt-1"></i>
+                        <span className="ml-2">Landing Page Creation</span>
+                      </span>
+                      <span className="text-secondary border border-primary rounded p-2">
+                        <strong className="text-dark">Price</strong>:
+                        $50/campaign
+                      </span>
                     </span>
                   </span>
                 </span>

@@ -13,8 +13,7 @@ const SeoBlogPage = ({ data }) => (
     <HeaderBlog
       Tag="header"
       className="bg-img-page-top"
-      hOne="SEO Blog"
-      pText="This is a test"
+      hOne="SEO Knowledge for Business Owners"
     />
     <section className="page-section">
       <div className="container">

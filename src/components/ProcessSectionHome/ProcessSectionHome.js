@@ -37,7 +37,7 @@ const ProcessSectionHome = ({ className }) => {
           srcText="StatCounter"
         />
         <h2 className="text-center mt-0 text-white drop-shadow-dark">
-          SEO Process
+          SEO Process for Success
         </h2>
         <hr className="divider mt-4 drop-shadow-dark" />
         <div className="timeline container mt-5">

@@ -2,16 +2,15 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import HeaderAbout from '../components/HeaderAbout/HeaderAbout';
+import HeaderSolutions from '../components/HeaderSolutions/HeaderSolutions';
 
-const AboutPage = () => (
+const SolutionsPage = () => (
   <Layout>
-    <SEO title="About Me" />
-    <HeaderAbout
+    <SEO title="SEO & Web Design Solutions" />
+    <HeaderSolutions
       Tag="header"
       className="bg-img-page-top"
-      hOne="About Me"
-      pText="This is a test"
+      hOne="Solutions for Your Business"
     />
     <section className="page-section">
       <div className="container"></div>
@@ -19,4 +18,4 @@ const AboutPage = () => (
   </Layout>
 );
 
-export default AboutPage;
+export default SolutionsPage;

@@ -33,7 +33,7 @@ export default class Header extends React.Component {
               <Nav className="navbar-nav ml-auto my-2 my-lg-0 drop-shadow-dark">
                 <Scrollspy
                   className="navbar-nav"
-                  items={['about', 'services', 'portfolio', 'contact']}
+                  items={['about', 'solutions', 'portfolio', 'contact']}
                   currentClassName="active"
                   rootEl={'#mainNav'}
                   offset={-75}
@@ -44,8 +44,8 @@ export default class Header extends React.Component {
                     </Link>
                   </li>
                   <li className="nav-item">
-                    <Link className="nav-link text-uppercase" to="/services">
-                      Services
+                    <Link className="nav-link text-uppercase" to="/solutions">
+                      Solutions
                     </Link>
                   </li>
                   <li className="nav-item">

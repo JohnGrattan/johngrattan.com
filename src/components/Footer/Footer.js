@@ -21,7 +21,7 @@ const Footer = () => {
             <div className="col-lg-8 text-center text-white">
               <h2 className="mt-0 drop-shadow-dark">Let's Talk Today</h2>
               <hr className="divider my-4 drop-shadow-dark" />
-              <div className="mb-5">
+              <div className="my-5">
                 <p>Have any questions or concerns?</p>
                 <p>
                   Feel free to call, email or fill out this form and you will be

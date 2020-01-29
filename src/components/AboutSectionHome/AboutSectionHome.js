@@ -43,9 +43,9 @@ const AboutSectionHome = ({ className }) => {
           </div>
           <div className="col-lg-5 col-md-6 text-center order-md-1 mt-5">
             <h1 className="text-dark mt-0">
-              Hi, I'm John Grattan
+              Hi, I'm John Grattan{' '}
               <span className="d-block mt-3">Your one man </span>
-              <span className="d-block text-secondary">Digital Marketing</span>
+              <span className="d-block text-secondary">Digital Marketing </span>
               <span className="d-block text-secondary">Agency</span>
             </h1>
             <hr className="divider-long shadow primary my-4" />
