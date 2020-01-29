@@ -2,10 +2,10 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const FullServiceSeoSectionPrices = ({ className }) => {
+const WebsiteOnlySectionPrices = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query FullServiceSeoSectionPricesQ {
-      masthead: file(relativePath: { eq: "images/bg-img-dashboard.jpg" }) {
+    query WebsiteOnlySectionPricesQ {
+      masthead: file(relativePath: { eq: "images/bg-img-coding-website.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -26,16 +26,15 @@ const FullServiceSeoSectionPrices = ({ className }) => {
       alt="full-service seo background"
     >
       <div className="text-center pt-5 drop-shadow-dark">
-        <i className="fas fa-3x fa-rocket mb-3 text-primary"></i>
-        <h3 className="mt-2 text-white">Full-Service SEO</h3>
+        <i className="fas fa-3x fa-globe mb-3 text-primary"></i>
+        <h3 className="mt-2 text-white">Website Only</h3>
         <hr className="divider mt-4" />
       </div>
       <div className="row justify-content-center align-items-baseline pt-5 p-3">
         <div className="container text-center border border-secondary col-md-7 pt-3 drop-shadow">
           <p className="text-white">
-            Are you looking for a long term marketing plan
-            <br />
-            to drive new leads to your business website?
+            Just need a modern business website you can share across all
+            devices?
           </p>
           <p className="text-primary">This package is for you!</p>
         </div>
@@ -55,11 +54,12 @@ const FullServiceSeoSectionPrices = ({ className }) => {
               </h3>
               <div className="container border mt-3 py-3">
                 <small className="d-block text-info">
-                  Full-Service SEO Package
+                  Website Only Package
                 </small>
                 <span className="d-block text-muted lead">
-                  $2,000 flat rate
+                  $2,000 base rate
                 </span>
+                <small className="d-block text-muted">+ $300 per page</small>
                 <span className="d-block text-primary bg-purple mt-4">
                   Save $4,760!
                 </span>
@@ -125,24 +125,25 @@ const FullServiceSeoSectionPrices = ({ className }) => {
             </div>
           </div>
         </div>
-        {/* Step 2: SEO Container */}
+        {/* Step 2: Maintenance Container */}
         <div className="container col-md-4">
           <p className="mt-2 p-3 lead text-center text-white bg-purple border border-white">
-            <span className="text-secondary">Step 2:</span> SEO
+            <span className="text-secondary">Step 2:</span> Maintenance
           </p>
           <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
             <div className="text-center pt-5">
-              <i className="fas fa-3x fa-search-location text-secondary mb-4 d-block"></i>
+              <i className="fas fa-3x fa-tools text-secondary mb-4 d-block"></i>
               <h3 className="mt-2">
-                Local SEO
+                Maintenance
                 <br />
-                Marketing
+                Program
               </h3>
               <div className="container border mt-3 py-3">
                 <small className="d-block text-info">
-                  Full-Service SEO Package
+                  Website Only Package
                 </small>
-                <span className="d-block text-muted lead">$500/month</span>
+                <span className="d-block text-muted lead">$30/month</span>
+                <small className="d-block text-muted">Cancel anytime</small>
                 <span className="d-block text-primary bg-purple mt-4">
                   Save $1,000!
                 </span>
@@ -216,7 +217,7 @@ const FullServiceSeoSectionPrices = ({ className }) => {
               </h3>
               <div className="container border mt-3 py-3">
                 <small className="d-block text-info">
-                  Full-Service SEO Package
+                  Website Only Package
                 </small>
                 <span className="d-block text-muted lead">
                   $1,500 flat rate
@@ -278,4 +279,4 @@ const FullServiceSeoSectionPrices = ({ className }) => {
   );
 };
 
-export default FullServiceSeoSectionPrices;
+export default WebsiteOnlySectionPrices;

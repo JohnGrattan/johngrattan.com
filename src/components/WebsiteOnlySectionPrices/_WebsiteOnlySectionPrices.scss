@@ -1,19 +1,19 @@
-.bg-img-full-service-seo {
+.bg-img-website-only {
   background: linear-gradient(
     to bottom,
     #{fade-out(#343a40, 0.1)} 0%,
     #{fade-out(#343a40, 0.1)} 100%
   ) !important;
-  background-position: center !important;
+  background-position: top !important;
   background-repeat: repeat !important;
   background-attachment: scroll !important;
-  background-size: inherit !important;
+  background-size: auto !important;
   opacity: 1 !important;
 
   @include media-breakpoint-up(md) {
-    background-position: center !important;
-    background-repeat: no-repeat !important;
-    background-attachment: scroll !important;
-    background-size: cover !important;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
   }
 }
