@@ -5,7 +5,7 @@ import BackgroundImage from 'gatsby-background-image';
 const BgImgPageTop = ({ className, hOne, pText }) => {
   const data = useStaticQuery(graphql`
     query BgImgPageTopQ {
-      masthead: file(relativePath: { eq: "images/bg-img-services.jpg" }) {
+      masthead: file(relativePath: { eq: "images/bg-img-solutions.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
