@@ -17,7 +17,7 @@ const FormEmail = ({ formname }) => {
           <strong className="text-secondary text-uppercase">
             <u>FREE SEO Checklist</u>
           </strong>{' '}
-          for small businesses!
+          for business owners!
         </span>
       </Form.Text>
       <Form.Row>

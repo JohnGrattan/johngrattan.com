@@ -3,6 +3,7 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import HeaderAbout from '../components/HeaderAbout/HeaderAbout';
+import AboutSectionPage from '../components/AboutSectionPage/AboutSectionPage';
 
 const AboutPage = () => (
   <Layout>
@@ -13,9 +14,7 @@ const AboutPage = () => (
       hOne="About Me"
       pText="This is a test"
     />
-    <section className="page-section">
-      <div className="container"></div>
-    </section>
+    <AboutSectionPage className="py-md-5 bg-texture-1" />
   </Layout>
 );
 

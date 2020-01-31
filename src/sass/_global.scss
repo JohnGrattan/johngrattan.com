@@ -9,6 +9,13 @@ html {
   outline: none;
 }
 
+.text-white-link {
+  color: white;
+  &:hover {
+    color: $primary;
+  }
+}
+
 // Typography
 .text-white-75 {
   color: fade-out($white, 0.25);
@@ -55,6 +62,26 @@ html {
 
 .bg-light-gray {
   background-color: $lightGray;
+}
+
+.bg-img-gray-gradient {
+  background: linear-gradient(
+    to bottom,
+    #{fade-out(#343a40, 0.1)} 0%,
+    #{fade-out(#343a40, 0.1)} 100%
+  ) !important;
+  background-position: center !important;
+  background-repeat: repeat !important;
+  background-attachment: scroll !important;
+  background-size: inherit !important;
+  opacity: 1 !important;
+
+  @include media-breakpoint-up(md) {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: scroll !important;
+    background-size: cover !important;
+  }
 }
 
 // Custom horizontal rules
@@ -129,20 +156,6 @@ hr.secondary {
 .clip-triangle-down {
   clip-path: polygon(0 90%, 0 0, 500% 0, 50vw 100%);
 }
-
-// .bg-img {
-//   background-position: top;
-//   background-repeat: repeat;
-//   background-attachment: scroll;
-//   background-size: auto;
-
-//   @include media-breakpoint-up(md) {
-//     background-position: center;
-//     background-repeat: no-repeat;
-//     background-attachment: scroll;
-//     background-size: cover;
-//   }
-// }
 
 .bg-img-page-top {
   height: 50%;
