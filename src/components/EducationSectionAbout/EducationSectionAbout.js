@@ -49,12 +49,37 @@ const EducationSectionAbout = ({ className }) => {
         <div className="container">
           <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
             <div className="p-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              voluptates soluta dicta debitis fugiat eos at asperiores, hic
-              molestias expedita sed similique, deleniti minus aspernatur enim
-              quos porro. Culpa, commodi necessitatibus? Repellat magnam fugit
-              possimus, voluptate, cupiditate vero ipsum quis explicabo labore
-              fugiat quam earum, cum officia voluptatibus id. Commodi.
+              <p>
+                I studied Computer Science in college and went from playing
+                around with Basic, Q Basic and Visual Basic to learning Java,
+                C++ and Python.
+              </p>
+              <p>
+                Technology has changed a lot in the last decade, predominately
+                moving in the direction of Web Development, Web Apps, SaaS, IaaS
+                and PaaS.
+              </p>
+              <p>
+                Naturally, I progressed with the times and focused on JavaScript
+                and ReactJS for Web Development and Web Apps.
+              </p>
+              <p>
+                Now, I'm a self taught Full Stack Web Developer with skills in
+                HTML5, CSS3, Sass, Bootstrap, JavaScript, jQuery, ReactJS,
+                Node.js, Express, GraphQL and GatsbyJS.
+              </p>
+              <p>
+                I soon realized it was imperative to learn UI/UX design and SEO.
+              </p>
+              <p>
+                Afterall, what good a beautifully coded website if it looks
+                terrible and no one can find it?!
+              </p>
+              <p className="text-info">
+                Now I can officially say I've developed the skills to consider
+                myself a 'one man Digital Marketing Agency', capable of
+                competently handling the full service from beginning to end.
+              </p>
             </div>
           </div>
         </div>

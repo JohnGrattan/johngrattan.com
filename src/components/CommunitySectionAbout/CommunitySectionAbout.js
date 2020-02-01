@@ -28,21 +28,17 @@ const CommunitySectionAbout = ({ className }) => {
       alt="john grattan about me background"
     >
       <div id="community" className="text-center pt-5 drop-shadow-dark">
-        <i className="fas fa-3x fa-university mb-3 text-primary"></i>
+        <i className="fas fa-3x fa-handshake mb-3 text-primary"></i>
         <h3 className="mt-2 text-white">Community</h3>
         <hr className="divider mt-4" />
       </div>
       <div className="row justify-content-center align-items-baseline pt-5 p-3">
         <div className="container text-center border border-secondary col-md-7 pt-3 drop-shadow">
           <p className="text-white">
-            I'm a lifelong resident of{' '}
-            <span className="text-primary">Plymouth, MA</span>, a fanatic of{' '}
-            <span className="text-primary">Boston sports</span> and a strong
-            believer that{' '}
-            <span className="text-primary">
-              success starts with helping others
-            </span>
-            .
+            The sense of <span className="text-primary">belonging</span> is
+            pivotal to <span className="text-primary">longevity</span>. Creating
+            a relationship between small businesses and the people they serve is
+            the <span className="text-primary">ultimate ROI</span>.
           </p>
         </div>
       </div>
@@ -50,12 +46,22 @@ const CommunitySectionAbout = ({ className }) => {
         <div className="container">
           <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
             <div className="p-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              voluptates soluta dicta debitis fugiat eos at asperiores, hic
-              molestias expedita sed similique, deleniti minus aspernatur enim
-              quos porro. Culpa, commodi necessitatibus? Repellat magnam fugit
-              possimus, voluptate, cupiditate vero ipsum quis explicabo labore
-              fugiat quam earum, cum officia voluptatibus id. Commodi.
+              <p>
+                Growing up in Plymouth, MA, I've seen many businesses come and
+                go.
+              </p>
+              <p>
+                More often than not, the deciding factor is how well they serve
+                the community and contribute to the town's success.
+              </p>
+              <p>
+                People value rapport, personal interactions and the ability to
+                relate.
+              </p>
+              <p className="text-info">
+                I hold true to putting the people's interest first by improving
+                the connection between local businesses and their consumers.
+              </p>
             </div>
           </div>
         </div>

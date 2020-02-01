@@ -15,9 +15,9 @@ import {
 } from 'react-scroll';
 
 // BG Query
-const AboutSectionPage = ({ className }) => {
+const ServicesSectionPage = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query AboutSectionPageQ {
+    query ServicesSectionPageQ {
       texture: file(
         relativePath: { eq: "images/textures/gradient-squares.png" }
       ) {
@@ -44,7 +44,10 @@ const AboutSectionPage = ({ className }) => {
         <div className="row justify-content-center align-items-center border bg-white shadow rounded position-sticky">
           <div className="container py-3">
             <div className="py-3 px-5">
-              <h2 className="mt-2 text-center">Who is John Grattan?</h2>
+              <h2 className="mt-2 text-center">
+                SEO & Web Design Services <br />
+                for Small Business
+              </h2>
               <hr className="divider my-4" />
             </div>
             <div className="container col-md-8 py-3 my-2 text-white bg-info drop-shadow">
@@ -54,42 +57,55 @@ const AboutSectionPage = ({ className }) => {
               <div className="row justify-content-around align-items-end my-4">
                 <Link
                   to="background"
-                  className="col-md-4 mb-5 mb-md-0 text-center drop-shadow pointer"
+                  className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
                   smooth={true}
                   duration={500}
                   offset={-75}
                 >
-                  <i className="fas fa-3x fa-address-card mb-3 text-primary wiggle"></i>
+                  <i className="fas fa-3x fa-chess mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">Background</span>
+                  <span className="text-white-link">SEO Strategy</span>
+                </Link>
+                <Link
+                  to="background"
+                  className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-75}
+                >
+                  <i className="fas fa-3x fa-drafting-compass mb-3 text-primary wiggle"></i>
+                  <br />
+                  <span className="text-white-link">Local SEO</span>
                 </Link>
                 <Link
                   to="education"
-                  className="col-md-4 mb-5 mb-md-0 text-center drop-shadow pointer"
+                  className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
                   smooth={true}
                   duration={500}
                   offset={-75}
                 >
-                  <i className="fas fa-3x fa-user-graduate mb-3 text-primary wiggle"></i>
+                  <i className="fas fa-3x fa-laptop-code mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">Education</span>
+                  <span className="text-white-link">Web Design</span>
                 </Link>
                 <Link
                   to="community"
-                  className="col-md-4 mb-5 mb-md-0 text-center drop-shadow pointer"
+                  className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
                   smooth={true}
                   duration={500}
                   offset={-75}
                 >
-                  <i className="fas fa-3x fa-handshake mb-3 text-primary wiggle"></i>
+                  <i className="fas fa-3x fa-chart-line mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">Community</span>
+                  <span className="text-white-link">Web Development</span>
                 </Link>
               </div>
             </div>
@@ -103,4 +119,4 @@ const AboutSectionPage = ({ className }) => {
   );
 };
 
-export default AboutSectionPage;
+export default ServicesSectionPage;

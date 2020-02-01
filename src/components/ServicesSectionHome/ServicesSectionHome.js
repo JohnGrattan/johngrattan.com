@@ -6,10 +6,10 @@ import StatsSectionHome from '../StatsSectionHome/StatsSectionHome';
 
 import Button from '../Button/Button';
 
-const SolutionsSectionHome = ({ className }) => {
+const ServicesSectionHome = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query SolutionsSectionHomeQ {
-      masthead: file(relativePath: { eq: "images/bg-img-solutions.jpg" }) {
+    query ServicesSectionHomeQ {
+      masthead: file(relativePath: { eq: "images/bg-img-services.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -27,7 +27,7 @@ const SolutionsSectionHome = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="seo solutions for small businesses background"
+      alt="local seo services for small business"
     >
       <div className="container">
         <StatsSectionHome
@@ -36,7 +36,7 @@ const SolutionsSectionHome = ({ className }) => {
           srcText="WordStream"
         />
         <h2 className="text-center mt-0 text-white drop-shadow-dark">
-          SEO Solutions for Small Businesses
+          Local SEO Services for Small Business
         </h2>
         <hr className="divider mt-4 drop-shadow-dark" />
         <div className="row">
@@ -48,7 +48,7 @@ const SolutionsSectionHome = ({ className }) => {
               <div className="text-muted mb-0 text-left my-3">
                 <p>
                   We'll work together to diagnose your unique challenges and
-                  formulate viable solutions to establish{' '}
+                  formulate viable services to establish{' '}
                   <strong className="text-secondary">
                     domain authority within your industry
                   </strong>
@@ -65,20 +65,22 @@ const SolutionsSectionHome = ({ className }) => {
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">SEO content site map</span>
+                  <span className="ml-2">
+                    Diagnose what's preventing digital growth
+                  </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Service & location landing pages</span>
+                  <span className="ml-2">Short term web traffic gains</span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Plan adaptation to analytics</span>
+                  <span className="ml-2">Long term lead generation</span>
                 </span>
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/solutions/seo-strategy"
+                  btnlink="/services/seo-strategy"
                   btnlabel="See My Strategy"
                   btnsolid={true}
                 />
@@ -88,7 +90,7 @@ const SolutionsSectionHome = ({ className }) => {
           <div className="col-md-6 text-center justify-content-center align-items-center">
             <div className="my-5 border shadow p-3 bg-texture-2">
               <i className="fas fa-4x fa-drafting-compass text-primary mb-4 drop-shadow"></i>
-              <h3 className="h4 mb-2">Professional Web Design</h3>
+              <h3 className="h4 mb-2">Responsive Web Design</h3>
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
@@ -114,16 +116,18 @@ const SolutionsSectionHome = ({ className }) => {
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Conversion rate optimization</span>
+                  <span className="ml-2">Modern, user friendly layouts</span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">UI/UX focused layouts</span>
+                  <span className="ml-2">
+                    Brand consistency delivering your message
+                  </span>
                 </span>
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/solutions/web-design"
+                  btnlink="/services/web-design"
                   btnlabel="How I Design"
                   btnsolid={true}
                 />
@@ -158,24 +162,26 @@ const SolutionsSectionHome = ({ className }) => {
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
                   <span className="ml-2">
-                    Rank 90-100 on Google Pagespeed Insights
+                    Keep customers happy with fast page speeds
                   </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
                   <span className="ml-2">
-                    No servers, no database to get hacked
+                    No limits on features and functions
                   </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Scalable for max ROI</span>
+                  <span className="ml-2">
+                    No servers or database to get hacked
+                  </span>
                 </span>
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/solutions/web-development"
-                  btnlabel="Modern Benefits"
+                  btnlink="/services/web-development"
+                  btnlabel="Why Hand Code?"
                   btnsolid={true}
                 />
               </div>
@@ -184,7 +190,7 @@ const SolutionsSectionHome = ({ className }) => {
           <div className="col-md-6 text-center justify-content-center align-items-center">
             <div className="my-5 border shadow p-3 bg-texture-2">
               <i className="fas fa-4x fa-chart-line text-primary mb-4 drop-shadow"></i>
-              <h3 className="h4 mb-2">SEO Optimization</h3>
+              <h3 className="h4 mb-2">Local SEO & SEM</h3>
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
@@ -207,23 +213,25 @@ const SolutionsSectionHome = ({ className }) => {
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Leverage local SEO</span>
+                  <span className="ml-2">
+                    Rank on Google Map's Local 3-Pack
+                  </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Competitor & keyword research</span>
+                  <span className="ml-2">Rank for all towns you service</span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
                   <span className="ml-2">
-                    On-page and off-page optimization
+                    Outrank your competitors in searches
                   </span>
                 </span>
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/solutions/local-seo"
-                  btnlabel="What Is SEO?"
+                  btnlink="/services/local-seo"
+                  btnlabel="SEO vs. SEM"
                   btnsolid={true}
                 />
               </div>
@@ -235,4 +243,4 @@ const SolutionsSectionHome = ({ className }) => {
   );
 };
 
-export default SolutionsSectionHome;
+export default ServicesSectionHome;

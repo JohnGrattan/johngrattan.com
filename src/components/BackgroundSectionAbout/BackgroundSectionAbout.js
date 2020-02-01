@@ -49,12 +49,27 @@ const BackgroundSectionAbout = ({ className }) => {
         <div className="container">
           <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
             <div className="p-5">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt
-              voluptates soluta dicta debitis fugiat eos at asperiores, hic
-              molestias expedita sed similique, deleniti minus aspernatur enim
-              quos porro. Culpa, commodi necessitatibus? Repellat magnam fugit
-              possimus, voluptate, cupiditate vero ipsum quis explicabo labore
-              fugiat quam earum, cum officia voluptatibus id. Commodi.
+              <p>
+                I've always been intrigued with technology and its infinite
+                possibilities.
+              </p>
+              <p>
+                Growing up, I was introduced to coding and instantly loved it!
+              </p>
+              <p>
+                Having the ability to create a game and actually play it or
+                build a simple tool I didn't have before was enough to start my
+                journey.
+              </p>
+              <p>
+                Looking back, whether I was using a program or listening to
+                music, I couldn't help but dissect it's components and think
+                about what I would do differently.
+              </p>
+              <p className="text-info">
+                It's no surprise I became a Software Engineer by day and an
+                Audio Engineer by night!
+              </p>
             </div>
           </div>
         </div>

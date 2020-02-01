@@ -1,16 +1,8 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import Scrollspy from 'react-scrollspy';
 import { Navbar, Nav } from 'react-bootstrap';
-import Scroller from '../scroller';
-import Button from '../Button/Button';
 
 export default class Header extends React.Component {
-  constructor(props) {
-    super(props);
-    Scroller.handleAnchorScroll = Scroller.handleAnchorScroll.bind(this);
-  }
-
   render() {
     return (
       <>
@@ -31,52 +23,41 @@ export default class Header extends React.Component {
             <Navbar.Toggle aria-controls="navbarResponsive" />
             <Navbar.Collapse id="navbarResponsive">
               <Nav className="navbar-nav ml-auto my-2 my-lg-0 drop-shadow-dark">
-                <Scrollspy
-                  className="navbar-nav"
-                  items={['about', 'solutions', 'portfolio', 'contact']}
-                  currentClassName="active"
-                  rootEl={'#mainNav'}
-                  offset={-75}
-                >
-                  <li className="nav-item">
-                    <Link className="nav-link text-uppercase" to="/about">
-                      About
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link text-uppercase" to="/solutions">
-                      Solutions
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link text-uppercase" to="/process">
-                      Process
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link text-uppercase" to="/pricing">
-                      Pricing
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link
-                      className="nav-link text-uppercase"
-                      to="/case-studies"
-                    >
-                      Case Studies
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link text-uppercase" to="/seo-blog">
-                      Blog
-                    </Link>
-                  </li>
-                  <li className="nav-item">
-                    <Link className="nav-link text-uppercase" to="/contact">
-                      Contact
-                    </Link>
-                  </li>
-                </Scrollspy>
+                <li className="nav-item">
+                  <Link className="nav-link text-uppercase" to="/about">
+                    About
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-uppercase" to="/services">
+                    Services
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-uppercase" to="/process">
+                    Process
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-uppercase" to="/pricing">
+                    Pricing
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-uppercase" to="/case-studies">
+                    Case Studies
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-uppercase" to="/seo-blog">
+                    Blog
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-uppercase" to="/contact">
+                    Contact
+                  </Link>
+                </li>
               </Nav>
             </Navbar.Collapse>
           </div>
