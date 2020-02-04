@@ -9,6 +9,10 @@ html {
   outline: none;
 }
 
+a:hover {
+  color: $secondary;
+}
+
 .pointer {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
@@ -63,6 +67,22 @@ html {
 
 .text-gold {
   color: $gold;
+}
+
+.text-stroke-primary {
+  -webkit-text-stroke: $primary 1px;
+}
+
+.text-stroke-secondary {
+  -webkit-text-stroke: $secondary 1px;
+}
+
+.text-stroke-white {
+  -webkit-text-stroke: $white 1px;
+}
+
+.text-stroke-purple {
+  -webkit-text-stroke: $purple 1px;
 }
 
 .bg-texture-1 {
@@ -250,6 +270,10 @@ hr.secondary {
     color: $primary;
     transform: scale(1.2);
   }
+}
+
+.ml-1-25 {
+  margin-left: 1.25rem !important;
 }
 
 @include media-breakpoint-up(lg) {

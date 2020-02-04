@@ -67,7 +67,7 @@ const ServicesSectionPage = ({ className }) => {
                   <span className="text-white-link">Organic SEO</span>
                 </Link>
                 <Link
-                  to="background"
+                  to="local-seo"
                   className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
@@ -80,7 +80,7 @@ const ServicesSectionPage = ({ className }) => {
                   <span className="text-white-link">Local SEO</span>
                 </Link>
                 <Link
-                  to="education"
+                  to="local-seo"
                   className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}

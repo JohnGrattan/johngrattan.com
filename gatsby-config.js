@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: `/`,
   siteMetadata: {
     title: `John Grattan SEO & Web Design`,
-    description: `Hi, I'm John Grattan. I offer affordable Digital Marketing services such as SEO, SEM, Web Design and Web Development to small businesses in Massachusetts.`,
+    description: `John Grattan SEO & Web Design offers affordable Digital Marketing services such as SEO, SEM, Web Design and Web Development to small businesses in Massachusetts.`,
     author: `John Grattan`,
   },
   plugins: [

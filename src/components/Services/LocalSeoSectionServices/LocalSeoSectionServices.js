@@ -7,7 +7,7 @@ const LocalSeoSectionServices = ({ className }) => {
   const data = useStaticQuery(graphql`
     query LocalSeoSectionServicesQ {
       masthead: file(
-        relativePath: { eq: "images/bg-img-services-organic-seo.jpg" }
+        relativePath: { eq: "images/bg-img-services-local-seo.jpg" }
       ) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
@@ -24,10 +24,10 @@ const LocalSeoSectionServices = ({ className }) => {
     <BackgroundImage
       Tag="section"
       className={className}
-      id="organic-seo"
+      id="local-seo"
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="organic seo digital marketing services background"
+      alt="local seo digital marketing services background"
     >
       <div className="text-center pt-5 drop-shadow-dark">
         <i className="fas fa-3x fa-address-card mb-3 text-primary"></i>
@@ -37,12 +37,9 @@ const LocalSeoSectionServices = ({ className }) => {
       <div className="row justify-content-center align-items-baseline pt-5 p-3">
         <div className="container text-center border border-secondary col-md-7 pt-3 drop-shadow">
           <p className="text-white">
-            I'll optimize your website to{' '}
-            <span className="text-primary">
-              organically rank on the first page
-            </span>{' '}
-            for targeted keywords related to your business, your industry and
-            your services.
+            I'll localize your website and Google My Business account to{' '}
+            <span className="text-primary">rank locally on the first page</span>{' '}
+            for all the towns/cities your business services.
           </p>
         </div>
       </div>
@@ -52,19 +49,30 @@ const LocalSeoSectionServices = ({ className }) => {
             <div className="p-5">
               <h3 className="mb-3">What is Local SEO?</h3>
               <p>
-                Organic Search Engine Optimization (SEO) is the process of
-                improving your website's visibility to search engines, such as
-                Google and Bing. The ultimate goal is to strike a balance
-                between optimizing your website for search engine algorithms,
-                while maximizing your user's experience.{' '}
-                <strong className="text-info">
-                  Together, these enhancements will boost your website's ranking
-                  on search engine results pages (
-                  <Link className="text-link-on-white" to="/glossary">
-                    SERPs
-                  </Link>
-                  ) to the coveted top spot, on the first page.
-                </strong>
+                Local SEO (Local Search Engine Optimization) is the process of
+                localizing your website by naturally including your town/city,
+                county or region of service throughout{' '}
+                <Link className="text-link-on-white" to="/glossary">
+                  meta data
+                </Link>
+                , headings, content and{' '}
+                <Link className="text-link-on-white" to="/glossary">
+                  structured data/schema markup
+                </Link>{' '}
+                in order to be ranked on the first page of local intent
+                searches. Local SEO also includes the optimization of{' '}
+                <Link className="text-link-on-white" to="/glossary">
+                  Google My Business (GMB)
+                </Link>
+                , managing customer reviews and building{' '}
+                <Link className="text-link-on-white" to="/glossary">
+                  local citations
+                </Link>{' '}
+                to boost your chances of ranking within Google Map's{' '}
+                <Link className="text-link-on-white" to="/glossary">
+                  Local 3-Pack
+                </Link>
+                .
               </p>
               <h3 className="mb-3 mt-5">What are the benefits of Local SEO?</h3>
               <p>
@@ -152,7 +160,7 @@ const LocalSeoSectionServices = ({ className }) => {
                   to="/services/organic-seo"
                 >
                   Dive Deeper Into Organic SEO{' '}
-                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <i className="fas fa-long-arrow-alt-right"></i>
                 </Link>
               </div>
             </div>

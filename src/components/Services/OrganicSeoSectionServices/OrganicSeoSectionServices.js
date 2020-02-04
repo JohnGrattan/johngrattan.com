@@ -150,7 +150,7 @@ const OrganicSeoSectionServices = ({ className }) => {
                   to="/services/organic-seo"
                 >
                   Dive Deeper Into Organic SEO{' '}
-                  <i class="fas fa-long-arrow-alt-right"></i>
+                  <i className="fas fa-long-arrow-alt-right"></i>
                 </Link>
               </div>
             </div>

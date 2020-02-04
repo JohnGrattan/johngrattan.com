@@ -85,15 +85,41 @@ const Footer = () => {
               </Link>
             </div>
             <div className="col-md-6 col-lg-3 text-center text-md-left mb-5 mb-lg-0 drop-shadow-dark">
-              <h5 className="text-uppercase text-secondary mb-4">
-                John Grattan
-              </h5>
-              <p className="text-white text-sans-serif text-justify pt-2">
-                John Grattan SEO & Web Design provides an affordable Digital
-                Marketing solution for small businesses throughout Massachusetts
-                to help them generate leads, increase sales and establish a
-                their domain authority on search engines.
-              </p>
+              <h5 className="text-uppercase text-secondary mb-4">Info</h5>
+              <div className="text-white text-sans-serif pt-2 d-flex mb-2">
+                <i className="fas fa-address-card mt-1"></i>
+                <Link to="/" className="ml-3">
+                  John Grattan SEO & Web Design
+                </Link>
+              </div>
+              <div className="text-white text-sans-serif pt-2 d-flex mb-2">
+                <i className="fas fa-phone mt-1"></i>
+                <a className="ml-3" href="tel:+14012169868">
+                  (401) 216-9868
+                </a>
+              </div>
+              <div className="text-white text-sans-serif pt-2 d-flex mb-2">
+                <i className="fas fa-envelope mt-1"></i>
+                <a
+                  className="ml-3"
+                  href="mailto:contact@johngrattan.com?Subject=Important%20Email%20From%20Website"
+                  target="_blank"
+                >
+                  contact@johngrattan.com
+                </a>
+              </div>
+              <div className="text-white text-sans-serif pt-2 d-flex mb-2">
+                <i className="fas fa-map-marker-alt mt-1"></i>
+                <a
+                  className="ml-1-25"
+                  href="https://g.page/john-grattan-seo-web-design?share"
+                  target="_blank"
+                >
+                  30 Roosevelt Road,
+                  <br />
+                  Plymouth, MA 02360
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -115,12 +141,24 @@ const Footer = () => {
               </p>
             </div>
             <div className="col-md-4 text-center text-white">
-              <i className="fab fa-2x fa-facebook px-2"></i>
-              <i className="fab fa-2x fa-instagram px-2"></i>
-              <i className="fab fa-2x fa-twitter px-2"></i>
-              <i className="fab fa-2x fa-youtube px-2"></i>
-              <i className="fab fa-2x fa-linkedin px-2"></i>
-              <i className="fab fa-2x fa-github px-2"></i>
+              <a href="#">
+                <i className="fab fa-2x fa-facebook px-2"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-2x fa-instagram px-2"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-2x fa-twitter px-2"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-2x fa-youtube px-2"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-2x fa-linkedin px-2"></i>
+              </a>
+              <a href="#">
+                <i className="fab fa-2x fa-github px-2"></i>
+              </a>
             </div>
           </div>
         </div>
