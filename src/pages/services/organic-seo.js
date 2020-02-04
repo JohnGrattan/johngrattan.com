@@ -4,13 +4,13 @@ import Layout from '../../components/layout';
 import SEO from '../../components/seo';
 import BgImgPageTop from '../../components/BgImgPageTop/BgImgPageTop';
 
-const WebDesignPage = () => (
+const OrganicSeoPage = () => (
   <Layout>
-    <SEO title="Web Design" />
+    <SEO title="Organic SEO" />
     <BgImgPageTop
       Tag="header"
       className="bg-img-page-top"
-      hOne="Web Design"
+      hOne="Organic SEO"
       pText="This is a test"
     />
     <section className="page-section">
@@ -19,4 +19,4 @@ const WebDesignPage = () => (
   </Layout>
 );
 
-export default WebDesignPage;
+export default OrganicSeoPage;

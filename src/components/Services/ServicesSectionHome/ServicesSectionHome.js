@@ -1,10 +1,8 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-
-import StatsSectionHome from '../StatsSectionHome/StatsSectionHome';
-
-import Button from '../Button/Button';
+import StatsSectionHome from '../../StatsSectionHome/StatsSectionHome';
+import Button from '../../Button/Button';
 
 const ServicesSectionHome = ({ className }) => {
   const data = useStaticQuery(graphql`
@@ -127,7 +125,7 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/web-design"
+                  btnlink="/services/website-design"
                   btnlabel="How I Design"
                   btnsolid={true}
                 />

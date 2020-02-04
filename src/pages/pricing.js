@@ -2,8 +2,8 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import HeaderPricing from '../components/HeaderPricing/HeaderPricing';
-import PricingSectionPage from '../components/PricingSectionPage/PricingSectionPage';
+import HeaderPricing from '../components/Pricing/HeaderPricing/HeaderPricing';
+import PricingSectionPage from '../components/Pricing/PricingSectionPage/PricingSectionPage';
 
 const PricingPage = () => (
   <Layout>

@@ -3,9 +3,9 @@ import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import HeaderHome from '../components/HeaderHome/HeaderHome';
-import AboutSectionHome from '../components/AboutSectionHome/AboutSectionHome';
+import AboutSectionHome from '../components/About/AboutSectionHome/AboutSectionHome';
 import BlogSectionBgHome from '../components/BlogSectionHome/BlogSectionBgHome';
-import ServicesSectionHome from '../components/ServicesSectionHome/ServicesSectionHome';
+import ServicesSectionHome from '../components/Services/ServicesSectionHome/ServicesSectionHome';
 import ProcessSectionHome from '../components/ProcessSectionHome/ProcessSectionHome';
 
 const IndexPage = () => {

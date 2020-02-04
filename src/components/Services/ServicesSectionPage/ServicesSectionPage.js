@@ -1,9 +1,8 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import BackgroundSectionAbout from '../BackgroundSectionAbout/BackgroundSectionAbout';
-import EducationSectionAbout from '../EducationSectionAbout/EducationSectionAbout';
-import CommunitySectionAbout from '../CommunitySectionAbout/CommunitySectionAbout';
+import OrganicSeoSectionServices from '../OrganicSeoSectionServices/OrganicSeoSectionServices';
+import LocalSeoSectionServices from '../LocalSeoSectionServices/LocalSeoSectionServices';
 import * as Scroll from 'react-scroll';
 import {
   Link,
@@ -45,18 +44,17 @@ const ServicesSectionPage = ({ className }) => {
           <div className="container py-3">
             <div className="py-3 px-5">
               <h2 className="mt-2 text-center">
-                SEO & Web Design Services <br />
-                for Small Business
+                Optimize Your Online Presence
               </h2>
               <hr className="divider my-4" />
             </div>
             <div className="container col-md-8 py-3 my-2 text-white bg-info drop-shadow">
               <p className="m-3 mb-5 text-center drop-shadow">
-                Get to know me:
+                Learn about my services:
               </p>
-              <div className="row justify-content-around align-items-end my-4">
+              <div className="row justify-content-around align-items-end mt-4 mb-5">
                 <Link
-                  to="background"
+                  to="organic-seo"
                   className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
@@ -64,9 +62,9 @@ const ServicesSectionPage = ({ className }) => {
                   duration={500}
                   offset={-75}
                 >
-                  <i className="fas fa-3x fa-chess mb-3 text-primary wiggle"></i>
+                  <i className="fas fa-3x fa-seedling mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">SEO Strategy</span>
+                  <span className="text-white-link">Organic SEO</span>
                 </Link>
                 <Link
                   to="background"
@@ -77,7 +75,7 @@ const ServicesSectionPage = ({ className }) => {
                   duration={500}
                   offset={-75}
                 >
-                  <i className="fas fa-3x fa-drafting-compass mb-3 text-primary wiggle"></i>
+                  <i className="fas fa-3x fa-search-location mb-3 text-primary wiggle"></i>
                   <br />
                   <span className="text-white-link">Local SEO</span>
                 </Link>
@@ -90,9 +88,24 @@ const ServicesSectionPage = ({ className }) => {
                   duration={500}
                   offset={-75}
                 >
+                  <i className="fas fa-3x fa-drafting-compass mb-3 text-primary wiggle"></i>
+                  <br />
+                  <span className="text-white-link">Website Design</span>
+                </Link>
+              </div>
+              <div className="row justify-content-around align-items-end my-4">
+                <Link
+                  to="community"
+                  className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-75}
+                >
                   <i className="fas fa-3x fa-laptop-code mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">Web Design</span>
+                  <span className="text-white-link">Web Development</span>
                 </Link>
                 <Link
                   to="community"
@@ -103,16 +116,28 @@ const ServicesSectionPage = ({ className }) => {
                   duration={500}
                   offset={-75}
                 >
-                  <i className="fas fa-3x fa-chart-line mb-3 text-primary wiggle"></i>
+                  <i className="fas fa-3x fa-users mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">Web Development</span>
+                  <span className="text-white-link">Social Media</span>
+                </Link>
+                <Link
+                  to="community"
+                  className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-75}
+                >
+                  <i className="fas fa-3x fa-envelope-open-text mb-3 text-primary wiggle"></i>
+                  <br />
+                  <span className="text-white-link">Email Marketing</span>
                 </Link>
               </div>
             </div>
           </div>
-          <BackgroundSectionAbout className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
-          <EducationSectionAbout className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
-          <CommunitySectionAbout className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
+          <OrganicSeoSectionServices className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
+          <LocalSeoSectionServices className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
         </div>
       </div>
     </BackgroundImage>

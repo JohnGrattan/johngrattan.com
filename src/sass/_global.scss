@@ -19,10 +19,25 @@ html {
   }
 }
 
+.text-sans-serif {
+  font-family: $font-family-sans-serif;
+}
+
 .text-white-link {
   color: white;
   &:hover {
     color: $primary;
+  }
+}
+
+.text-link-on-white {
+  color: $purple;
+  font-weight: 600;
+  font-style: italic;
+  border-bottom: 3px solid $primary;
+  &:active,
+  &:hover {
+    color: $purple;
   }
 }
 

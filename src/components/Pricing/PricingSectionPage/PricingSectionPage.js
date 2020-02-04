@@ -37,7 +37,9 @@ const PricingSectionPage = ({ className }) => {
           {/* Pricing Structures Container */}
           <div className="container py-3">
             <div className="py-3 px-5">
-              <h2 className="mt-2 text-center">Pricing Structures</h2>
+              <h2 className="mt-2 text-center">
+                Digital Marketing Pricing Packages
+              </h2>
               <hr className="divider my-4" />
             </div>
             {/* Options Overview Container */}

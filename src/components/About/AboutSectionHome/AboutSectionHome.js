@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-import ImgJgGreen from '../ImageComps/image-jg-headshot-green';
-import Button from '../Button/Button';
-import FormEmail from '../FormEmail/FormEmail';
+import ImgJgGreen from '../../ImageComps/image-jg-headshot-green';
+import Button from '../../Button/Button';
+import FormEmail from '../../FormEmail/FormEmail';
 
 const AboutSectionHome = ({ className }) => {
   const data = useStaticQuery(graphql`

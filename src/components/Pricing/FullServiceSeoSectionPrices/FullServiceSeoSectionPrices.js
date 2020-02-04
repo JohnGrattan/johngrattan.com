@@ -134,9 +134,9 @@ const FullServiceSeoSectionPrices = ({ className }) => {
             <div className="text-center pt-5">
               <i className="fas fa-3x fa-search-location text-secondary mb-4 d-block"></i>
               <h3 className="mt-2">
-                Local SEO
+                Organic &
                 <br />
-                Marketing
+                Local SEO
               </h3>
               <div className="container border mt-3 py-3">
                 <small className="d-block text-info">

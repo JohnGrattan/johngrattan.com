@@ -2,8 +2,8 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import HeaderAbout from '../components/HeaderAbout/HeaderAbout';
-import AboutSectionPage from '../components/AboutSectionPage/AboutSectionPage';
+import HeaderAbout from '../components/About/HeaderAbout/HeaderAbout';
+import AboutSectionPage from '../components/About/AboutSectionPage/AboutSectionPage';
 
 const AboutPage = () => (
   <Layout>
