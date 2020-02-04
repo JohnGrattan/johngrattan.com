@@ -4,6 +4,7 @@ module.exports = {
     title: `John Grattan SEO & Web Design`,
     description: `John Grattan SEO & Web Design offers affordable Digital Marketing services such as SEO, SEM, Web Design and Web Development to small businesses in Massachusetts.`,
     author: `John Grattan`,
+    siteUrl: `https://johngrattan.com`,
   },
   plugins: [
     `gatsby-plugin-catch-links`,
@@ -12,6 +13,16 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-robots-txt',
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://johngrattan.com',
+        sitemap: 'https://johngrattan.com/sitemap.xml',
+        policy: [{ userAgent: '*', disallow: '', allow: '/' }],
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
