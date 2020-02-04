@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: `/`,
   siteMetadata: {
     title: `John Grattan SEO & Web Design`,
-    description: `Hi, I'm John Grattan. I offer affordable Digital Marketing solutions such as SEO, SEM, Web Design and Web Development to small businesses in Massachusetts.`,
+    description: `Hi, I'm John Grattan. I offer affordable Digital Marketing services such as SEO, SEM, Web Design and Web Development to small businesses in Massachusetts.`,
     author: `John Grattan`,
   },
   plugins: [
@@ -12,6 +12,12 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: 'UA-157734045-1',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
