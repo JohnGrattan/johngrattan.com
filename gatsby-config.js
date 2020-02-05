@@ -1,10 +1,20 @@
+const {
+  NODE_ENV,
+  URL: NETLIFY_SITE_URL = 'https://johngrattan.com',
+  DEPLOY_PRIME_URL: NETLIFY_DEPLOY_URL = NETLIFY_SITE_URL,
+  CONTEXT: NETLIFY_ENV = NODE_ENV,
+} = process.env;
+const isNetlifyProduction = NETLIFY_ENV === 'production';
+const siteUrl = isNetlifyProduction ? NETLIFY_SITE_URL : NETLIFY_DEPLOY_URL;
+
 module.exports = {
   pathPrefix: `/`,
   siteMetadata: {
     title: `John Grattan SEO & Web Design`,
     description: `John Grattan SEO & Web Design offers affordable Digital Marketing services such as SEO, SEM, Web Design and Web Development to small businesses in Massachusetts.`,
     author: `John Grattan`,
-    siteUrl: `https://johngrattan.com`,
+    image: 'https://johngrattan.com/images/john-grattan-circle-headshot.jpg',
+    siteUrl,
   },
   plugins: [
     `gatsby-plugin-catch-links`,
@@ -18,9 +28,22 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: 'https://johngrattan.com',
-        sitemap: 'https://johngrattan.com/sitemap.xml',
-        policy: [{ userAgent: '*', disallow: '', allow: '/' }],
+        resolveEnv: () => NETLIFY_ENV,
+        env: {
+          production: {
+            policy: [{ userAgent: '*' }],
+          },
+          'branch-deploy': {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+            sitemap: null,
+            host: null,
+          },
+          'deploy-preview': {
+            policy: [{ userAgent: '*', disallow: ['/'] }],
+            sitemap: null,
+            host: null,
+          },
+        },
       },
     },
     {
