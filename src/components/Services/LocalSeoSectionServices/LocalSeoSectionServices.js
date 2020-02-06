@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 import Button from '../../Button/Button';
+import { Popover, OverlayTrigger } from 'react-bootstrap';
 
 const LocalSeoSectionServices = ({ className }) => {
   const data = useStaticQuery(graphql`
@@ -19,6 +20,20 @@ const LocalSeoSectionServices = ({ className }) => {
   `);
 
   const imageData = data.masthead.childImageSharp.fluid;
+
+  const SERPS = (
+    <Popover id="serps">
+      <Popover.Title className="text-info" as="h4">
+        <strong>SERPs</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          Stands for 'search engine results page', which is the page following a
+          search query.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
 
   return (
     <BackgroundImage
@@ -59,7 +74,7 @@ const LocalSeoSectionServices = ({ className }) => {
                 <Link className="text-link-on-white" to="/glossary">
                   structured data/schema markup
                 </Link>{' '}
-                in order to be ranked on the first page of local intent
+                in order to be ranked on the first page of local intent keyword
                 searches. Local SEO also includes the optimization of{' '}
                 <Link className="text-link-on-white" to="/glossary">
                   Google My Business (GMB)
@@ -76,78 +91,34 @@ const LocalSeoSectionServices = ({ className }) => {
               </p>
               <h3 className="mb-3 mt-5">What are the benefits of Local SEO?</h3>
               <p>
-                Organic SEO has become very important for your business because
-                new technology is allowing search engines to accurately modify
-                search results based on user intent. This means, when someone
-                has the intention to buy, the results will be reflected
-                accordingly. Now, this will greatly increase the chances of your
-                business making a sale, provided it's listed on the first page
-                for buyer intent keywords.{' '}
-                <strong className="text-info">
-                  In short, ranking first means more{' '}
-                  <Link className="text-link-on-white" to="/glossary">
-                    quality leads
-                  </Link>{' '}
-                  you can convert to paying customers.
-                </strong>
+                Every business can benefit from Local SEO because it provides a
+                chance to rank within your industry and not necessarily have to
+                worry about competing with major corporations. Google has
+                numerous local ranking factors that are specific to geographical
+                'near me' search phrases.
+              </p>
+              <p>
+                By locally optimizing your business website, you will increase
+                visibility on{' '}
+                <OverlayTrigger
+                  trigger={['click', 'hover']}
+                  placement="bottom"
+                  overlay={SERPS}
+                >
+                  <span className="text-link-on-white pointer">
+                    SERPs <i className="fas fa-info-circle text-info"></i>
+                  </span>
+                </OverlayTrigger>{' '}
+                via Google Map's Local 3-Pack. Since these 3 business listings
+                get the most clicks, your traffic will increase and in turn
+                boost your potential sales.
               </p>
               <h3 className="mb-3 mt-5">What is the Google Local Pack?</h3>
-              <p>
-                Organic SEO and Local SEO both utilize the same strategies, such
-                as keyword and competitor research and on-page, off-page and
-                technical SEO. The difference lies within the focus on a
-                geographical component.
-              </p>
-              <p>
-                Organic SEO concentrates on ranking a website on a global scale,
-                while Local SEO concentrates on generating business website
-                awareness within targeted towns and cities. Local SEO also takes
-                it a step further by connecting{' '}
-                <Link className="text-link-on-white" to="/glossary">
-                  Google My Business (GMB)
-                </Link>
-                , customer reviews and{' '}
-                <Link className="text-link-on-white" to="/glossary">
-                  structured data/schema markup
-                </Link>{' '}
-                to boost your business into Google Map's{' '}
-                <Link className="text-link-on-white" to="/glossary">
-                  Local 3-Pack
-                </Link>
-                .
-              </p>
-              <p>
-                Although Local SEO is especially important for brick-and-mortar
-                businesses and companies that serve specific local areas,{' '}
-                <strong className="text-info">
-                  Organic SEO is essential to creating an audience that's built
-                  on trust from the informational value you provide, thus
-                  solidifying your website as a{' '}
-                  <Link className="text-link-on-white" to="/glossary">
-                    domain authority
-                  </Link>{' '}
-                  within your industry.
-                </strong>
-              </p>
+              <p></p>
               <h3 className="mb-3 mt-5">
                 Google My Business & Local Citations
               </h3>
-              <p>
-                Organic SEO is a long term strategy to drive traffic to your
-                website via organic user searches based on targeted keywords,
-                while{' '}
-                <Link className="text-link-on-white" to="/glossary">
-                  Pay-Per-Click (PPC)
-                </Link>{' '}
-                is a short term strategy to drive traffic to your website via
-                Google Ads placed above organic search results.{' '}
-                <strong className="text-info">
-                  Organic SEO is often preferred over PPC because it will pay
-                  dividends year after year, whereas PPC will immediately cease
-                  extra traffic the moment your ad campaign is complete
-                </strong>
-                .
-              </p>
+              <p></p>
               <div className="container d-flex justify-content-center align-items-center mt-5">
                 <Button
                   className="mr-4"
@@ -157,9 +128,9 @@ const LocalSeoSectionServices = ({ className }) => {
                 />
                 <Link
                   className="text-link-on-white ml-4"
-                  to="/services/organic-seo"
+                  to="/services/local-seo"
                 >
-                  Dive Deeper Into Organic SEO{' '}
+                  Dive Deeper Into Local SEO{' '}
                   <i className="fas fa-long-arrow-alt-right"></i>
                 </Link>
               </div>

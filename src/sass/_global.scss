@@ -39,9 +39,11 @@ a:hover {
   font-weight: 600;
   font-style: italic;
   border-bottom: 3px solid $primary;
+  cursor: pointer;
   &:active,
   &:hover {
     color: $purple;
+    text-decoration: underline;
   }
 }
 

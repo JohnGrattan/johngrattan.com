@@ -2,6 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 import Button from '../../Button/Button';
+import { Popover, OverlayTrigger } from 'react-bootstrap';
 
 const OrganicSeoSectionServices = ({ className }) => {
   const data = useStaticQuery(graphql`
@@ -19,6 +20,72 @@ const OrganicSeoSectionServices = ({ className }) => {
   `);
 
   const imageData = data.masthead.childImageSharp.fluid;
+
+  const organicSEO = (
+    <Popover id="organic-seo">
+      <Popover.Title className="text-info" as="h4">
+        <strong>Organic SEO</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          Naturally earning your website's rank placement within search results,
+          as opposed to paid advertisements.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const SERPS = (
+    <Popover id="serps">
+      <Popover.Title className="text-info" as="h4">
+        <strong>SERPs</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          Stands for 'search engine results page', which is the page following a
+          search query.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const buyerIntentKeywords = (
+    <Popover id="buyer-intent-keywords">
+      <Popover.Title className="text-info" as="h4">
+        <strong>Buyer Intent Keywords</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          Buyer intent keywords refer to particular phrases people search for
+          when they're ready to buy a product or service. The intent behind
+          these phrases signal that they've done their research, identified
+          their need, and now they're actively in the buying cycle and
+          considering the solution they want to purchase.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const qualityLeads = (
+    <Popover id="quality-leads">
+      <Popover.Title className="text-info" as="h4">
+        <strong>Quality Leads</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          The quality of a lead refers to the likeliness that the prospect is
+          willing to buy. When a person's search phrase uses buyer intent
+          keywords, they are more likely to click a link and become a paying
+          customer.
+        </p>
+        <p>
+          On the other hand, if a person's search phrase uses informational
+          intent keywords, they are simply doing research and less likely to
+          buy.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
 
   return (
     <BackgroundImage
@@ -52,18 +119,33 @@ const OrganicSeoSectionServices = ({ className }) => {
             <div className="p-5">
               <h3 className="mb-3">What is Organic SEO?</h3>
               <p>
-                Organic SEO (Organic Search Engine Optimization) is the process
-                of improving your website's visibility to search engines, such
-                as Google and Bing. The ultimate goal is to strike a balance
-                between optimizing your website for search engine algorithms,
-                while maximizing your user's experience.{' '}
+                <OverlayTrigger
+                  trigger={['click', 'hover']}
+                  placement="bottom"
+                  overlay={organicSEO}
+                >
+                  <span className="text-link-on-white pointer">
+                    Organic SEO <i className="fas fa-info-circle text-info"></i>
+                  </span>
+                </OverlayTrigger>{' '}
+                (Organic Search Engine Optimization) is the process of improving
+                your website's visibility to search engines, such as Google and
+                Bing. The ultimate goal is to strike a balance between
+                optimizing your website for search engine algorithms, while
+                maximizing your user's experience.{' '}
                 <strong className="text-info">
                   Together, these enhancements will boost your website's ranking
-                  on search engine results pages (
-                  <Link className="text-link-on-white" to="/glossary">
-                    SERPs
-                  </Link>
-                  ) to the coveted top spot, on the first page.
+                  on{' '}
+                  <OverlayTrigger
+                    trigger={['click', 'hover']}
+                    placement="bottom"
+                    overlay={SERPS}
+                  >
+                    <span className="text-link-on-white pointer">
+                      SERPs <i className="fas fa-info-circle text-info"></i>
+                    </span>
+                  </OverlayTrigger>{' '}
+                  to the coveted top spots within the first page.
                 </strong>
               </p>
               <h3 className="mb-3 mt-5">Why is Organic SEO important?</h3>
@@ -72,29 +154,46 @@ const OrganicSeoSectionServices = ({ className }) => {
                 new technology is allowing search engines to accurately modify
                 search results based on user intent. This means, when someone
                 has the intention to buy, the results will be reflected
-                accordingly. Now, this will greatly increase the chances of your
-                business making a sale, provided it's listed on the first page
-                for buyer intent keywords.{' '}
+                accordingly. This greatly increases the chances of your business
+                making a sale, provided it's ranked on the first page for{' '}
+                <OverlayTrigger
+                  trigger={['click', 'hover']}
+                  placement="bottom"
+                  overlay={buyerIntentKeywords}
+                >
+                  <span className="text-link-on-white pointer">
+                    buyer intent keywords{' '}
+                    <i className="fas fa-info-circle text-info"></i>
+                  </span>
+                </OverlayTrigger>
+                .{' '}
                 <strong className="text-info">
-                  In short, ranking first means more{' '}
-                  <Link className="text-link-on-white" to="/glossary">
-                    quality leads
-                  </Link>{' '}
+                  In short, ranking on the first page means more{' '}
+                  <OverlayTrigger
+                    trigger={['click', 'hover']}
+                    placement="bottom"
+                    overlay={qualityLeads}
+                  >
+                    <span className="text-link-on-white pointer">
+                      quality leads{' '}
+                      <i className="fas fa-info-circle text-info"></i>
+                    </span>
+                  </OverlayTrigger>{' '}
                   you can convert to paying customers.
                 </strong>
               </p>
               <h3 className="mb-3 mt-5">Organic SEO vs Local SEO</h3>
               <p>
                 Organic SEO and Local SEO both utilize the same strategies, such
-                as keyword and competitor research and on-page, off-page and
-                technical SEO. The difference lies within the focus on a
-                geographical component.
+                as keyword and competitor research, on-page and off-page SEO,
+                technical SEO and valuable content creation. The difference lies
+                within the focus on a geographical component.
               </p>
               <p>
-                Organic SEO concentrates on ranking a website on a global scale,
-                while Local SEO concentrates on generating business website
-                awareness within targeted towns and cities. Local SEO also takes
-                it a step further by connecting{' '}
+                Organic SEO concentrates on ranking a website for certain
+                keywords globally, while Local SEO concentrates on generating
+                awareness of your business website within targeted towns and
+                cities. Local SEO also takes it a step further by connecting{' '}
                 <Link className="text-link-on-white" to="/glossary">
                   Google My Business (GMB)
                 </Link>
@@ -129,12 +228,14 @@ const OrganicSeoSectionServices = ({ className }) => {
                 <Link className="text-link-on-white" to="/glossary">
                   Pay-Per-Click (PPC)
                 </Link>{' '}
-                is a short term strategy to drive traffic to your website via
-                Google Ads placed above organic search results.{' '}
+                is a short term paid strategy to drive traffic to your website
+                via Google Ads. These paid advertisements are placed above the
+                organic search results.{' '}
                 <strong className="text-info">
                   Organic SEO is often preferred over PPC because it will pay
-                  dividends year after year, whereas PPC will immediately cease
-                  extra traffic the moment your ad campaign is complete
+                  dividends year after year through natural traffic, whereas PPC
+                  will immediately cease any extra traffic the moment your ad
+                  campaign is complete
                 </strong>
                 .
               </p>
