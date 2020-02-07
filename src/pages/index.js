@@ -12,8 +12,8 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO
-        title="John Grattan: Freelance Digital Marketing - Offering SEO, SEM, Web Design, Web Development Services | Boston, MA & Plymouth, MA"
-        description="Hi, I'm John Grattan. I offer affordable freelance Digital Marketing services such as SEO, SEM, Web Design & Development to local businesses in Massachusetts."
+        title="John Grattan SEO & Web Design | Digital Marketing Services - SEO, PPC, Website Design, Web Development | Boston & Plymouth, Massachusetts"
+        description="Hi, I'm John Grattan. I offer affordable Digital Marketing services such as SEO, PPC, Website Design & Web Development to local businesses in Massachusetts, from Boston to Plymouth."
       />
       <HeaderHome className="bg-img-home border-bottom border-secondary" />
       <AboutSectionHome className="page-section bg-texture-1 pb-md-5" />

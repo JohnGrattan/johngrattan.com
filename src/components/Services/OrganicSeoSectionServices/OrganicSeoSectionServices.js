@@ -49,18 +49,20 @@ const OrganicSeoSectionServices = ({ className }) => {
     </Popover>
   );
 
-  const buyerIntentKeywords = (
-    <Popover id="buyer-intent-keywords">
+  const transactionalIntentKeywords = (
+    <Popover id="transactional-intent-keywords">
       <Popover.Title className="text-info" as="h4">
-        <strong>Buyer Intent Keywords</strong>
+        <strong>Transactional Intent Keywords</strong>
       </Popover.Title>
       <Popover.Content>
         <p>
-          Buyer intent keywords refer to particular phrases people search for
-          when they're ready to buy a product or service. The intent behind
-          these phrases signal that they've done their research, identified
-          their need, and now they're actively in the buying cycle and
-          considering the solution they want to purchase.
+          Transactional intent keywords refer to particular phrases people
+          search for when they're ready to buy a product or service.
+        </p>
+        <p>
+          The intent behind these phrases will signal that they've done their
+          research, identified their need, and now they're actively in the
+          buying cycle, considering the solution they want to purchase.
         </p>
       </Popover.Content>
     </Popover>
@@ -74,14 +76,52 @@ const OrganicSeoSectionServices = ({ className }) => {
       <Popover.Content>
         <p>
           The quality of a lead refers to the likeliness that the prospect is
-          willing to buy. When a person's search phrase uses buyer intent
-          keywords, they are more likely to click a link and become a paying
-          customer.
+          willing to buy. When their search phrase uses buyer intent keywords,
+          they are more likely to click a link and become a paying customer.
         </p>
         <p>
           On the other hand, if a person's search phrase uses informational
           intent keywords, they are simply doing research and less likely to
           buy.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const seoAudit = (
+    <Popover id="seo-audit">
+      <Popover.Title className="text-info" as="h4">
+        <strong>SEO Audit</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          An SEO audit consists of examining your website to determine where you
+          perform well in terms of SEO and where you need improvement.
+        </p>
+        <p>
+          This can be done by referencing all the current ranking factors
+          recommended by Google and comparing them with each component of your
+          website.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const blackHatSEO = (
+    <Popover id="black-hat-seo">
+      <Popover.Title className="text-info" as="h4">
+        <strong>Black Hat SEO</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          Black hat SEO is an unethical practice that violates search engine
+          guidelines and terms of service, using hacks and loopholes to game the
+          system in order to rank a website higher.
+        </p>
+        <p>
+          Black hat techniques include keyword stuffing, hidden text or links,
+          cloaking, using private link networks, and many more. All of these
+          techniques can lead to your website being banned from search engines.
         </p>
       </Popover.Content>
     </Popover>
@@ -159,10 +199,10 @@ const OrganicSeoSectionServices = ({ className }) => {
                 <OverlayTrigger
                   trigger={['click', 'hover']}
                   placement="bottom"
-                  overlay={buyerIntentKeywords}
+                  overlay={transactionalIntentKeywords}
                 >
                   <span className="text-link-on-white pointer">
-                    buyer intent keywords{' '}
+                    transactional intent keywords{' '}
                     <i className="fas fa-info-circle text-info"></i>
                   </span>
                 </OverlayTrigger>
@@ -182,6 +222,55 @@ const OrganicSeoSectionServices = ({ className }) => {
                   you can convert to paying customers.
                 </strong>
               </p>
+              <h3 className="mb-3 mt-5">Implementing Organic SEO</h3>
+              <p>
+                What does the implementation of Organic SEO look like? Well, it
+                all starts with an{' '}
+                <OverlayTrigger
+                  trigger={['click', 'hover']}
+                  placement="bottom"
+                  overlay={seoAudit}
+                >
+                  <span className="text-link-on-white pointer">
+                    SEO audit <i className="fas fa-info-circle text-info"></i>
+                  </span>
+                </OverlayTrigger>{' '}
+                of your current website. I will analyze your sites technical
+                performance and SEO factors, web design and layout, information
+                structure and navigation, but most importantly your Google
+                Analytics and Search Console statistics. From here I can
+                pinpoint your strengths and weaknesses in order to formulate an
+                SEO strategy that's unique to your business goals and needs.
+              </p>
+              <p>
+                The actual implementation is a long term process that generally
+                takes at least 4 months to see significant results and can be an
+                ongoing process since your competition is constantly attempting
+                to outrank you. Is it possible to see rank changes within a
+                month for certain keywords, especially for sites that have been
+                well established with a strong domain authority. For a new site,
+                expect about 35 weeks for every new page to reach about 90% of
+                the traffic it will provide for the long term.{' '}
+              </p>
+              <p>
+                <strong className="text-info">
+                  Anyone that tells you they can provide instant SEO results is
+                  misleading you and potentially using{' '}
+                  <OverlayTrigger
+                    trigger={['click', 'hover']}
+                    placement="bottom"
+                    overlay={blackHatSEO}
+                  >
+                    <span className="text-link-on-white pointer">
+                      black hat SEO{' '}
+                      <i className="fas fa-info-circle text-info"></i>
+                    </span>
+                  </OverlayTrigger>{' '}
+                  techniques. These methods are malicious, harmful to your
+                  website and will result in your business being penalized by
+                  Google.
+                </strong>
+              </p>
               <h3 className="mb-3 mt-5">Organic SEO vs Local SEO</h3>
               <p>
                 Organic SEO and Local SEO both utilize the same strategies, such
@@ -197,7 +286,7 @@ const OrganicSeoSectionServices = ({ className }) => {
                 <Link className="text-link-on-white" to="/glossary">
                   Google My Business (GMB)
                 </Link>
-                , customer reviews and{' '}
+                , customer reviews, local citations and{' '}
                 <Link className="text-link-on-white" to="/glossary">
                   structured data/schema markup
                 </Link>{' '}
@@ -212,15 +301,15 @@ const OrganicSeoSectionServices = ({ className }) => {
                 businesses and companies that serve specific local areas,{' '}
                 <strong className="text-info">
                   Organic SEO is essential to creating an audience that's built
-                  on trust from the informational value you provide, thus
-                  solidifying your website as a{' '}
+                  on trust from the informational value you provide. This value
+                  will solidify your website as a{' '}
                   <Link className="text-link-on-white" to="/glossary">
                     domain authority
                   </Link>{' '}
                   within your industry.
                 </strong>
               </p>
-              <h3 className="mb-3 mt-5">Organic SEO vs Pay-Per-Click (PPC)</h3>
+              {/* <h3 className="mb-3 mt-5">Organic SEO vs Pay-Per-Click (PPC)</h3>
               <p>
                 Organic SEO is a long term strategy to drive traffic to your
                 website via organic user searches based on targeted keywords,
@@ -238,11 +327,11 @@ const OrganicSeoSectionServices = ({ className }) => {
                   campaign is complete
                 </strong>
                 .
-              </p>
+              </p> */}
               <div className="container d-flex justify-content-center align-items-center mt-5">
                 <Button
                   className="mr-4"
-                  btnlabel="Contact Me Today"
+                  btnlabel="Get Organic SEO"
                   btnlink="/contact"
                   btnsolid={true}
                 />

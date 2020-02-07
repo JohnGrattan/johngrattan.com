@@ -79,7 +79,7 @@ const LocalSeoSectionServices = ({ className }) => {
                 <Link className="text-link-on-white" to="/glossary">
                   Google My Business (GMB)
                 </Link>
-                , managing customer reviews and building{' '}
+                , managing your customer reviews and building{' '}
                 <Link className="text-link-on-white" to="/glossary">
                   local citations
                 </Link>{' '}
@@ -98,8 +98,8 @@ const LocalSeoSectionServices = ({ className }) => {
                 'near me' search phrases.
               </p>
               <p>
-                By locally optimizing your business website, you will increase
-                visibility on{' '}
+                By locally optimizing your business website, you'll increase
+                your visibility on{' '}
                 <OverlayTrigger
                   trigger={['click', 'hover']}
                   placement="bottom"
@@ -110,8 +110,8 @@ const LocalSeoSectionServices = ({ className }) => {
                   </span>
                 </OverlayTrigger>{' '}
                 via Google Map's Local 3-Pack. Since these 3 business listings
-                get the most clicks, your traffic will increase and in turn
-                boost your potential sales.
+                get the most clicks, your traffic will increase, in turn
+                boosting your potential sales.
               </p>
               <h3 className="mb-3 mt-5">What is the Google Local Pack?</h3>
               <p></p>
