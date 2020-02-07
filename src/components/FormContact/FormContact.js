@@ -8,9 +8,12 @@ const FormContact = ({ formname }) => {
     <Form
       name={formname}
       method="POST"
+      action="/thanks/"
       data-netlify="true"
+      data-netlify-honeypot="bot-field"
       className="border border-secondary rounded shadow p-2 p-md-5 bg-texture-2"
     >
+      <input type="hidden" name={formname} value="contact" />
       <Form.Row>
         <Form.Group as={Col} controlId="formContactFirstName">
           <Form.Label>
