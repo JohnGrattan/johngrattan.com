@@ -3,6 +3,7 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 import Button from '../../Button/Button';
 import { Popover, OverlayTrigger } from 'react-bootstrap';
+import ImgLocalMapPack from '../../ImageComps/image-local-map-pack';
 
 const LocalSeoSectionServices = ({ className }) => {
   const data = useStaticQuery(graphql`
@@ -61,8 +62,8 @@ const LocalSeoSectionServices = ({ className }) => {
       <div className="row justify-content-center align-items-baseline py-5 px-md-3">
         <div className="container">
           <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
-            <div className="p-5">
-              <h3 className="mb-3">What is Local SEO?</h3>
+            <div className="p-2 p-md-5">
+              <h3 className="mb-4">What is Local SEO?</h3>
               <p>
                 Local SEO (Local Search Engine Optimization) is the process of
                 localizing your website by naturally including your town/city,
@@ -89,7 +90,7 @@ const LocalSeoSectionServices = ({ className }) => {
                 </Link>
                 .
               </p>
-              <h3 className="mb-3 mt-5">What are the benefits of Local SEO?</h3>
+              <h3 className="mb-4 mt-5">What are the benefits of Local SEO?</h3>
               <p>
                 Every business can benefit from Local SEO because it provides a
                 chance to rank within your industry and not necessarily have to
@@ -113,9 +114,33 @@ const LocalSeoSectionServices = ({ className }) => {
                 get the most clicks, your traffic will increase, in turn
                 boosting your potential sales.
               </p>
-              <h3 className="mb-3 mt-5">What is the Google Local Pack?</h3>
-              <p></p>
-              <h3 className="mb-3 mt-5">
+              <div className="row justify-content-center my-5">
+                <div className="col-md-8">
+                  <h3 className="mb-4">What is the Google Local Pack?</h3>
+                  <p>
+                    The Google Local Pack, often referred to as the 'Local
+                    3-Pack', is Google's way of listing the top local search
+                    results for a given query. It's important to note, this
+                    listing appears on the top of the results page, above the
+                    organic search results. Google wants to place a particular
+                    focus on local business listings, which works out great for
+                    the top 3 results!
+                  </p>
+                  <p>
+                    Prior to August 2015, the Google Local Pack showed 7
+                    results. However, this was changed due to Google's push for
+                    mobile optimization. The 7 results did not fit well on a
+                    mobile screen, so Google decided to show the top 3 instead.
+                    Each listing now shows several pieces of information,
+                    including the business name, hours of operation and reviews.
+                  </p>
+                </div>
+                <div className="col-md-4 mb-4 mb-md-0">
+                  <ImgLocalMapPack className="border rounded" />
+                </div>
+              </div>
+
+              <h3 className="mb-4 mt-5">
                 Google My Business & Local Citations
               </h3>
               <p></p>

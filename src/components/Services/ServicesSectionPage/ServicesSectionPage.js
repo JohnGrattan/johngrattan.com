@@ -48,11 +48,11 @@ const ServicesSectionPage = ({ className }) => {
               </h2>
               <hr className="divider my-4" />
             </div>
-            <div className="container col-md-8 py-3 my-2 text-white bg-info drop-shadow">
+            <div className="container col-md-8 py-3 my-2 text-white bg-info rounded drop-shadow">
               <p className="m-3 mb-5 text-center drop-shadow">
                 Learn about my services:
               </p>
-              <div className="row justify-content-around align-items-end mt-4 mb-5">
+              <div className="row justify-content-around align-items-end mt-4 mb-md-5">
                 <Link
                   to="organic-seo"
                   className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
