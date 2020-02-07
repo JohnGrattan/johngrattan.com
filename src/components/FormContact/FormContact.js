@@ -13,7 +13,7 @@ const FormContact = ({ formname }) => {
       data-netlify-honeypot="bot-field"
       className="border border-secondary rounded shadow p-2 p-md-5 bg-texture-2"
     >
-      <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="form-name" value={formname} />
       <Form.Row>
         <Form.Group as={Col} controlId="formContactFirstName">
           <Form.Label>
