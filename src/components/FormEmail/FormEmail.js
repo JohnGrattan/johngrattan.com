@@ -13,7 +13,7 @@ const FormEmail = ({ formname }) => {
       data-netlify-honeypot="bot-field"
       className="border border-secondary rounded shadow p-3 bg-texture-2"
     >
-      <input type="hidden" name={formname} value="contact" />
+      <input type="hidden" name="form-name" value="contact" />
       <Form.Text className="mb-4 text-center">
         <span className="lead">
           Receive your{' '}
