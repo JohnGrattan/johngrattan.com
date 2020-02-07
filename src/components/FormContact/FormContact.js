@@ -19,14 +19,14 @@ const FormContact = ({ formname }) => {
           <Form.Label>
             First Name <span className="text-danger">*</span>
           </Form.Label>
-          <Form.Control type="text" required />
+          <Form.Control name="firstName" type="text" required />
         </Form.Group>
 
         <Form.Group as={Col} controlId="formContactLastName">
           <Form.Label>
             Last Name <span className="text-danger">*</span>
           </Form.Label>
-          <Form.Control type="text" required />
+          <Form.Control name="lastName" type="text" required />
         </Form.Group>
       </Form.Row>
       <Form.Row>
@@ -34,13 +34,13 @@ const FormContact = ({ formname }) => {
           <Form.Label>
             Phone Number <span className="text-danger">*</span>
           </Form.Label>
-          <Form.Control type="tel" />
+          <Form.Control name="phoneNumber" type="tel" />
         </Form.Group>
         <Form.Group as={Col} controlId="formContactEmail">
           <Form.Label>
             Business Email <span className="text-danger">*</span>
           </Form.Label>
-          <Form.Control type="email" required />
+          <Form.Control name="email" type="email" required />
         </Form.Group>
       </Form.Row>
 
@@ -49,14 +49,14 @@ const FormContact = ({ formname }) => {
           <Form.Label>
             Company <span className="text-danger">*</span>
           </Form.Label>
-          <Form.Control type="text" required />
+          <Form.Control name="company" type="text" required />
         </Form.Group>
 
         <Form.Group as={Col} controlId="formContactJobTitle">
           <Form.Label>
             Job Title <span className="text-danger">*</span>
           </Form.Label>
-          <Form.Control type="text" required />
+          <Form.Control name="jobTitle" type="text" required />
         </Form.Group>
       </Form.Row>
 
@@ -65,7 +65,7 @@ const FormContact = ({ formname }) => {
           <Form.Label>
             Service of Interest <span className="text-danger">*</span>
           </Form.Label>
-          <Form.Control as="select" defaultValue={''} required>
+          <Form.Control name="service" as="select" defaultValue={''} required>
             <option value="" disabled hidden>
               Choose One...
             </option>
@@ -79,7 +79,7 @@ const FormContact = ({ formname }) => {
           <Form.Label>
             Business Industry <span className="text-danger">*</span>
           </Form.Label>
-          <Form.Control as="select" defaultValue={''} required>
+          <Form.Control name="industry" as="select" defaultValue={''} required>
             <option value="" disabled hidden>
               Choose One...
             </option>

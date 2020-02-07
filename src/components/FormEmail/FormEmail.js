@@ -26,7 +26,12 @@ const FormEmail = ({ formname }) => {
       <Form.Row>
         <Form.Group as={Col} controlId="formEmailBusinessEmail">
           <Col sm="12">
-            <Form.Control type="email" placeholder="Business Email" required />
+            <Form.Control
+              name="email"
+              type="email"
+              placeholder="Business Email"
+              required
+            />
           </Col>
           <Col sm="12">
             <Button className="mt-3 w-100" variant="primary" type="submit">
