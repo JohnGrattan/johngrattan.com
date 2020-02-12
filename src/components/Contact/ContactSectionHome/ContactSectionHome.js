@@ -42,29 +42,24 @@ const ContactSectionHome = ({ className }) => {
           </div>
         </div>
       </div>
-      <div className="row text-white">
-        <div className="col-lg-4 ml-auto text-center mb-5 mb-lg-0">
-          <i className="fas fa-phone fa-3x mb-3 text-secondary drop-shadow-dark"></i>
-          <div itemScope itemType="http://schema.org/LocalBusiness">
-            <p>Phone:</p>
-            <span itemProp="telephone">
-              <a href="tel:+14012169868">(401) 216-9868</a>
-            </span>
-          </div>
-        </div>
-        <div className="col-lg-4 mr-auto text-center">
-          <i className="fas fa-envelope fa-3x mb-3 text-secondary drop-shadow-dark"></i>
-          <p>Email:</p>
+      <div className="container col-md-10 col-lg-8">
+        <div className="text-white text-center row justify-content-around align-items-end mt-4">
+          <a className="col-md-6 mb-5 pointer" href="tel:+14012169868">
+            <i className="fas fa-phone fa-3x mb-3 text-secondary drop-shadow-dark wiggle"></i>
+            <span className="d-block">(401) 216-9868</span>
+          </a>
+
           <a
-            className="d-block"
+            className="col-md-6 mb-5 pointer"
             href="mailto:contact@johngrattan.com?Subject=Important%20Email%20From%20Website"
             target="_blank"
           >
-            contact@johngrattan.com
+            <i className="fas fa-envelope fa-3x mb-3 text-secondary drop-shadow-dark wiggle"></i>
+            <span className="d-block">contact@johngrattan.com</span>
           </a>
         </div>
       </div>
-      <div className="row mt-4">
+      <div className="row">
         <div className="container col-md-8 px-0 my-5">
           <FormContact formname="form-contact-homepage" />
         </div>

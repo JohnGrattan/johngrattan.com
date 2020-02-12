@@ -21,7 +21,7 @@ const Footer = () => {
       <section className="bg-purple">
         <div className="container p-5">
           <div className="row justify-content-around align-items-baseline">
-            <div className="col-md-6 col-lg-3 text-center text-md-left mb-5 mb-lg-0 drop-shadow-dark">
+            <div className="col-md-6 col-lg-3 text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark">
               <h5 className="text-uppercase text-secondary mb-4">Company</h5>
               <Link className="d-flex footer-link" to="/about">
                 About
@@ -48,7 +48,7 @@ const Footer = () => {
                 Partners
               </Link>
             </div>
-            <div className="col-md-6 col-lg-3 text-center text-md-left mb-5 mb-lg-0 drop-shadow-dark">
+            <div className="col-md-6 col-lg-3 text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark">
               <h5 className="text-uppercase text-secondary mb-4">Services</h5>
               <Link className="d-flex footer-link" to="/about">
                 SEO Strategy
@@ -75,7 +75,7 @@ const Footer = () => {
                 Email Marketing
               </Link>
             </div>
-            <div className="col-md-6 col-lg-3 text-center text-md-left mb-5 mb-lg-0 drop-shadow-dark">
+            <div className="col-md-6 col-lg-3 text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark">
               <h5 className="text-uppercase text-secondary mb-4">Resources</h5>
               <Link className="d-flex footer-link" to="/about">
                 SEO Checklist
@@ -87,7 +87,7 @@ const Footer = () => {
                 Glossary of Terms
               </Link>
             </div>
-            <div className="col-md-6 col-lg-3 text-center text-md-left mb-5 mb-lg-0 drop-shadow-dark">
+            <div className="col-md-6 col-lg-3 text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark">
               <h5 className="text-uppercase text-secondary mb-4">Info</h5>
               <div className="text-white text-sans-serif pt-2 d-flex mb-2">
                 <i className="fas fa-address-card mt-1"></i>

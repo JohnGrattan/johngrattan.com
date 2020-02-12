@@ -34,6 +34,12 @@ a:hover {
   }
 }
 
+.no-decoration {
+  &:hover {
+    text-decoration: none !important;
+  }
+}
+
 .text-link-on-white {
   color: $purple;
   font-weight: 600;
@@ -156,15 +162,6 @@ hr.secondary {
 // Page section padding
 .page-section {
   padding: 8rem 0;
-}
-
-// Modal
-.modal-backdrop {
-  background-color: #0b0b0b;
-}
-
-.modal-backdrop.show {
-  opacity: 0.8;
 }
 
 .drop-shadow {

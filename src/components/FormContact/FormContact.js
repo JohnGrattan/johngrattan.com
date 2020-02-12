@@ -12,6 +12,7 @@ const FormContact = ({ formname }) => {
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className="border border-secondary rounded shadow p-2 p-md-5 bg-texture-2"
+      id="footer-contact-form"
     >
       <input type="hidden" name="form-name" value={formname} />
       <Form.Row>

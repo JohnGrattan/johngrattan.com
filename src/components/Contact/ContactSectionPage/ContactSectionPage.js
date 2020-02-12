@@ -48,31 +48,33 @@ const ContactSectionPage = ({ className }) => {
               </h2>
               <hr className="divider my-4" />
             </div>
-            <div className="container col-md-6 py-3 my-2 text-white bg-info rounded drop-shadow">
+            <div className="container col-md-8 py-3 my-2 text-white bg-info rounded drop-shadow">
               <p className="m-3 mb-5 text-center drop-shadow">
                 Contact me today:
               </p>
               <div className="row justify-content-around align-items-end mt-4">
                 <a
                   href="tel:+14012169868"
-                  className="col-md-4 mb-5 text-center drop-shadow pointer"
+                  className="col-md-4 mb-5 text-center drop-shadow pointer no-decoration"
                 >
                   <i className="fas fa-3x fa-phone mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">Call Me</span>
+                  <span className="text-white-link">(401)216-9868</span>
                 </a>
                 <a
                   href="mailto:contact@johngrattan.com?Subject=Important%20Email%20From%20Website"
                   target="_blank"
-                  className="col-md-4 mb-5 text-center drop-shadow pointer"
+                  className="col-md-4 mb-5 text-center drop-shadow pointer no-decoration"
                 >
                   <i className="fas fa-3x fa-envelope mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">Email Me</span>
+                  <span className="text-white-link">
+                    contact@johngrattan.com
+                  </span>
                 </a>
                 <Link
-                  to="local-seo"
-                  className="col-md-4 mb-5 text-center drop-shadow pointer"
+                  to="footer-contact-form"
+                  className="col-md-4 mb-5 text-center drop-shadow pointer no-decoration"
                   activeClass="active"
                   spy={true}
                   smooth={true}
