@@ -17,3 +17,31 @@
     background-size: cover;
   }
 }
+
+.bg-purple-to-gray {
+  background-color: $lightGray;
+  strong {
+    color: #212529;
+  }
+
+  @include media-breakpoint-up(md) {
+    background-color: $purple;
+    strong {
+      color: white;
+    }
+  }
+}
+
+.bg-gray-to-purple {
+  background-color: $purple;
+  strong {
+    color: white;
+  }
+
+  @include media-breakpoint-up(md) {
+    background-color: $lightGray;
+    strong {
+      color: #212529;
+    }
+  }
+}

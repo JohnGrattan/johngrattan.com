@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-import FormContact from '../FormContact/FormContact';
+import FormContact from '../../FormContact/FormContact';
 
 const ContactSectionHome = ({ className }) => {
   const data = useStaticQuery(graphql`

@@ -52,10 +52,23 @@ const ServicesSectionPage = ({ className }) => {
               <p className="m-3 mb-5 text-center drop-shadow">
                 Learn about my services:
               </p>
-              <div className="row justify-content-around align-items-end mt-4 mb-md-5">
+              <div className="row justify-content-around align-items-end mt-4">
                 <Link
                   to="organic-seo"
-                  className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
+                  className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-75}
+                >
+                  <i className="fas fa-3x fa-chess mb-3 text-primary wiggle"></i>
+                  <br />
+                  <span className="text-white-link">SEO Strategy</span>
+                </Link>
+                <Link
+                  to="organic-seo"
+                  className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
                   smooth={true}
@@ -68,7 +81,7 @@ const ServicesSectionPage = ({ className }) => {
                 </Link>
                 <Link
                   to="local-seo"
-                  className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
+                  className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
                   smooth={true}
@@ -81,7 +94,20 @@ const ServicesSectionPage = ({ className }) => {
                 </Link>
                 <Link
                   to="local-seo"
-                  className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
+                  className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-75}
+                >
+                  <i className="fas fa-3x fa-mouse-pointer mb-3 text-primary wiggle"></i>
+                  <br />
+                  <span className="text-white-link">PPC Ads</span>
+                </Link>
+                <Link
+                  to="local-seo"
+                  className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
                   smooth={true}
@@ -92,11 +118,9 @@ const ServicesSectionPage = ({ className }) => {
                   <br />
                   <span className="text-white-link">Website Design</span>
                 </Link>
-              </div>
-              <div className="row justify-content-around align-items-end my-4">
                 <Link
                   to="community"
-                  className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
+                  className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
                   smooth={true}
@@ -109,7 +133,7 @@ const ServicesSectionPage = ({ className }) => {
                 </Link>
                 <Link
                   to="community"
-                  className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
+                  className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
                   smooth={true}
@@ -122,7 +146,7 @@ const ServicesSectionPage = ({ className }) => {
                 </Link>
                 <Link
                   to="community"
-                  className="col-md-3 mb-5 mb-md-0 text-center drop-shadow pointer"
+                  className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
                   smooth={true}

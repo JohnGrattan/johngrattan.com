@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import StatsSectionHome from '../StatsSectionHome/StatsSectionHome';
+import StatsSectionHome from '../../StatsSectionHome/StatsSectionHome';
 
-import Button from '../Button/Button';
+import Button from '../../Button/Button';
 
 const ProcessSectionHome = ({ className }) => {
   const data = useStaticQuery(graphql`

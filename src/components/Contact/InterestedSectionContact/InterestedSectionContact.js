@@ -3,16 +3,16 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 import Button from '../../Button/Button';
 import { Popover, OverlayTrigger } from 'react-bootstrap';
-import ImgLocalBuyNearMe from '../../ImageComps/image-stats-local-seo-buy-near-me';
-import ImgLocalStore from '../../ImageComps/image-stats-local-seo-store-five-miles';
-import ImgLocalGMB from '../../ImageComps/image-stats-local-seo-google-my-business';
-import ImgLocalMapPack from '../../ImageComps/image-stats-local-seo-map-pack';
+import ImgStatsSeoFirstPage from '../../ImageComps/image-stats-seo-first-page-results';
+import ImgStatsSeoCtr from '../../ImageComps/image-stats-seo-ctr-first-result';
+import ImgStatsSeoFirstFive from '../../ImageComps/image-stats-seo-first-five-results';
+import ImgStatsSeoOrganicTraffic from '../../ImageComps/image-stats-seo-organic-web-traffic';
 
-const LocalSeoSectionServices = ({ className }) => {
+const InterestedSectionContact = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query LocalSeoSectionServicesQ {
+    query InterestedSectionContactQ {
       masthead: file(
-        relativePath: { eq: "images/bg-img-services-local-seo.jpg" }
+        relativePath: { eq: "images/bg-img-services-organic-seo.jpg" }
       ) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
@@ -48,6 +48,84 @@ const LocalSeoSectionServices = ({ className }) => {
         <p>
           Stands for 'search engine results page', which is the page following a
           search query.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const transactionalIntentKeywords = (
+    <Popover id="transactional-intent-keywords">
+      <Popover.Title className="text-info" as="h4">
+        <strong>Transactional Intent Keywords</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          Transactional intent keywords refer to particular phrases people
+          search for when they're ready to buy a product or service.
+        </p>
+        <p>
+          The intent behind these phrases will signal that they've done their
+          research, identified their need, and now they're actively in the
+          buying cycle, considering the solution they want to purchase.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const qualityLeads = (
+    <Popover id="quality-leads">
+      <Popover.Title className="text-info" as="h4">
+        <strong>Quality Leads</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          The quality of a lead refers to the likeliness that the prospect is
+          willing to buy. When their search phrase uses buyer intent keywords,
+          they are more likely to click a link and become a paying customer.
+        </p>
+        <p>
+          On the other hand, if a person's search phrase uses informational
+          intent keywords, they are simply doing research and less likely to
+          buy.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const seoAudit = (
+    <Popover id="seo-audit">
+      <Popover.Title className="text-info" as="h4">
+        <strong>SEO Audit</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          An SEO audit consists of examining your website to determine where you
+          perform well in terms of SEO and where you need improvement.
+        </p>
+        <p>
+          This can be done by referencing all the current ranking factors
+          recommended by Google and comparing them with each component of your
+          website.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const blackHatSEO = (
+    <Popover id="black-hat-seo">
+      <Popover.Title className="text-info" as="h4">
+        <strong>Black Hat SEO</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          Black hat SEO is an unethical practice that violates search engine
+          guidelines and terms of service, using hacks and loopholes to game the
+          system in order to rank a website higher.
+        </p>
+        <p>
+          Black hat techniques include keyword stuffing, hidden text or links,
+          cloaking, using private link networks, and many more. All of these
+          techniques can lead to your website being banned from search engines.
         </p>
       </Popover.Content>
     </Popover>
@@ -167,40 +245,29 @@ const LocalSeoSectionServices = ({ className }) => {
     </Popover>
   );
 
-  const metadata = (
-    <Popover id="metadata">
-      <Popover.Title className="text-info" as="h4">
-        <strong>Metadata</strong>
-      </Popover.Title>
-      <Popover.Content>
-        <p>
-          Metadata is essentially data that describes data. In terms of an HTML,
-          metadata is placed within the head element to describe the document.
-        </p>
-      </Popover.Content>
-    </Popover>
-  );
-
   return (
     <BackgroundImage
       Tag="section"
       className={className}
-      id="local-seo"
+      id="organic-seo"
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="local seo digital marketing services background"
+      alt="organic seo digital marketing services background"
     >
       <div className="text-center pt-5 drop-shadow-dark">
-        <i className="fas fa-3x fa-address-card mb-3 text-primary"></i>
-        <h2 className="mt-2 text-white">Local SEO</h2>
+        <i className="fas fa-3x fa-hands-helping mb-3 text-primary"></i>
+        <h2 className="mt-2 text-white">Working Together</h2>
         <hr className="divider mt-4" />
       </div>
       <div className="row justify-content-center align-items-baseline pt-5 p-3">
         <div className="container text-center border border-secondary col-md-7 pt-3 drop-shadow">
           <p className="text-white">
-            I'll localize your website and Google My Business account to{' '}
-            <span className="text-primary">rank locally on the first page</span>{' '}
-            for all the towns/cities your business services.
+            I'll optimize your website to{' '}
+            <span className="text-primary">
+              organically rank on the first page
+            </span>{' '}
+            for targeted keywords related to your business, your industry and
+            your services.
           </p>
         </div>
       </div>
@@ -208,7 +275,31 @@ const LocalSeoSectionServices = ({ className }) => {
         <div className="container">
           <div className="container mb-3 pt-2 border border-secondary rounded drop-shadow bg-texture-2">
             <div className="p-2 p-md-5">
-              <p className="display-4 text-center">8-Steps to Local Success</p>
+              <p className="display-4 text-center">
+                8-Steps to Organic Success
+              </p>
+              <div className="row justify-content-center">
+                <p className="text-muted mb-4 text-left">
+                  <span className="d-flex">
+                    <i className="far fa-2x fa-check-square text-secondary mt-1"></i>
+                    <span className="ml-2 mt-1 lead">
+                      Keep customers happy with fast page speeds
+                    </span>
+                  </span>
+                  <span className="d-flex">
+                    <i className="far fa-2x fa-check-square text-secondary mt-1"></i>
+                    <span className="ml-2 mt-1 lead">
+                      No limits on features and functions
+                    </span>
+                  </span>
+                  <span className="d-flex">
+                    <i className="far fa-2x fa-check-square text-secondary mt-1"></i>
+                    <span className="ml-2 mt-1 lead">
+                      No servers or database to get hacked
+                    </span>
+                  </span>
+                </p>
+              </div>
               <div className="p-2 p-md-5 mb-5">
                 <div className="row justify-content-center align-items-baseline">
                   <div className="col-6 col-md-3 bg-purple pt-4 pb-2">
@@ -216,11 +307,11 @@ const LocalSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">1</span>
                     </div>
                     <div className="text-center text-white">
-                      <i className="fab fa-4x fa-google text-secondary"></i>
+                      <i className="fas fa-4x fa-clipboard-list text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Google My <br />
-                          Business (GMB)
+                          Website <br />
+                          Audit
                         </strong>
                       </div>
                     </div>
@@ -230,11 +321,11 @@ const LocalSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">2</span>
                     </div>
                     <div className="text-center">
-                      <i className="fas fa-4x fa-address-card text-secondary"></i>
+                      <i className="fas fa-4x fa-chart-bar text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Local <br />
-                          Citations
+                          Data & <br />
+                          Analytics
                         </strong>
                       </div>
                     </div>
@@ -244,11 +335,11 @@ const LocalSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">3</span>
                     </div>
                     <div className="text-center text-white">
-                      <i className="far fa-4x fa-newspaper text-secondary"></i>
+                      <i className="fab fa-4x fa-searchengin text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Press <br />
-                          Releases
+                          Competitor <br />
+                          Research
                         </strong>
                       </div>
                     </div>
@@ -258,11 +349,11 @@ const LocalSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">4</span>
                     </div>
                     <div className="text-center">
-                      <i className="fas fa-4x fa-star text-secondary"></i>
+                      <i className="fas fa-4x fa-key text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Review <br />
-                          Management
+                          Keyword <br />
+                          Research
                         </strong>
                       </div>
                     </div>
@@ -272,11 +363,11 @@ const LocalSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">5</span>
                     </div>
                     <div className="text-center">
-                      <i className="fas fa-4x fa-link text-secondary"></i>
+                      <i className="fas fa-4x fa-file-alt text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Link <br />
-                          Building
+                          On-Page <br />
+                          SEO
                         </strong>
                       </div>
                     </div>
@@ -286,11 +377,11 @@ const LocalSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">6</span>
                     </div>
                     <div className="text-center text-white">
-                      <i className="fas fa-4x fa-code text-secondary"></i>
+                      <i className="fas fa-4x fa-link text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Structured <br />
-                          Data
+                          Off-Page <br />
+                          SEO
                         </strong>
                       </div>
                     </div>
@@ -300,11 +391,11 @@ const LocalSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">7</span>
                     </div>
                     <div className="text-center">
-                      <i className="fas fa-4x fa-map-marked-alt text-secondary"></i>
+                      <i className="fas fa-4x fa-cogs text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Location <br />
-                          Landing Pages
+                          Technical <br />
+                          SEO
                         </strong>
                       </div>
                     </div>
@@ -328,173 +419,161 @@ const LocalSeoSectionServices = ({ className }) => {
 
               <div className="row justify-content-center mb-5">
                 <div className="col-md-8 order-1 order-md-0">
-                  <h3 className="mb-4">What is Local SEO?</h3>
+                  <h3 className="mb-4">
+                    Every Business Owner Knows They Need a Website in 2020...
+                  </h3>
 
-                  <div>
-                    <OverlayTrigger
-                      trigger={['click', 'hover']}
-                      placement="bottom"
-                      overlay={localSEO}
-                    >
-                      <span className="text-link-on-white pointer">
-                        Local SEO{' '}
-                        <i className="fas fa-info-circle text-info"></i>
-                      </span>
-                    </OverlayTrigger>{' '}
-                    (Local Search Engine Optimization) is the process of
-                    localizing your website by naturally including your
-                    town/city, county or region of service throughout:
-                    <ul className="my-3">
-                      <li>
-                        <OverlayTrigger
-                          trigger={['click', 'hover']}
-                          placement="bottom"
-                          overlay={structuredData}
-                        >
-                          <span className="text-link-on-white pointer">
-                            structured data{' '}
-                            <i className="fas fa-info-circle text-info"></i>
-                          </span>
-                        </OverlayTrigger>
-                      </li>
-                      <li>
-                        {' '}
-                        <OverlayTrigger
-                          trigger={['click', 'hover']}
-                          placement="bottom"
-                          overlay={metadata}
-                        >
-                          <span className="text-link-on-white pointer">
-                            metadata{' '}
-                            <i className="fas fa-info-circle text-info"></i>
-                          </span>
-                        </OverlayTrigger>
-                      </li>
-                      <li>title tags</li>
-                      <li>description tags</li>
-                      <li>headings</li>
-                      <li>content</li>
-                      <li>landing pages</li>
-                    </ul>
-                    This localization must be done in order to be ranked on the
-                    first page for local intent keyword searches.
-                  </div>
-                  <div>
-                    Local SEO also includes the optimization of:
-                    <ul className="my-3">
-                      <li>
-                        <OverlayTrigger
-                          trigger={['click', 'hover']}
-                          placement="bottom"
-                          overlay={googleMyBusiness}
-                        >
-                          <span className="text-link-on-white pointer">
-                            Google My Business (GMB){' '}
-                            <i className="fas fa-info-circle text-info"></i>
-                          </span>
-                        </OverlayTrigger>
-                      </li>
-                      <li>
-                        <OverlayTrigger
-                          trigger={['click', 'hover']}
-                          placement="bottom"
-                          overlay={localCitations}
-                        >
-                          <span className="text-link-on-white pointer">
-                            local citations{' '}
-                            <i className="fas fa-info-circle text-info"></i>
-                          </span>
-                        </OverlayTrigger>
-                      </li>
-                      <li>customer reviews</li>
-                    </ul>
-                    Optimizating these will help boost your chances of ranking
-                    within Google Map's{' '}
-                    <OverlayTrigger
-                      trigger={['click', 'hover']}
-                      placement="bottom"
-                      overlay={localPack}
-                    >
-                      <span className="text-link-on-white pointer">
-                        Local 3-Pack{' '}
-                        <i className="fas fa-info-circle text-info"></i>
-                      </span>
-                    </OverlayTrigger>
+                  <p>
+                    What most people are{' '}
+                    <strong className="text-info">unaware</strong> of is what a
+                    search engine's algorithm looks for when deciding who ranks
+                    first and for what.
+                  </p>
+                  <p>
+                    Fortunately, there are a number of{' '}
+                    <strong className="text-info">known ranking factors</strong>{' '}
+                    that can be implemented on a website to help it become more
+                    visible to Google.
+                  </p>
+                  <p>
+                    Some are quick and simple, like adding a descriptive,
+                    relevant and unique title to each page of your website. Now
+                    Google can{' '}
+                    <strong className="text-info">
+                      understand what each page is all about
+                    </strong>
                     .
-                  </div>
+                  </p>
+                  <p>
+                    Unfortunately, it gets{' '}
+                    <strong className="text-info">
+                      a lot more complicated
+                    </strong>{' '}
+                    and can be quite time consuming. Business owners are busy
+                    and with only so many hours in a day, most would rather
+                    focus their time on the{' '}
+                    <strong className="text-info">
+                      work that keeps their doors open
+                    </strong>
+                    .
+                  </p>
+                  <p>That's where I come in!</p>
+                  <p>
+                    I can{' '}
+                    <strong className="text-info">
+                      help your business thrive online
+                    </strong>{' '}
+                    by converting it from a lonely island floating in digital
+                    space to a complex web of connected bridges, reaching out to
+                    potential customers.
+                  </p>
                 </div>
                 <div className="col-md-4 order-0 order-md-1 mb-4 mb-md-0 px-2">
-                  <ImgLocalBuyNearMe className="border border-secondary rounded mx-auto mt-1 mt-md-0 drop-shadow" />
+                  <ImgStatsSeoFirstPage className="border border-secondary rounded mx-auto mt-1 mt-md-0 drop-shadow" />
                 </div>
               </div>
               <div className="row justify-content-center py-5">
                 <div className="col-md-4 mb-4 mb-md-0 px-2">
-                  <ImgLocalStore className="border border-secondary rounded drop-shadow" />
+                  <ImgStatsSeoCtr className="border border-secondary rounded drop-shadow" />
                 </div>
                 <div className="col-md-8">
-                  <h3 className="mb-4">What are the benefits of Local SEO?</h3>
+                  <h3 className="mb-4">What is Organic SEO?</h3>
                   <p>
-                    Every business can benefit from Local SEO because it
-                    provides a chance to rank within your industry and not
-                    necessarily have to worry about competing with major
-                    corporations.
-                  </p>
-                  <p>
-                    Google has numerous local ranking factors that are specific
-                    to geographical 'near me' search phrases.
-                  </p>
-                  <p>
-                    By locally optimizing your business website, you'll increase
-                    your visibility on SERPs via Google Map's Local 3-Pack.
-                    Since these 3 business listings get the most clicks, your
-                    traffic will increase, in turn boosting your potential
-                    sales.
-                  </p>
-                  <strong className="text-info">
-                    Together, the balance between serving people and computers,
-                    while abiding to important factors and guidelines will boost
-                    your website's ranking on{' '}
                     <OverlayTrigger
                       trigger={['click', 'hover']}
                       placement="bottom"
-                      overlay={SERPS}
+                      overlay={organicSEO}
                     >
                       <span className="text-link-on-white pointer">
-                        SERPs <i className="fas fa-info-circle text-info"></i>
+                        Organic SEO{' '}
+                        <i className="fas fa-info-circle text-info"></i>
                       </span>
                     </OverlayTrigger>{' '}
-                    to the coveted top spots within the first page.
-                  </strong>
+                    (Organic Search Engine Optimization) is the process of
+                    improving your website's visibility to search engines, such
+                    as Google and Bing.
+                  </p>
+                  <p>
+                    The ultimate goal is to strike a balance between optimizing
+                    your website for search engine algorithms, while maximizing
+                    your user's experience.
+                  </p>
+                  <div>
+                    Important factors reign supreme, such as:
+                    <ul className="py-3">
+                      <li>accuracy of the information your provide</li>
+                      <li>format in which you deliver valuable content</li>
+                      <li>
+                        popularity of your website among established domains
+                      </li>
+                    </ul>
+                  </div>
+                  <p>
+                    <strong className="text-info">
+                      Together, the balance between serving people and
+                      computers, while abiding to important factors and
+                      guidelines will boost your website's ranking on{' '}
+                      <OverlayTrigger
+                        trigger={['click', 'hover']}
+                        placement="bottom"
+                        overlay={SERPS}
+                      >
+                        <span className="text-link-on-white pointer">
+                          SERPs <i className="fas fa-info-circle text-info"></i>
+                        </span>
+                      </OverlayTrigger>{' '}
+                      to the coveted top spots within the first page.
+                    </strong>
+                  </p>
                 </div>
               </div>
               <div className="row justify-content-center my-5">
                 <div className="col-md-8">
-                  <h3 className="mb-4">What is the Google Local Pack?</h3>
+                  <h3 className="mb-4">Why is Organic SEO Important?</h3>
                   <p>
-                    The Google Local Pack, often referred to as the 'Local
-                    3-Pack', is Google's way of listing the top local search
-                    results for a given query.
+                    Organic SEO has become very important for your business
+                    because new technology is allowing search engines to
+                    accurately modify search results based on semantics and user
+                    intent.
                   </p>
                   <p>
-                    It's important to note, this listing appears at the top of
-                    the results page, above the organic search results.
+                    This means when someone has the intention to buy, the
+                    results will be reflected accordingly.
                   </p>
                   <p>
-                    Google wants to place a particular focus on local business
-                    listings, which works out great for the top 3 visible
-                    results!
+                    Now the chances of your business making a sale have greatly
+                    increased, provided it's ranked on the first page for{' '}
+                    <OverlayTrigger
+                      trigger={['click', 'hover']}
+                      placement="bottom"
+                      overlay={transactionalIntentKeywords}
+                    >
+                      <span className="text-link-on-white pointer">
+                        transactional intent keywords{' '}
+                        <i className="fas fa-info-circle text-info"></i>
+                      </span>
+                    </OverlayTrigger>
+                    .{' '}
                   </p>
                   <p>
                     <strong className="text-info">
-                      Reaching the coveted Local 3-Pack results will plaster
-                      your business, hours of operation and reviews on the first
-                      page, while the rest of the listings can only be accessed
-                      by following a link to see more.
+                      In short, ranking on the first page means more{' '}
+                      <OverlayTrigger
+                        trigger={['click', 'hover']}
+                        placement="bottom"
+                        overlay={qualityLeads}
+                      >
+                        <span className="text-link-on-white pointer">
+                          quality leads{' '}
+                          <i className="fas fa-info-circle text-info"></i>
+                        </span>
+                      </OverlayTrigger>{' '}
+                      you can convert to paying customers.
                     </strong>
                   </p>
                 </div>
                 <div className="col-md-4 mb-4 mb-md-0 px-2">
-                  <ImgLocalMapPack className="border border-secondary rounded drop-shadow" />
+                  <ImgStatsSeoFirstFive className="border border-secondary rounded drop-shadow" />
                 </div>
               </div>
               <div className="py-3">
@@ -510,11 +589,24 @@ const LocalSeoSectionServices = ({ className }) => {
               </div>
               <div className="row justify-content-center my-5">
                 <div className="col-md-4 mb-4 mb-md-0 px-2">
-                  <ImgLocalGMB className="border border-secondary rounded drop-shadow" />
+                  <ImgStatsSeoOrganicTraffic className="border border-secondary rounded drop-shadow" />
                 </div>
                 <div className="col-md-8">
-                  <h3 className="mb-4">Google My Business & Local Citations</h3>
-
+                  <h3 className="mb-4">Implementing Organic SEO</h3>
+                  <p>
+                    The implementation of Organic SEO all starts with an{' '}
+                    <OverlayTrigger
+                      trigger={['click', 'hover']}
+                      placement="bottom"
+                      overlay={seoAudit}
+                    >
+                      <span className="text-link-on-white pointer">
+                        SEO audit{' '}
+                        <i className="fas fa-info-circle text-info"></i>
+                      </span>
+                    </OverlayTrigger>{' '}
+                    of your current website.
+                  </p>
                   <p>
                     I will analyze your sites technical performance, SEO factors
                     and user interface. Most importantly, I'll examine your
@@ -555,9 +647,20 @@ const LocalSeoSectionServices = ({ className }) => {
                   <p>
                     <strong className="text-info">
                       Anyone that tells you they can provide instant SEO results
-                      is misleading you and potentially using techniques. These
-                      methods are malicious, harmful to your website and will
-                      result in your business being penalized by Google.
+                      is misleading you and potentially using{' '}
+                      <OverlayTrigger
+                        trigger={['click', 'hover']}
+                        placement="bottom"
+                        overlay={blackHatSEO}
+                      >
+                        <span className="text-link-on-white pointer">
+                          black hat SEO{' '}
+                          <i className="fas fa-info-circle text-info"></i>
+                        </span>
+                      </OverlayTrigger>{' '}
+                      techniques. These methods are malicious, harmful to your
+                      website and will result in your business being penalized
+                      by Google.
                     </strong>
                   </p>
                 </div>
@@ -660,15 +763,41 @@ const LocalSeoSectionServices = ({ className }) => {
                   </p>
                 </div>
                 <div className="col-md-4 mb-4 mb-md-0 px-2">
-                  <ImgLocalBuyNearMe className="border border-secondary rounded drop-shadow" />
+                  <ImgStatsSeoOrganicTraffic className="border border-secondary rounded drop-shadow" />
                 </div>
               </div>
+              {/* <h3 className="mb-4 mt-5">Organic SEO vs Pay-Per-Click (PPC)</h3>
+              <p>
+                Organic SEO is a long term strategy to drive traffic to your
+                website via organic user searches based on targeted keywords,
+                while{' '}
+                <Link className="text-link-on-white" to="/glossary">
+                  Pay-Per-Click (PPC)
+                </Link>{' '}
+                is a short term paid strategy to drive traffic to your website
+                via Google Ads. These paid advertisements are placed above the
+                organic search results.{' '}
+                <strong className="text-info">
+                  Organic SEO is often preferred over PPC because it will pay
+                  dividends year after year through natural traffic, whereas PPC
+                  will immediately cease any extra traffic the moment your ad
+                  campaign is complete
+                </strong>
+                .
+              </p> */}
               <div className="container d-flex justify-content-center align-items-center">
                 <Button
-                  btnlabel="Rank My Website Locally"
+                  btnlabel="Rank My Website Organically"
                   btnlink="/contact"
                   btnsolid={true}
                 />
+                {/* <Link
+                  className="text-link-on-white ml-4"
+                  to="/services/organic-seo"
+                >
+                  Dive Deeper Into Organic SEO{' '}
+                  <i className="fas fa-long-arrow-alt-right"></i>
+                </Link> */}
               </div>
             </div>
           </div>
@@ -678,4 +807,4 @@ const LocalSeoSectionServices = ({ className }) => {
   );
 };
 
-export default LocalSeoSectionServices;
+export default InterestedSectionContact;

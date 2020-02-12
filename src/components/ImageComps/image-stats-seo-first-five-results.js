@@ -2,11 +2,11 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-const ImgStatsSeoFirstPage = ({ className }) => {
+const ImgStatsSeoFirstFive = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query ImgStatsSeoFirstPageQ {
+    query ImgStatsSeoFirstFiveQ {
       image: file(
-        relativePath: { eq: "images/stats-seo-first-page-results.jpg" }
+        relativePath: { eq: "images/stats-seo-first-five-organic.jpg" }
       ) {
         id
         childImageSharp {
@@ -21,10 +21,10 @@ const ImgStatsSeoFirstPage = ({ className }) => {
   return (
     <Img
       fluid={data.image.childImageSharp.fluid}
-      alt="75% of users don’t even scroll past the first page of results - Source: HubSpot"
+      alt="On the first page alone, the first five organic search results account for 67.60% of all the clicks - Source: Zero Limit Web"
       className={className}
     />
   );
 };
 
-export default ImgStatsSeoFirstPage;
+export default ImgStatsSeoFirstFive;

@@ -25,7 +25,7 @@ const ServicesSectionHome = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="local seo services for small business"
+      alt="digital marketing services for small business"
     >
       <div className="container">
         <StatsSectionHome
@@ -34,7 +34,7 @@ const ServicesSectionHome = ({ className }) => {
           srcText="WordStream"
         />
         <h2 className="text-center mt-0 text-white drop-shadow-dark">
-          Local SEO Services for Small Business
+          Digital Marketing Services for Small Business
         </h2>
         <hr className="divider mt-4 drop-shadow-dark" />
         <div className="row">
@@ -78,8 +78,8 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/seo-strategy"
-                  btnlabel="See My Strategy"
+                  btnlink="/services"
+                  btnlabel="Learn More"
                   btnsolid={true}
                 />
               </div>
@@ -87,8 +87,102 @@ const ServicesSectionHome = ({ className }) => {
           </div>
           <div className="col-md-6 text-center justify-content-center align-items-center">
             <div className="my-5 border shadow p-3 bg-texture-2">
-              <i className="fas fa-4x fa-drafting-compass text-primary mb-4 drop-shadow"></i>
-              <h3 className="h4 mb-2">Responsive Web Design</h3>
+              <i className="fas fa-4x fa-seedling text-primary mb-4 drop-shadow"></i>
+              <h3 className="h4 mb-2">Organic SEO</h3>
+              <hr className="light" />
+              <div className="text-muted mb-0 text-left my-3">
+                <p>
+                  We'll work together to diagnose your unique challenges and
+                  formulate viable services to establish{' '}
+                  <strong className="text-secondary">
+                    domain authority within your industry
+                  </strong>
+                  .
+                </p>
+                <p>
+                  I will upgrade your website from a simple brochure to a{' '}
+                  <strong className="text-secondary">
+                    trusted resource of value and information
+                  </strong>{' '}
+                  for your customers.
+                </p>
+              </div>
+              <p className="text-muted mb-4 text-left">
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">
+                    Diagnose what's preventing digital growth
+                  </span>
+                </span>
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">Short term web traffic gains</span>
+                </span>
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">Long term lead generation</span>
+                </span>
+              </p>
+              <div className="my-3">
+                <Button
+                  btnlink="/services"
+                  btnlabel="Learn More"
+                  btnsolid={true}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 text-center justify-content-center align-items-center">
+            <div className="my-5 border shadow p-3 bg-texture-2">
+              <i className="fas fa-4x fa-search-location text-primary mb-4 drop-shadow"></i>
+              <h3 className="h4 mb-2">Local SEO</h3>
+              <hr className="light" />
+              <div className="text-muted mb-0 text-left my-3">
+                <p>
+                  We'll work together to diagnose your unique challenges and
+                  formulate viable services to establish{' '}
+                  <strong className="text-secondary">
+                    domain authority within your industry
+                  </strong>
+                  .
+                </p>
+                <p>
+                  I will upgrade your website from a simple brochure to a{' '}
+                  <strong className="text-secondary">
+                    trusted resource of value and information
+                  </strong>{' '}
+                  for your customers.
+                </p>
+              </div>
+              <p className="text-muted mb-4 text-left">
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">
+                    Diagnose what's preventing digital growth
+                  </span>
+                </span>
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">Short term web traffic gains</span>
+                </span>
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">Long term lead generation</span>
+                </span>
+              </p>
+              <div className="my-3">
+                <Button
+                  btnlink="/services"
+                  btnlabel="Learn More"
+                  btnsolid={true}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 text-center justify-content-center align-items-center">
+            <div className="my-5 border shadow p-3 bg-texture-2">
+              <i className="fas fa-4x fa-mouse-pointer text-primary mb-4 drop-shadow"></i>
+              <h3 className="h4 mb-2">PPC Ads</h3>
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
@@ -125,19 +219,64 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/website-design"
-                  btnlabel="How I Design"
+                  btnlink="/services"
+                  btnlabel="Learn More"
                   btnsolid={true}
                 />
               </div>
             </div>
           </div>
-        </div>
-        <div className="row">
+          <div className="col-md-6 text-center justify-content-center align-items-center">
+            <div className="my-5 border shadow p-3 bg-texture-2">
+              <i className="fas fa-4x fa-drafting-compass text-primary mb-4 drop-shadow"></i>
+              <h3 className="h4 mb-2">Website Design</h3>
+              <hr className="light" />
+              <div className="text-muted mb-0 text-left my-3">
+                <p>
+                  Users instantly judge your credibility the second they see
+                  your design. This{' '}
+                  <strong className="text-secondary">
+                    first impression is critical to user engagement
+                  </strong>{' '}
+                  and can easily sabotage a conversion.
+                </p>
+                <p>
+                  If your website is{' '}
+                  <strong className="text-secondary">
+                    outdated, malfunctioning or disorganized
+                  </strong>
+                  , I can help upgrade your design.
+                </p>
+              </div>
+              <p className="text-muted mb-4 text-left">
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">Responsive on all devices</span>
+                </span>
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">Modern, user friendly layouts</span>
+                </span>
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">
+                    Brand consistency delivering your message
+                  </span>
+                </span>
+              </p>
+              <div className="my-3">
+                <Button
+                  btnlink="/services"
+                  btnlabel="Learn More"
+                  btnsolid={true}
+                />
+              </div>
+            </div>
+          </div>
           <div className="col-md-6 text-center justify-content-center align-items-center">
             <div className="mt-5 border shadow p-3 bg-texture-2">
               <i className="fas fa-4x fa-laptop-code text-primary mb-4 drop-shadow"></i>
-              <h3 className="h4 mb-2">Custom Web Development</h3>
+              <h3 className="h4 mb-2">Web Development</h3>
               <hr className="light" />
               <div className="text-muted mb-3 text-left my-3">
                 <p>
@@ -178,14 +317,114 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/web-development"
-                  btnlabel="Why Hand Code?"
+                  btnlink="/services"
+                  btnlabel="Learn More"
                   btnsolid={true}
                 />
               </div>
             </div>
           </div>
           <div className="col-md-6 text-center justify-content-center align-items-center">
+            <div className="my-5 border shadow p-3 bg-texture-2">
+              <i className="fas fa-4x fa-users text-primary mb-4 drop-shadow"></i>
+              <h3 className="h4 mb-2">Social Media</h3>
+              <hr className="light" />
+              <div className="text-muted mb-0 text-left my-3">
+                <p>
+                  Users instantly judge your credibility the second they see
+                  your design. This{' '}
+                  <strong className="text-secondary">
+                    first impression is critical to user engagement
+                  </strong>{' '}
+                  and can easily sabotage a conversion.
+                </p>
+                <p>
+                  If your website is{' '}
+                  <strong className="text-secondary">
+                    outdated, malfunctioning or disorganized
+                  </strong>
+                  , I can help upgrade your design.
+                </p>
+              </div>
+              <p className="text-muted mb-4 text-left">
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">Responsive on all devices</span>
+                </span>
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">Modern, user friendly layouts</span>
+                </span>
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">
+                    Brand consistency delivering your message
+                  </span>
+                </span>
+              </p>
+              <div className="my-3">
+                <Button
+                  btnlink="/services"
+                  btnlabel="Learn More"
+                  btnsolid={true}
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-md-6 text-center justify-content-center align-items-center">
+            <div className="mt-5 border shadow p-3 bg-texture-2">
+              <i className="fas fa-4x fa-envelope-open-text text-primary mb-4 drop-shadow"></i>
+              <h3 className="h4 mb-2">Email Marketing</h3>
+              <hr className="light" />
+              <div className="text-muted mb-3 text-left my-3">
+                <p>
+                  Utilizing the latest web technologies will{' '}
+                  <strong className="text-secondary">
+                    prevent unwanted bloat, maintain clean code and result in
+                    blazing speeds
+                  </strong>{' '}
+                  with ability to scale.
+                </p>
+                <p>
+                  Let's{' '}
+                  <strong className="text-secondary">
+                    move past WordPress and cumbersome page builders
+                  </strong>{' '}
+                  to harness the power of modern development tools.
+                </p>
+              </div>
+              <p className="text-muted mb-4 text-left">
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">
+                    Keep customers happy with fast page speeds
+                  </span>
+                </span>
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">
+                    No limits on features and functions
+                  </span>
+                </span>
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">
+                    No servers or database to get hacked
+                  </span>
+                </span>
+              </p>
+              <div className="my-3">
+                <Button
+                  btnlink="/services"
+                  btnlabel="Learn More"
+                  btnsolid={true}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* <div className="col-md-6 text-center justify-content-center align-items-center">
             <div className="my-5 border shadow p-3 bg-texture-2">
               <i className="fas fa-4x fa-chart-line text-primary mb-4 drop-shadow"></i>
               <h3 className="h4 mb-2">Local SEO & SEM</h3>
@@ -228,14 +467,13 @@ const ServicesSectionHome = ({ className }) => {
               </p>
               <div className="my-3">
                 <Button
-                  btnlink="/services/local-seo"
-                  btnlabel="SEO vs. SEM"
+                  btnlink="/services"
+                  btnlabel="Learn More"
                   btnsolid={true}
                 />
               </div>
             </div>
-          </div>
-        </div>
+          </div> */}
       </div>
     </BackgroundImage>
   );

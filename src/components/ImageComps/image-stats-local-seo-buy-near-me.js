@@ -2,11 +2,11 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
-const ImgStatsSeoFirstPage = ({ className }) => {
+const ImgLocalBuyNearMePage = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query ImgStatsSeoFirstPageQ {
+    query ImgLocalBuyNearMePageQ {
       image: file(
-        relativePath: { eq: "images/stats-seo-first-page-results.jpg" }
+        relativePath: { eq: "images/stats-local-seo-buy-near-me.jpg" }
       ) {
         id
         childImageSharp {
@@ -21,10 +21,10 @@ const ImgStatsSeoFirstPage = ({ className }) => {
   return (
     <Img
       fluid={data.image.childImageSharp.fluid}
-      alt="75% of users don’t even scroll past the first page of results - Source: HubSpot"
+      alt="“Where to buy” + “near me” mobile queries have grown by over 200% in the last two years - Source: Google"
       className={className}
     />
   );
 };
 
-export default ImgStatsSeoFirstPage;
+export default ImgLocalBuyNearMePage;

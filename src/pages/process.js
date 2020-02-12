@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import HeaderProcess from '../components/HeaderProcess/HeaderProcess';
+import HeaderProcess from '../components/Process/HeaderProcess/HeaderProcess';
 
 const ProcessPage = () => (
   <Layout>

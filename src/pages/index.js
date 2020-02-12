@@ -6,7 +6,7 @@ import HeaderHome from '../components/HeaderHome/HeaderHome';
 import AboutSectionHome from '../components/About/AboutSectionHome/AboutSectionHome';
 import BlogSectionBgHome from '../components/BlogSectionHome/BlogSectionBgHome';
 import ServicesSectionHome from '../components/Services/ServicesSectionHome/ServicesSectionHome';
-import ProcessSectionHome from '../components/ProcessSectionHome/ProcessSectionHome';
+import ProcessSectionHome from '../components/Process/ProcessSectionHome/ProcessSectionHome';
 
 const IndexPage = () => {
   return (

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import ContactSectionHome from '../ContactSectionHome/ContactSectionHome';
+import ContactSectionHome from '../Contact/ContactSectionHome/ContactSectionHome';
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -14,7 +14,7 @@ const Footer = () => {
   `);
 
   return (
-    <footer>
+    <section>
       <section className="page-section">
         <ContactSectionHome className="container bg-img-contact-section rounded shadow p-5" />
       </section>
@@ -50,6 +50,9 @@ const Footer = () => {
             </div>
             <div className="col-md-6 col-lg-3 text-center text-md-left mb-5 mb-lg-0 drop-shadow-dark">
               <h5 className="text-uppercase text-secondary mb-4">Services</h5>
+              <Link className="d-flex footer-link" to="/about">
+                SEO Strategy
+              </Link>
               <Link className="d-flex footer-link" to="/about">
                 Organic SEO
               </Link>
@@ -163,7 +166,7 @@ const Footer = () => {
           </div>
         </div>
       </section>
-    </footer>
+    </section>
   );
 };
 

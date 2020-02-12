@@ -3,9 +3,10 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 import Button from '../../Button/Button';
 import { Popover, OverlayTrigger } from 'react-bootstrap';
-import ImgOrganicSeoMemHall from '../../ImageComps/image-organic-seo-memorial-hall';
 import ImgStatsSeoFirstPage from '../../ImageComps/image-stats-seo-first-page-results';
 import ImgStatsSeoCtr from '../../ImageComps/image-stats-seo-ctr-first-result';
+import ImgStatsSeoFirstFive from '../../ImageComps/image-stats-seo-first-five-results';
+import ImgStatsSeoOrganicTraffic from '../../ImageComps/image-stats-seo-organic-web-traffic';
 
 const OrganicSeoSectionServices = ({ className }) => {
   const data = useStaticQuery(graphql`
@@ -130,6 +131,120 @@ const OrganicSeoSectionServices = ({ className }) => {
     </Popover>
   );
 
+  const localSEO = (
+    <Popover id="local-seo">
+      <Popover.Title className="text-info" as="h4">
+        <strong>Local SEO</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          Local SEO is a digital marketing strategy for local businesses to help
+          them promote their products and services to local customers at the
+          exact moment they’re searching for them online.
+        </p>
+        <p>
+          Local results appear in a map during particular searches, such as
+          "near me". These local results are displayed in-between the Google Ads
+          and the organic search results.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const googleMyBusiness = (
+    <Popover id="google-my-business">
+      <Popover.Title className="text-info" as="h4">
+        <strong>Google My Business (GMB)</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          Google My Business is a free and easy tool offered by Google. It's
+          purpose is to help verify your business listing so it's included
+          within Google Search and Maps, manage your information, interact with
+          customers and understand analytics.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const localCitations = (
+    <Popover id="local-citations">
+      <Popover.Title className="text-info" as="h4">
+        <strong>Local Citations</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          Local citations are any mentions of your business information online,
+          including the name, address and phone number (NAP).
+        </p>
+        <p>
+          There are two types of Local Citations, structured and unstructured.
+        </p>
+        <p>
+          Structured citations include business directory listings such as Yelp,
+          Yellowpages,Facebook, MapQuest, etc.
+        </p>
+        <p>
+          Unstructed citations include any mention of your business on blogs,
+          magazines, newspapers, wikis, etc.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const structuredData = (
+    <Popover id="structured-data">
+      <Popover.Title className="text-info" as="h4">
+        <strong>Structured Data</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          Structured Data is JSON-LD formatted code that Google uses to
+          understand the content of a website's page. Web developers include
+          these code snippets within the HTML to provide explicit clues and
+          meaning, such as contact information, business reviews, social events,
+          etc.
+        </p>
+        <p>
+          Google Search uses structured data to enable special search result
+          features and enhancements.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const localPack = (
+    <Popover id="local-pack">
+      <Popover.Title className="text-info" as="h4">
+        <strong>Local 3-Pack</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          Google Map's Local 3-Pack is the top listing of relevant local
+          businesses for particular search results. This map only appears during
+          local searches and is displayed in-between the Google Ads and the
+          organic search results.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
+  const domainAuthority = (
+    <Popover id="domain-authority">
+      <Popover.Title className="text-info" as="h4">
+        <strong>Domain Authority</strong>
+      </Popover.Title>
+      <Popover.Content>
+        <p>
+          Domain Authority (DA) is a ranking score developed by Moz to predict
+          how well a website ranks within search engines. DA scores range from
+          one to 100, with higher scores corresponding to a greater ability to
+          rank.
+        </p>
+      </Popover.Content>
+    </Popover>
+  );
+
   return (
     <BackgroundImage
       Tag="section"
@@ -160,73 +275,120 @@ const OrganicSeoSectionServices = ({ className }) => {
         <div className="container">
           <div className="container mb-3 pt-2 border border-secondary rounded drop-shadow bg-texture-2">
             <div className="p-2 p-md-5">
-              <p className="display-4 text-center">Target Quality Traffic</p>
-              <div className="p-2 p-md-5">
-                <div className="row justify-content-center align-items-baseline mb-md-5">
-                  <div className="col-md-3">
-                    <div className="text-center">
+              <p className="display-4 text-center">
+                8-Steps to Organic Success
+              </p>
+              <div className="p-2 p-md-5 mb-5">
+                <div className="row justify-content-center align-items-baseline">
+                  <div className="col-6 col-md-3 bg-purple pt-4 pb-2">
+                    <div className="bg-white drop-shadow border border-secondary text-info rounded-circle position-absolute top-0 left-0 px-2">
+                      <span className="font-weight-bold">1</span>
+                    </div>
+                    <div className="text-center text-white">
                       <i className="fas fa-4x fa-clipboard-list text-secondary"></i>
                       <div className="my-3">
-                        <strong>Website Audit</strong>
+                        <strong>
+                          Website <br />
+                          Audit
+                        </strong>
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-6 col-md-3 bg-light-gray pt-4 pb-2">
+                    <div className="bg-white drop-shadow border border-secondary text-info rounded-circle position-absolute top-0 left-0 px-2">
+                      <span className="font-weight-bold">2</span>
+                    </div>
                     <div className="text-center">
                       <i className="fas fa-4x fa-chart-bar text-secondary"></i>
                       <div className="my-3">
-                        <strong>Analytics</strong>
+                        <strong>
+                          Data & <br />
+                          Analytics
+                        </strong>
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-6 col-md-3 bg-purple-to-gray pt-4 pb-2">
+                    <div className="bg-white drop-shadow border border-secondary text-info rounded-circle position-absolute top-0 left-0 px-2">
+                      <span className="font-weight-bold">3</span>
+                    </div>
+                    <div className="text-center text-white">
+                      <i className="fab fa-4x fa-searchengin text-secondary"></i>
+                      <div className="my-3">
+                        <strong>
+                          Competitor <br />
+                          Research
+                        </strong>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-6 col-md-3 bg-gray-to-purple pt-4 pb-2">
+                    <div className="bg-white drop-shadow border border-secondary text-info rounded-circle position-absolute top-0 left-0 px-2">
+                      <span className="font-weight-bold">4</span>
+                    </div>
                     <div className="text-center">
                       <i className="fas fa-4x fa-key text-secondary"></i>
                       <div className="my-3">
-                        <strong>Keyword Research</strong>
+                        <strong>
+                          Keyword <br />
+                          Research
+                        </strong>
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-3">
-                    <div className="text-center">
-                      <i className="fab fa-4x fa-searchengin text-secondary"></i>
-                      <div className="my-3">
-                        <strong>Competitor Research</strong>
-                      </div>
+                  <div className="col-6 col-md-3 bg-gray-to-purple pt-4 pb-2">
+                    <div className="bg-white drop-shadow border border-secondary text-info rounded-circle position-absolute top-0 left-0 px-2">
+                      <span className="font-weight-bold">5</span>
                     </div>
-                  </div>
-                </div>
-
-                <div className="row justify-content-center align-items-baseline mb-md-5">
-                  <div className="col-md-3">
                     <div className="text-center">
                       <i className="fas fa-4x fa-file-alt text-secondary"></i>
                       <div className="my-3">
-                        <strong>On-Page SEO</strong>
+                        <strong>
+                          On-Page <br />
+                          SEO
+                        </strong>
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-3">
-                    <div className="text-center">
+                  <div className="col-6 col-md-3 bg-purple-to-gray pt-4 pb-2">
+                    <div className="bg-white drop-shadow border border-secondary text-info rounded-circle position-absolute top-0 left-0 px-2">
+                      <span className="font-weight-bold">6</span>
+                    </div>
+                    <div className="text-center text-white">
                       <i className="fas fa-4x fa-link text-secondary"></i>
                       <div className="my-3">
-                        <strong>Off-Page SEO</strong>
+                        <strong>
+                          Off-Page <br />
+                          SEO
+                        </strong>
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-3">
+                  <div className="col-6 col-md-3 bg-light-gray pt-4 pb-2">
+                    <div className="bg-white drop-shadow border border-secondary text-info rounded-circle position-absolute top-0 left-0 px-2">
+                      <span className="font-weight-bold">7</span>
+                    </div>
                     <div className="text-center">
                       <i className="fas fa-4x fa-cogs text-secondary"></i>
                       <div className="my-3">
-                        <strong>Technical SEO</strong>
+                        <strong>
+                          Technical <br />
+                          SEO
+                        </strong>
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-3">
-                    <div className="text-center">
+                  <div className="col-6 col-md-3 bg-purple pt-4 pb-2">
+                    <div className="bg-white drop-shadow border border-secondary text-info rounded-circle position-absolute top-0 left-0 px-2">
+                      <span className="font-weight-bold">8</span>
+                    </div>
+                    <div className="text-center text-white">
                       <i className="fas fa-4x fa-newspaper text-secondary"></i>
                       <div className="my-3">
-                        <strong>Content Creation</strong>
+                        <strong>
+                          Content <br />
+                          Creation
+                        </strong>
                       </div>
                     </div>
                   </div>
@@ -235,14 +397,15 @@ const OrganicSeoSectionServices = ({ className }) => {
 
               <div className="row justify-content-center mb-5">
                 <div className="col-md-8 order-1 order-md-0">
+                  <h3 className="mb-4">
+                    Every Business Owner Knows They Need a Website in 2020...
+                  </h3>
+
                   <p>
-                    Every business owner{' '}
-                    <strong className="text-info">
-                      knows they need a website
-                    </strong>
-                    , but what most people are unaware of is how a search
-                    engine's algorithm <em>actually</em> works when deciding who
-                    ranks first and for what.
+                    What most people are{' '}
+                    <strong className="text-info">unaware</strong> of is what a
+                    search engine's algorithm looks for when deciding who ranks
+                    first and for what.
                   </p>
                   <p>
                     Fortunately, there are a number of{' '}
@@ -252,10 +415,10 @@ const OrganicSeoSectionServices = ({ className }) => {
                   </p>
                   <p>
                     Some are quick and simple, like adding a descriptive,
-                    relevant and unique page title to each page of your website.
-                    Now Google can{' '}
+                    relevant and unique title to each page of your website. Now
+                    Google can{' '}
                     <strong className="text-info">
-                      understand what that page is all about
+                      understand what each page is all about
                     </strong>
                     .
                   </p>
@@ -268,26 +431,27 @@ const OrganicSeoSectionServices = ({ className }) => {
                     and with only so many hours in a day, most would rather
                     focus their time on the{' '}
                     <strong className="text-info">
-                      work that keeps their business' doors open
+                      work that keeps their doors open
                     </strong>
                     .
                   </p>
+                  <p>That's where I come in!</p>
                   <p>
-                    That's where I come in! I can{' '}
+                    I can{' '}
                     <strong className="text-info">
                       help your business thrive online
                     </strong>{' '}
                     by converting it from a lonely island floating in digital
                     space to a complex web of connected bridges, reaching out to
-                    the masses.
+                    potential customers.
                   </p>
                 </div>
-                <div className="col-md-4 order-0 order-md-1 mb-4 mb-md-0">
+                <div className="col-md-4 order-0 order-md-1 mb-4 mb-md-0 px-2">
                   <ImgStatsSeoFirstPage className="border border-secondary rounded mx-auto mt-1 mt-md-0 drop-shadow" />
                 </div>
               </div>
-              <div className="row justify-content-center my-5">
-                <div className="col-md-4 mb-4 mb-md-0">
+              <div className="row justify-content-center py-5">
+                <div className="col-md-4 mb-4 mb-md-0 px-2">
                   <ImgStatsSeoCtr className="border border-secondary rounded drop-shadow" />
                 </div>
                 <div className="col-md-8">
@@ -314,7 +478,7 @@ const OrganicSeoSectionServices = ({ className }) => {
                   </p>
                   <div>
                     Important factors reign supreme, such as:
-                    <ul>
+                    <ul className="py-3">
                       <li>accuracy of the information your provide</li>
                       <li>format in which you deliver valuable content</li>
                       <li>
@@ -343,7 +507,7 @@ const OrganicSeoSectionServices = ({ className }) => {
               </div>
               <div className="row justify-content-center my-5">
                 <div className="col-md-8">
-                  <h3 className="mb-4">Why is Organic SEO important?</h3>
+                  <h3 className="mb-4">Why is Organic SEO Important?</h3>
                   <p>
                     Organic SEO has become very important for your business
                     because new technology is allowing search engines to
@@ -386,21 +550,24 @@ const OrganicSeoSectionServices = ({ className }) => {
                     </strong>
                   </p>
                 </div>
-                <div className="col-md-4 mb-4 mb-md-0">
-                  <ImgStatsSeoCtr className="border border-secondary rounded drop-shadow" />
+                <div className="col-md-4 mb-4 mb-md-0 px-2">
+                  <ImgStatsSeoFirstFive className="border border-secondary rounded drop-shadow" />
                 </div>
               </div>
-              <div className="text-center lead my-5 p-2 border rounded border-primary border-size-5">
-                More Visibility{' '}
-                <i className="fas fa-long-arrow-alt-right text-info"></i> More
-                Clicks <i className="fas fa-long-arrow-alt-right text-info"></i>{' '}
-                More Quality Leads{' '}
-                <i className="fas fa-long-arrow-alt-right text-info"></i> More
-                Paying Customers
+              <div className="py-3">
+                <div className="text-center lead my-5 p-2 border rounded border-primary border-size-5">
+                  More Visibility{' '}
+                  <i className="fas fa-long-arrow-alt-right text-info"></i> More
+                  Clicks{' '}
+                  <i className="fas fa-long-arrow-alt-right text-info"></i> More
+                  Quality Leads{' '}
+                  <i className="fas fa-long-arrow-alt-right text-info"></i> More
+                  Paying Customers
+                </div>
               </div>
               <div className="row justify-content-center my-5">
-                <div className="col-md-4 mb-4 mb-md-0">
-                  <ImgStatsSeoCtr className="border border-secondary rounded drop-shadow" />
+                <div className="col-md-4 mb-4 mb-md-0 px-2">
+                  <ImgStatsSeoOrganicTraffic className="border border-secondary rounded drop-shadow" />
                 </div>
                 <div className="col-md-8">
                   <h3 className="mb-4">Implementing Organic SEO</h3>
@@ -437,7 +604,18 @@ const OrganicSeoSectionServices = ({ className }) => {
                   <p>
                     It's possible to see rank changes within a month for certain
                     keywords with low difficulty, especially for sites that are
-                    well established with strong domain authority.
+                    well established with strong{' '}
+                    <OverlayTrigger
+                      trigger={['click', 'hover']}
+                      placement="bottom"
+                      overlay={domainAuthority}
+                    >
+                      <span className="text-link-on-white pointer">
+                        domain authority{' '}
+                        <i className="fas fa-info-circle text-info"></i>
+                      </span>
+                    </OverlayTrigger>{' '}
+                    .
                   </p>
                   <p>
                     For a new site, expect about 35 weeks for every new page to
@@ -465,13 +643,26 @@ const OrganicSeoSectionServices = ({ className }) => {
                   </p>
                 </div>
               </div>
-              <div className="row justify-content-center my-5">
+              <div className="row justify-content-center py-5">
                 <div className="col-md-8">
                   <h3 className="mb-4">Organic SEO vs Local SEO</h3>
                   <p>
-                    Organic SEO and Local SEO both utilize the same strategies,
-                    such as keyword and competitor research, on-page and
-                    off-page SEO, technical SEO and valuable content creation.
+                    Organic SEO and{' '}
+                    <OverlayTrigger
+                      trigger={['click', 'hover']}
+                      placement="bottom"
+                      overlay={localSEO}
+                    >
+                      <span className="text-link-on-white pointer">
+                        Local SEO{' '}
+                        <i className="fas fa-info-circle text-info"></i>
+                      </span>
+                    </OverlayTrigger>{' '}
+                    both utilize the same strategies, such as keyword and
+                    competitor research, on-page and off-page SEO, technical SEO
+                    and valuable content creation.
+                  </p>
+                  <p>
                     The difference lies within the focus on a geographical
                     component.
                   </p>
@@ -479,21 +670,64 @@ const OrganicSeoSectionServices = ({ className }) => {
                     Organic SEO concentrates on ranking a website for certain
                     keywords globally, while Local SEO concentrates on
                     generating awareness of your business website within
-                    targeted towns and cities. Local SEO also takes it a step
-                    further by connecting{' '}
-                    <Link className="text-link-on-white" to="/glossary">
-                      Google My Business (GMB)
-                    </Link>
-                    , customer reviews, local citations and{' '}
-                    <Link className="text-link-on-white" to="/glossary">
-                      structured data/schema markup
-                    </Link>{' '}
-                    to boost your business into Google Map's{' '}
-                    <Link className="text-link-on-white" to="/glossary">
-                      Local 3-Pack
-                    </Link>
-                    .
+                    targeted towns and cities.
                   </p>
+                  <div>
+                    Local SEO also takes it a step further by making connections
+                    between:{' '}
+                    <ul className="py-3">
+                      <li>
+                        <OverlayTrigger
+                          trigger={['click', 'hover']}
+                          placement="bottom"
+                          overlay={googleMyBusiness}
+                        >
+                          <span className="text-link-on-white pointer">
+                            Google My Business (GMB){' '}
+                            <i className="fas fa-info-circle text-info"></i>
+                          </span>
+                        </OverlayTrigger>
+                      </li>
+                      <li>
+                        <OverlayTrigger
+                          trigger={['click', 'hover']}
+                          placement="bottom"
+                          overlay={localCitations}
+                        >
+                          <span className="text-link-on-white pointer">
+                            local citations{' '}
+                            <i className="fas fa-info-circle text-info"></i>
+                          </span>
+                        </OverlayTrigger>
+                      </li>
+                      <li>
+                        <OverlayTrigger
+                          trigger={['click', 'hover']}
+                          placement="bottom"
+                          overlay={structuredData}
+                        >
+                          <span className="text-link-on-white pointer">
+                            structured data{' '}
+                            <i className="fas fa-info-circle text-info"></i>
+                          </span>
+                        </OverlayTrigger>
+                      </li>
+                      <li>customer reviews</li>
+                    </ul>
+                    These connections are used to boost your business into
+                    Google Map's{' '}
+                    <OverlayTrigger
+                      trigger={['click', 'hover']}
+                      placement="bottom"
+                      overlay={localPack}
+                    >
+                      <span className="text-link-on-white pointer">
+                        Local 3-Pack{' '}
+                        <i className="fas fa-info-circle text-info"></i>
+                      </span>
+                    </OverlayTrigger>
+                    .
+                  </div>
                   <p>
                     Although Local SEO is especially important for
                     brick-and-mortar businesses and companies that serve
@@ -501,16 +735,13 @@ const OrganicSeoSectionServices = ({ className }) => {
                     <strong className="text-info">
                       Organic SEO is essential to creating an audience that's
                       built on trust from the informational value you provide.
-                      This value will solidify your website as a{' '}
-                      <Link className="text-link-on-white" to="/glossary">
-                        domain authority
-                      </Link>{' '}
-                      within your industry.
+                      This value will solidify your website as a domain
+                      authority within your industry.
                     </strong>
                   </p>
                 </div>
-                <div className="col-md-4 mb-4 mb-md-0">
-                  <ImgStatsSeoCtr className="border border-secondary rounded drop-shadow" />
+                <div className="col-md-4 mb-4 mb-md-0 px-2">
+                  <ImgStatsSeoOrganicTraffic className="border border-secondary rounded drop-shadow" />
                 </div>
               </div>
               {/* <h3 className="mb-4 mt-5">Organic SEO vs Pay-Per-Click (PPC)</h3>
@@ -532,20 +763,19 @@ const OrganicSeoSectionServices = ({ className }) => {
                 </strong>
                 .
               </p> */}
-              <div className="container d-flex justify-content-center align-items-center mt-5">
+              <div className="container d-flex justify-content-center align-items-center">
                 <Button
-                  className="mr-4"
-                  btnlabel="Get Organic SEO"
+                  btnlabel="Rank My Website Organically"
                   btnlink="/contact"
                   btnsolid={true}
                 />
-                <Link
+                {/* <Link
                   className="text-link-on-white ml-4"
                   to="/services/organic-seo"
                 >
                   Dive Deeper Into Organic SEO{' '}
                   <i className="fas fa-long-arrow-alt-right"></i>
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>

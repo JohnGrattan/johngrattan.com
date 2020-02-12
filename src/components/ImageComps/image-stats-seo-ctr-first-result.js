@@ -21,7 +21,7 @@ const ImgStatsSeoCtr = ({ className }) => {
   return (
     <Img
       fluid={data.image.childImageSharp.fluid}
-      alt="organic seo results for memorial hall in plymouth ma"
+      alt="The first position on Google search results has a 34.36% clickthrough rate for desktop and 35% for mobile - Source: HubSpot"
       className={className}
     />
   );
