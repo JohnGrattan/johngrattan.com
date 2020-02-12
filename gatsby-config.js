@@ -26,6 +26,14 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-robots-txt',
     {
+      resolve: 'gatsby-plugin-hubspot',
+      options: {
+        trackingCode: '7150863',
+        respectDNT: true,
+        productionOnly: true,
+      },
+    },
+    {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
         resolveEnv: () => NETLIFY_ENV,
