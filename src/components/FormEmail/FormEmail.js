@@ -24,21 +24,24 @@ const FormEmail = ({ formname }) => {
         </span>
       </Form.Text>
       <Form.Row>
-        <Form.Group as={Col} controlId="formEmailBusinessEmail">
-          <Col sm="12">
-            <Form.Control
-              name="email"
-              type="email"
-              placeholder="Business Email"
-              required
-            />
-          </Col>
-          <Col sm="12">
-            <Button className="mt-3 w-100" variant="primary" type="submit">
-              Submit
-            </Button>
-          </Col>
-        </Form.Group>
+        <Col sm="12" md="6" className="mb-2 mb-md-0">
+          <Form.Control name="name" type="text" placeholder="Name" required />
+        </Col>
+        <Col sm="12" md="6">
+          <Form.Control
+            name="email"
+            type="email"
+            placeholder="Business Email"
+            required
+          />
+        </Col>
+      </Form.Row>
+      <Form.Row>
+        <Col sm="12">
+          <Button className="mt-3 w-100" variant="primary" type="submit">
+            Submit
+          </Button>
+        </Col>
       </Form.Row>
     </Form>
   );

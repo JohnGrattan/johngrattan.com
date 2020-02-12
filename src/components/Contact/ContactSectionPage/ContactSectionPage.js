@@ -59,7 +59,7 @@ const ContactSectionPage = ({ className }) => {
                 >
                   <i className="fas fa-3x fa-phone mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">(401)216-9868</span>
+                  <span className="text-white-link">(401) 216-9868</span>
                 </a>
                 <a
                   href="mailto:contact@johngrattan.com?Subject=Important%20Email%20From%20Website"

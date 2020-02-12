@@ -45,41 +45,46 @@ const ServicesSectionHome = ({ className }) => {
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
-                  We'll work together to diagnose your unique challenges and
-                  formulate viable services to establish{' '}
+                  Every business is unique and faces their own marketing
+                  challenges. It's my job to{' '}
                   <strong className="text-secondary">
-                    domain authority within your industry
-                  </strong>
-                  .
+                    diagnose these obstacles
+                  </strong>{' '}
+                  to formulate a successful SEO approach.
                 </p>
                 <p>
-                  I will upgrade your website from a simple brochure to a{' '}
+                  Researching your competition and understanding your customers
+                  is crucial to{' '}
                   <strong className="text-secondary">
-                    trusted resource of value and information
-                  </strong>{' '}
-                  for your customers.
+                    developing your sales funnel
+                  </strong>
+                  .
                 </p>
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
                   <span className="ml-2">
-                    Diagnose what's preventing digital growth
+                    Create a monthly plan and content site map
                   </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Short term web traffic gains</span>
+                  <span className="ml-2">
+                    Analyze competitors and outperform
+                  </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Long term lead generation</span>
+                  <span className="ml-2">
+                    Reverse engineer how customers find you
+                  </span>
                 </span>
               </p>
               <div className="my-3">
                 <Button
                   btnlink="/services"
-                  btnlabel="Learn More"
+                  btnlabel="See My Strategy"
                   btnsolid={true}
                 />
               </div>
@@ -92,41 +97,46 @@ const ServicesSectionHome = ({ className }) => {
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
-                  We'll work together to diagnose your unique challenges and
-                  formulate viable services to establish{' '}
+                  It's important to rank organically for relevant keywords
+                  within your industry because it{' '}
                   <strong className="text-secondary">
-                    domain authority within your industry
-                  </strong>
-                  .
+                    drives quality traffic
+                  </strong>{' '}
+                  to your site.
                 </p>
                 <p>
-                  I will upgrade your website from a simple brochure to a{' '}
+                  By providing free value through your knowledge and expertise,
+                  you can{' '}
                   <strong className="text-secondary">
-                    trusted resource of value and information
+                    build an audience and brand awareness
                   </strong>{' '}
-                  for your customers.
+                  as a trusted source.
                 </p>
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
                   <span className="ml-2">
-                    Diagnose what's preventing digital growth
+                    Boost Google rankings for relevant keywords
                   </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Short term web traffic gains</span>
+                  <span className="ml-2">
+                    Create long term quality lead generation
+                  </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Long term lead generation</span>
+                  <span className="ml-2">
+                    Free organic clicks save money vs. paid ads
+                  </span>
                 </span>
               </p>
               <div className="my-3">
                 <Button
                   btnlink="/services"
-                  btnlabel="Learn More"
+                  btnlabel="See Why SEO Works"
                   btnsolid={true}
                 />
               </div>
@@ -139,35 +149,40 @@ const ServicesSectionHome = ({ className }) => {
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
-                  We'll work together to diagnose your unique challenges and
-                  formulate viable services to establish{' '}
+                  Google's exclusive focus on local intent searches highlights
+                  the top 3 results within the Map's Local 3-Pack, giving these
+                  businesses an{' '}
                   <strong className="text-secondary">
-                    domain authority within your industry
+                    automatic edge over their competitors
                   </strong>
                   .
                 </p>
                 <p>
-                  I will upgrade your website from a simple brochure to a{' '}
+                  Optimizing your site and Google My Business account will{' '}
                   <strong className="text-secondary">
-                    trusted resource of value and information
-                  </strong>{' '}
-                  for your customers.
+                    launch your name to the top 3 results
+                  </strong>
+                  .
                 </p>
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
                   <span className="ml-2">
-                    Diagnose what's preventing digital growth
+                    Rank locally within all areas you service
                   </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Short term web traffic gains</span>
+                  <span className="ml-2">
+                    Rank for local searches with buyer intent
+                  </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Long term lead generation</span>
+                  <span className="ml-2">
+                    Build reviews for stronger local reputation
+                  </span>
                 </span>
               </p>
               <div className="my-3">
@@ -204,7 +219,7 @@ const ServicesSectionHome = ({ className }) => {
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Responsive on all devices</span>
+                  <span className="ml-2">Responsive design on all devices</span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
@@ -251,11 +266,15 @@ const ServicesSectionHome = ({ className }) => {
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Responsive on all devices</span>
+                  <span className="ml-2">
+                    Responsive design on all devices and browsers
+                  </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Modern, user friendly layouts</span>
+                  <span className="ml-2">
+                    Modern, user friendly layouts with call-to-action
+                  </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
