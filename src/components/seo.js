@@ -42,12 +42,13 @@ function SEO({ description, lang, meta, title }) {
       "streetAddress": "30 Roosevelt Road",
       "addressLocality": "Plymouth",
       "addressRegion": "MA",
-      "postalCode": "02360",
+      "addressCountry": "US",
+      "postalCode": "02360"
     },
     "geo": {
       "@type": "GeoCoordinates",
       "latitude": "41.9359701",
-      "longitude": "-70.7228474",
+      "longitude": "-70.7228474"
     },
     "hasMap": "https://www.google.com/maps/place/John+Grattan+SEO+%26+Web+Design/@41.9359701,-70.7228474,15z/data=!4m5!3m4!1s0x0:0xbffcbd1521f630a0!8m2!3d41.9359701!4d-70.7228474",
     "openingHours": "Mo, Tu, We, Th, Fr 09:00-17:00",
