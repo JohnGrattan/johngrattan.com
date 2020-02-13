@@ -149,8 +149,8 @@ const ServicesSectionHome = ({ className }) => {
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
-                  Google's exclusive focus on local intent searches highlights
-                  the top 3 results within the Map's Local 3-Pack, giving these
+                  Google's exclusive focus on local intent will highlight the
+                  top 3 results within the Map's Local 3-Pack, giving these
                   businesses an{' '}
                   <strong className="text-secondary">
                     automatic edge over their competitors
@@ -158,9 +158,10 @@ const ServicesSectionHome = ({ className }) => {
                   .
                 </p>
                 <p>
-                  Optimizing your site and Google My Business account will{' '}
+                  By localizing your site and optimizing your Google My Business
+                  account, I will{' '}
                   <strong className="text-secondary">
-                    launch your name to the top 3 results
+                    launch your business to the top 3 results
                   </strong>
                   .
                 </p>
@@ -188,7 +189,7 @@ const ServicesSectionHome = ({ className }) => {
               <div className="my-3">
                 <Button
                   btnlink="/services"
-                  btnlabel="Learn More"
+                  btnlabel="See the Local Pack"
                   btnsolid={true}
                 />
               </div>
@@ -201,41 +202,46 @@ const ServicesSectionHome = ({ className }) => {
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
-                  Users instantly judge your credibility the second they see
-                  your design. This{' '}
+                  Pay-Per-Click (PPC) ads are an efficient, cost effective
+                  marketing strategy because you{' '}
                   <strong className="text-secondary">
-                    first impression is critical to user engagement
-                  </strong>{' '}
-                  and can easily sabotage a conversion.
+                    only pay when ads gets clicked
+                  </strong>
+                  .
                 </p>
                 <p>
-                  If your website is{' '}
+                  PPC ads place your name{' '}
                   <strong className="text-secondary">
-                    outdated, malfunctioning or disorganized
+                    above the top results
                   </strong>
-                  , I can help upgrade your design.
+                  , allowing you to compete against higher ranking sites. Even
+                  with no clicks, you still get free brand awareness.
                 </p>
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Responsive design on all devices</span>
-                </span>
-                <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Modern, user friendly layouts</span>
+                  <span className="ml-2">
+                    Full control over maximum budget on ads
+                  </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
                   <span className="ml-2">
-                    Brand consistency delivering your message
+                    Change your ad copy anytime to test what works
+                  </span>
+                </span>
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">
+                    Track stats to help understand your customers
                   </span>
                 </span>
               </p>
               <div className="my-3">
                 <Button
                   btnlink="/services"
-                  btnlabel="Learn More"
+                  btnlabel="See PPC Ads"
                   btnsolid={true}
                 />
               </div>
@@ -286,7 +292,7 @@ const ServicesSectionHome = ({ className }) => {
               <div className="my-3">
                 <Button
                   btnlink="/services"
-                  btnlabel="Learn More"
+                  btnlabel="See Why Design Matters"
                   btnsolid={true}
                 />
               </div>
@@ -337,7 +343,7 @@ const ServicesSectionHome = ({ className }) => {
               <div className="my-3">
                 <Button
                   btnlink="/services"
-                  btnlabel="Learn More"
+                  btnlabel="See My Page Speeds"
                   btnsolid={true}
                 />
               </div>
@@ -350,41 +356,45 @@ const ServicesSectionHome = ({ className }) => {
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
-                  Users instantly judge your credibility the second they see
-                  your design. This{' '}
+                  Connecting your business with social media platforms like
+                  Facebook, Instagram, LinkedIn and Pinterest are{' '}
                   <strong className="text-secondary">
-                    first impression is critical to user engagement
+                    pivotal to staying in touch
                   </strong>{' '}
-                  and can easily sabotage a conversion.
+                  with your customers on a daily basis.
                 </p>
                 <p>
-                  If your website is{' '}
+                  I'll build your{' '}
                   <strong className="text-secondary">
-                    outdated, malfunctioning or disorganized
-                  </strong>
-                  , I can help upgrade your design.
+                    brand awareness, customer loyalty and social engagement
+                  </strong>{' '}
+                  through daily posts, boosted ads and shareable content.
                 </p>
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Responsive on all devices</span>
-                </span>
-                <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Modern, user friendly layouts</span>
+                  <span className="ml-2">
+                    Setup branded social media accounts
+                  </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
                   <span className="ml-2">
-                    Brand consistency delivering your message
+                    Custom profile images for each platform
+                  </span>
+                </span>
+                <span className="d-flex">
+                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <span className="ml-2">
+                    Test and measure the success of boosted ads
                   </span>
                 </span>
               </p>
               <div className="my-3">
                 <Button
                   btnlink="/services"
-                  btnlabel="Learn More"
+                  btnlabel="See Social Campaigns"
                   btnsolid={true}
                 />
               </div>
@@ -397,102 +407,50 @@ const ServicesSectionHome = ({ className }) => {
               <hr className="light" />
               <div className="text-muted mb-3 text-left my-3">
                 <p>
-                  Utilizing the latest web technologies will{' '}
-                  <strong className="text-secondary">
-                    prevent unwanted bloat, maintain clean code and result in
-                    blazing speeds
-                  </strong>{' '}
-                  with ability to scale.
+                  Create a{' '}
+                  <strong className="text-secondary">conversion machine</strong>{' '}
+                  by directing subscribers into your ecosystem, providing free
+                  valuable content on a regular basis and occasionally pushing a
+                  call-to-action.
                 </p>
                 <p>
-                  Let's{' '}
+                  Since your email list requires each subscriber to opt-in, they
+                  are{' '}
                   <strong className="text-secondary">
-                    move past WordPress and cumbersome page builders
-                  </strong>{' '}
-                  to harness the power of modern development tools.
+                    immediately qualified, excited to hear from you and more
+                    likely to purchase
+                  </strong>
+                  .
                 </p>
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
                   <span className="ml-2">
-                    Keep customers happy with fast page speeds
+                    Target particular groups with unique copy
                   </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
                   <span className="ml-2">
-                    No limits on features and functions
+                    A/B split testing to see what works
                   </span>
                 </span>
                 <span className="d-flex">
                   <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">
-                    No servers or database to get hacked
-                  </span>
+                  <span className="ml-2">Create custom landing pages</span>
                 </span>
               </p>
               <div className="my-3">
                 <Button
                   btnlink="/services"
-                  btnlabel="Learn More"
+                  btnlabel="See Email Campaigns"
                   btnsolid={true}
                 />
               </div>
             </div>
           </div>
         </div>
-
-        {/* <div className="col-md-6 text-center justify-content-center align-items-center">
-            <div className="my-5 border shadow p-3 bg-texture-2">
-              <i className="fas fa-4x fa-chart-line text-primary mb-4 drop-shadow"></i>
-              <h3 className="h4 mb-2">Local SEO & SEM</h3>
-              <hr className="light" />
-              <div className="text-muted mb-0 text-left my-3">
-                <p>
-                  It's imperative your business appears high on search engine
-                  results pages. Let's make your site{' '}
-                  <strong className="text-secondary">
-                    visible and increase the amount of organic visitors
-                  </strong>
-                  .
-                </p>
-                <p>
-                  With long term SEO and short term SEM, I can{' '}
-                  <strong className="text-secondary">
-                    drive traffic, generate quality leads to sales funnels
-                  </strong>{' '}
-                  and{' '}
-                  <strong className="text-secondary">increase your ROI</strong>.
-                </p>
-              </div>
-              <p className="text-muted mb-4 text-left">
-                <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">
-                    Rank on Google Map's Local 3-Pack
-                  </span>
-                </span>
-                <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">Rank for all towns you service</span>
-                </span>
-                <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
-                  <span className="ml-2">
-                    Outrank your competitors in searches
-                  </span>
-                </span>
-              </p>
-              <div className="my-3">
-                <Button
-                  btnlink="/services"
-                  btnlabel="Learn More"
-                  btnsolid={true}
-                />
-              </div>
-            </div>
-          </div> */}
       </div>
     </BackgroundImage>
   );
