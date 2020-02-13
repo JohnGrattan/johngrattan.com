@@ -32,7 +32,7 @@ function SEO({ description, lang, meta, title }) {
     "@type": "LocalBusiness",
     "name": "John Grattan SEO & Web Design",
     "priceRange": "$100 - $500",
-    "description": "John Grattan SEO & Web Design offers affordable Digital Marketing services such as SEO, SEM, Website Design and Web Development to small businesses throughout Massachusetts, from Boston to Plymouth."
+    "description": "John Grattan SEO & Web Design offers affordable Digital Marketing services such as SEO, SEM, Website Design and Web Development to small businesses throughout Massachusetts, from Boston to Plymouth.",
     "image":
       "https://johngrattan.com/static/8cad32f9172e09f0099b1a68e49be910/bc59e/john-grattan-circle-headshot-green.png",
     "telephone": "+1-401 216 9868",
