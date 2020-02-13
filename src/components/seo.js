@@ -57,7 +57,7 @@ function SEO({ description, lang, meta, title }) {
       "contactType": "customer support",
       "telephone": "+1-401 216 9868"
     },
-    "url": "https://johngrattan.com/",
+    "url": "https://johngrattan.com/"
   }`;
 
   return (
