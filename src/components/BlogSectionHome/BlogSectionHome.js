@@ -70,10 +70,7 @@ const BlogSectionHome = () => {
                 <small className="col">{post.node.timeToRead} min read</small>
               </div>
               <div className="my-3">
-                <Link
-                  className="text-secondary"
-                  to={post.node.frontmatter.path}
-                >
+                <Link className="text-info" to={post.node.frontmatter.path}>
                   Read More
                 </Link>
               </div>

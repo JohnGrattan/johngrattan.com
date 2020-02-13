@@ -44,15 +44,15 @@ const AboutSectionHome = ({ className }) => {
           <div className="col-lg-5 col-md-6 text-center order-md-1 mt-5">
             <h1 className="text-dark mt-0">
               Hi, I'm John Grattan{' '}
-              <span className="d-block mt-3">Your one man </span>
-              <span className="d-block text-secondary">Digital Marketing </span>
-              <span className="d-block text-secondary">Agency</span>
+              <span className="d-block mt-3">Your one-man </span>
+              <span className="d-block text-info">Digital Marketing </span>
+              <span className="d-block text-info">Agency</span>
             </h1>
             <hr className="divider-long shadow primary my-4" />
             <p className="text-dark mb-5 text-left px-3 px-md-0">
               I help small businesses adapt to the latest technologies by
               personalizing digital marketing strategies —{' '}
-              <strong className="text-secondary">
+              <strong className="text-info">
                 centered on custom, responsive websites
               </strong>{' '}
               — to help generate leads and improve customer experience.

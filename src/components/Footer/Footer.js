@@ -123,6 +123,14 @@ const Footer = () => {
                   Plymouth, MA 02360
                 </a>
               </div>
+              <div className="text-white text-sans-serif pt-2 d-flex mb-2">
+                <i className="far fa-clock mt-1"></i>
+                <span className="text-primary ml-3">
+                  Monday - Friday
+                  <br />
+                  9:00 am - 5:00 pm
+                </span>
+              </div>
             </div>
           </div>
         </div>

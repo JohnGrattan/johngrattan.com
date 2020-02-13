@@ -46,9 +46,9 @@ const ServicesSectionHome = ({ className }) => {
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
-                  Every business is unique and faces their own marketing
+                  Every business is unique and faces its own marketing
                   challenges. It's my job to{' '}
-                  <strong className="text-secondary">
+                  <strong className="text-info">
                     diagnose these obstacles
                   </strong>{' '}
                   to formulate a successful SEO approach.
@@ -56,7 +56,7 @@ const ServicesSectionHome = ({ className }) => {
                 <p>
                   Researching your competition and understanding your customers
                   is crucial to{' '}
-                  <strong className="text-secondary">
+                  <strong className="text-info">
                     developing your sales funnel
                   </strong>
                   .
@@ -64,19 +64,19 @@ const ServicesSectionHome = ({ className }) => {
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Create a monthly plan and content site map
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Analyze competitors and outperform
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Reverse engineer how customers find you
                   </span>
@@ -100,15 +100,13 @@ const ServicesSectionHome = ({ className }) => {
                 <p>
                   It's important to rank organically for relevant keywords
                   within your industry because it{' '}
-                  <strong className="text-secondary">
-                    drives quality traffic
-                  </strong>{' '}
+                  <strong className="text-info">drives quality traffic</strong>{' '}
                   to your site.
                 </p>
                 <p>
                   By providing free value through your knowledge and expertise,
                   you can{' '}
-                  <strong className="text-secondary">
+                  <strong className="text-info">
                     build an audience and brand awareness
                   </strong>{' '}
                   as a trusted source.
@@ -116,19 +114,19 @@ const ServicesSectionHome = ({ className }) => {
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Boost Google rankings for relevant keywords
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Create long term quality lead generation
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Free organic clicks save money vs. paid ads
                   </span>
@@ -153,15 +151,15 @@ const ServicesSectionHome = ({ className }) => {
                   Google's exclusive focus on local intent will highlight the
                   top 3 results within the Map's Local 3-Pack, giving these
                   businesses an{' '}
-                  <strong className="text-secondary">
-                    automatic edge over their competitors
+                  <strong className="text-info">
+                    automatic edge over its competitors
                   </strong>
                   .
                 </p>
                 <p>
                   By localizing your site and optimizing your Google My Business
                   account, I will{' '}
-                  <strong className="text-secondary">
+                  <strong className="text-info">
                     launch your business to the top 3 results
                   </strong>
                   .
@@ -169,19 +167,19 @@ const ServicesSectionHome = ({ className }) => {
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Rank locally within all areas you service
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Rank for local searches with buyer intent
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Build reviews for stronger local reputation
                   </span>
@@ -203,37 +201,35 @@ const ServicesSectionHome = ({ className }) => {
               <hr className="light" />
               <div className="text-muted mb-0 text-left my-3">
                 <p>
-                  Pay-Per-Click (PPC) ads are an efficient, cost effective
+                  Pay-Per-Click (PPC) ads are an efficient, cost-effective
                   marketing strategy because you{' '}
-                  <strong className="text-secondary">
-                    only pay when ads gets clicked
+                  <strong className="text-info">
+                    only pay when ads get clicked
                   </strong>
                   .
                 </p>
                 <p>
                   PPC ads place your name{' '}
-                  <strong className="text-secondary">
-                    above the top results
-                  </strong>
-                  , allowing you to compete against higher ranking sites. Even
+                  <strong className="text-info">above the top results</strong>,
+                  allowing you to compete against higher ranking sites. Even
                   with no clicks, you still get free brand awareness.
                 </p>
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Full control over maximum budget on ads
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Change your ad copy anytime to test what works
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Track stats to help understand your customers
                   </span>
@@ -257,34 +253,34 @@ const ServicesSectionHome = ({ className }) => {
                 <p>
                   Users instantly judge your credibility the second they see
                   your design. This{' '}
-                  <strong className="text-secondary">
+                  <strong className="text-info">
                     first impression is critical to user engagement
                   </strong>{' '}
                   and can easily sabotage a conversion.
                 </p>
                 <p>
                   If your website is{' '}
-                  <strong className="text-secondary">
+                  <strong className="text-info">
                     outdated, malfunctioning or disorganized
                   </strong>
-                  , I can help upgrade your design.
+                  , I can help upgrade your design for a great user experience.
                 </p>
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Responsive design on all devices and browsers
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
-                    Modern, user friendly layouts with call-to-action
+                    Modern, user-friendly layouts with call-to-action
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Brand consistency delivering your message
                   </span>
@@ -307,15 +303,15 @@ const ServicesSectionHome = ({ className }) => {
               <div className="text-muted mb-3 text-left my-3">
                 <p>
                   Utilizing the latest web technologies will{' '}
-                  <strong className="text-secondary">
+                  <strong className="text-info">
                     prevent unwanted bloat, maintain clean code and result in
                     blazing speeds
                   </strong>{' '}
-                  with ability to scale.
+                  with the ability to scale your new website.
                 </p>
                 <p>
                   Let's{' '}
-                  <strong className="text-secondary">
+                  <strong className="text-info">
                     move past WordPress and cumbersome page builders
                   </strong>{' '}
                   to harness the power of modern development tools.
@@ -323,19 +319,19 @@ const ServicesSectionHome = ({ className }) => {
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Keep customers happy with fast page speeds
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
-                    No limits on features and functions
+                    No themes or plugins that limit development options
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     No servers or database to get hacked
                   </span>
@@ -359,14 +355,14 @@ const ServicesSectionHome = ({ className }) => {
                 <p>
                   Connecting your business with social media platforms like
                   Facebook, Instagram, LinkedIn and Pinterest are{' '}
-                  <strong className="text-secondary">
+                  <strong className="text-info">
                     pivotal to staying in touch
                   </strong>{' '}
                   with your customers on a daily basis.
                 </p>
                 <p>
                   I'll build your{' '}
-                  <strong className="text-secondary">
+                  <strong className="text-info">
                     brand awareness, customer loyalty and social engagement
                   </strong>{' '}
                   through daily posts, boosted ads and shareable content.
@@ -374,19 +370,19 @@ const ServicesSectionHome = ({ className }) => {
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Setup branded social media accounts
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Custom profile images for each platform
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Test and measure the success of boosted ads
                   </span>
@@ -409,15 +405,15 @@ const ServicesSectionHome = ({ className }) => {
               <div className="text-muted mb-3 text-left my-3">
                 <p>
                   Create a{' '}
-                  <strong className="text-secondary">conversion machine</strong>{' '}
-                  by directing subscribers into your ecosystem, providing free
+                  <strong className="text-info">conversion machine</strong> by
+                  directing subscribers into your ecosystem, providing free
                   valuable content on a regular basis and occasionally pushing a
                   call-to-action.
                 </p>
                 <p>
                   Since your email list requires each subscriber to opt-in, they
                   are{' '}
-                  <strong className="text-secondary">
+                  <strong className="text-info">
                     immediately qualified, excited to hear from you and more
                     likely to purchase
                   </strong>
@@ -426,19 +422,19 @@ const ServicesSectionHome = ({ className }) => {
               </div>
               <p className="text-muted mb-4 text-left">
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     Target particular groups with unique copy
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">
                     A/B split testing to see what works
                   </span>
                 </span>
                 <span className="d-flex">
-                  <i className="far fa-check-square text-secondary mt-1"></i>
+                  <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">Create custom landing pages</span>
                 </span>
               </p>

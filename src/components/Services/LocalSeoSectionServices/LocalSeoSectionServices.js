@@ -512,8 +512,8 @@ const LocalSeoSectionServices = ({ className }) => {
                   </p>
                   <p>
                     From here I can pinpoint your sites' strengths and
-                    weaknesses in order to formulate an SEO strategy that's
-                    unique to your business goals and needs.
+                    weaknesses to formulate an SEO strategy that's unique to
+                    your business goals and needs.
                   </p>
                   <p>
                     The actual implementation is a long term process that

@@ -50,7 +50,7 @@ const BackgroundSectionAbout = ({ className }) => {
           <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
             <div className="p-5">
               <p>
-                I've always been intrigued with technology and its infinite
+                I've always been intrigued by technology and its infinite
                 possibilities.
               </p>
               <p>

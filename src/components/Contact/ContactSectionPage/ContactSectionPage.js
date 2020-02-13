@@ -49,9 +49,14 @@ const ContactSectionPage = ({ className }) => {
               <hr className="divider my-4" />
             </div>
             <div className="container col-md-8 py-3 my-2 text-white bg-info rounded drop-shadow">
-              <p className="m-3 mb-5 text-center drop-shadow">
-                Contact me today:
+              <p className="m-3 text-center drop-shadow text-primary font-weight-bold">
+                Office Hours:
               </p>
+              <p className="m-3 mb-5 text-center drop-shadow">
+                Monday - Friday <span className="text-primary">|</span> 9:00 am
+                - 5:00 pm
+              </p>
+
               <div className="row justify-content-around align-items-end mt-4">
                 <a
                   href="tel:+14012169868"

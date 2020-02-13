@@ -12,7 +12,7 @@ const IndexPage = () => {
   return (
     <Layout>
       <SEO
-        title="John Grattan SEO & Web Design | Digital Marketing Services - SEO, PPC, Website Design, Web Development | Boston & Plymouth, Massachusetts"
+        title="Digital Marketing Services - SEO, PPC, Website Design, Web Development | Boston & Plymouth, Massachusetts"
         description="Hi, I'm John Grattan. I offer affordable Digital Marketing services such as SEO, PPC, Website Design & Web Development to local businesses in Massachusetts, from Boston to Plymouth."
       />
       <HeaderHome className="bg-img-home border-bottom border-secondary" />

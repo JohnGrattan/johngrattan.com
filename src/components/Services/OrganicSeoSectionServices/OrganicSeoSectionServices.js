@@ -266,7 +266,7 @@ const OrganicSeoSectionServices = ({ className }) => {
             <span className="text-primary">
               organically rank on the first page
             </span>{' '}
-            for targeted keywords related to your business, your industry and
+            for targeted keywords related to your business, your industry, and
             your services.
           </p>
         </div>
@@ -408,7 +408,7 @@ const OrganicSeoSectionServices = ({ className }) => {
                     first and for what.
                   </p>
                   <p>
-                    Fortunately, there are a number of{' '}
+                    Fortunately, there are a several{' '}
                     <strong className="text-info">known ranking factors</strong>{' '}
                     that can be implemented on a website to help it become more
                     visible to Google.
@@ -590,8 +590,8 @@ const OrganicSeoSectionServices = ({ className }) => {
                   </p>
                   <p>
                     From here, I can pinpoint your sites' strengths and
-                    weaknesses in order to formulate an SEO strategy that's
-                    unique to your business goals and needs.
+                    weaknesses to formulate an SEO strategy that's unique to
+                    your business goals and needs.
                   </p>
                   <p>
                     The actual implementation is a long term process that

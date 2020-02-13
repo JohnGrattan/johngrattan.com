@@ -52,7 +52,7 @@ const EducationSectionAbout = ({ className }) => {
               <p>
                 I studied Computer Science in college and went from playing
                 around with Basic, Q Basic and Visual Basic to learning Java,
-                C++ and Python.
+                C++, and Python.
               </p>
               <p>
                 Technology has changed a lot in the last decade, predominately
@@ -64,20 +64,20 @@ const EducationSectionAbout = ({ className }) => {
                 and ReactJS for Web Development and Web Apps.
               </p>
               <p>
-                Now, I'm a self taught Full Stack Web Developer with skills in
+                Now, I'm a self-taught Full Stack Web Developer with skills in
                 HTML5, CSS3, Sass, Bootstrap, JavaScript, jQuery, ReactJS,
-                Node.js, Express, GraphQL and GatsbyJS.
+                Node.js, Express, GraphQL, and GatsbyJS.
               </p>
               <p>
                 I soon realized it was imperative to learn UI/UX design and SEO.
               </p>
               <p>
-                Afterall, what good a beautifully coded website if it looks
+                After all, what good a beautifully coded website if it looks
                 terrible and no one can find it?!
               </p>
               <p className="text-info">
                 Now I can officially say I've developed the skills to consider
-                myself a 'one man Digital Marketing Agency', capable of
+                myself a 'one-man Digital Marketing Agency', capable of
                 competently handling the full service from beginning to end.
               </p>
             </div>

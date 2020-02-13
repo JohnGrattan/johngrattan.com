@@ -44,6 +44,15 @@ const ContactSectionHome = ({ className }) => {
       </div>
       <div className="container col-md-10 col-lg-8">
         <div className="text-white text-center row justify-content-around align-items-end mt-4">
+          <div className="container mb-3">
+            <p className="m-3 text-center drop-shadow text-primary font-weight-bold">
+              Office Hours:
+            </p>
+            <p className="m-3 mb-5 text-center drop-shadow">
+              Monday - Friday <span className="text-primary">|</span> 9:00 am -
+              5:00 pm
+            </p>
+          </div>
           <a className="col-md-6 mb-5 pointer" href="tel:+14012169868">
             <i className="fas fa-phone fa-3x mb-3 text-secondary drop-shadow-dark wiggle"></i>
             <span className="d-block">(401) 216-9868</span>
