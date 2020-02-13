@@ -42,7 +42,8 @@ const BlogSectionHome = () => {
   return (
     <div className="container">
       <h2 className="text-center mt-0 text-light drop-shadow-dark">
-        SEO & Web Design Insights for Business Owners
+        SEO & Web Design Insights <br />
+        for Business Owners
       </h2>
       <hr className="divider mt-4 mb-5 drop-shadow-dark" />
       <div className="row justify-content-center align-items-center">

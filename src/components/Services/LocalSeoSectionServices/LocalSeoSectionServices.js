@@ -7,6 +7,7 @@ import ImgLocalBuyNearMe from '../../ImageComps/image-stats-local-seo-buy-near-m
 import ImgLocalStore from '../../ImageComps/image-stats-local-seo-store-five-miles';
 import ImgLocalGMB from '../../ImageComps/image-stats-local-seo-google-my-business';
 import ImgLocalMapPack from '../../ImageComps/image-stats-local-seo-map-pack';
+import ImgLocalSeoMapPack from '../../ImageComps/image-local-3-pack-seo-results';
 
 const LocalSeoSectionServices = ({ className }) => {
   const data = useStaticQuery(graphql`
@@ -330,7 +331,7 @@ const LocalSeoSectionServices = ({ className }) => {
                 <div className="col-md-8 order-1 order-md-0">
                   <h3 className="mb-4">What is Local SEO?</h3>
 
-                  <div>
+                  <div className="mb-3">
                     <OverlayTrigger
                       trigger={['click', 'hover']}
                       placement="bottom"
@@ -379,36 +380,30 @@ const LocalSeoSectionServices = ({ className }) => {
                     This localization must be done in order to be ranked on the
                     first page for local intent keyword searches.
                   </div>
-                  <div>
-                    Local SEO also includes the optimization of:
-                    <ul className="my-3">
-                      <li>
-                        <OverlayTrigger
-                          trigger={['click', 'hover']}
-                          placement="bottom"
-                          overlay={googleMyBusiness}
-                        >
-                          <span className="text-link-on-white pointer">
-                            Google My Business (GMB){' '}
-                            <i className="fas fa-info-circle text-info"></i>
-                          </span>
-                        </OverlayTrigger>
-                      </li>
-                      <li>
-                        <OverlayTrigger
-                          trigger={['click', 'hover']}
-                          placement="bottom"
-                          overlay={localCitations}
-                        >
-                          <span className="text-link-on-white pointer">
-                            local citations{' '}
-                            <i className="fas fa-info-circle text-info"></i>
-                          </span>
-                        </OverlayTrigger>
-                      </li>
-                      <li>customer reviews</li>
-                    </ul>
-                    Optimizating these will help boost your chances of ranking
+                  <p>
+                    Local SEO also includes the optimization of{' '}
+                    <OverlayTrigger
+                      trigger={['click', 'hover']}
+                      placement="bottom"
+                      overlay={googleMyBusiness}
+                    >
+                      <span className="text-link-on-white pointer">
+                        Google My Business (GMB){' '}
+                        <i className="fas fa-info-circle text-info"></i>
+                      </span>
+                    </OverlayTrigger>
+                    ,{' '}
+                    <OverlayTrigger
+                      trigger={['click', 'hover']}
+                      placement="bottom"
+                      overlay={localCitations}
+                    >
+                      <span className="text-link-on-white pointer">
+                        local citations{' '}
+                        <i className="fas fa-info-circle text-info"></i>
+                      </span>
+                    </OverlayTrigger>{' '}
+                    and customer reviews to help boost your chances of ranking
                     within Google Map's{' '}
                     <OverlayTrigger
                       trigger={['click', 'hover']}
@@ -421,7 +416,14 @@ const LocalSeoSectionServices = ({ className }) => {
                       </span>
                     </OverlayTrigger>
                     .
-                  </div>
+                  </p>
+                  <p>
+                    <strong className="text-info">
+                      The higher you rank locally, the more likely customers
+                      within your service area will find your business during
+                      'near me' searches.
+                    </strong>
+                  </p>
                 </div>
                 <div className="col-md-4 order-0 order-md-1 mb-4 mb-md-0 px-2">
                   <ImgLocalBuyNearMe className="border border-secondary rounded mx-auto mt-1 mt-md-0 drop-shadow" />
@@ -435,36 +437,32 @@ const LocalSeoSectionServices = ({ className }) => {
                   <h3 className="mb-4">What are the benefits of Local SEO?</h3>
                   <p>
                     Every business can benefit from Local SEO because it
-                    provides a chance to rank within your industry and not
-                    necessarily have to worry about competing with major
-                    corporations.
+                    ultimately leads to more customers and more sales by:
                   </p>
+                  <ul>
+                    <li>
+                      Increasing visibility on Google Maps and local SERPs
+                    </li>
+                    <li>
+                      Driving quality leads to your business from targeted
+                      keywords
+                    </li>
+                    <li>
+                      Allowing you to rank within your industry and not compete
+                      against major corporations
+                    </li>
+                    <li>
+                      Building positive reviews and trust within your service
+                      areas
+                    </li>
+                  </ul>
                   <p>
-                    Google has numerous local ranking factors that are specific
-                    to geographical 'near me' search phrases.
+                    <strong className="text-info">
+                      Google My Business also provides valuable insights about
+                      your customers to help you understand where they are
+                      coming from, how they found you and what works best.
+                    </strong>
                   </p>
-                  <p>
-                    By locally optimizing your business website, you'll increase
-                    your visibility on SERPs via Google Map's Local 3-Pack.
-                    Since these 3 business listings get the most clicks, your
-                    traffic will increase, in turn boosting your potential
-                    sales.
-                  </p>
-                  <strong className="text-info">
-                    Together, the balance between serving people and computers,
-                    while abiding to important factors and guidelines will boost
-                    your website's ranking on{' '}
-                    <OverlayTrigger
-                      trigger={['click', 'hover']}
-                      placement="bottom"
-                      overlay={SERPS}
-                    >
-                      <span className="text-link-on-white pointer">
-                        SERPs <i className="fas fa-info-circle text-info"></i>
-                      </span>
-                    </OverlayTrigger>{' '}
-                    to the coveted top spots within the first page.
-                  </strong>
                 </div>
               </div>
               <div className="row justify-content-center my-5">
@@ -497,16 +495,8 @@ const LocalSeoSectionServices = ({ className }) => {
                   <ImgLocalMapPack className="border border-secondary rounded drop-shadow" />
                 </div>
               </div>
-              <div className="py-3">
-                <div className="text-center lead my-5 p-2 border rounded border-primary border-size-5">
-                  More Visibility{' '}
-                  <i className="fas fa-long-arrow-alt-right text-info"></i> More
-                  Clicks{' '}
-                  <i className="fas fa-long-arrow-alt-right text-info"></i> More
-                  Quality Leads{' '}
-                  <i className="fas fa-long-arrow-alt-right text-info"></i> More
-                  Paying Customers
-                </div>
+              <div className="container col-md-8 py-3">
+                <ImgLocalSeoMapPack className="border rounded drop-shadow" />
               </div>
               <div className="row justify-content-center my-5">
                 <div className="col-md-4 mb-4 mb-md-0 px-2">
@@ -591,48 +581,50 @@ const LocalSeoSectionServices = ({ className }) => {
                     generating awareness of your business website within
                     targeted towns and cities.
                   </p>
-                  <div>
+                  <p>
                     Local SEO also takes it a step further by making connections
-                    between:{' '}
-                    <ul className="py-3">
-                      <li>
-                        <OverlayTrigger
-                          trigger={['click', 'hover']}
-                          placement="bottom"
-                          overlay={googleMyBusiness}
-                        >
-                          <span className="text-link-on-white pointer">
-                            Google My Business (GMB){' '}
-                            <i className="fas fa-info-circle text-info"></i>
-                          </span>
-                        </OverlayTrigger>
-                      </li>
-                      <li>
-                        <OverlayTrigger
-                          trigger={['click', 'hover']}
-                          placement="bottom"
-                          overlay={localCitations}
-                        >
-                          <span className="text-link-on-white pointer">
-                            local citations{' '}
-                            <i className="fas fa-info-circle text-info"></i>
-                          </span>
-                        </OverlayTrigger>
-                      </li>
-                      <li>
-                        <OverlayTrigger
-                          trigger={['click', 'hover']}
-                          placement="bottom"
-                          overlay={structuredData}
-                        >
-                          <span className="text-link-on-white pointer">
-                            structured data{' '}
-                            <i className="fas fa-info-circle text-info"></i>
-                          </span>
-                        </OverlayTrigger>
-                      </li>
-                      <li>customer reviews</li>
-                    </ul>
+                    between:
+                  </p>
+                  <ul>
+                    <li>
+                      <OverlayTrigger
+                        trigger={['click', 'hover']}
+                        placement="bottom"
+                        overlay={googleMyBusiness}
+                      >
+                        <span className="text-link-on-white pointer">
+                          Google My Business (GMB){' '}
+                          <i className="fas fa-info-circle text-info"></i>
+                        </span>
+                      </OverlayTrigger>
+                    </li>
+                    <li>
+                      <OverlayTrigger
+                        trigger={['click', 'hover']}
+                        placement="bottom"
+                        overlay={localCitations}
+                      >
+                        <span className="text-link-on-white pointer">
+                          local citations{' '}
+                          <i className="fas fa-info-circle text-info"></i>
+                        </span>
+                      </OverlayTrigger>
+                    </li>
+                    <li>
+                      <OverlayTrigger
+                        trigger={['click', 'hover']}
+                        placement="bottom"
+                        overlay={structuredData}
+                      >
+                        <span className="text-link-on-white pointer">
+                          structured data{' '}
+                          <i className="fas fa-info-circle text-info"></i>
+                        </span>
+                      </OverlayTrigger>
+                    </li>
+                    <li>customer reviews</li>
+                  </ul>
+                  <p>
                     These connections are used to boost your business into
                     Google Map's{' '}
                     <OverlayTrigger
@@ -646,7 +638,7 @@ const LocalSeoSectionServices = ({ className }) => {
                       </span>
                     </OverlayTrigger>
                     .
-                  </div>
+                  </p>
                   <p>
                     Although Local SEO is especially important for
                     brick-and-mortar businesses and companies that serve

@@ -34,7 +34,8 @@ const ServicesSectionHome = ({ className }) => {
           srcText="WordStream"
         />
         <h2 className="text-center mt-0 text-white drop-shadow-dark">
-          Digital Marketing Services for Small Business
+          Digital Marketing Services <br />
+          for Small Business
         </h2>
         <hr className="divider mt-4 drop-shadow-dark" />
         <div className="row">
@@ -241,7 +242,7 @@ const ServicesSectionHome = ({ className }) => {
               <div className="my-3">
                 <Button
                   btnlink="/services"
-                  btnlabel="See PPC Ads"
+                  btnlabel="See Why PPC Works"
                   btnsolid={true}
                 />
               </div>

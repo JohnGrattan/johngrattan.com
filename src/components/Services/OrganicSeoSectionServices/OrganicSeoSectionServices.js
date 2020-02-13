@@ -418,7 +418,7 @@ const OrganicSeoSectionServices = ({ className }) => {
                     relevant and unique title to each page of your website. Now
                     Google can{' '}
                     <strong className="text-info">
-                      understand what each page is all about
+                      understand what your pages are all about
                     </strong>
                     .
                   </p>
@@ -476,16 +476,14 @@ const OrganicSeoSectionServices = ({ className }) => {
                     your website for search engine algorithms, while maximizing
                     your user's experience.
                   </p>
-                  <div>
-                    Important factors reign supreme, such as:
-                    <ul className="py-3">
-                      <li>accuracy of the information your provide</li>
-                      <li>format in which you deliver valuable content</li>
-                      <li>
-                        popularity of your website among established domains
-                      </li>
-                    </ul>
-                  </div>
+                  <p>Important factors reign supreme, such as:</p>
+                  <ul>
+                    <li>accuracy of the information you provide</li>
+                    <li>format in which you deliver valuable content</li>
+                    <li>
+                      popularity of your website among established domains
+                    </li>
+                  </ul>
                   <p>
                     <strong className="text-info">
                       Together, the balance between serving people and
@@ -591,7 +589,7 @@ const OrganicSeoSectionServices = ({ className }) => {
                     Google Analytics and Search Console statistics.
                   </p>
                   <p>
-                    From here I can pinpoint your sites' strengths and
+                    From here, I can pinpoint your sites' strengths and
                     weaknesses in order to formulate an SEO strategy that's
                     unique to your business goals and needs.
                   </p>
@@ -672,48 +670,50 @@ const OrganicSeoSectionServices = ({ className }) => {
                     generating awareness of your business website within
                     targeted towns and cities.
                   </p>
-                  <div>
+                  <p>
                     Local SEO also takes it a step further by making connections
-                    between:{' '}
-                    <ul className="py-3">
-                      <li>
-                        <OverlayTrigger
-                          trigger={['click', 'hover']}
-                          placement="bottom"
-                          overlay={googleMyBusiness}
-                        >
-                          <span className="text-link-on-white pointer">
-                            Google My Business (GMB){' '}
-                            <i className="fas fa-info-circle text-info"></i>
-                          </span>
-                        </OverlayTrigger>
-                      </li>
-                      <li>
-                        <OverlayTrigger
-                          trigger={['click', 'hover']}
-                          placement="bottom"
-                          overlay={localCitations}
-                        >
-                          <span className="text-link-on-white pointer">
-                            local citations{' '}
-                            <i className="fas fa-info-circle text-info"></i>
-                          </span>
-                        </OverlayTrigger>
-                      </li>
-                      <li>
-                        <OverlayTrigger
-                          trigger={['click', 'hover']}
-                          placement="bottom"
-                          overlay={structuredData}
-                        >
-                          <span className="text-link-on-white pointer">
-                            structured data{' '}
-                            <i className="fas fa-info-circle text-info"></i>
-                          </span>
-                        </OverlayTrigger>
-                      </li>
-                      <li>customer reviews</li>
-                    </ul>
+                    between:
+                  </p>
+                  <ul>
+                    <li>
+                      <OverlayTrigger
+                        trigger={['click', 'hover']}
+                        placement="bottom"
+                        overlay={googleMyBusiness}
+                      >
+                        <span className="text-link-on-white pointer">
+                          Google My Business (GMB){' '}
+                          <i className="fas fa-info-circle text-info"></i>
+                        </span>
+                      </OverlayTrigger>
+                    </li>
+                    <li>
+                      <OverlayTrigger
+                        trigger={['click', 'hover']}
+                        placement="bottom"
+                        overlay={localCitations}
+                      >
+                        <span className="text-link-on-white pointer">
+                          local citations{' '}
+                          <i className="fas fa-info-circle text-info"></i>
+                        </span>
+                      </OverlayTrigger>
+                    </li>
+                    <li>
+                      <OverlayTrigger
+                        trigger={['click', 'hover']}
+                        placement="bottom"
+                        overlay={structuredData}
+                      >
+                        <span className="text-link-on-white pointer">
+                          structured data{' '}
+                          <i className="fas fa-info-circle text-info"></i>
+                        </span>
+                      </OverlayTrigger>
+                    </li>
+                    <li>customer reviews</li>
+                  </ul>
+                  <p>
                     These connections are used to boost your business into
                     Google Map's{' '}
                     <OverlayTrigger
@@ -727,7 +727,7 @@ const OrganicSeoSectionServices = ({ className }) => {
                       </span>
                     </OverlayTrigger>
                     .
-                  </div>
+                  </p>
                   <p>
                     Although Local SEO is especially important for
                     brick-and-mortar businesses and companies that serve

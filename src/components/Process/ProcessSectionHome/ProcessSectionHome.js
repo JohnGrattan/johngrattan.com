@@ -37,7 +37,8 @@ const ProcessSectionHome = ({ className }) => {
           srcText="StatCounter"
         />
         <h2 className="text-center mt-0 text-white drop-shadow-dark">
-          SEO Process for Success
+          SEO & Web Design <br />
+          Process for Success
         </h2>
         <hr className="divider mt-4 drop-shadow-dark" />
         <div className="timeline container mt-5">
@@ -220,7 +221,7 @@ const ProcessSectionHome = ({ className }) => {
               </h3>
               <hr className="secondary" />
               <p className="text-muted">
-                Ongoing metric analysis and data monitoring will often result in
+                Ongoing metric analysis and data monitoring will often result in{' '}
                 <strong className="text-secondary">
                   strategy adaptation and refinement
                 </strong>
