@@ -1,17 +1,17 @@
 import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import Button from '../../Button/Button';
 import { Popover, OverlayTrigger } from 'react-bootstrap';
-import ImgLocalBuyNearMe from '../../ImageComps/image-stats-local-seo-buy-near-me';
-import ImgLocalStore from '../../ImageComps/image-stats-local-seo-store-five-miles';
-import ImgLocalGMB from '../../ImageComps/image-stats-local-seo-google-my-business';
-import ImgLocalMapPack from '../../ImageComps/image-stats-local-seo-map-pack';
-import ImgLocalSeoMapPack from '../../ImageComps/image-local-3-pack-seo-results';
+import Button from '../../../../Button/Button';
+import ImgLocalBuyNearMe from '../../../../ImageComps/image-stats-local-seo-buy-near-me';
+import ImgLocalStore from '../../../../ImageComps/image-stats-local-seo-store-five-miles';
+import ImgLocalGMB from '../../../../ImageComps/image-stats-local-seo-google-my-business';
+import ImgLocalMapPack from '../../../../ImageComps/image-stats-local-seo-map-pack';
+import ImgLocalSeoMapPack from '../../../../ImageComps/image-local-3-pack-seo-results';
 
-const LocalSeoSectionServices = ({ className }) => {
+const LocalSeoPage__Section = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query LocalSeoSectionServicesQ {
+    query LocalSeoPage__SectionQ {
       masthead: file(
         relativePath: { eq: "images/bg-img-services-local-seo.jpg" }
       ) {
@@ -670,4 +670,4 @@ const LocalSeoSectionServices = ({ className }) => {
   );
 };
 
-export default LocalSeoSectionServices;
+export default LocalSeoPage__Section;

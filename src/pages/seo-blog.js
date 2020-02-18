@@ -9,7 +9,7 @@ import ImgJgBlogPic from '../components/ImageComps/image-jg-blog-pic';
 
 const SeoBlogPage = ({ data }) => (
   <Layout>
-    <SEO title="SEO Blog" />
+    <SEO title="SEO Blog" description="SEO Blog" />
     <HeaderBlog
       Tag="header"
       className="bg-img-page-top"

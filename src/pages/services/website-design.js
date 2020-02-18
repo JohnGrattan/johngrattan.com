@@ -6,7 +6,7 @@ import BgImgPageTop from '../../components/BgImgPageTop/BgImgPageTop';
 
 const WebsiteDesignPage = () => (
   <Layout>
-    <SEO title="Website Design" />
+    <SEO title="Website Design" description="Website Design" />
     <BgImgPageTop
       Tag="header"
       className="bg-img-page-top"

@@ -6,7 +6,10 @@ import HeaderCaseStudies from '../components/HeaderCaseStudies/HeaderCaseStudies
 
 const CaseStudiesPage = () => (
   <Layout>
-    <SEO title="SEO & Web Design Case Studies" />
+    <SEO
+      title="SEO & Web Design Case Studies"
+      description="SEO & Web Design Case Studies"
+    />
     <HeaderCaseStudies
       Tag="header"
       className="bg-img-page-top"

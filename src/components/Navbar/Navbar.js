@@ -22,7 +22,7 @@ export default class Header extends React.Component {
             </Link>
             <Navbar.Toggle aria-controls="navbarResponsive" />
             <Navbar.Collapse id="navbarResponsive">
-              <Nav className="navbar-nav ml-auto my-2 my-lg-0 drop-shadow-dark">
+              <Nav className="navbar-nav ml-auto my-2 my-lg-0">
                 <li className="nav-item">
                   <Link className="nav-link text-uppercase" to="/about">
                     About

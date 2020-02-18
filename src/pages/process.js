@@ -6,7 +6,10 @@ import HeaderProcess from '../components/Process/HeaderProcess/HeaderProcess';
 
 const ProcessPage = () => (
   <Layout>
-    <SEO title="SEO & Web Design Process" />
+    <SEO
+      title="SEO & Web Design Process"
+      description="SEO & Web Design Process"
+    />
     <HeaderProcess
       Tag="header"
       className="bg-img-page-top"

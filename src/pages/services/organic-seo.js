@@ -1,21 +1,19 @@
 import React from 'react';
-
 import Layout from '../../components/layout';
 import SEO from '../../components/seo';
-import BgImgPageTop from '../../components/BgImgPageTop/BgImgPageTop';
+import OrganicSeoPage__Header from '../../components/Services/Subpages/OrganicSeo/Page/OrganicSeoPage__Header';
+import OrganicSeoPage__Body from '../../components/Services/Subpages/OrganicSeo/Page/OrganicSeoPage__Body';
 
 const OrganicSeoPage = () => (
   <Layout>
-    <SEO title="Organic SEO" />
-    <BgImgPageTop
+    <SEO title="Organic SEO" description="Organic SEO" />
+    <OrganicSeoPage__Header
       Tag="header"
       className="bg-img-page-top"
       hOne="Organic SEO"
       pText="This is a test"
     />
-    <section className="page-section">
-      <div className="container"></div>
-    </section>
+    <OrganicSeoPage__Body className="py-md-5 bg-texture-1" />
   </Layout>
 );
 

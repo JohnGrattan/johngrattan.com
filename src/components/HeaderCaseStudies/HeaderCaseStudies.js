@@ -24,7 +24,7 @@ const HeaderCaseStudies = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo and web design case studies background"
+      alt="seo and web design case studies background image"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

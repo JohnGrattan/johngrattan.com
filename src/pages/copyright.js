@@ -6,7 +6,7 @@ import BgImgPageTop from '../components/BgImgPageTop/BgImgPageTop';
 
 const CopyrightPage = () => (
   <Layout>
-    <SEO title="Copyright" />
+    <SEO title="Copyright" description="Copyright" />
     <BgImgPageTop
       Tag="header"
       className="bg-img-page-top"

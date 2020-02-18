@@ -6,7 +6,7 @@ import BgImgPageTop from '../components/BgImgPageTop/BgImgPageTop';
 
 const PrivacyPage = () => (
   <Layout>
-    <SEO title="Privacy Policy" />
+    <SEO title="Privacy Policy" description="Privacy Policy" />
     <BgImgPageTop
       Tag="header"
       className="bg-img-page-top"

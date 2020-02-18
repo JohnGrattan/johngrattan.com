@@ -1,16 +1,16 @@
 import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import Button from '../../Button/Button';
+import Button from '../../../../../Button/Button';
 import { Popover, OverlayTrigger } from 'react-bootstrap';
-import ImgStatsSeoFirstPage from '../../ImageComps/image-stats-seo-first-page-results';
-import ImgStatsSeoCtr from '../../ImageComps/image-stats-seo-ctr-first-result';
-import ImgStatsSeoFirstFive from '../../ImageComps/image-stats-seo-first-five-results';
-import ImgStatsSeoOrganicTraffic from '../../ImageComps/image-stats-seo-organic-web-traffic';
+import ImgStatsSeoFirstPage from '../../../../../ImageComps/image-stats-seo-first-page-results';
+import ImgStatsSeoCtr from '../../../../../ImageComps/image-stats-seo-ctr-first-result';
+import ImgStatsSeoFirstFive from '../../../../../ImageComps/image-stats-seo-first-five-results';
+import ImgStatsSeoOrganicTraffic from '../../../../../ImageComps/image-stats-seo-organic-web-traffic';
 
-const OrganicSeoSectionServices = ({ className }) => {
+const SeoStrategyPage__Section = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query OrganicSeoSectionServicesQ {
+    query SeoStrategyPage__SectionQ {
       masthead: file(
         relativePath: { eq: "images/bg-img-services-organic-seo.jpg" }
       ) {
@@ -26,9 +26,9 @@ const OrganicSeoSectionServices = ({ className }) => {
   const imageData = data.masthead.childImageSharp.fluid;
 
   const organicSEO = (
-    <Popover id="organic-seo">
+    <Popover id="seo-strategy">
       <Popover.Title className="text-info" as="h4">
-        <strong>Organic SEO</strong>
+        <strong>SEO Strategy</strong>
       </Popover.Title>
       <Popover.Content>
         <p>
@@ -249,25 +249,24 @@ const OrganicSeoSectionServices = ({ className }) => {
     <BackgroundImage
       Tag="section"
       className={className}
-      id="organic-seo"
+      id="seo-strategy"
       fluid={imageData}
       backgroundColor={`#040e18`}
       alt="organic seo digital marketing services background"
     >
       <div className="text-center pt-5 drop-shadow-dark">
         <i className="fas fa-3x fa-address-card mb-3 text-primary"></i>
-        <h2 className="mt-2 text-white">Organic SEO</h2>
+        <h2 className="mt-2 text-white">SEO Strategy</h2>
         <hr className="divider mt-4" />
       </div>
       <div className="row justify-content-center align-items-baseline pt-5 p-3">
         <div className="container text-center border border-secondary col-md-7 pt-3 drop-shadow">
           <p className="text-white">
-            I'll optimize your website to{' '}
+            I'll map out a custom, monthly marketing plan{' '}
             <span className="text-primary">
-              organically rank on the first page
+              to overcome challenges and reach your business goals
             </span>{' '}
-            for targeted keywords related to your business, your industry, and
-            your services.
+            with efficient, cost-effective solutions.
           </p>
         </div>
       </div>
@@ -276,7 +275,7 @@ const OrganicSeoSectionServices = ({ className }) => {
           <div className="container mb-3 pt-2 border border-secondary rounded drop-shadow bg-texture-2">
             <div className="p-2 p-md-5">
               <p className="display-4 text-center">
-                8-Steps to Organic Success
+                8-Steps to Strategy Success
               </p>
               <div className="p-2 p-md-5 mb-5">
                 <div className="row justify-content-center align-items-baseline">
@@ -285,11 +284,11 @@ const OrganicSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">1</span>
                     </div>
                     <div className="text-center text-white">
-                      <i className="fas fa-4x fa-clipboard-list text-secondary"></i>
+                      <i className="fas fa-4x fa-award text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Website <br />
-                          Audit
+                          Identify <br />
+                          Your Goals
                         </strong>
                       </div>
                     </div>
@@ -299,11 +298,11 @@ const OrganicSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">2</span>
                     </div>
                     <div className="text-center">
-                      <i className="fas fa-4x fa-chart-bar text-secondary"></i>
+                      <i className="fas fa-4x fa-stethoscope text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Data & <br />
-                          Analytics
+                          Diagnose the <br />
+                          Challenges
                         </strong>
                       </div>
                     </div>
@@ -313,11 +312,11 @@ const OrganicSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">3</span>
                     </div>
                     <div className="text-center text-white">
-                      <i className="fab fa-4x fa-searchengin text-secondary"></i>
+                      <i className="fas fa-4x fa-brain text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Competitor <br />
-                          Research
+                          Understand <br />
+                          Your Brand
                         </strong>
                       </div>
                     </div>
@@ -327,11 +326,11 @@ const OrganicSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">4</span>
                     </div>
                     <div className="text-center">
-                      <i className="fas fa-4x fa-key text-secondary"></i>
+                      <i className="fas fa-4x fa-user-check text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Keyword <br />
-                          Research
+                          Become the <br />
+                          Customer
                         </strong>
                       </div>
                     </div>
@@ -341,11 +340,11 @@ const OrganicSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">5</span>
                     </div>
                     <div className="text-center">
-                      <i className="fas fa-4x fa-file-alt text-secondary"></i>
+                      <i className="fas fa-4x fa-user-secret text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          On-Page <br />
-                          SEO
+                          Analyze <br />
+                          Competitors
                         </strong>
                       </div>
                     </div>
@@ -355,11 +354,11 @@ const OrganicSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">6</span>
                     </div>
                     <div className="text-center text-white">
-                      <i className="fas fa-4x fa-link text-secondary"></i>
+                      <i className="fas fa-4x fa-cubes text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Off-Page <br />
-                          SEO
+                          Information <br />
+                          Architecture
                         </strong>
                       </div>
                     </div>
@@ -369,11 +368,11 @@ const OrganicSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">7</span>
                     </div>
                     <div className="text-center">
-                      <i className="fas fa-4x fa-cogs text-secondary"></i>
+                      <i className="fas fa-4x fa-sitemap text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Technical <br />
-                          SEO
+                          SEO <br />
+                          Site Map
                         </strong>
                       </div>
                     </div>
@@ -383,11 +382,11 @@ const OrganicSeoSectionServices = ({ className }) => {
                       <span className="font-weight-bold">8</span>
                     </div>
                     <div className="text-center text-white">
-                      <i className="fas fa-4x fa-newspaper text-secondary"></i>
+                      <i className="fas fa-4x fa-clock text-secondary"></i>
                       <div className="my-3">
                         <strong>
-                          Content <br />
-                          Creation
+                          Schedule <br />
+                          Content
                         </strong>
                       </div>
                     </div>
@@ -397,9 +396,7 @@ const OrganicSeoSectionServices = ({ className }) => {
 
               <div className="row justify-content-center mb-5">
                 <div className="col-md-8 order-1 order-md-0">
-                  <h3 className="mb-4">
-                    Every Business Owner Knows They Need a Website in 2020...
-                  </h3>
+                  <h3 className="mb-4">What is SEO Strategy?</h3>
 
                   <p>
                     What most people are{' '}
@@ -785,4 +782,4 @@ const OrganicSeoSectionServices = ({ className }) => {
   );
 };
 
-export default OrganicSeoSectionServices;
+export default SeoStrategyPage__Section;

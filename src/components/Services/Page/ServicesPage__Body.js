@@ -1,8 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import OrganicSeoSectionServices from '../OrganicSeoSectionServices/OrganicSeoSectionServices';
-import LocalSeoSectionServices from '../LocalSeoSectionServices/LocalSeoSectionServices';
+import ServicesPage__Section from '../Page/Section/ServicesPage__Section';
 import * as Scroll from 'react-scroll';
 import {
   Link,
@@ -14,9 +13,9 @@ import {
 } from 'react-scroll';
 
 // BG Query
-const ServicesSectionPage = ({ className }) => {
+const ServicesPage__Body = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query ServicesSectionPageQ {
+    query ServicesPage__BodyQ {
       texture: file(
         relativePath: { eq: "images/textures/gradient-squares.png" }
       ) {
@@ -41,7 +40,7 @@ const ServicesSectionPage = ({ className }) => {
     >
       <div className="container">
         <div className="row justify-content-center align-items-center border bg-white shadow rounded position-sticky">
-          <div className="container py-3">
+          <div className="container pt-3 pb-5">
             <div className="py-3 px-5">
               <h2 className="mt-2 text-center">
                 Optimize Your Online Presence
@@ -50,11 +49,11 @@ const ServicesSectionPage = ({ className }) => {
             </div>
             <div className="container col-md-8 py-3 my-2 text-white bg-info rounded drop-shadow">
               <p className="m-3 mb-5 text-center drop-shadow">
-                Learn about my services:
+                Learn about each service:
               </p>
               <div className="row justify-content-around align-items-end mt-4">
                 <Link
-                  to="organic-seo"
+                  to="seo-strategy"
                   className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
@@ -93,7 +92,7 @@ const ServicesSectionPage = ({ className }) => {
                   <span className="text-white-link">Local SEO</span>
                 </Link>
                 <Link
-                  to="local-seo"
+                  to="ppc-ads"
                   className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
@@ -106,7 +105,7 @@ const ServicesSectionPage = ({ className }) => {
                   <span className="text-white-link">PPC Ads</span>
                 </Link>
                 <Link
-                  to="local-seo"
+                  to="web-design"
                   className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
@@ -119,7 +118,7 @@ const ServicesSectionPage = ({ className }) => {
                   <span className="text-white-link">Website Design</span>
                 </Link>
                 <Link
-                  to="community"
+                  to="web-dev"
                   className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
@@ -132,7 +131,7 @@ const ServicesSectionPage = ({ className }) => {
                   <span className="text-white-link">Web Development</span>
                 </Link>
                 <Link
-                  to="community"
+                  to="social-media"
                   className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
@@ -145,7 +144,7 @@ const ServicesSectionPage = ({ className }) => {
                   <span className="text-white-link">Social Media</span>
                 </Link>
                 <Link
-                  to="community"
+                  to="email-marketing"
                   className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
                   activeClass="active"
                   spy={true}
@@ -160,12 +159,14 @@ const ServicesSectionPage = ({ className }) => {
               </div>
             </div>
           </div>
+          <ServicesPage__Section className="page-section border-bottom border-secondary bg-img-services" />
+          {/* <SeoStrategySectionServices className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
           <OrganicSeoSectionServices className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
-          <LocalSeoSectionServices className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
+          <LocalSeoSectionServices className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" /> */}
         </div>
       </div>
     </BackgroundImage>
   );
 };
 
-export default ServicesSectionPage;
+export default ServicesPage__Body;

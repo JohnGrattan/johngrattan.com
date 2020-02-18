@@ -31,7 +31,7 @@ const AboutSectionHome = ({ className }) => {
       backgroundColor={`#fff`}
       alt="about John Grattan background"
     >
-      <div className="container">
+      <div className="container mb-md-5">
         <div className="container col-md-7 neg-margin-top-email-form">
           <FormEmail formname="form-email-homepage" />
         </div>

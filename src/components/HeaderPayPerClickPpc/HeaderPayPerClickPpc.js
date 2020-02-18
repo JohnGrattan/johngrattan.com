@@ -2,11 +2,11 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const HeaderServices = ({ className, hOne }) => {
+const HeaderPayPerClickPpc = ({ className, hOne }) => {
   const data = useStaticQuery(graphql`
-    query HeaderServicesQ {
+    query HeaderPayPerClickPpcQ {
       masthead: file(
-        relativePath: { eq: "images/bg-img-services-header.jpg" }
+        relativePath: { eq: "images/bg-img-pay-per-click-ppc.jpg" }
       ) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
@@ -26,7 +26,7 @@ const HeaderServices = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo services background"
+      alt="seo and web design social media marketing services background image"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">
@@ -41,4 +41,4 @@ const HeaderServices = ({ className, hOne }) => {
   );
 };
 
-export default HeaderServices;
+export default HeaderPayPerClickPpc;

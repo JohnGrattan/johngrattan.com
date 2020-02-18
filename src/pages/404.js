@@ -6,7 +6,7 @@ import BgImgPageTop from '../components/BgImgPageTop/BgImgPageTop';
 
 const NotFoundPage = () => (
   <Layout>
-    <SEO title="404: Not Found" />
+    <SEO title="404: Not Found" description="404: Not Found" />
     <BgImgPageTop
       Tag="header"
       className="bg-img-page-top"

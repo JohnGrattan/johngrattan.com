@@ -1,12 +1,12 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import StatsSectionHome from '../../StatsSectionHome/StatsSectionHome';
+import StatsSectionHome from '../../../components/StatsSectionHome/StatsSectionHome';
 import Button from '../../Button/Button';
 
-const ServicesSectionHome = ({ className }) => {
+const Home__ServicesSection = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query ServicesSectionHomeQ {
+    query Home__ServicesSectionQ {
       masthead: file(relativePath: { eq: "images/bg-img-services.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
@@ -453,4 +453,4 @@ const ServicesSectionHome = ({ className }) => {
   );
 };
 
-export default ServicesSectionHome;
+export default Home__ServicesSection;

@@ -26,64 +26,79 @@ const Footer = () => {
               <Link className="d-flex footer-link" to="/about">
                 About
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link className="d-flex footer-link" to="/contact">
                 Contact
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link className="d-flex footer-link" to="/process">
                 Process
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link className="d-flex footer-link" to="/pricing">
                 Pricing
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link className="d-flex footer-link" to="/case-studies">
                 Case Studies
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link className="d-flex footer-link" to="/">
                 Testimonials
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link className="d-flex footer-link" to="/">
                 FAQs
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link className="d-flex footer-link" to="/">
                 Partners
               </Link>
             </div>
             <div className="col-md-6 col-lg-3 text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark">
               <h5 className="text-uppercase text-secondary mb-4">Services</h5>
-              <Link className="d-flex footer-link" to="/about">
+              <Link className="d-flex footer-link" to="/services/seo-strategy">
                 SEO Strategy
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link className="d-flex footer-link" to="/services/organic-seo">
                 Organic SEO
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link className="d-flex footer-link" to="/services/local-seo">
                 Local SEO
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link
+                className="d-flex footer-link"
+                to="/services/pay-per-click-ppc"
+              >
                 Pay-Per-Click Ads
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link
+                className="d-flex footer-link"
+                to="/services/website-design"
+              >
                 Website Design
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link
+                className="d-flex footer-link"
+                to="/services/web-development"
+              >
                 Web Development
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link
+                className="d-flex footer-link"
+                to="/services/social-media-marketing"
+              >
                 Social Media
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link
+                className="d-flex footer-link"
+                to="/services/email-marketing"
+              >
                 Email Marketing
               </Link>
             </div>
             <div className="col-md-6 col-lg-3 text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark">
               <h5 className="text-uppercase text-secondary mb-4">Resources</h5>
-              <Link className="d-flex footer-link" to="/about">
+              <Link className="d-flex footer-link" to="/">
                 SEO Checklist
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link className="d-flex footer-link" to="/blog">
                 SEO Blog
               </Link>
-              <Link className="d-flex footer-link" to="/about">
+              <Link className="d-flex footer-link" to="/">
                 Glossary of Terms
               </Link>
             </div>

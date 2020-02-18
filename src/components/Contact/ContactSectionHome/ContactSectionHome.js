@@ -34,8 +34,8 @@ const ContactSectionHome = ({ className }) => {
           <h2 className="mt-0 drop-shadow-dark">Let's Talk Today</h2>
           <hr className="divider my-4 drop-shadow-dark" />
           <div className="my-5">
-            <p>Have any questions or concerns?</p>
-            <p>
+            <p className="drop-shadow-dark">Have any questions or concerns?</p>
+            <p className="drop-shadow-dark">
               Feel free to call, email or fill out this form and you will be
               contacted shortly!
             </p>
@@ -45,17 +45,17 @@ const ContactSectionHome = ({ className }) => {
       <div className="container col-md-10 col-lg-8">
         <div className="text-white text-center row justify-content-around align-items-end mt-4">
           <div className="container mb-3">
-            <p className="m-3 text-center drop-shadow text-primary font-weight-bold">
+            <p className="m-3 text-center drop-shadow-dark text-primary font-weight-bold">
               Office Hours:
             </p>
-            <p className="m-3 mb-5 text-center drop-shadow">
+            <p className="m-3 mb-5 text-center drop-shadow-dark">
               Monday - Friday <span className="text-primary">|</span> 9:00 am -
               5:00 pm
             </p>
           </div>
           <a className="col-md-6 mb-5 pointer" href="tel:+14012169868">
             <i className="fas fa-phone fa-3x mb-3 text-secondary drop-shadow-dark wiggle"></i>
-            <span className="d-block">(401) 216-9868</span>
+            <span className="d-block drop-shadow-dark">(401) 216-9868</span>
           </a>
 
           <a
@@ -64,7 +64,9 @@ const ContactSectionHome = ({ className }) => {
             target="_blank"
           >
             <i className="fas fa-envelope fa-3x mb-3 text-secondary drop-shadow-dark wiggle"></i>
-            <span className="d-block">contact@johngrattan.com</span>
+            <span className="d-block drop-shadow-dark">
+              contact@johngrattan.com
+            </span>
           </a>
         </div>
       </div>
