@@ -125,6 +125,26 @@ export default class Header extends React.Component {
                     </div>
                   </div>
                 </li>
+                <div className="d-md-none mt-4 mb-1 text-center text-white">
+                  <a href="#">
+                    <i className="fab fa-2x fa-facebook px-2"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fab fa-2x fa-instagram px-2"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fab fa-2x fa-twitter px-2"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fab fa-2x fa-youtube px-2"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fab fa-2x fa-linkedin px-2"></i>
+                  </a>
+                  <a href="#">
+                    <i className="fab fa-2x fa-github px-2"></i>
+                  </a>
+                </div>
               </Nav>
             </Navbar.Collapse>
           </div>
