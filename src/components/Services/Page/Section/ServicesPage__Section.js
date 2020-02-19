@@ -35,11 +35,6 @@ const ServicesPage__Section = ({ className }) => {
       alt="digital marketing services for small business"
     >
       <div className="container">
-        <h2 className="text-center mt-0 text-white drop-shadow-dark">
-          Digital Marketing Services <br />
-          for Your Small Business
-        </h2>
-        <hr className="divider mt-4 drop-shadow-dark" />
         <div className="row">
           <div className="col-md-12 px-0 text-center justify-content-center align-items-center">
             <div className="row mx-0 container">
@@ -47,8 +42,8 @@ const ServicesPage__Section = ({ className }) => {
                 id="seo-strategy"
                 className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
               >
-                <i className="fas fa-4x fa-chess text-primary mb-4 drop-shadow"></i>
-                <h3 className="h4 mb-2">SEO Strategy</h3>
+                <i className="fas fa-4x fa-chess text-primary mt-3 mb-4 drop-shadow"></i>
+                <h2 className="mb-2">SEO Strategy</h2>
                 <hr className="light" />
                 <div className="text-muted mb-0 text-left my-3">
                   <p>
@@ -107,8 +102,8 @@ const ServicesPage__Section = ({ className }) => {
                 id="organic-seo"
                 className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
               >
-                <i className="fas fa-4x fa-seedling text-primary mb-4 drop-shadow"></i>
-                <h3 className="h4 mb-2">Organic SEO</h3>
+                <i className="fas fa-4x fa-seedling text-primary mt-3 mb-4 drop-shadow"></i>
+                <h2 className="mb-2">Organic SEO</h2>
                 <hr className="light" />
                 <div className="text-muted mb-0 text-left my-3">
                   <p>
@@ -164,8 +159,8 @@ const ServicesPage__Section = ({ className }) => {
                 id="local-seo"
                 className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
               >
-                <i className="fas fa-4x fa-search-location text-primary mb-4 drop-shadow"></i>
-                <h3 className="h4 mb-2">Local SEO</h3>
+                <i className="fas fa-4x fa-search-location text-primary mt-3 mb-4 drop-shadow"></i>
+                <h2 className="mb-2">Local SEO</h2>
                 <hr className="light" />
                 <div className="text-muted mb-0 text-left my-3">
                   <p>
@@ -224,8 +219,8 @@ const ServicesPage__Section = ({ className }) => {
                 id="ppc-ads"
                 className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
               >
-                <i className="fas fa-4x fa-mouse-pointer text-primary mb-4 drop-shadow"></i>
-                <h3 className="h4 mb-2">PPC Ads</h3>
+                <i className="fas fa-4x fa-mouse-pointer text-primary mt-3 mb-4 drop-shadow"></i>
+                <h2 className="mb-2">PPC Ads</h2>
                 <hr className="light" />
                 <div className="text-muted mb-0 text-left my-3">
                   <p>
@@ -279,8 +274,8 @@ const ServicesPage__Section = ({ className }) => {
                 id="web-design"
                 className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
               >
-                <i className="fas fa-4x fa-drafting-compass text-primary mb-4 drop-shadow"></i>
-                <h3 className="h4 mb-2">Website Design</h3>
+                <i className="fas fa-4x fa-drafting-compass text-primary mt-3 mb-4 drop-shadow"></i>
+                <h2 className="mb-2">Website Design</h2>
                 <hr className="light" />
                 <div className="text-muted mb-0 text-left my-3">
                   <p>
@@ -338,8 +333,8 @@ const ServicesPage__Section = ({ className }) => {
                 id="web-dev"
                 className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
               >
-                <i className="fas fa-4x fa-laptop-code text-primary mb-4 drop-shadow"></i>
-                <h3 className="h4 mb-2">Web Development</h3>
+                <i className="fas fa-4x fa-laptop-code text-primary mt-3 mb-4 drop-shadow"></i>
+                <h2 className="mb-2">Web Development</h2>
                 <hr className="light" />
                 <div className="text-muted mb-3 text-left my-3">
                   <p>
@@ -394,8 +389,8 @@ const ServicesPage__Section = ({ className }) => {
                 id="social-media"
                 className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
               >
-                <i className="fas fa-4x fa-users text-primary mb-4 drop-shadow"></i>
-                <h3 className="h4 mb-2">Social Media</h3>
+                <i className="fas fa-4x fa-users text-primary mt-3 mb-4 drop-shadow"></i>
+                <h2 className="mb-2">Social Media</h2>
                 <hr className="light" />
                 <div className="text-muted mb-0 text-left my-3">
                   <p>
@@ -452,8 +447,8 @@ const ServicesPage__Section = ({ className }) => {
                 id="email-marketing"
                 className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
               >
-                <i className="fas fa-4x fa-envelope-open-text text-primary mb-4 drop-shadow"></i>
-                <h3 className="h4 mb-2">Email Marketing</h3>
+                <i className="fas fa-4x fa-envelope-open-text text-primary mt-3 mb-4 drop-shadow"></i>
+                <h2 className="mb-2">Email Marketing</h2>
                 <hr className="light" />
                 <div className="text-muted mb-3 text-left my-3">
                   <p>

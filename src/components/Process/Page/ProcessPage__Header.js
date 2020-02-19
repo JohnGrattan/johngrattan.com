@@ -2,10 +2,10 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const HeaderProcess = ({ className, hOne }) => {
+const ProcessPage__Header = ({ className, hOne }) => {
   const data = useStaticQuery(graphql`
-    query HeaderProcessQ {
-      masthead: file(relativePath: { eq: "images/bg-img-process.jpg" }) {
+    query ProcessPage__HeaderQ {
+      masthead: file(relativePath: { eq: "images/bg-img-process-header.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -39,4 +39,4 @@ const HeaderProcess = ({ className, hOne }) => {
   );
 };
 
-export default HeaderProcess;
+export default ProcessPage__Header;

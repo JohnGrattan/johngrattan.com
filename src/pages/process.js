@@ -1,8 +1,8 @@
 import React from 'react';
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import HeaderProcess from '../components/Process/HeaderProcess/HeaderProcess';
+import ProcessPage__Header from '../components/Process/Page/ProcessPage__Header';
+import ProcessPage__Body from '../components/Process/Page/ProcessPage__Body';
 
 const ProcessPage = () => (
   <Layout>
@@ -10,14 +10,12 @@ const ProcessPage = () => (
       title="SEO & Web Design Process"
       description="SEO & Web Design Process"
     />
-    <HeaderProcess
+    <ProcessPage__Header
       Tag="header"
       className="bg-img-page-top"
-      hOne="A Process Proven for Success"
+      hOne="Proven Process for Success"
     />
-    <section className="page-section">
-      <div className="container"></div>
-    </section>
+    <ProcessPage__Body className="py-md-5 bg-texture-1" />
   </Layout>
 );
 
