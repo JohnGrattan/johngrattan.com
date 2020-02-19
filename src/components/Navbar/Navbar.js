@@ -30,37 +30,37 @@ export default class Header extends React.Component {
             </Navbar.Toggle>
             <Navbar.Collapse id="navbarResponsive" aria-expanded="false">
               <Nav className="navbar-nav ml-auto mt-2 my-lg-0">
-                <li className="nav-item my-auto">
+                <li className="nav-item my-auto d-none d-lg-inline">
                   <Link className="nav-link text-uppercase" to="/about">
                     About
                   </Link>
                 </li>
-                <li className="nav-item my-auto">
+                <li className="nav-item my-auto d-none d-lg-inline">
                   <Link className="nav-link text-uppercase" to="/services">
                     Services
                   </Link>
                 </li>
-                <li className="nav-item my-auto">
+                <li className="nav-item my-auto d-none d-lg-inline">
                   <Link className="nav-link text-uppercase" to="/process">
                     Process
                   </Link>
                 </li>
-                <li className="nav-item my-auto">
+                <li className="nav-item my-auto d-none d-lg-inline">
                   <Link className="nav-link text-uppercase" to="/prices">
                     Prices
                   </Link>
                 </li>
-                <li className="nav-item my-auto">
+                <li className="nav-item my-auto d-none d-lg-inline">
                   <Link className="nav-link text-uppercase" to="/case-studies">
                     Case Studies
                   </Link>
                 </li>
-                <li className="nav-item my-auto">
+                <li className="nav-item my-auto d-none d-lg-inline">
                   <Link className="nav-link text-uppercase" to="/seo-blog">
                     Blog
                   </Link>
                 </li>
-                <li className="nav-item my-auto">
+                <li className="nav-item my-auto d-none d-lg-inline">
                   <Link
                     className="nav-link text-uppercase text-dark py-2 ml-4 border border-white bg-primary rounded-pill drop-shadow-dark"
                     to="/contact"
@@ -68,7 +68,7 @@ export default class Header extends React.Component {
                     Contact
                   </Link>
                 </li>
-                <li className="nav-item mx-2 d-md-none">
+                <li className="nav-item mx-2 d-lg-none">
                   <div className="row">
                     <div className="col-6 mt-4 py-3 bg-info container justify-content-center align-items-center">
                       <Link
@@ -88,7 +88,7 @@ export default class Header extends React.Component {
                     </div>
                   </div>
                 </li>
-                <li className="nav-item mx-2 d-md-none">
+                <li className="nav-item mx-2 d-lg-none">
                   <div className="row">
                     <div className="col-6 mt-4 py-3 bg-dark container justify-content-center align-items-center">
                       <Link
@@ -108,7 +108,7 @@ export default class Header extends React.Component {
                     </div>
                   </div>
                 </li>
-                <li className="nav-item mx-2 d-md-none">
+                <li className="nav-item mx-2 d-lg-none">
                   <div className="row">
                     <div className="col-6 mt-4 py-3 bg-info container justify-content-center align-items-center">
                       <Link
@@ -128,7 +128,7 @@ export default class Header extends React.Component {
                     </div>
                   </div>
                 </li>
-                <li className="nav-item mx-2 d-md-none">
+                <li className="nav-item mx-2 d-lg-none">
                   <div className="row">
                     <div className="col-12 mt-4 py-3 bg-primary container justify-content-center align-items-center">
                       <Link
@@ -140,7 +140,7 @@ export default class Header extends React.Component {
                     </div>
                   </div>
                 </li>
-                <li className="nav-item d-md-none mx-2">
+                <li className="nav-item d-lg-none mx-2">
                   <div className="row">
                     <div className="col-6 py-3 bg-dark container justify-content-center align-items-center">
                       <a
@@ -162,7 +162,7 @@ export default class Header extends React.Component {
                     </div>
                   </div>
                 </li>
-                <div className="d-md-none mt-4 mb-1 text-center text-white">
+                <div className="d-lg-none mt-4 mb-1 text-center text-white">
                   <a href="#">
                     <i className="fab fa-2x fa-facebook px-2"></i>
                   </a>
