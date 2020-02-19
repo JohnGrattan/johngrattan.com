@@ -28,52 +28,102 @@ export default class Header extends React.Component {
               <span> </span>
               <span> </span>
             </Navbar.Toggle>
-            {/* <button
-              className="navbar-toggler collapsed"
-              type="button"
-              aria-controls="navbarResponsive"
-              aria-label="Toggle navigation"
-            >
-              <span> </span>
-              <span> </span>
-              <span> </span>
-            </button> */}
             <Navbar.Collapse id="navbarResponsive" aria-expanded="false">
-              <Nav className="navbar-nav ml-auto my-2 my-lg-0">
-                <li className="nav-item">
-                  <Link className="nav-link text-uppercase" to="/about">
-                    About
-                  </Link>
+              <Nav className="navbar-nav ml-auto mt-2 my-lg-0">
+                <li className="nav-item mx-2">
+                  <div className="row">
+                    <div className="col-6 mt-4 py-3 bg-info container justify-content-center align-items-center">
+                      <Link
+                        className="nav-button text-uppercase drop-shadow-dark"
+                        to="/about"
+                      >
+                        About
+                      </Link>
+                    </div>
+                    <div className="col-6 mt-4 py-3 bg-dark container justify-content-center align-items-center">
+                      <Link
+                        className="nav-button text-uppercase drop-shadow-dark"
+                        to="/services"
+                      >
+                        Services
+                      </Link>
+                    </div>
+                  </div>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link text-uppercase" to="/services">
-                    Services
-                  </Link>
+                <li className="nav-item mx-2">
+                  <div className="row">
+                    <div className="col-6 mt-4 py-3 bg-dark container justify-content-center align-items-center">
+                      <Link
+                        className="nav-button text-uppercase drop-shadow-dark"
+                        to="/process"
+                      >
+                        Process
+                      </Link>
+                    </div>
+                    <div className="col-6 mt-4 py-3 bg-info container justify-content-center align-items-center">
+                      <Link
+                        className="nav-button text-uppercase drop-shadow-dark"
+                        to="/pricing"
+                      >
+                        Pricing
+                      </Link>
+                    </div>
+                  </div>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link text-uppercase" to="/process">
-                    Process
-                  </Link>
+                <li className="nav-item mx-2">
+                  <div className="row">
+                    <div className="col-6 mt-4 py-3 bg-info container justify-content-center align-items-center">
+                      <Link
+                        className="nav-button text-uppercase drop-shadow-dark"
+                        to="/case-studies"
+                      >
+                        Case Studies
+                      </Link>
+                    </div>
+                    <div className="col-6 mt-4 py-3 bg-dark container justify-content-center align-items-center">
+                      <Link
+                        className="nav-button text-uppercase drop-shadow-dark"
+                        to="/seo-blog"
+                      >
+                        Blog
+                      </Link>
+                    </div>
+                  </div>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link text-uppercase" to="/pricing">
-                    Pricing
-                  </Link>
+                <li className="nav-item mx-2">
+                  <div className="row">
+                    <div className="col-12 mt-4 py-3 bg-primary container justify-content-center align-items-center">
+                      <Link
+                        className="nav-button text-uppercase text-dark"
+                        to="/contact"
+                      >
+                        Contact
+                      </Link>
+                    </div>
+                  </div>
                 </li>
-                <li className="nav-item">
-                  <Link className="nav-link text-uppercase" to="/case-studies">
-                    Case Studies
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link text-uppercase" to="/seo-blog">
-                    Blog
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link text-uppercase" to="/contact">
-                    Contact
-                  </Link>
+
+                <li className="nav-item d-md-none mx-2">
+                  <div className="row">
+                    <div className="col-6 py-3 bg-dark container justify-content-center align-items-center">
+                      <a
+                        className="nav-button text-uppercase drop-shadow-dark"
+                        href="tel:+14012169868"
+                      >
+                        <i className="fas fa-phone mr-3 text-primary"></i>Call
+                      </a>
+                    </div>
+                    <div className="col-6 py-3 bg-info container justify-content-center align-items-center">
+                      <a
+                        className="nav-button text-uppercase drop-shadow-dark"
+                        href="mailto:contact@johngrattan.com?Subject=Important%20Email%20From%20Website"
+                        target="_blank"
+                      >
+                        <i className="fas fa-envelope mr-3 text-primary"></i>
+                        Email
+                      </a>
+                    </div>
+                  </div>
                 </li>
               </Nav>
             </Navbar.Collapse>

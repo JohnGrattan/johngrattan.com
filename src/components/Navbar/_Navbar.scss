@@ -83,15 +83,6 @@
     opacity: 0.9;
   }
 
-  .navbar-toggler-icon {
-    color: $white;
-    content: '' !important;
-    &:active,
-    &:hover {
-      color: $primary;
-    }
-  }
-
   .navbar-nav {
     .nav-item {
       &.active {
@@ -104,7 +95,7 @@
         color: $white;
         font-family: $font-family-sans-serif;
         font-weight: $font-weight-bold;
-        font-size: 1.5rem;
+        font-size: 1rem;
         text-align: center;
         padding: 0.75rem 0;
         &:hover,
@@ -118,6 +109,24 @@
           width: 50%; /* Change this to whatever width you want. */
           padding-top: 20px; /* This creates some space between the element and the border. */
           border-bottom: 1px solid $primary; /* This creates the border. Replace black with whatever color you want. */
+        }
+      }
+      .nav-button {
+        color: $white;
+        font-family: $font-family-sans-serif;
+        font-weight: $font-weight-bold;
+        font-size: 1rem;
+        text-align: center;
+        padding: 0.75rem 0;
+        &:hover,
+        &:active {
+          color: $primary;
+        }
+        &::after {
+          content: ''; /* This is necessary for the pseudo element to work. */
+          display: block; /* This will put the pseudo element on its own line. */
+          margin: 0 auto; /* This will center the border. */
+          width: 50%; /* Change this to whatever width you want. */
         }
       }
     }
