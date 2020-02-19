@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 
 const Button = ({ btnlink, btnlabel, btnsolid }) => {
-  const solid = 'btn btn-primary btn-xl shadow';
+  const solid = 'btn btn-primary btn-xl drop-shadow-dark';
   const outline = 'btn btn-outline-light btn-xl-outline drop-shadow-dark';
 
   return (

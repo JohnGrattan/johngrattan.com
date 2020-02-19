@@ -27,6 +27,14 @@ const ProcessPage__Section = ({ className }) => {
       alt="digital marketing process for small business"
     >
       <div className="container">
+        <div className="px-5 text-white text-center">
+          <h2 className="mt-2">Earn Your Trust</h2>
+          <i className="fas fa-2x fa-long-arrow-alt-down text-secondary"></i>
+          <h2 className="mt-2">Boost Your Confidence</h2>
+          <i className="fas fa-2x fa-long-arrow-alt-down text-secondary"></i>
+          <h2 className="mt-2">Deliver Results</h2>
+          <hr className="divider my-4" />
+        </div>
         <div className="row">
           <div className="col-md-12 px-0 text-center justify-content-center align-items-center">
             <div className="row mx-0 px-0 container">

@@ -50,19 +50,19 @@ const InterestedSectionContact = ({ className }) => {
               <p className="display-4 text-center pb-4">Increase Your ROI</p>
               <div className="row justify-content-center">
                 <p className="text-muted mb-4 text-left">
-                  <span className="d-flex">
+                  <span className="d-flex mb-3">
                     <i className="far fa-2x fa-check-square text-secondary mt-1"></i>
                     <span className="ml-2 mt-1 lead">
                       Organically drive traffic to your business website
                     </span>
                   </span>
-                  <span className="d-flex">
+                  <span className="d-flex mb-3">
                     <i className="far fa-2x fa-check-square text-secondary mt-1"></i>
                     <span className="ml-2 mt-1 lead">
                       Boost the quality of your leads by focusing on intent
                     </span>
                   </span>
-                  <span className="d-flex">
+                  <span className="d-flex mb-3">
                     <i className="far fa-2x fa-check-square text-secondary mt-1"></i>
                     <span className="ml-2 mt-1 lead">
                       Dominate local search results for all areas you service

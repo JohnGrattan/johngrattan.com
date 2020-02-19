@@ -58,8 +58,8 @@ const AboutSectionHome = ({ className }) => {
               — to help generate leads and improve customer experience.
             </p>
             <Button
-              btnlink="/process"
-              btnlabel="See My Process"
+              btnlink="/contact"
+              btnlabel="Get More Leads"
               btnsolid={true}
             />
           </div>

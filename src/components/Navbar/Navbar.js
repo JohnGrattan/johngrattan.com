@@ -46,8 +46,8 @@ export default class Header extends React.Component {
                   </Link>
                 </li>
                 <li className="nav-item my-auto d-none d-lg-inline">
-                  <Link className="nav-link text-uppercase" to="/prices">
-                    Prices
+                  <Link className="nav-link text-uppercase" to="/pricing">
+                    Pricing
                   </Link>
                 </li>
                 <li className="nav-item my-auto d-none d-lg-inline">
@@ -62,7 +62,7 @@ export default class Header extends React.Component {
                 </li>
                 <li className="nav-item my-auto d-none d-lg-inline">
                   <Link
-                    className="nav-link text-uppercase text-dark py-2 ml-4 border border-white bg-primary rounded-pill drop-shadow-dark"
+                    className="nav-link text-uppercase text-dark py-2 ml-4 border border-white bg-primary rounded-pill drop-shadow-dark pointer"
                     to="/contact"
                   >
                     Contact

@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import ProcessPage__Section from './Section/ProcessPage__Section';
+import ProcessPage__Section from './Sections/ProcessPage__Section';
 import * as Scroll from 'react-scroll';
 import {
   Link,

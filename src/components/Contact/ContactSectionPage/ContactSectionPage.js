@@ -53,8 +53,7 @@ const ContactSectionPage = ({ className }) => {
                 Office Hours:
               </p>
               <p className="m-3 mb-5 text-center drop-shadow">
-                Monday - Friday <span className="text-primary">|</span> 9:00 am
-                - 5:00 pm
+                Mon - Fri <span className="text-primary">|</span> 9 am - 5 pm ET
               </p>
 
               <div className="row justify-content-around align-items-end mt-4">

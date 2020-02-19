@@ -39,11 +39,11 @@ const FormEmail = ({ formname }) => {
       <Form.Row>
         <Col sm="12">
           <Button
-            className="mt-3 w-100 font-weight-bold"
+            className="text-uppercase mt-3 w-100 font-weight-bold"
             variant="primary"
             type="submit"
           >
-            Submit
+            Send Free Tips to Rank My Business
           </Button>
         </Col>
       </Form.Row>

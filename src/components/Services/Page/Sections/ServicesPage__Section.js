@@ -35,12 +35,20 @@ const ServicesPage__Section = ({ className }) => {
       alt="digital marketing services for small business"
     >
       <div className="container">
+        <div className="px-5 text-white text-center">
+          <h2 className="mt-2">Drive Traffic</h2>
+          <i className="fas fa-2x fa-long-arrow-alt-down text-secondary"></i>
+          <h2 className="mt-2">Generate Leads</h2>
+          <i className="fas fa-2x fa-long-arrow-alt-down text-secondary"></i>
+          <h2 className="mt-2">Increase ROI</h2>
+          <hr className="divider my-4" />
+        </div>
         <div className="row">
           <div className="col-md-12 px-0 text-center justify-content-center align-items-center">
             <div className="row mx-0 container">
               <div
                 id="seo-strategy"
-                className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
+                className="col-lg-8 my-5 border shadow p-3 bg-texture-2 order-0"
               >
                 <i className="fas fa-4x fa-chess text-primary mt-3 mb-4 drop-shadow"></i>
                 <h2 className="mb-2">SEO Strategy</h2>
@@ -91,16 +99,16 @@ const ServicesPage__Section = ({ className }) => {
                   />
                 </div>
               </div>
-              <ImgSeoStrategy className="col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex" />
+              <ImgSeoStrategy className="d-none d-lg-inline col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex order-1" />
             </div>
           </div>
 
           <div className="col-md-12 px-0 text-center justify-content-center align-items-center">
             <div className="row mx-0 container">
-              <ImgOrganicSeo className="col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex" />
+              <ImgOrganicSeo className="d-none d-lg-inline col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex order-1 order-lg-0" />
               <div
                 id="organic-seo"
-                className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
+                className="col-lg-8 my-5 border shadow p-3 bg-texture-2 order-0 order-lg-1"
               >
                 <i className="fas fa-4x fa-seedling text-primary mt-3 mb-4 drop-shadow"></i>
                 <h2 className="mb-2">Organic SEO</h2>
@@ -157,7 +165,7 @@ const ServicesPage__Section = ({ className }) => {
             <div className="row mx-0 container">
               <div
                 id="local-seo"
-                className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
+                className="col-lg-8 my-5 border shadow p-3 bg-texture-2 order-0"
               >
                 <i className="fas fa-4x fa-search-location text-primary mt-3 mb-4 drop-shadow"></i>
                 <h2 className="mb-2">Local SEO</h2>
@@ -209,15 +217,15 @@ const ServicesPage__Section = ({ className }) => {
                   />
                 </div>
               </div>
-              <ImgLocalSeo className="col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex" />
+              <ImgLocalSeo className="d-none d-lg-inline col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex order-1" />
             </div>
           </div>
           <div className="col-md-12 px-0 text-center justify-content-center align-items-center">
             <div className="row mx-0 container">
-              <ImgPpc className="col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex" />
+              <ImgPpc className="d-none d-lg-inline col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex order-1 order-lg-0" />
               <div
                 id="ppc-ads"
-                className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
+                className="col-lg-8 my-5 border shadow p-3 bg-texture-2 order-0 order-lg-1"
               >
                 <i className="fas fa-4x fa-mouse-pointer text-primary mt-3 mb-4 drop-shadow"></i>
                 <h2 className="mb-2">PPC Ads</h2>
@@ -261,7 +269,7 @@ const ServicesPage__Section = ({ className }) => {
                 <div className="mt-5 mb-3">
                   <Button
                     btnlink="/services"
-                    btnlabel="See Why PPC Works"
+                    btnlabel="See If PPC Is For You"
                     btnsolid={true}
                   />
                 </div>
@@ -272,7 +280,7 @@ const ServicesPage__Section = ({ className }) => {
             <div className="row mx-0 container">
               <div
                 id="web-design"
-                className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
+                className="col-lg-8 my-5 border shadow p-3 bg-texture-2 order-0"
               >
                 <i className="fas fa-4x fa-drafting-compass text-primary mt-3 mb-4 drop-shadow"></i>
                 <h2 className="mb-2">Website Design</h2>
@@ -323,15 +331,15 @@ const ServicesPage__Section = ({ className }) => {
                   />
                 </div>
               </div>
-              <ImgWebDesign className="col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex" />
+              <ImgWebDesign className="d-none d-lg-inline col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex order-1" />
             </div>
           </div>
           <div className="col-md-12 px-0 text-center justify-content-center align-items-center">
             <div className="row mx-0 container">
-              <ImgWebDev className="col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex" />
+              <ImgWebDev className="d-none d-lg-inline col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex order-1 order-lg-0" />
               <div
                 id="web-dev"
-                className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
+                className="col-lg-8 my-5 border shadow p-3 bg-texture-2 order-0 order-lg-1"
               >
                 <i className="fas fa-4x fa-laptop-code text-primary mt-3 mb-4 drop-shadow"></i>
                 <h2 className="mb-2">Web Development</h2>
@@ -387,7 +395,7 @@ const ServicesPage__Section = ({ className }) => {
             <div className="row mx-0 container">
               <div
                 id="social-media"
-                className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
+                className="col-lg-8 my-5 border shadow p-3 bg-texture-2 order-0"
               >
                 <i className="fas fa-4x fa-users text-primary mt-3 mb-4 drop-shadow"></i>
                 <h2 className="mb-2">Social Media</h2>
@@ -432,20 +440,20 @@ const ServicesPage__Section = ({ className }) => {
                 <div className="mt-5 mb-3">
                   <Button
                     btnlink="/services"
-                    btnlabel="See Social Campaigns"
+                    btnlabel="See More On Social Media"
                     btnsolid={true}
                   />
                 </div>
               </div>
-              <ImgSocialMedia className="col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex" />
+              <ImgSocialMedia className="d-none d-lg-inline col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex order-1" />
             </div>
           </div>
           <div className="col-md-12 px-0 text-center justify-content-center align-items-center">
             <div className="row mx-0 container">
-              <ImgEmailMarketing className="col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex" />
+              <ImgEmailMarketing className="d-none d-lg-inline col-lg-4 px-0 text-center justify-content-center align-items-center my-5 d-md-none d-lg-flex order-1 order-lg-0" />
               <div
                 id="email-marketing"
-                className="col-lg-8 my-5 border shadow p-3 bg-texture-2"
+                className="col-lg-8 my-5 border shadow p-3 bg-texture-2 order-0 order-lg-1"
               >
                 <i className="fas fa-4x fa-envelope-open-text text-primary mt-3 mb-4 drop-shadow"></i>
                 <h2 className="mb-2">Email Marketing</h2>
@@ -489,7 +497,7 @@ const ServicesPage__Section = ({ className }) => {
                 <div className="mt-5 mb-3">
                   <Button
                     btnlink="/services"
-                    btnlabel="See Email Campaigns"
+                    btnlabel="See More On Email Campaigns"
                     btnsolid={true}
                   />
                 </div>

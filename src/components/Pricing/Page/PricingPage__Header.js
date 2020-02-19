@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const HeaderPricing = ({ className, hOne }) => {
+const PricingPage__Header = ({ className, hOne }) => {
   const data = useStaticQuery(graphql`
-    query HeaderPricingQ {
+    query PricingPage__HeaderQ {
       masthead: file(relativePath: { eq: "images/bg-img-pricing.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
@@ -39,4 +39,4 @@ const HeaderPricing = ({ className, hOne }) => {
   );
 };
 
-export default HeaderPricing;
+export default PricingPage__Header;

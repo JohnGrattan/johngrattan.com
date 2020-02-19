@@ -100,8 +100,12 @@ const FormContact = ({ formname }) => {
         Your information will never be shared with anyone else.
       </Form.Text>
 
-      <Button className="drop-shadow-dark" variant="primary" type="submit">
-        Submit
+      <Button
+        className="btn btn-primary btn-xl drop-shadow-dark font-weight-bold mt-3"
+        variant="primary"
+        type="submit"
+      >
+        Get More Leads
       </Button>
     </Form>
   );

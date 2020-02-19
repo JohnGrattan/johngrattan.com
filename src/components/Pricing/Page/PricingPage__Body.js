@@ -1,15 +1,24 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import FullServiceSeoSectionPrices from '../FullServiceSeoSectionPrices/FullServiceSeoSectionPrices';
-import WebsiteOnlySectionPrices from '../WebsiteOnlySectionPrices/WebsiteOnlySectionPrices';
+import PricingSection__FullService from './Sections/PricingSection__FullService';
+import PricingSection__WebsiteOnly from './Sections/PricingSection__WebsiteOnly';
+import * as Scroll from 'react-scroll';
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from 'react-scroll';
 
 import { Card, ListGroup, ListGroupItem, Table } from 'react-bootstrap';
 
 // BG Query
-const PricingSectionPage = ({ className }) => {
+const PricingPage__Body = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query PricingSectionPageQ {
+    query PricingPage__BodyQ {
       texture: file(
         relativePath: { eq: "images/textures/gradient-squares.png" }
       ) {
@@ -34,7 +43,6 @@ const PricingSectionPage = ({ className }) => {
     >
       <div className="container">
         <div className="row justify-content-center align-items-center border bg-white shadow rounded position-sticky">
-          {/* Pricing Structures Container */}
           <div className="container py-3">
             <div className="py-3 px-5">
               <h2 className="mt-2 text-center">
@@ -42,34 +50,55 @@ const PricingSectionPage = ({ className }) => {
               </h2>
               <hr className="divider my-4" />
             </div>
-            {/* Options Overview Container */}
-            <div className="container col-md-8 py-3 my-2 text-white bg-info drop-shadow">
+            <div className="container col-md-8 py-3 my-2 text-white bg-info rounded drop-shadow">
               <p className="m-3 mb-5 text-center drop-shadow">
                 Get more leads with these options:
               </p>
-              <div className="row justify-content-around align-items-end my-4">
-                <div className="col-md-4 mb-5 mb-md-0 text-center drop-shadow">
-                  <i className="fas fa-3x fa-rocket mb-3 text-primary"></i>
+              <div className="row justify-content-around align-items-end mt-4">
+                <Link
+                  to="full-service"
+                  className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-75}
+                >
+                  <i className="fas fa-3x fa-rocket mb-3 text-primary wiggle"></i>
                   <br />
-                  <span>Full-Service SEO</span>
-                </div>
-                <div className="col-md-4 mb-5 mb-md-0 text-center drop-shadow">
-                  <i className="fas fa-3x fa-globe mb-3 text-primary"></i>
+                  <span className="text-white-link">Full-Service SEO</span>
+                </Link>
+                <Link
+                  to="website-only"
+                  className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-75}
+                >
+                  <i className="fas fa-3x fa-globe mb-3 text-primary wiggle"></i>
                   <br />
-                  <span>Website Only</span>
-                </div>
-                <div className="col-md-4 text-center drop-shadow">
-                  <i className="fas fa-3x fa-thumbs-up mb-3 text-primary"></i>
+                  <span className="text-white-link">Website Only</span>
+                </Link>
+                <Link
+                  to="marketing-services"
+                  className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
+                  activeClass="active"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  offset={-75}
+                >
+                  <i className="fas fa-3x fa-funnel-dollar mb-3 text-primary wiggle"></i>
                   <br />
-                  <span>One-Time Services</span>
-                </div>
+                  <span className="text-white-link">Marketing Services</span>
+                </Link>
               </div>
             </div>
           </div>
-          {/* Full-Service SEO Container */}
-          <FullServiceSeoSectionPrices className="container my-5 mx-3 border rounded shadow bg-img-full-service-seo" />
-          {/* Website Only Container */}
-          <WebsiteOnlySectionPrices className="container my-5 mx-3 border rounded shadow bg-img-full-service-seo" />
+          <PricingSection__FullService className="container my-5 mx-3 border rounded shadow bg-img-full-service-seo" />
+          <PricingSection__WebsiteOnly className="container my-5 mx-3 border rounded shadow bg-img-full-service-seo" />
           <div className="container bg-texture-2 m-5 border rounded shadow">
             <div className="text-center pt-5">
               <i className="fas fa-3x fa-thumbs-up mb-3 text-primary"></i>
@@ -131,4 +160,4 @@ const PricingSectionPage = ({ className }) => {
   );
 };
 
-export default PricingSectionPage;
+export default PricingPage__Body;
