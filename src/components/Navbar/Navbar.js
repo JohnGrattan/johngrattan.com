@@ -68,7 +68,7 @@ export default class Header extends React.Component {
                     Contact
                   </Link>
                 </li>
-                <li className="nav-item mx-2 d-lg-none">
+                <li className="nav-item mx-3 d-lg-none">
                   <div className="row">
                     <div className="col-6 mt-4 py-3 bg-info container justify-content-center align-items-center">
                       <Link
@@ -88,7 +88,7 @@ export default class Header extends React.Component {
                     </div>
                   </div>
                 </li>
-                <li className="nav-item mx-2 d-lg-none">
+                <li className="nav-item mx-3 d-lg-none">
                   <div className="row">
                     <div className="col-6 mt-4 py-3 bg-dark container justify-content-center align-items-center">
                       <Link
@@ -108,7 +108,7 @@ export default class Header extends React.Component {
                     </div>
                   </div>
                 </li>
-                <li className="nav-item mx-2 d-lg-none">
+                <li className="nav-item mx-3 d-lg-none">
                   <div className="row">
                     <div className="col-6 mt-4 py-3 bg-info container justify-content-center align-items-center">
                       <Link
@@ -128,7 +128,7 @@ export default class Header extends React.Component {
                     </div>
                   </div>
                 </li>
-                <li className="nav-item mx-2 d-lg-none">
+                <li className="nav-item mx-3 d-lg-none">
                   <div className="row">
                     <div className="col-12 mt-4 py-3 bg-primary container justify-content-center align-items-center">
                       <Link
@@ -140,7 +140,7 @@ export default class Header extends React.Component {
                     </div>
                   </div>
                 </li>
-                <li className="nav-item d-lg-none mx-2">
+                <li className="nav-item mx-3 d-lg-none">
                   <div className="row">
                     <div className="col-6 py-3 bg-dark container justify-content-center align-items-center">
                       <a
