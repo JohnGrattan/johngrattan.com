@@ -20,8 +20,25 @@ export default class Header extends React.Component {
               <span className="border border-primary rounded p-2">JG</span> John
               Grattan
             </Link>
-            <Navbar.Toggle aria-controls="navbarResponsive" />
-            <Navbar.Collapse id="navbarResponsive">
+            <Navbar.Toggle
+              aria-label="Toggle navigation"
+              aria-controls="navbarResponsive"
+            >
+              <span> </span>
+              <span> </span>
+              <span> </span>
+            </Navbar.Toggle>
+            {/* <button
+              className="navbar-toggler collapsed"
+              type="button"
+              aria-controls="navbarResponsive"
+              aria-label="Toggle navigation"
+            >
+              <span> </span>
+              <span> </span>
+              <span> </span>
+            </button> */}
+            <Navbar.Collapse id="navbarResponsive" aria-expanded="false">
               <Nav className="navbar-nav ml-auto my-2 my-lg-0">
                 <li className="nav-item">
                   <Link className="nav-link text-uppercase" to="/about">
