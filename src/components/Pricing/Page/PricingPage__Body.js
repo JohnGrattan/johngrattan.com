@@ -43,7 +43,7 @@ const PricingPage__Body = ({ className }) => {
     >
       <div className="container">
         <div className="row justify-content-center align-items-center border bg-white shadow rounded position-sticky">
-          <div className="container py-3">
+          <div className="container pt-3 pb-5">
             <div className="py-3 px-5">
               <h2 className="mt-2 text-center">
                 Digital Marketing Pricing Packages
@@ -97,8 +97,8 @@ const PricingPage__Body = ({ className }) => {
               </div>
             </div>
           </div>
-          <PricingSection__FullService className="container my-5 mx-3 border rounded shadow bg-img-full-service-seo" />
-          <PricingSection__WebsiteOnly className="container my-5 mx-3 border rounded shadow bg-img-full-service-seo" />
+          <PricingSection__FullService className="container border rounded shadow bg-img-full-service-seo" />
+          <PricingSection__WebsiteOnly className="container border rounded shadow bg-img-full-service-seo" />
           <div className="container bg-texture-2 m-5 border rounded shadow">
             <div className="text-center pt-5">
               <i className="fas fa-3x fa-thumbs-up mb-3 text-primary"></i>
