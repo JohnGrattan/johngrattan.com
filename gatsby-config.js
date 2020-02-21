@@ -40,9 +40,9 @@ module.exports = {
         defaultDataLayer: { platform: 'gatsby' },
 
         // Specify optional GTM environment details.
-        gtmAuth: 'JG_GTM_ENV_AUTH_STRING',
-        gtmPreview: 'JG_GTM_ENV_PREVIEW',
-        dataLayerName: 'JG_GTM_DATA_LAYER',
+        // gtmAuth: 'JG_GTM_ENV_AUTH_STRING',
+        // gtmPreview: 'JG_GTM_ENV_PREVIEW',
+        // dataLayerName: 'JG_GTM_DATA_LAYER',
       },
     },
     {
