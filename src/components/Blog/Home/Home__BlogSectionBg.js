@@ -1,12 +1,11 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
+import BlogSectionHome from './Home__BlogSection';
 
-import BlogSectionHome from './BlogSectionHome';
-
-const BlogSectionBgHome = ({ className }) => {
+const Home__BlogSectionBg = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query BlogSectionBgHomeQ {
+    query Home__BlogSectionBgQ {
       masthead: file(relativePath: { eq: "images/bg-img-blog.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
@@ -58,4 +57,4 @@ const BlogSectionBgHome = ({ className }) => {
   );
 };
 
-export default BlogSectionBgHome;
+export default Home__BlogSectionBg;

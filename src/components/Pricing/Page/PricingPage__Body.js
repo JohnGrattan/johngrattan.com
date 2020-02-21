@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 import PricingSection__FullService from './Sections/PricingSection__FullService';
 import PricingSection__WebsiteOnly from './Sections/PricingSection__WebsiteOnly';
+import PricingSection__MarketingServices from './Sections/PricingSection__MarketingServices';
 import * as Scroll from 'react-scroll';
 import {
   Link,
@@ -99,7 +100,8 @@ const PricingPage__Body = ({ className }) => {
           </div>
           <PricingSection__FullService className="container border rounded shadow bg-img-full-service-seo" />
           <PricingSection__WebsiteOnly className="container border rounded shadow bg-img-full-service-seo" />
-          <div className="container bg-texture-2 m-5 border rounded shadow">
+          <PricingSection__MarketingServices className="container border rounded shadow bg-img-full-service-seo" />
+          {/* <div className="container bg-texture-2 m-5 border rounded shadow">
             <div className="text-center pt-5">
               <i className="fas fa-3x fa-thumbs-up mb-3 text-primary"></i>
               <h2 className="mt-2">One-Time Services</h2>
@@ -153,7 +155,7 @@ const PricingPage__Body = ({ className }) => {
                 </tbody>
               </Table>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </BackgroundImage>

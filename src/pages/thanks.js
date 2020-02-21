@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import BgImgPageTop from '../components/BgImgPageTop/BgImgPageTop';
@@ -9,6 +8,7 @@ const ThanksPage = () => (
     <SEO
       title="Thank you for submitting"
       description="Thank you for submitting"
+      canonicalLink="https://johngrattan.com/thanks"
     />
     <BgImgPageTop
       Tag="header"

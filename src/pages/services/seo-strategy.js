@@ -6,7 +6,11 @@ import SeoStrategyPage__Body from '../../components/Services/Subpages/SeoStrateg
 
 const SEOStrategyPage = () => (
   <Layout>
-    <SEO title="SEO Strategy" description="SEO Strategy" />
+    <SEO
+      title="SEO Strategy"
+      description="SEO Strategy"
+      canonicalLink="https://johngrattan.com/services/seo-strategy"
+    />
     <SeoStrategyPage__Header
       Tag="header"
       className="bg-img-page-top"

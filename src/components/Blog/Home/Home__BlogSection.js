@@ -1,15 +1,12 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import Img from 'gatsby-image';
-import ImgJgBlogPic from '../ImageComps/image-jg-blog-pic';
+import ImgJgBlogPic from '../../ImageComps/image-jg-blog-pic';
+import Button from '../../Button/Button';
 
-import BackgroundImage from 'gatsby-background-image';
-
-import Button from '../Button/Button';
-
-const BlogSectionHome = () => {
+const Home__BlogSection = () => {
   const data = useStaticQuery(graphql`
-    query BlogSectionHomeQ {
+    query Home__BlogSectionQ {
       allMarkdownRemark(
         sort: { fields: [frontmatter___date], order: DESC }
         limit: 4
@@ -79,14 +76,10 @@ const BlogSectionHome = () => {
         ))}
       </div>
       <div className="row my-5 justify-content-center align-items-center">
-        <Button
-          btnlink="/seo-blog"
-          btnlabel="View More Posts"
-          btnsolid={true}
-        />
+        <Button btnlink="/blog" btnlabel="View More Posts" btnsolid={true} />
       </div>
     </div>
   );
 };
 
-export default BlogSectionHome;
+export default Home__BlogSection;

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import PricingPage__Header from '../components/Pricing/Page/PricingPage__Header';
@@ -10,6 +9,7 @@ const PricingPage = () => (
     <SEO
       title="SEO & Web Design Pricing"
       description="Take a look at my pricing structures for all monthly and one-time services."
+      canonicalLink="https://johngrattan.com/pricing"
     />
     <PricingPage__Header
       Tag="header"

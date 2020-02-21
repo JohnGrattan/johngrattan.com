@@ -9,6 +9,7 @@ const ProcessPage = () => (
     <SEO
       title="SEO & Web Design Process"
       description="SEO & Web Design Process"
+      canonicalLink="https://johngrattan.com/process"
     />
     <ProcessPage__Header
       Tag="header"

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import HeaderCaseStudies from '../components/HeaderCaseStudies/HeaderCaseStudies';
@@ -9,6 +8,7 @@ const CaseStudiesPage = () => (
     <SEO
       title="SEO & Web Design Case Studies"
       description="SEO & Web Design Case Studies"
+      canonicalLink="https://johngrattan.com/case-studies"
     />
     <HeaderCaseStudies
       Tag="header"

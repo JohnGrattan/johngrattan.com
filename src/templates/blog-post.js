@@ -31,7 +31,7 @@ const BlogPostTemplate = ({ data }) => {
               className="container col-8 mb-2"
               fluid={post.frontmatter.image.childImageSharp.fluid}
             />
-            <Link to="/seo-blog">Go Back</Link>
+            <Link to="/blog">Go Back</Link>
             <hr />
             <div dangerouslySetInnerHTML={{ __html: post.html }} />
           </div>

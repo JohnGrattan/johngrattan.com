@@ -273,6 +273,11 @@ const ProcessPage__Section = ({ className }) => {
             </div>
           </div>
         </div>
+        <div className="mt-5 px-5 text-white text-center">
+          <i className="fas fa-3x fa-thumbs-up text-secondary"></i>
+          <h2 className="mt-3">Happy Business Owners!</h2>
+          <hr className="divider my-4" />
+        </div>
       </div>
     </BackgroundImage>
   );

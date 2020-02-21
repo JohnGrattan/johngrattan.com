@@ -6,7 +6,11 @@ import BgImgPageTop from '../../components/BgImgPageTop/BgImgPageTop';
 
 const WebDevelopmentPage = () => (
   <Layout>
-    <SEO title="Web Development" description="Web Development" />
+    <SEO
+      title="Web Development"
+      description="Web Development"
+      canonicalLink="https://johngrattan.com/services/web-development"
+    />
     <BgImgPageTop
       Tag="header"
       className="bg-img-page-top"

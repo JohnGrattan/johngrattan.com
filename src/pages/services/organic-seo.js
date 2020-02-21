@@ -6,7 +6,11 @@ import OrganicSeoPage__Body from '../../components/Services/Subpages/OrganicSeo/
 
 const OrganicSeoPage = () => (
   <Layout>
-    <SEO title="Organic SEO" description="Organic SEO" />
+    <SEO
+      title="Organic SEO"
+      description="Organic SEO"
+      canonicalLink="https://johngrattan.com/services/organic-seo"
+    />
     <OrganicSeoPage__Header
       Tag="header"
       className="bg-img-page-top"

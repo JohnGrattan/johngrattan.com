@@ -2,10 +2,10 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const PricingSection__FullService = ({ className }) => {
+const PricingSection__MarketingServices = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query PricingSection__FullServiceQ {
-      masthead: file(relativePath: { eq: "images/bg-img-dashboard.jpg" }) {
+    query PricingSection__MarketingServicesQ {
+      masthead: file(relativePath: { eq: "images/bg-img-coding-website.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -26,41 +26,44 @@ const PricingSection__FullService = ({ className }) => {
       alt="full-service seo background"
     >
       <div className="container">
-        <div id="full-service" className="text-center pt-5 drop-shadow-dark">
-          <i className="fas fa-3x fa-rocket mb-3 text-primary"></i>
-          <h3 className="mt-2 text-white">Full-Service SEO</h3>
+        <div
+          id="marketing-services"
+          className="text-center pt-5 drop-shadow-dark"
+        >
+          <i className="fas fa-3x fa-funnel-dollar mb-3 text-primary"></i>
+          <h3 className="mt-2 text-white">Marketing Services</h3>
           <hr className="divider mt-4" />
         </div>
         <div className="row justify-content-center align-items-baseline pt-5 p-3">
           <div className="container text-center border border-secondary col-md-7 pt-3 drop-shadow">
             <p className="text-white px-5">
-              Are you looking for a long term marketing plan to drive new leads
-              to your business website?
+              Are you looking to drive traffic to your website expediently with
+              paid advertising solely based on your budget?
             </p>
-            <p className="text-primary">This package is for you!</p>
+            <p className="text-primary">These options are for you!</p>
           </div>
         </div>
         <div className="row justify-content-center align-items-baseline py-5 px-md-3">
           <div className="container col-md-4">
             <p className="mt-2 p-3 lead text-center text-white bg-purple border border-white">
-              <span className="text-secondary">Step 1:</span> Website
+              <span className="text-secondary">Option 1:</span> PPC
             </p>
             <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
               <div className="text-center pt-5">
-                <i className="fas fa-3x fa-laptop-code text-info mb-4 d-block"></i>
+                <i className="fas fa-3x fa-mouse-pointer text-info mb-4 d-block"></i>
                 <h3 className="mt-2">
-                  Web Design &<br />
-                  Development
+                  Pay-Per-Click
+                  <br />
+                  (PPC) Ads
                 </h3>
                 <div className="container border mt-3 py-3">
                   <small className="d-block text-info">
-                    Full-Service SEO Package
+                    Marketing Services
                   </small>
-                  <span className="d-block text-muted lead">
-                    $2,000 flat rate
-                  </span>
+                  <span className="d-block text-muted lead">20% of Budget</span>
+                  <small className="d-block text-muted">+ $300 per page</small>
                   <span className="d-block text-primary bg-purple mt-4">
-                    Save $4,760!
+                    Only Pay for Clicks
                   </span>
                   <small className="d-block text-muted mt-2 px-2">
                     (Compared to{' '}
@@ -80,25 +83,27 @@ const PricingSection__FullService = ({ className }) => {
                   <span className="d-flex mb-2">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Setup:</strong> all the technical stuff
+                      <strong>Research:</strong> valuable keywords
                     </span>
                   </span>
                   <span className="d-flex mb-2">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Design:</strong> clean & professional
+                      <strong>Testing:</strong> find what works
                     </span>
                   </span>
                   <span className="d-flex mb-2">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Develop:</strong> custom hand-coded
+                      <strong>Landing Pages:</strong> optimized for high
+                      conversion rates
                     </span>
                   </span>
                   <span className="d-flex mb-2">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Testing:</strong> for quality assurance
+                      <strong>Analysis:</strong> customer trends and
+                      demographics
                     </span>
                   </span>
                   <div className="text-danger mt-5">
@@ -112,11 +117,6 @@ const PricingSection__FullService = ({ className }) => {
                     <small className="d-flex ml-2 mt-1">
                       - Maintenance: $30/month (optional)
                     </small>
-                    <small className="d-flex mt-3">
-                      <span>
-                        * SEO package <u>requires</u> a new website
-                      </span>
-                    </small>
                   </div>
                 </div>
               </div>
@@ -124,33 +124,27 @@ const PricingSection__FullService = ({ className }) => {
           </div>
           <div className="container col-md-4">
             <p className="mt-2 p-3 lead text-center text-white bg-purple border border-white">
-              <span className="text-secondary">Step 2:</span> SEO
+              <span className="text-secondary">Option 2:</span> Social Media
             </p>
             <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
               <div className="text-center pt-5">
-                <i className="fas fa-3x fa-search-location text-info mb-4 d-block"></i>
+                <i className="fas fa-3x fa-comment text-info mb-4 d-block"></i>
                 <h3 className="mt-2">
-                  Organic &
+                  Social Media
                   <br />
-                  Local SEO
+                  Advertising
                 </h3>
                 <div className="container border mt-3 py-3">
                   <small className="d-block text-info">
-                    Full-Service SEO Package
+                    Marketing Services
                   </small>
-                  <span className="d-block text-muted lead">$1,000/month</span>
+                  <span className="d-block text-muted lead">20% of Budget</span>
+                  <small className="d-block text-muted">Cancel anytime!</small>
                   <span className="d-block text-primary bg-purple mt-4">
-                    Save $500!
+                    Safe & Secure!
                   </span>
                   <small className="d-block text-muted mt-2 px-2">
-                    (Compared to{' '}
-                    <a
-                      className="text-info"
-                      href="https://www.rankpay.com/seo-cost/"
-                    >
-                      average SEO cost
-                    </a>
-                    )
+                    (Don't wait for a disaster!)
                   </small>
                 </div>
                 <div className="container py-4 text-left">
@@ -160,40 +154,37 @@ const PricingSection__FullService = ({ className }) => {
                   <span className="d-flex mb-2">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>SEO Strategy:</strong> research, plan and schedule
-                      for success
+                      <strong>Security:</strong> scans & updates
                     </span>
                   </span>
                   <span className="d-flex mb-2">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Organic SEO:</strong> rank your top keyword
-                      phrases
+                      <strong>Backups:</strong> local & cloud
                     </span>
                   </span>
                   <span className="d-flex mb-2">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Local SEO:</strong> Google My Business & location
-                      pages
+                      <strong>Restore:</strong> previous states
                     </span>
                   </span>
                   <span className="d-flex mb-2">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Social Media:</strong> setup & image optimization
+                      <strong>Testing:</strong> pages, links, forms
                     </span>
                   </span>
                   <div className="text-danger mt-5">
-                    <small>Monthly SEO Plans:</small>
+                    <small>Maintenance Program Covers:</small>
                     <small className="d-flex ml-2 mt-3">
-                      - Contract is month-to-month
+                      - Cost of new domain: $15/year
                     </small>
                     <small className="d-flex ml-2 mt-1">
-                      - You decide each month to renew
+                      - Cost of Hosting Plan: $15/month
                     </small>
                     <small className="d-flex ml-2 mt-1">
-                      - Generally takes 4-6 months to rank
+                      - Cancel anytime!
                     </small>
                   </div>
                 </div>
@@ -202,74 +193,70 @@ const PricingSection__FullService = ({ className }) => {
           </div>
           <div className="container col-md-4">
             <p className="mt-2 p-3 lead text-center text-white bg-purple border border-white">
-              <span className="text-secondary">Step 3:</span> Marketing
+              <span className="text-secondary">Option 3:</span> Email
             </p>
             <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
               <div className="text-center pt-5">
-                <i className="fas fa-3x fa-funnel-dollar text-info mb-4 d-block"></i>
+                <i className="fas fa-3x fa-envelope-open-text text-info mb-4 d-block"></i>
                 <h3 className="mt-2">
-                  Marketing
+                  Email
                   <br />
-                  Services
+                  Campaigns
                 </h3>
                 <div className="container border mt-3 py-3">
                   <small className="d-block text-info">
-                    Full-Service SEO Package
+                    Marketing Services
                   </small>
-                  <span className="d-block text-muted lead">Rates Vary</span>
+                  <span className="d-block text-muted lead">$300/month</span>
+                  <small className="d-block text-muted">
+                    Use for anything you need!
+                  </small>
                   <span className="d-block text-primary bg-purple mt-4">
-                    Bundle All 3 & Save $$
+                    Bundle Hours & Save $$
                   </span>
                   <small className="d-block text-muted mt-2 px-2">
-                    (Save <span className="text-info">5%</span> off total cost)
+                    (Save <span className="text-info">$100</span> for every 20
+                    hours!)
                   </small>
                 </div>
                 <div className="container py-4 text-left">
                   <span className="d-flex my-2">
                     <strong className="mb-3">Options:</strong>
                   </span>
-                  <span className="d-flex mb-5">
+                  <span className="d-flex mb-2">
                     <i className="fas fa-chevron-circle-right text-info mt-1"></i>
                     <span className="ml-2">
-                      Pay-Per-Click (PPC) Ads
-                      <span className="mt-3 d-block">
-                        <span className="text-info border border-primary rounded p-2">
-                          <strong className="text-dark">Price</strong>: 20% of
-                          Budget
-                        </span>
-                      </span>
+                      <strong>New</strong> Features
                     </span>
                   </span>
-                  <span className="d-flex mb-5">
+                  <span className="d-flex mb-2">
                     <i className="fas fa-chevron-circle-right text-info mt-1"></i>
                     <span className="ml-2">
-                      Facebook Ads Campaign
-                      <span className="mt-3 d-block">
-                        <span className="text-info border border-primary rounded p-2">
-                          <strong className="text-dark">Price</strong>: 20% of
-                          Budget
-                        </span>
-                      </span>
+                      <strong>New</strong> Functions
                     </span>
                   </span>
-                  <span className="d-flex mb-4">
+                  <span className="d-flex mb-2">
                     <i className="fas fa-chevron-circle-right text-info mt-1"></i>
                     <span className="ml-2">
-                      Email Marketing Campaign
-                      <span className="mt-3 d-block">
-                        <span className="text-info border border-primary rounded p-2">
-                          <strong className="text-dark">Price</strong>: $50/hour
-                        </span>
-                      </span>
+                      <strong>New</strong> Pages
+                    </span>
+                  </span>
+                  <span className="d-flex mb-2">
+                    <i className="fas fa-chevron-circle-right text-info mt-1"></i>
+                    <span className="ml-2">
+                      <strong>New</strong> Graphics
                     </span>
                   </span>
                   <div className="text-danger mt-5">
-                    <small>Minimum Requirements:</small>
+                    <small>Service Package Terms:</small>
                     <small className="d-flex ml-2 mt-3">
-                      - Budgets must be at least $500
+                      - Maximum of 40 hours per month
                     </small>
-                    <small className="d-flex mt-3">
-                      * Marketing Services are optional
+                    <small className="d-flex ml-2 mt-1">
+                      - Work beyond 40 hours is a new project
+                    </small>
+                    <small className="d-flex ml-2 mt-1">
+                      - New projects require new contracts
                     </small>
                   </div>
                 </div>
@@ -282,4 +269,4 @@ const PricingSection__FullService = ({ className }) => {
   );
 };
 
-export default PricingSection__FullService;
+export default PricingSection__MarketingServices;

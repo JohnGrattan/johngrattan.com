@@ -8,6 +8,7 @@ const PayPerClickPpcPage = () => (
     <SEO
       title="Pay-Per-Click (PPC) Ads"
       description="Pay-Per-Click (PPC) Ads"
+      canonicalLink="https://johngrattan.com/services/pay-per-click-ppc"
     />
     <HeaderPayPerClickPpc
       Tag="header"

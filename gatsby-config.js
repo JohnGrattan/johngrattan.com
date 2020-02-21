@@ -26,6 +26,26 @@ module.exports = {
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-robots-txt',
     {
+      resolve: 'gatsby-plugin-google-tagmanager',
+      options: {
+        id: 'GTM-PFKLK3Q',
+
+        // Include GTM in development.
+        // Defaults to false meaning GTM will only be loaded in production.
+        includeInDevelopment: false,
+
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        // Defaults to null
+        defaultDataLayer: { platform: 'gatsby' },
+
+        // Specify optional GTM environment details.
+        gtmAuth: 'JG_GTM_ENV_AUTH_STRING',
+        gtmPreview: 'JG_GTM_ENV_PREVIEW',
+        dataLayerName: 'JG_GTM_DATA_LAYER',
+      },
+    },
+    {
       resolve: 'gatsby-plugin-hubspot',
       options: {
         trackingCode: '7150863',

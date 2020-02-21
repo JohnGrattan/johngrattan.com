@@ -6,7 +6,11 @@ import LocalSeoPage__Body from '../../components/Services/Subpages/LocalSeo/Page
 
 const LocalSeoPage = () => (
   <Layout>
-    <SEO title="Local SEO" description="Local SEO" />
+    <SEO
+      title="Local SEO"
+      description="Local SEO"
+      canonicalLink="https://johngrattan.com/services/local-seo"
+    />
     <LocalSeoPage__Header
       Tag="header"
       className="bg-img-page-top"

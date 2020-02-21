@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const HeaderBlog = ({ className, hOne }) => {
+const BlogPage__Header = ({ className, hOne }) => {
   const data = useStaticQuery(graphql`
-    query HeaderBlogQ {
+    query BlogPage__HeaderQ {
       masthead: file(relativePath: { eq: "images/bg-img-blog.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
@@ -39,4 +39,4 @@ const HeaderBlog = ({ className, hOne }) => {
   );
 };
 
-export default HeaderBlog;
+export default BlogPage__Header;

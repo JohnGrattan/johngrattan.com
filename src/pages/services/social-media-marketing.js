@@ -6,7 +6,11 @@ import HeaderSocialMediaMarketing from '../../components/HeaderSocialMediaMarket
 
 const SocialMediaMarketingPage = () => (
   <Layout>
-    <SEO title="Social Media Marketing" description="Social Media Marketing" />
+    <SEO
+      title="Social Media Marketing"
+      description="Social Media Marketing"
+      canonicalLink="https://johngrattan.com/services/social-media-marketing"
+    />
     <HeaderSocialMediaMarketing
       Tag="header"
       className="bg-img-page-top"

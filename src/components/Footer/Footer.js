@@ -96,7 +96,7 @@ const Footer = () => {
                 SEO Checklist
               </Link>
               <Link className="d-flex footer-link" to="/blog">
-                SEO Blog
+                SEO & Web Design Blog
               </Link>
               <Link className="d-flex footer-link" to="/">
                 Glossary of Terms
