@@ -28,8 +28,9 @@ const BlogPostTemplate = ({ data }) => {
         <div className="container">
           <div>
             <Img
-              className="container col-8 mb-2"
+              className="container col-8 mb-2 drop-shadow-dark"
               fluid={post.frontmatter.image.childImageSharp.fluid}
+              alt={post.frontmatter.alt}
             />
             <Link to="/blog">Go Back</Link>
             <hr />
@@ -51,6 +52,7 @@ export const postQuery = graphql`
         date
         title
         author
+        alt
         image {
           id
           relativePath

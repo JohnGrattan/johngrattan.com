@@ -89,7 +89,8 @@ const PricingSection__MarketingServices = ({ className }) => {
                   <span className="d-flex mb-2">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Testing:</strong> find what works
+                      <strong>Testing:</strong> find copy that resonates with
+                      your customers
                     </span>
                   </span>
                   <span className="d-flex mb-2">
@@ -107,15 +108,9 @@ const PricingSection__MarketingServices = ({ className }) => {
                     </span>
                   </span>
                   <div className="text-danger mt-5">
-                    <small>Additional Recurring Payments:</small>
+                    <small>Minimum Requirements:</small>
                     <small className="d-flex ml-2 mt-3">
-                      - New Domain: $15/year
-                    </small>
-                    <small className="d-flex ml-2 mt-1">
-                      - Hosting Plan: $15/month
-                    </small>
-                    <small className="d-flex ml-2 mt-1">
-                      - Maintenance: $30/month (optional)
+                      - Budgets must be at least $500
                     </small>
                   </div>
                 </div>
@@ -148,43 +143,40 @@ const PricingSection__MarketingServices = ({ className }) => {
                   </small>
                 </div>
                 <div className="container py-4 text-left">
-                  <span className="d-flex my-2">
+                  <span className="d-flex my-2 mb-2">
                     <strong className="mb-3">Includes:</strong>
                   </span>
                   <span className="d-flex mb-2">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Security:</strong> scans & updates
+                      <strong>Research:</strong> valuable keywords
                     </span>
                   </span>
                   <span className="d-flex mb-2">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Backups:</strong> local & cloud
+                      <strong>Testing:</strong> find copy that resonates with
+                      your customers
                     </span>
                   </span>
                   <span className="d-flex mb-2">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Restore:</strong> previous states
+                      <strong>Landing Pages:</strong> optimized for high
+                      conversion rates
                     </span>
                   </span>
                   <span className="d-flex mb-2">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Testing:</strong> pages, links, forms
+                      <strong>Analysis:</strong> customer trends and
+                      demographics
                     </span>
                   </span>
                   <div className="text-danger mt-5">
-                    <small>Maintenance Program Covers:</small>
+                    <small>Minimum Requirements:</small>
                     <small className="d-flex ml-2 mt-3">
-                      - Cost of new domain: $15/year
-                    </small>
-                    <small className="d-flex ml-2 mt-1">
-                      - Cost of Hosting Plan: $15/month
-                    </small>
-                    <small className="d-flex ml-2 mt-1">
-                      - Cancel anytime!
+                      - Budgets must be at least $500
                     </small>
                   </div>
                 </div>
@@ -207,7 +199,7 @@ const PricingSection__MarketingServices = ({ className }) => {
                   <small className="d-block text-info">
                     Marketing Services
                   </small>
-                  <span className="d-block text-muted lead">$300/month</span>
+                  <span className="d-block text-muted lead">$75/hour</span>
                   <small className="d-block text-muted">
                     Use for anything you need!
                   </small>
@@ -220,43 +212,43 @@ const PricingSection__MarketingServices = ({ className }) => {
                   </small>
                 </div>
                 <div className="container py-4 text-left">
-                  <span className="d-flex my-2">
-                    <strong className="mb-3">Options:</strong>
+                  <span className="d-flex my-2 mb-2">
+                    <strong className="mb-3">Includes:</strong>
                   </span>
                   <span className="d-flex mb-2">
-                    <i className="fas fa-chevron-circle-right text-info mt-1"></i>
+                    <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>New</strong> Features
+                      <strong>Opt-in Forms:</strong> strategically placed on
+                      your website
                     </span>
                   </span>
                   <span className="d-flex mb-2">
-                    <i className="fas fa-chevron-circle-right text-info mt-1"></i>
+                    <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>New</strong> Functions
+                      <strong>Integrations:</strong> with your CRM software
                     </span>
                   </span>
                   <span className="d-flex mb-2">
-                    <i className="fas fa-chevron-circle-right text-info mt-1"></i>
+                    <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>New</strong> Pages
+                      <strong>Weekly Emails:</strong> optimized for high
+                      conversion rates
                     </span>
                   </span>
                   <span className="d-flex mb-2">
-                    <i className="fas fa-chevron-circle-right text-info mt-1"></i>
+                    <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>New</strong> Graphics
+                      <strong>Analysis:</strong> customer trends and
+                      demographics
                     </span>
                   </span>
                   <div className="text-danger mt-5">
-                    <small>Service Package Terms:</small>
+                    <small>Additional Recurring Payments:</small>
                     <small className="d-flex ml-2 mt-3">
-                      - Maximum of 40 hours per month
+                      - Email Service: $9.99 - $299.00/month
                     </small>
                     <small className="d-flex ml-2 mt-1">
-                      - Work beyond 40 hours is a new project
-                    </small>
-                    <small className="d-flex ml-2 mt-1">
-                      - New projects require new contracts
+                      - Monthly fee depends on features
                     </small>
                   </div>
                 </div>

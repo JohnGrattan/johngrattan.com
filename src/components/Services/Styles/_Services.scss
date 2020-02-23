@@ -18,6 +18,26 @@
   }
 }
 
+.bg-img-services-section {
+  background: linear-gradient(
+    to bottom,
+    #{fade-out($gray, 0.1)} 0%,
+    #{fade-out($gray, 0.1)} 100%
+  );
+  background-position: top;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: auto;
+  opacity: 1 !important;
+
+  @include media-breakpoint-up(md) {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
+
 .bg-purple-to-gray {
   background-color: $lightGray;
   strong {

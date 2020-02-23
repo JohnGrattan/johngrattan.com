@@ -6,7 +6,9 @@ import ImgJgBlogPic from '../ImageComps/image-jg-blog-pic';
 const HeaderBlogPost = ({ className, hOne, author, date, timeToRead }) => {
   const data = useStaticQuery(graphql`
     query HeaderBlogPostQ {
-      masthead: file(relativePath: { eq: "images/bg-img-blog.jpg" }) {
+      masthead: file(
+        relativePath: { eq: "images/bg-img-blog-post-lightbulb.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -36,7 +38,7 @@ const HeaderBlogPost = ({ className, hOne, author, date, timeToRead }) => {
             <h1 className="text-white font-weight-bold border border-primary rounded p-md-5 p-3 drop-shadow-dark text-lg">
               {hOne}
             </h1>
-            <div className="row justify-content-center text-white mt-3">
+            <div className="row justify-content-center text-white mt-3 drop-shadow-dark">
               <ImgJgBlogPic className="mr-2 mt-1" />
               <p>
                 {author} • {date} • {timeToRead} min read

@@ -61,7 +61,7 @@ const BlogPage__Body = ({ className }) => {
                   <span className="text-white-link">Marketing</span>
                 </Link>
                 <Link
-                  to="diagnostic"
+                  to="/"
                   className="col-6 col-md-3 mb-5 text-center drop-shadow pointer"
                 >
                   <i className="fas fa-3x fa-palette mb-3 text-primary wiggle"></i>
@@ -79,7 +79,7 @@ const BlogPage__Body = ({ className }) => {
               </div>
             </div>
           </div>
-          <BlogPage__Section className="page-section border-bottom border-secondary bg-img-process" />
+          <BlogPage__Section className="page-section border-bottom border-secondary bg-img-blog-section" />
         </div>
       </div>
     </BackgroundImage>

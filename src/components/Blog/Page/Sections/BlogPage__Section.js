@@ -8,7 +8,7 @@ import ImgJgBlogPic from '../../../ImageComps/image-jg-blog-pic';
 const BlogPage__Section = ({ className }) => {
   const data = useStaticQuery(graphql`
     query BlogPage__SectionQ {
-      masthead: file(relativePath: { eq: "images/bg-img-process.jpg" }) {
+      masthead: file(relativePath: { eq: "images/bg-img-blog-section.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -49,15 +49,15 @@ const BlogPage__Section = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="digital marketing process for small business"
+      alt="seo & web design blog insights for small business owners"
     >
       <div className="container">
         <h2 className="text-center mt-0 text-white">Latest Posts</h2>
         <hr className="divider mt-4 mb-5" />
-        <div className="row justify-content-center align-items-center">
+        <div className="row justify-content-center align-items-baseline">
           {data.allMarkdownRemark.edges.map(post => (
             <div className="col-md-6 col-lg-3" key={post.node.id}>
-              <div className="container seo-blog mb-5 p-2 border rounded bg-white">
+              <div className="container seo-blog mb-5 p-2 border rounded bg-white drop-shadow-dark">
                 <Img
                   className="mb-2"
                   fluid={post.node.frontmatter.image.childImageSharp.fluid}
@@ -80,7 +80,8 @@ const BlogPage__Section = ({ className }) => {
                   </div>
                   <div className="my-3">
                     <Link className="text-info" to={post.node.frontmatter.path}>
-                      Read More
+                      Read More{' '}
+                      <i className="fas fa-long-arrow-alt-right ml-1"></i>
                     </Link>
                   </div>
                 </div>

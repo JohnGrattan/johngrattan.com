@@ -43,7 +43,7 @@ const Home__BlogSection = () => {
         for Business Owners
       </h2>
       <hr className="divider mt-4 mb-5 drop-shadow-dark" />
-      <div className="row justify-content-center align-items-center">
+      <div className="row justify-content-center align-items-baseline">
         {data.allMarkdownRemark.edges.map(post => (
           <div
             className="container seo-blog p-2 mx-1 my-3 border rounded col-md-48 col-lg-24 flex-shrink-1 bg-white"

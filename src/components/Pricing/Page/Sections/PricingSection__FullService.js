@@ -258,7 +258,7 @@ const PricingSection__FullService = ({ className }) => {
                       Email Marketing Campaign
                       <span className="mt-3 d-block">
                         <span className="text-info border border-primary rounded p-2">
-                          <strong className="text-dark">Price</strong>: $50/hour
+                          <strong className="text-dark">Price</strong>: $75/hour
                         </span>
                       </span>
                     </span>
