@@ -19,7 +19,6 @@ module.exports = {
   plugins: [
     `gatsby-transformer-sharp`,
     `gatsby-plugin-mdx`,
-    `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
