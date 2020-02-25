@@ -17,14 +17,39 @@ module.exports = {
     siteUrl,
   },
   plugins: [
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-mdx`,
+    `gatsby-plugin-feed-mdx`,
     `gatsby-plugin-catch-links`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-transformer-remark`,
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-robots-txt',
+
+    {
+      resolve: `gatsby-plugin-mdx`,
+      options: {
+        extensions: ['.mdx', '.md'],
+        gatsbyRemarkPlugins: [
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 590,
+            },
+          },
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`,
+            },
+          },
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+        ],
+      },
+    },
     {
       resolve: 'gatsby-plugin-google-tagmanager',
       options: {

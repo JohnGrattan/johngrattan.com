@@ -13,10 +13,7 @@ const Home__BlogSectionBg = ({ className }) => {
           }
         }
       }
-      allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
-        limit: 4
-      ) {
+      allMdx(sort: { fields: [frontmatter___date], order: DESC }, limit: 4) {
         edges {
           node {
             id

@@ -14,9 +14,12 @@ const SeoBlogPage = ({ data }) => (
     <BlogPage__Header
       Tag="header"
       className="bg-img-page-top"
-      hOne="SEO & Web Design Insights"
+      hOne="SEO & Web Design Blog"
     />
-    <BlogPage__Body className="py-md-5 bg-texture-1" />
+    <BlogPage__Body
+      section="BlogPage__Section"
+      className="py-md-5 bg-texture-1"
+    />
   </Layout>
 );
 

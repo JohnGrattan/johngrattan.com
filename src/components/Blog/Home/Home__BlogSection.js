@@ -7,10 +7,7 @@ import Button from '../../Button/Button';
 const Home__BlogSection = () => {
   const data = useStaticQuery(graphql`
     query Home__BlogSectionQ {
-      allMarkdownRemark(
-        sort: { fields: [frontmatter___date], order: DESC }
-        limit: 4
-      ) {
+      allMdx(sort: { fields: [frontmatter___date], order: DESC }, limit: 4) {
         edges {
           node {
             id
@@ -44,32 +41,32 @@ const Home__BlogSection = () => {
       </h2>
       <hr className="divider mt-4 mb-5 drop-shadow-dark" />
       <div className="row justify-content-center align-items-baseline">
-        {data.allMarkdownRemark.edges.map(post => (
-          <div
-            className="container seo-blog p-2 mx-1 my-3 border rounded col-md-48 col-lg-24 flex-shrink-1 bg-white"
-            key={post.node.id}
-          >
-            <Img
-              className="mb-2"
-              fluid={post.node.frontmatter.image.childImageSharp.fluid}
-            />
-            <div>
+        {data.allMdx.edges.map(post => (
+          <div className="col-md-6 col-lg-3" key={post.node.id}>
+            <div className="container seo-blog p-2 mx-1 my-3 border rounded bg-white">
+              <Img
+                className="mb-2"
+                fluid={post.node.frontmatter.image.childImageSharp.fluid}
+              />
               <div>
-                <h3>{post.node.frontmatter.title}</h3>
-              </div>
-              <div className="row text-muted ml-1">
-                <ImgJgBlogPic className="mr-2" />
-                <small>
-                  {post.node.frontmatter.author} • {post.node.frontmatter.date}
-                </small>
-              </div>
-              <div className="row text-muted ml-3">
-                <small className="col">{post.node.timeToRead} min read</small>
-              </div>
-              <div className="my-3">
-                <Link className="text-info" to={post.node.frontmatter.path}>
-                  Read More
-                </Link>
+                <div>
+                  <h3>{post.node.frontmatter.title}</h3>
+                </div>
+                <div className="row text-muted ml-1">
+                  <ImgJgBlogPic className="mr-2" />
+                  <small>
+                    {post.node.frontmatter.author} •{' '}
+                    {post.node.frontmatter.date}
+                  </small>
+                </div>
+                <div className="row text-muted ml-3">
+                  <small className="col">{post.node.timeToRead} min read</small>
+                </div>
+                <div className="my-3">
+                  <Link className="text-info" to={post.node.frontmatter.path}>
+                    Read More
+                  </Link>
+                </div>
               </div>
             </div>
           </div>

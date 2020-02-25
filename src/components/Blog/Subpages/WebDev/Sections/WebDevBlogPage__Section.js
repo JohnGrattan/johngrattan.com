@@ -2,11 +2,11 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import Img from 'gatsby-image';
 import BackgroundImage from 'gatsby-background-image';
-import ImgJgBlogPic from '../../../ImageComps/image-jg-blog-pic';
+import ImgJgBlogPic from '../../../../ImageComps/image-jg-blog-pic';
 
-const BlogPage__Section = ({ className }) => {
+const WebDevBlogPage__Section = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query BlogPage__SectionQ {
+    query WebDevBlogPage__SectionQ {
       masthead: file(relativePath: { eq: "images/bg-img-blog-section.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
@@ -14,7 +14,10 @@ const BlogPage__Section = ({ className }) => {
           }
         }
       }
-      allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+      allMdx(
+        sort: { fields: [frontmatter___date], order: DESC }
+        filter: { frontmatter: { tag: { eq: "web-dev" } } }
+      ) {
         edges {
           node {
             id
@@ -24,6 +27,8 @@ const BlogPage__Section = ({ className }) => {
               date
               title
               author
+              tag
+              alt
               image {
                 id
                 relativePath
@@ -48,14 +53,16 @@ const BlogPage__Section = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="seo & web design blog insights for small business owners"
+      alt="seo & web design blog - web development articles background image"
     >
       <div className="container">
-        <h2 className="text-center mt-0 text-white">Latest Posts</h2>
+        <h2 className="text-center mt-0 text-white">
+          Latest Web Development Posts
+        </h2>
         <hr className="divider mt-4 mb-5" />
         <div className="row justify-content-center align-items-baseline">
           {data.allMdx.edges.map(post => (
-            <div className="col-md-6 col-lg-3" key={post.node.id}>
+            <div className="col-12" key={post.node.id}>
               <div className="container seo-blog mb-5 p-2 border rounded bg-white drop-shadow-dark">
                 <Link to={post.node.frontmatter.path}>
                   <Img
@@ -95,4 +102,4 @@ const BlogPage__Section = ({ className }) => {
   );
 };
 
-export default BlogPage__Section;
+export default WebDevBlogPage__Section;

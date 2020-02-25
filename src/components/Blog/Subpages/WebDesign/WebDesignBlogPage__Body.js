@@ -1,12 +1,12 @@
 import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import BlogPage__Section from './Sections/BlogPage__Section';
+import WebDesignBlogPage__Section from '../WebDesign/Sections/WebDesignBlogPage__Section';
 
 // BG Query
-const BlogPage__Body = ({ className, section }) => {
+const WebDesignBlogPage__Body = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query BlogPage__BodyQ {
+    query WebDesignBlogPage__BodyQ {
       texture: file(
         relativePath: { eq: "images/textures/gradient-squares.png" }
       ) {
@@ -27,7 +27,7 @@ const BlogPage__Body = ({ className, section }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#fff`}
-      alt="about John Grattan background"
+      alt="seo & web design blog - web design articles background image"
     >
       <div className="container">
         <div className="row justify-content-center align-items-center border bg-white shadow rounded position-sticky">
@@ -78,11 +78,11 @@ const BlogPage__Body = ({ className, section }) => {
               </div>
             </div>
           </div>
-          <BlogPage__Section className="page-section border-bottom border-secondary bg-img-blog-section" />
+          <WebDesignBlogPage__Section className="page-section border-bottom border-secondary bg-img-blog-section" />
         </div>
       </div>
     </BackgroundImage>
   );
 };
 
-export default BlogPage__Body;
+export default WebDesignBlogPage__Body;

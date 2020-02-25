@@ -3,11 +3,11 @@ const path = require('path');
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions;
 
-  const postTemplate = path.resolve('src/templates/blog-post.js');
+  const postTemplate = path.resolve('src/templates/BlogPost__Page.js');
 
   return graphql(`
     {
-      allMarkdownRemark {
+      allMdx {
         edges {
           node {
             html
@@ -28,7 +28,7 @@ exports.createPages = ({ actions, graphql }) => {
       return Promise.reject(res.errors);
     }
 
-    res.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    res.data.allMdx.edges.forEach(({ node }) => {
       createPage({
         path: node.frontmatter.path,
         component: postTemplate,
