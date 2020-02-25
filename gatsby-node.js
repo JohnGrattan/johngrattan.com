@@ -10,7 +10,7 @@ exports.createPages = ({ actions, graphql }) => {
       allMdx {
         edges {
           node {
-            html
+            body
             id
             timeToRead
             frontmatter {
