@@ -67,25 +67,25 @@ const BlogPostTemplate = ({ data }) => {
               <p className="text-white text-center">Share this article!</p>
               <div className="row justify-content-around mb-5">
                 <FacebookShareButton
-                  url={post.frontmatter.path}
+                  url={post.frontmatter.url}
                   size={32}
                   round={true}
                   className="pointer drop-shadow"
                 >
                   <FacebookIcon
-                    url={post.frontmatter.path}
+                    url={post.frontmatter.url}
                     size={32}
                     round={true}
                   />
                 </FacebookShareButton>
                 <TwitterShareButton
-                  url={post.frontmatter.path}
+                  url={post.frontmatter.url}
                   size={32}
                   round={true}
                   className="pointer drop-shadow"
                 >
                   <TwitterIcon
-                    url={post.frontmatter.path}
+                    url={post.frontmatter.url}
                     size={32}
                     round={true}
                   />
@@ -160,6 +160,7 @@ export const postQuery = graphql`
       timeToRead
       frontmatter {
         path
+        url
         date
         title
         author
