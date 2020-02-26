@@ -8,6 +8,7 @@ import SEO from '../components/seo';
 import HeaderBlogPost from '../components/HeaderBlogPost/HeaderBlogPost';
 import ImgJgBlogPostPic from '../components/ImageComps/image-jg-headshot-green';
 import Button from '../components/Button/Button';
+import { Breadcrumb } from 'react-bootstrap';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.mdx;
@@ -28,17 +29,32 @@ const BlogPostTemplate = ({ data }) => {
       />
       <section className="page-section">
         <div className="container">
-          <div className="row justify-content-center">
-            <div className="col-lg-9 px-lg-5">
+          <div className="drop-shadow p-3 mb-5 bg-dark rounded">
+            <Link className="text-primary" to="/">
+              Home
+            </Link>
+            <span className="mx-3 text-secondary">/</span>
+            <Link className="text-primary" to="/blog">
+              Blog
+            </Link>
+            <span className="mx-3 text-secondary">/</span>
+            <Link className="text-primary" to="/blog/seo">
+              SEO
+            </Link>
+            <span className="mx-3 text-secondary">/</span>
+            <span className="text-white">{post.frontmatter.title}</span>
+          </div>
+          <div className="row mx-0 px-0 container justify-content-center">
+            <div className="px-0 col-lg-9 pr-lg-5">
               <Img
-                className="container col-8 mb-5 drop-shadow-dark"
+                className="container mb-5 drop-shadow-dark rounded"
                 fluid={post.frontmatter.image.childImageSharp.fluid}
                 alt={post.frontmatter.alt}
               />
               {/* <div dangerouslySetInnerHTML={{ __html: post.html }} /> */}
               <MDXRenderer>{post.body}</MDXRenderer>
             </div>
-            <div className="col-lg-3 p-3 bg-dark border rounded shadow">
+            <div className="col-lg-3 height-fit-content p-3 bg-dark border border-dark rounded drop-shadow">
               <p className="lead mb-4 text-white bg-info drop-shadow text-center">
                 <strong>About the author</strong>
               </p>
@@ -52,10 +68,15 @@ const BlogPostTemplate = ({ data }) => {
               <hr className="light" />
               <p className="text-left text-white">
                 John Grattan is a one-man digital marketing agency from
-                Plymouth, MA. He helps small businesses adapt to the latest
-                technologies by personalizing digital marketing strategies —
-                centered on custom, responsive websites — to help generate leads
-                and improve customer experience.
+                Plymouth, MA.
+              </p>
+              <p className="text-left text-white">
+                John helps small businesses adapt to the latest technologies by
+                personalizing digital marketing strategies —
+                <strong className="text-secondary">
+                  centered on custom, responsive websites
+                </strong>{' '}
+                — to help generate leads and improve customer experience.
               </p>
               <div className="text-center mb-3 mt-4">
                 <Button
