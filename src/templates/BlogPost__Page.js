@@ -8,7 +8,16 @@ import SEO from '../components/seo';
 import HeaderBlogPost from '../components/HeaderBlogPost/HeaderBlogPost';
 import ImgJgBlogPostPic from '../components/ImageComps/image-jg-headshot-green';
 import Button from '../components/Button/Button';
-import { Breadcrumb } from 'react-bootstrap';
+import {
+  EmailShareButton,
+  EmailIcon,
+  FacebookShareButton,
+  FacebookIcon,
+  LinkedinShareButton,
+  LinkedinIcon,
+  TwitterShareButton,
+  TwitterIcon,
+} from 'react-share';
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.mdx;
@@ -54,7 +63,58 @@ const BlogPostTemplate = ({ data }) => {
               {/* <div dangerouslySetInnerHTML={{ __html: post.html }} /> */}
               <MDXRenderer>{post.body}</MDXRenderer>
             </div>
-            <div className="col-lg-3 height-fit-content p-3 bg-dark border border-dark rounded drop-shadow">
+            <div className="col-lg-3 mt-5 mt-lg-0 height-fit-content p-3 bg-dark border border-dark rounded drop-shadow">
+              <p className="text-white text-center">Share this article!</p>
+              <div className="row justify-content-around mb-5">
+                <FacebookShareButton
+                  url={post.frontmatter.path}
+                  size={32}
+                  round={true}
+                  className="pointer drop-shadow"
+                >
+                  <FacebookIcon
+                    url={post.frontmatter.path}
+                    size={32}
+                    round={true}
+                  />
+                </FacebookShareButton>
+                <TwitterShareButton
+                  url={post.frontmatter.path}
+                  size={32}
+                  round={true}
+                  className="pointer drop-shadow"
+                >
+                  <TwitterIcon
+                    url={post.frontmatter.path}
+                    size={32}
+                    round={true}
+                  />
+                </TwitterShareButton>
+                <LinkedinShareButton
+                  url={post.frontmatter.path}
+                  size={32}
+                  round={true}
+                  className="pointer drop-shadow"
+                >
+                  <LinkedinIcon
+                    url={post.frontmatter.path}
+                    size={32}
+                    round={true}
+                  />
+                </LinkedinShareButton>
+                <EmailShareButton
+                  url={post.frontmatter.path}
+                  size={32}
+                  round={true}
+                  className="pointer drop-shadow"
+                >
+                  <EmailIcon
+                    url={post.frontmatter.path}
+                    size={32}
+                    round={true}
+                  />
+                </EmailShareButton>
+              </div>
               <p className="lead mb-4 text-white bg-info drop-shadow text-center">
                 <strong>About the author</strong>
               </p>
