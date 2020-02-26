@@ -91,25 +91,25 @@ const BlogPostTemplate = ({ data }) => {
                   />
                 </TwitterShareButton>
                 <LinkedinShareButton
-                  url={post.frontmatter.path}
+                  url={post.frontmatter.url}
                   size={32}
                   round={true}
                   className="pointer drop-shadow"
                 >
                   <LinkedinIcon
-                    url={post.frontmatter.path}
+                    url={post.frontmatter.url}
                     size={32}
                     round={true}
                   />
                 </LinkedinShareButton>
                 <EmailShareButton
-                  url={post.frontmatter.path}
+                  url={post.frontmatter.url}
                   size={32}
                   round={true}
                   className="pointer drop-shadow"
                 >
                   <EmailIcon
-                    url={post.frontmatter.path}
+                    url={post.frontmatter.url}
                     size={32}
                     round={true}
                   />
