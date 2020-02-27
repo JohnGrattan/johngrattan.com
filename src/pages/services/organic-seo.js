@@ -9,7 +9,7 @@ const OrganicSeoPage = () => (
     <SEO
       title="Organic SEO"
       description="Organic SEO"
-      canonicalLink="https://johngrattan.com/services/organic-seo"
+      canonicalLink="https://johngrattan.com/services/organic-seo/"
     />
     <OrganicSeoPage__Header
       Tag="header"

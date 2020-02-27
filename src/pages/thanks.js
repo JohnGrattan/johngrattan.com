@@ -8,7 +8,7 @@ const ThanksPage = () => (
     <SEO
       title="Thank you for submitting"
       description="Thank you for submitting"
-      canonicalLink="https://johngrattan.com/thanks"
+      canonicalLink="https://johngrattan.com/thanks/"
     />
     <BgImgPageTop
       Tag="header"

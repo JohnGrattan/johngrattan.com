@@ -9,7 +9,7 @@ const SocialMediaMarketingPage = () => (
     <SEO
       title="Social Media Marketing"
       description="Social Media Marketing"
-      canonicalLink="https://johngrattan.com/services/social-media-marketing"
+      canonicalLink="https://johngrattan.com/services/social-media-marketing/"
     />
     <HeaderSocialMediaMarketing
       Tag="header"

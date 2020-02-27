@@ -8,7 +8,7 @@ const NotFoundPage = () => (
     <SEO
       title="404: Not Found"
       description="404: Not Found"
-      canonicalLink="https://johngrattan.com/404"
+      canonicalLink="https://johngrattan.com/404/"
     />
     <BgImgPageTop
       Tag="header"

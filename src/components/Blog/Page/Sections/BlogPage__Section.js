@@ -55,7 +55,7 @@ const BlogPage__Section = ({ className }) => {
         <hr className="divider mt-4 mb-5" />
         <div className="row justify-content-center align-items-baseline">
           {data.allMdx.edges.map(post => (
-            <div className="col-md-6 col-lg-3" key={post.node.id}>
+            <div className="col-md-6 col-lg-12" key={post.node.id}>
               <div className="container seo-blog mb-5 p-2 border rounded bg-white drop-shadow-dark">
                 <Link to={post.node.frontmatter.path}>
                   <Img

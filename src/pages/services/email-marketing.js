@@ -8,7 +8,7 @@ const EmailMarketingPage = () => (
     <SEO
       title="Email Marketing"
       description="Email Marketing"
-      canonicalLink="https://johngrattan.com/services/email-marketing"
+      canonicalLink="https://johngrattan.com/services/email-marketing/"
     />
     <HeaderEmailMarketing
       Tag="header"

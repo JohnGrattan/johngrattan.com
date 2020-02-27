@@ -9,7 +9,7 @@ const WebDevelopmentPage = () => (
     <SEO
       title="Web Development"
       description="Web Development"
-      canonicalLink="https://johngrattan.com/services/web-development"
+      canonicalLink="https://johngrattan.com/services/web-development/"
     />
     <BgImgPageTop
       Tag="header"

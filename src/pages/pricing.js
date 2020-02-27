@@ -9,7 +9,7 @@ const PricingPage = () => (
     <SEO
       title="SEO & Web Design Pricing"
       description="Take a look at my pricing structures for all monthly and one-time services."
-      canonicalLink="https://johngrattan.com/pricing"
+      canonicalLink="https://johngrattan.com/pricing/"
     />
     <PricingPage__Header
       Tag="header"

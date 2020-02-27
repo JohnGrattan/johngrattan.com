@@ -25,8 +25,9 @@ const BlogPostTemplate = ({ data }) => {
   return (
     <LayoutBody>
       <SEO
-        title="John Grattan: Freelance Digital Marketing - Offering SEO, SEM, Web Design, Web Development Services | Boston, MA & Plymouth, MA"
-        description="Hi, I'm John Grattan. I offer affordable freelance Digital Marketing services such as SEO, SEM, Web Design & Development to local businesses in Massachusetts."
+        title={post.frontmatter.title}
+        description={post.frontmatter.description}
+        canonicalLink={post.frontmatter.url}
       />
       <HeaderBlogPost
         Tag="header"
@@ -163,6 +164,7 @@ export const postQuery = graphql`
         url
         date
         title
+        description
         author
         alt
         image {

@@ -9,7 +9,7 @@ const SEOStrategyPage = () => (
     <SEO
       title="SEO Strategy"
       description="SEO Strategy"
-      canonicalLink="https://johngrattan.com/services/seo-strategy"
+      canonicalLink="https://johngrattan.com/services/seo-strategy/"
     />
     <SeoStrategyPage__Header
       Tag="header"

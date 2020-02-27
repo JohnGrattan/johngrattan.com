@@ -9,7 +9,7 @@ const LocalSeoPage = () => (
     <SEO
       title="Local SEO"
       description="Local SEO"
-      canonicalLink="https://johngrattan.com/services/local-seo"
+      canonicalLink="https://johngrattan.com/services/local-seo/"
     />
     <LocalSeoPage__Header
       Tag="header"

@@ -9,7 +9,7 @@ const SeoBlogPage = ({ data }) => (
     <SEO
       title="SEO Blog"
       description="SEO Blog"
-      canonicalLink="https://johngrattan.com/blog"
+      canonicalLink="https://johngrattan.com/blog/"
     />
     <BlogPage__Header
       Tag="header"

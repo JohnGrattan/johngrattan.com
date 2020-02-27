@@ -9,7 +9,7 @@ const SeoCategoryBlogPage = () => (
     <SEO
       title="SEO Blog Articles"
       description="SEO Blog Articles"
-      canonicalLink="https://johngrattan.com/blog/seo"
+      canonicalLink="https://johngrattan.com/blog/seo/"
     />
     <SeoBlogPage__Header
       Tag="header"

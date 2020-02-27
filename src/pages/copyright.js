@@ -8,7 +8,7 @@ const CopyrightPage = () => (
     <SEO
       title="Copyright"
       description="Copyright"
-      canonicalLink="https://johngrattan.com/copyright"
+      canonicalLink="https://johngrattan.com/copyright/"
     />
     <BgImgPageTop
       Tag="header"

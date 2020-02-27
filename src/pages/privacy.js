@@ -8,7 +8,7 @@ const PrivacyPage = () => (
     <SEO
       title="Privacy Policy"
       description="Privacy Policy"
-      canonicalLink="https://johngrattan.com/privacy"
+      canonicalLink="https://johngrattan.com/privacy/"
     />
     <BgImgPageTop
       Tag="header"

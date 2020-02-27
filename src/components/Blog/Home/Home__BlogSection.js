@@ -42,7 +42,7 @@ const Home__BlogSection = () => {
       <hr className="divider mt-4 mb-5 drop-shadow-dark" />
       <div className="row justify-content-center align-items-baseline">
         {data.allMdx.edges.map(post => (
-          <div className="col-md-6 col-lg-3" key={post.node.id}>
+          <div className="col-md-6 col-lg-6" key={post.node.id}>
             <div className="container seo-blog p-2 mx-1 my-3 border rounded bg-white">
               <Img
                 className="mb-2"

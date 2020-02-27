@@ -8,7 +8,7 @@ const CaseStudiesPage = () => (
     <SEO
       title="SEO & Web Design Case Studies"
       description="SEO & Web Design Case Studies"
-      canonicalLink="https://johngrattan.com/case-studies"
+      canonicalLink="https://johngrattan.com/case-studies/"
     />
     <HeaderCaseStudies
       Tag="header"

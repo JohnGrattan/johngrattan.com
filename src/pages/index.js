@@ -13,7 +13,7 @@ const IndexPage = () => {
       <SEO
         title="Digital Marketing Services - SEO, PPC, Website Design, Web Development | Boston & Plymouth, Massachusetts"
         description="Hi, I'm John Grattan. I offer affordable Digital Marketing services such as SEO, PPC, Website Design & Web Development to local businesses in Massachusetts, from Boston to Plymouth."
-        canonicalLink="https://johngrattan.com"
+        canonicalLink="https://johngrattan.com/"
       />
       <HeaderHome className="bg-img-home border-bottom border-secondary" />
       <AboutSectionHome className="page-section border-bottom border-secondary bg-texture-1" />
