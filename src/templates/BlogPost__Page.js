@@ -47,7 +47,10 @@ const BlogPostTemplate = ({ data }) => {
       "logo" : "https://johngrattan.com/static/44c818c675ed93993775d2fb37a86cd5/a1eb1/john-grattan-logo-gmb.jpg"
     },
     "headline" : "${post.frontmatter.title}",
-    "mainEntityOfPage" : "${post.frontmatter.url}",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "${post.frontmatter.url}"
+    }
   }`;
 
   return (
