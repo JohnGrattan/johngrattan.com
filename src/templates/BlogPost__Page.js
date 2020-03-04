@@ -41,12 +41,13 @@ const BlogPostTemplate = ({ data }) => {
     "datePublished" : "${post.frontmatter.date}",
     "image" : "https://johngrattan.com/static/44c818c675ed93993775d2fb37a86cd5/a1eb1/john-grattan-logo-gmb.jpg",
     "url" : "${post.frontmatter.url}",
-    "publisher" : {
-      "@type" : "Organization",
-      "name" : "John Grattan SEO & Web Design",
-      "logo" : {
-        "url" : "https://johngrattan.com/static/44c818c675ed93993775d2fb37a86cd5/a1eb1/john-grattan-logo-gmb.jpg"
-      },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Google",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://johngrattan.com/static/44c818c675ed93993775d2fb37a86cd5/a1eb1/john-grattan-logo-gmb.jpg",
+      }
     },
     "headline" : "${post.frontmatter.title}",
     "mainEntityOfPage": {
