@@ -2,6 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
+import Helmet from 'react-helmet';
 
 import LayoutBody from '../components/layout-body';
 import SEO from '../components/seo';
@@ -22,6 +23,23 @@ import {
 const BlogPostTemplate = ({ data }) => {
   const post = data.mdx;
 
+  const structuredDataArticle = `{
+    "@context" : "http://schema.org",
+    "@type" : "Article",
+    "name" : "${post.frontmatter.title}",
+    "author" : {
+      "@type" : "Person",
+      "name" : "${post.frontmatter.author}"
+    },
+    "datePublished" : "${post.frontmatter.date}",
+    "image" : "${post.frontmatter.image}",
+    "url" : "${post.frontmatter.url}",
+    "publisher" : {
+      "@type" : "Organization",
+      "name" : "John Grattan SEO & Web Design"
+    }
+  }`;
+
   return (
     <LayoutBody>
       <SEO
@@ -29,6 +47,9 @@ const BlogPostTemplate = ({ data }) => {
         description={post.frontmatter.description}
         canonicalLink={post.frontmatter.url}
       />
+      <Helmet>
+        <script type="application/ld+json">{structuredDataArticle}</script>
+      </Helmet>
       <HeaderBlogPost
         Tag="header"
         className="bg-img-page-top"
@@ -61,7 +82,6 @@ const BlogPostTemplate = ({ data }) => {
                 fluid={post.frontmatter.image.childImageSharp.fluid}
                 alt={post.frontmatter.alt}
               />
-              {/* <div dangerouslySetInnerHTML={{ __html: post.html }} /> */}
               <MDXRenderer>{post.body}</MDXRenderer>
             </div>
             <div className="col-lg-3 mt-5 mt-lg-0 height-fit-content p-3 bg-dark border border-dark rounded drop-shadow">
@@ -70,7 +90,6 @@ const BlogPostTemplate = ({ data }) => {
                 <FacebookShareButton
                   url={post.frontmatter.url}
                   size={32}
-                  round={true}
                   className="pointer drop-shadow"
                 >
                   <FacebookIcon
@@ -82,7 +101,6 @@ const BlogPostTemplate = ({ data }) => {
                 <TwitterShareButton
                   url={post.frontmatter.url}
                   size={32}
-                  round={true}
                   className="pointer drop-shadow"
                 >
                   <TwitterIcon
@@ -94,7 +112,6 @@ const BlogPostTemplate = ({ data }) => {
                 <LinkedinShareButton
                   url={post.frontmatter.url}
                   size={32}
-                  round={true}
                   className="pointer drop-shadow"
                 >
                   <LinkedinIcon
@@ -106,7 +123,6 @@ const BlogPostTemplate = ({ data }) => {
                 <EmailShareButton
                   url={post.frontmatter.url}
                   size={32}
-                  round={true}
                   className="pointer drop-shadow"
                 >
                   <EmailIcon
