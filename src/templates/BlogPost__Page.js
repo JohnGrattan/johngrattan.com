@@ -44,7 +44,9 @@ const BlogPostTemplate = ({ data }) => {
     "publisher" : {
       "@type" : "Organization",
       "name" : "John Grattan SEO & Web Design",
-      "logo" : "https://johngrattan.com/static/44c818c675ed93993775d2fb37a86cd5/a1eb1/john-grattan-logo-gmb.jpg"
+      "logo" : {
+        "url" : "https://johngrattan.com/static/44c818c675ed93993775d2fb37a86cd5/a1eb1/john-grattan-logo-gmb.jpg"
+      },
     },
     "headline" : "${post.frontmatter.title}",
     "mainEntityOfPage": {
