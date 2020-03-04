@@ -1,7 +1,8 @@
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import HeaderCaseStudies from '../components/HeaderCaseStudies/HeaderCaseStudies';
+import CaseStudiesPage__Header from '../components/CaseStudies/Page/CaseStudiesPage__Header';
+import CaseStudiesPage__Body from '../components/CaseStudies/Page/CaseStudiesPage__Body';
 
 const CaseStudiesPage = () => (
   <Layout>
@@ -10,14 +11,12 @@ const CaseStudiesPage = () => (
       description="SEO & Web Design Case Studies"
       canonicalLink="https://johngrattan.com/case-studies/"
     />
-    <HeaderCaseStudies
+    <CaseStudiesPage__Header
       Tag="header"
       className="bg-img-page-top"
       hOne="Case Studies"
     />
-    <section className="page-section">
-      <div className="container"></div>
-    </section>
+    <CaseStudiesPage__Body className="py-md-5 bg-texture-1" />
   </Layout>
 );
 

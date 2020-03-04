@@ -22,6 +22,13 @@ import {
 
 const BlogPostTemplate = ({ data }) => {
   const post = data.mdx;
+  const postImg = `${(
+    <Img
+      className="container mb-5 drop-shadow-dark rounded"
+      fluid={post.frontmatter.image.childImageSharp.fluid}
+      alt={post.frontmatter.alt}
+    />
+  )}`;
 
   const structuredDataArticle = `{
     "@context" : "http://schema.org",
@@ -32,7 +39,7 @@ const BlogPostTemplate = ({ data }) => {
       "name" : "${post.frontmatter.author}"
     },
     "datePublished" : "${post.frontmatter.date}",
-    "image" : "${post.frontmatter.image}",
+    "image" : "${postImg}",
     "url" : "${post.frontmatter.url}",
     "publisher" : {
       "@type" : "Organization",

@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const HeaderCaseStudies = ({ className, hOne }) => {
+const CaseStudiesPage__Header = ({ className, hOne }) => {
   const data = useStaticQuery(graphql`
-    query HeaderCaseStudiesQ {
+    query CaseStudiesPage__HeaderQ {
       masthead: file(relativePath: { eq: "images/bg-img-case-studies.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
@@ -24,7 +24,7 @@ const HeaderCaseStudies = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo and web design case studies background image"
+      alt="John Grattan SEO & Web Design Case Studies Background"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">
@@ -39,4 +39,4 @@ const HeaderCaseStudies = ({ className, hOne }) => {
   );
 };
 
-export default HeaderCaseStudies;
+export default CaseStudiesPage__Header;
