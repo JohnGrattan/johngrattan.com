@@ -1,6 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
+import { Table } from 'react-bootstrap';
 
 const PricingSection__MarketingServices = ({ className }) => {
   const data = useStaticQuery(graphql`
@@ -37,223 +38,217 @@ const PricingSection__MarketingServices = ({ className }) => {
         <div className="row justify-content-center align-items-baseline pt-5 p-3">
           <div className="container text-center border border-secondary col-md-7 pt-3 drop-shadow">
             <p className="text-white px-5">
-              Are you looking to drive traffic to your website expediently with
+              Are you looking to immediately drive traffic to your website with
               paid advertising solely based on your budget?
             </p>
-            <p className="text-primary">These options are for you!</p>
+            <p className="text-primary">These services are for you!</p>
           </div>
         </div>
-        <div className="row justify-content-center align-items-baseline py-5 px-md-3">
-          <div className="container col-md-4">
-            <p className="mt-2 p-3 lead text-center text-white bg-purple border border-white">
-              <span className="text-secondary">Option 1:</span> PPC
-            </p>
-            <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
-              <div className="text-center pt-5">
-                <i className="fas fa-3x fa-mouse-pointer text-info mb-4 d-block"></i>
-                <h3 className="mt-2">
-                  Pay-Per-Click
-                  <br />
-                  (PPC) Ads
-                </h3>
-                <div className="container border mt-3 py-3">
-                  <small className="d-block text-info">
-                    Marketing Services
-                  </small>
-                  <span className="d-block text-muted lead">20% of Budget</span>
-                  <small className="d-block text-muted">+ $300 per page</small>
-                  <span className="d-block text-primary bg-purple mt-4">
-                    Only Pay for Clicks
-                  </span>
-                  <small className="d-block text-muted mt-2 px-2">
-                    (Compared to{' '}
-                    <a
-                      className="text-info"
-                      href="https://www.websitebuilderexpert.com/building-websites/how-much-should-a-website-cost/"
-                    >
-                      average website cost
-                    </a>
-                    )
-                  </small>
-                </div>
-                <div className="container py-4 text-left">
-                  <span className="d-flex my-2 mb-2">
-                    <strong className="mb-3">Includes:</strong>
-                  </span>
-                  <span className="d-flex mb-2">
+        <h4 className="mt-5 bg-info py-3 drop-shadow text-white text-center">
+          <span className="drop-shadow-dark">Monthly Marketing Services</span>
+        </h4>
+        <div className="mb-5 pb-5">
+          <Table
+            className="bg-white drop-shadow-dark"
+            striped
+            borderless
+            responsive
+            hover
+            size="sm"
+          >
+            <thead>
+              <tr className="text-white bg-purple">
+                <th className="py-3 pl-3">Services</th>
+                <th className="py-3 pl-3">
+                  Price <span className="text-danger">*</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td className="pl-3 pt-3">
+                  <strong>Pay-Per-Click (PPC)</strong>
+                  <span className="d-flex ml-3 mt-2 mb-1">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Research:</strong> valuable keywords
+                      <em>Setup:</em> Google Ads Account
                     </span>
                   </span>
-                  <span className="d-flex mb-2">
+                  <span className="d-flex ml-3 my-1">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Testing:</strong> find copy that resonates with
-                      your customers
+                      <em>Strategy:</em> Sales Funnel Optimization
                     </span>
                   </span>
-                  <span className="d-flex mb-2">
+                  <span className="d-flex ml-3 mb-1">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Landing Pages:</strong> optimized for high
-                      conversion rates
+                      <em>Research:</em> Keywords & Competitors
                     </span>
                   </span>
-                  <span className="d-flex mb-2">
+                  <span className="d-flex ml-3 mb-1">
                     <i className="far fa-check-square text-info mt-1"></i>
                     <span className="ml-2">
-                      <strong>Analysis:</strong> customer trends and
-                      demographics
+                      <em>Landing Pages:</em> Conversion Rate Optimized
                     </span>
                   </span>
-                  <div className="text-danger mt-5">
-                    <small>Minimum Requirements:</small>
-                    <small className="d-flex ml-2 mt-3">
-                      - Budgets must be at least $500
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </div>
+                  <span className="d-flex ml-3 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Testing:</em> Demographics & Copy
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-3">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Analysis:</em> Trends & Conversion Rates
+                    </span>
+                  </span>
+                </td>
+                <td className="pl-3 pt-3">
+                  20% of budget <br />+ <br />
+                  $300 / landing page
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-3 pt-3">
+                  <strong>Social Media (Paid Ads)</strong>
+                  <span className="d-flex ml-3 mt-2 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Setup:</em> Social Ads Accounts
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 my-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Strategy:</em> Sales Funnel Optimization
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Research:</em> Keywords & Competitors
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Landing Pages:</em> Conversion Rate Optimized
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Testing:</em> Demographics & Copy
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-3">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Analysis:</em> Trends & Conversion Rates
+                    </span>
+                  </span>
+                </td>
+                <td className="pl-3 pt-3">
+                  20% of budget <br />+ <br />
+                  $300 / landing page
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-3 pt-3">
+                  <strong>Social Media (Organic Reach)</strong>
+                  <span className="d-flex ml-3 mt-2 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Setup:</em> Social Media Accounts
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 my-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Optimization:</em> Profile Information
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Images:</em> Customized Per Platform
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-3">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Posts:</em> Sharable & Engaging Content
+                    </span>
+                  </span>
+                </td>
+                <td className="pl-3 pt-3">
+                  $300 / mo <br />
+                  (per platform)
+                </td>
+              </tr>
+              <tr>
+                <td className="pl-3 pt-3">
+                  <strong>Email Campaign</strong>
+                  <span className="d-flex ml-3 mt-2 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Setup:</em> Email Accounts
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 my-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Integration:</em> Website & CRM
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Emails:</em> Customized Weekly
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Landing Pages:</em> Conversion Rate Optimized
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Testing:</em> Demographics & Copy
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-3">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2">
+                      <em>Analysis:</em> Trends & Conversion Rates
+                    </span>
+                  </span>
+                </td>
+                <td className="pl-3 pt-3">
+                  $300 / mo <br />+ <br />
+                  $300 / landing page
+                </td>
+              </tr>
+            </tbody>
+          </Table>
+          <div className="d-flex">
+            <small className="text-danger">*</small>
+            <small className="text-danger ml-1 drop-shadow-dark font-weight-bold">
+              Ad services require a minimum budget of $500.
+            </small>
           </div>
-          <div className="container col-md-4">
-            <p className="mt-2 p-3 lead text-center text-white bg-purple border border-white">
-              <span className="text-secondary">Option 2:</span> Social Media
-            </p>
-            <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
-              <div className="text-center pt-5">
-                <i className="fas fa-3x fa-comment text-info mb-4 d-block"></i>
-                <h3 className="mt-2">
-                  Social Media
-                  <br />
-                  Advertising
-                </h3>
-                <div className="container border mt-3 py-3">
-                  <small className="d-block text-info">
-                    Marketing Services
-                  </small>
-                  <span className="d-block text-muted lead">20% of Budget</span>
-                  <small className="d-block text-muted">Cancel anytime!</small>
-                  <span className="d-block text-primary bg-purple mt-4">
-                    Safe & Secure!
-                  </span>
-                  <small className="d-block text-muted mt-2 px-2">
-                    (Don't wait for a disaster!)
-                  </small>
-                </div>
-                <div className="container py-4 text-left">
-                  <span className="d-flex my-2 mb-2">
-                    <strong className="mb-3">Includes:</strong>
-                  </span>
-                  <span className="d-flex mb-2">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">
-                      <strong>Research:</strong> valuable keywords
-                    </span>
-                  </span>
-                  <span className="d-flex mb-2">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">
-                      <strong>Testing:</strong> find copy that resonates with
-                      your customers
-                    </span>
-                  </span>
-                  <span className="d-flex mb-2">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">
-                      <strong>Landing Pages:</strong> optimized for high
-                      conversion rates
-                    </span>
-                  </span>
-                  <span className="d-flex mb-2">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">
-                      <strong>Analysis:</strong> customer trends and
-                      demographics
-                    </span>
-                  </span>
-                  <div className="text-danger mt-5">
-                    <small>Minimum Requirements:</small>
-                    <small className="d-flex ml-2 mt-3">
-                      - Budgets must be at least $500
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="container col-md-4">
-            <p className="mt-2 p-3 lead text-center text-white bg-purple border border-white">
-              <span className="text-secondary">Option 3:</span> Email
-            </p>
-            <div className="container mb-3 pt-2 border border-secondary drop-shadow bg-texture-2">
-              <div className="text-center pt-5">
-                <i className="fas fa-3x fa-envelope-open-text text-info mb-4 d-block"></i>
-                <h3 className="mt-2">
-                  Email
-                  <br />
-                  Campaigns
-                </h3>
-                <div className="container border mt-3 py-3">
-                  <small className="d-block text-info">
-                    Marketing Services
-                  </small>
-                  <span className="d-block text-muted lead">$75/hour</span>
-                  <small className="d-block text-muted">
-                    Use for anything you need!
-                  </small>
-                  <span className="d-block text-primary bg-purple mt-4">
-                    Bundle Hours & Save $$
-                  </span>
-                  <small className="d-block text-muted mt-2 px-2">
-                    (Save <span className="text-info">$100</span> for every 20
-                    hours!)
-                  </small>
-                </div>
-                <div className="container py-4 text-left">
-                  <span className="d-flex my-2 mb-2">
-                    <strong className="mb-3">Includes:</strong>
-                  </span>
-                  <span className="d-flex mb-2">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">
-                      <strong>Opt-in Forms:</strong> strategically placed on
-                      your website
-                    </span>
-                  </span>
-                  <span className="d-flex mb-2">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">
-                      <strong>Integrations:</strong> with your CRM software
-                    </span>
-                  </span>
-                  <span className="d-flex mb-2">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">
-                      <strong>Weekly Emails:</strong> optimized for high
-                      conversion rates
-                    </span>
-                  </span>
-                  <span className="d-flex mb-2">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">
-                      <strong>Analysis:</strong> customer trends and
-                      demographics
-                    </span>
-                  </span>
-                  <div className="text-danger mt-5">
-                    <small>Additional Recurring Payments:</small>
-                    <small className="d-flex ml-2 mt-3">
-                      - Email Service: $9.99 - $299.00/month
-                    </small>
-                    <small className="d-flex ml-2 mt-1">
-                      - Monthly fee depends on features
-                    </small>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div className="d-flex mt-3">
+            <small className="text-danger">*</small>
+            <small className="text-danger ml-1 drop-shadow-dark font-weight-bold">
+              Email Campaigns require a marketing service platform such as
+              Constant Contact, MailChimp, HubSpot, etc. <br />
+              These monthly fees are separate and must be covered by the client,
+              not my monthly price.
+            </small>
           </div>
         </div>
       </div>

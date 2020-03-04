@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
 import ContactSectionHome from '../Contact/ContactSectionHome/ContactSectionHome';
+import { Table } from 'react-bootstrap';
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -46,6 +47,9 @@ const Footer = () => {
               </Link>
               <Link className="d-flex footer-link" to="/">
                 Partners
+              </Link>
+              <Link className="d-flex footer-link" to="/privacy">
+                Privacy Policy
               </Link>
             </div>
             <div className="col-md-6 col-lg-3 text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark">
@@ -133,18 +137,45 @@ const Footer = () => {
                   href="https://g.page/john-grattan-seo-web-design?share"
                   target="_blank"
                 >
-                  30 Roosevelt Road,
+                  30 Roosevelt Rd,
                   <br />
                   Plymouth, MA 02360
                 </a>
               </div>
               <div className="text-white text-sans-serif pt-2 d-flex mb-2">
-                <i className="far fa-clock mt-1"></i>
-                <span className="text-primary ml-3">
-                  Monday - Friday
-                  <br />
-                  9:00 am - 5:00 pm
-                </span>
+                <i className="far fa-clock mt-2"></i>
+                <Table className="text-primary ml-2" borderless size="sm">
+                  <tbody>
+                    <tr>
+                      <td>Monday</td>
+                      <td>9AM–5PM</td>
+                    </tr>
+                    <tr>
+                      <td>Tuesday</td>
+                      <td>9AM–5PM</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday</td>
+                      <td>9AM–5PM</td>
+                    </tr>
+                    <tr>
+                      <td>Thursday</td>
+                      <td>9AM–5PM</td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td>
+                      <td>9AM–5PM</td>
+                    </tr>
+                    <tr>
+                      <td>Saturday</td>
+                      <td>Closed</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td>Closed</td>
+                    </tr>
+                  </tbody>
+                </Table>
               </div>
             </div>
           </div>

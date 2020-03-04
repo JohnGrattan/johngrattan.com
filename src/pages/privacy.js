@@ -1,7 +1,8 @@
 import React from 'react';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import BgImgPageTop from '../components/BgImgPageTop/BgImgPageTop';
+import PrivacyPage__Header from '../components/Privacy/Page/PrivacyPage__Header';
+import PrivacyPage__Body from '../components/Privacy/Page/PrivacyPage__Body';
 
 const PrivacyPage = () => (
   <Layout>
@@ -10,15 +11,12 @@ const PrivacyPage = () => (
       description="Privacy Policy"
       canonicalLink="https://johngrattan.com/privacy/"
     />
-    <BgImgPageTop
+    <PrivacyPage__Header
       Tag="header"
       className="bg-img-page-top"
       hOne="Privacy Policy"
-      pText="This is a test"
     />
-    <section className="page-section">
-      <div className="container"></div>
-    </section>
+    <PrivacyPage__Body className="py-md-5 bg-texture-1" />
   </Layout>
 );
 

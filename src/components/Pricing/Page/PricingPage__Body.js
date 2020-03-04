@@ -1,8 +1,8 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import PricingSection__FullService from './Sections/PricingSection__FullService';
-import PricingSection__WebsiteOnly from './Sections/PricingSection__WebsiteOnly';
+import PricingSection__SeoServices from './Sections/PricingSection__SeoServices';
+import PricingSection__WebsiteServices from './Sections/PricingSection__WebsiteServices';
 import PricingSection__MarketingServices from './Sections/PricingSection__MarketingServices';
 import * as Scroll from 'react-scroll';
 import {
@@ -13,8 +13,6 @@ import {
   scrollSpy,
   scroller,
 } from 'react-scroll';
-
-import { Card, ListGroup, ListGroupItem, Table } from 'react-bootstrap';
 
 // BG Query
 const PricingPage__Body = ({ className }) => {
@@ -47,7 +45,7 @@ const PricingPage__Body = ({ className }) => {
           <div className="container pt-3 pb-5">
             <div className="py-3 px-5">
               <h2 className="mt-2 text-center">
-                Digital Marketing Pricing Packages
+                Digital Marketing Service Prices
               </h2>
               <hr className="divider my-4" />
             </div>
@@ -67,7 +65,7 @@ const PricingPage__Body = ({ className }) => {
                 >
                   <i className="fas fa-3x fa-rocket mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">Full-Service SEO</span>
+                  <span className="text-white-link">SEO Services</span>
                 </Link>
                 <Link
                   to="website-only"
@@ -80,7 +78,7 @@ const PricingPage__Body = ({ className }) => {
                 >
                   <i className="fas fa-3x fa-globe mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">Website Only</span>
+                  <span className="text-white-link">Website Services</span>
                 </Link>
                 <Link
                   to="marketing-services"
@@ -98,64 +96,15 @@ const PricingPage__Body = ({ className }) => {
               </div>
             </div>
           </div>
-          <PricingSection__FullService className="container border rounded shadow bg-img-full-service-seo" />
-          <PricingSection__WebsiteOnly className="container border rounded shadow bg-img-full-service-seo" />
-          <PricingSection__MarketingServices className="container border rounded shadow bg-img-full-service-seo" />
-          {/* <div className="container bg-texture-2 m-5 border rounded shadow">
-            <div className="text-center pt-5">
-              <i className="fas fa-3x fa-thumbs-up mb-3 text-primary"></i>
-              <h2 className="mt-2">One-Time Services</h2>
-              <hr className="divider mt-4" />
-            </div>
-            <div className="pt-5">
-              <h3 className="mt-2 ml-5">
-                <i className="far fa-comment text-secondary"></i> Social Media
-              </h3>
-            </div>
-            <div className="container pb-5 px-5">
-              <Table responsive striped borderless>
-                <thead className="lead">
-                  <tr className="text-muted">
-                    <th>Service</th>
-                    <th>Fee</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Social Media Optimization</td>
-                    <td>$500</td>
-                  </tr>
-                  <tr>
-                    <td>Social Media Posts</td>
-                    <td>$50</td>
-                  </tr>
-                </tbody>
-              </Table>
-            </div>
-            <h3 className="mt-2 ml-5">
-              <i className="far fa-envelope text-secondary"></i> Email
-            </h3>
-            <div className="container pb-5 px-5">
-              <Table responsive striped borderless>
-                <thead className="lead">
-                  <tr className="text-muted">
-                    <th>Service</th>
-                    <th>Fee</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Email Marketing</td>
-                    <td>$50/campaign</td>
-                  </tr>
-                  <tr>
-                    <td>Business Email Setup</td>
-                    <td>$50</td>
-                  </tr>
-                </tbody>
-              </Table>
-            </div>
-          </div> */}
+          <div className="mb-5 w-100">
+            <PricingSection__SeoServices className="border rounded shadow bg-img-full-service-seo" />
+          </div>
+          <div className="mb-5 w-100">
+            <PricingSection__WebsiteServices className="border rounded shadow bg-img-full-service-seo" />
+          </div>
+          <div className="mb-5 w-100">
+            <PricingSection__MarketingServices className="border rounded shadow bg-img-full-service-seo" />
+          </div>
         </div>
       </div>
     </BackgroundImage>
