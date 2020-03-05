@@ -35,7 +35,7 @@ const CaseStudiesPage__Section = ({ className }) => {
           className="text-center pt-5 pb-4 drop-shadow-dark"
         >
           <i className="fas fa-3x fa-chart-line mb-3 text-primary"></i>
-          <h3 className="mt-2 text-white">Case Studies</h3>
+          <h3 className="mt-2 text-white">My Case Studies</h3>
           <hr className="divider mt-4 mb-5" />
         </div>
         <div className="container text-center border border-secondary col-md-7 pt-3 mb-5 drop-shadow">
@@ -56,6 +56,8 @@ const CaseStudiesPage__Section = ({ className }) => {
             <p className="text-white text-center mt-3">
               <strong className="text-secondary">Business:</strong> John Grattan
               SEO & Web Design
+              <br />
+              (Coming Soon)
             </p>
           </div>
           {/* <div className="col-md-6 col-lg-3">

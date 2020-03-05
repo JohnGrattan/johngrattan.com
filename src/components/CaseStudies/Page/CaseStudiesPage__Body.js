@@ -51,7 +51,7 @@ const CaseStudiesPage__Body = ({ className }) => {
             </div>
             <div className="container col-md-8 py-3 my-2 text-white bg-info rounded drop-shadow">
               <p className="m-3 mb-5 text-center drop-shadow">
-                Get more leads with these options:
+                The proof is in the numbers:
               </p>
               <div className="row justify-content-around align-items-end mt-4">
                 <Link
@@ -63,9 +63,9 @@ const CaseStudiesPage__Body = ({ className }) => {
                   duration={500}
                   offset={-75}
                 >
-                  <i className="fas fa-3x fa-rocket mb-3 text-primary wiggle"></i>
+                  <i className="fas fa-3x fa-chart-line mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">Case Studies</span>
+                  <span className="text-white-link">My Case Studies</span>
                 </Link>
                 <Link
                   to="website-only"
@@ -76,9 +76,9 @@ const CaseStudiesPage__Body = ({ className }) => {
                   duration={500}
                   offset={-75}
                 >
-                  <i className="fas fa-3x fa-globe mb-3 text-primary wiggle"></i>
+                  <i className="fas fa-3x fa-chart-pie mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">Website Services</span>
+                  <span className="text-white-link">Top SEO Reports</span>
                 </Link>
                 <Link
                   to="marketing-services"
@@ -89,9 +89,9 @@ const CaseStudiesPage__Body = ({ className }) => {
                   duration={500}
                   offset={-75}
                 >
-                  <i className="fas fa-3x fa-funnel-dollar mb-3 text-primary wiggle"></i>
+                  <i className="fas fa-3x fa-sort-numeric-up mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">Marketing Services</span>
+                  <span className="text-white-link">Staggering Stats</span>
                 </Link>
               </div>
             </div>
