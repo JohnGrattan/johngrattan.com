@@ -70,9 +70,15 @@ const FormContact = ({ formname }) => {
             <option value="" disabled hidden>
               Choose One...
             </option>
-            <option value="0">Package 1: Website Only</option>
-            <option value="1">Package 2: Website + SEO</option>
-            <option value="2">Package 3: Website + SEO + SEM</option>
+            <option value="0">Site Audit</option>
+            <option value="1">One-Time SEO</option>
+            <option value="2">Local SEO</option>
+            <option value="3">Organic SEO</option>
+            <option value="4">Full-Service SEO</option>
+            <option value="5">Website Design & Development</option>
+            <option value="6">Pay-Per-Click (PPC)</option>
+            <option value="7">Social Media Marketing</option>
+            <option value="8">Email Marketing</option>
           </Form.Control>
         </Form.Group>
 
@@ -85,12 +91,14 @@ const FormContact = ({ formname }) => {
               Choose One...
             </option>
             <option value="0">Home Services</option>
-            <option value="1">Medical</option>
+            <option value="1">Real Estate</option>
             <option value="2">Legal</option>
-            <option value="3">Retail</option>
-            <option value="4">Restaurant</option>
-            <option value="5">Education</option>
-            <option value="6">Small Business</option>
+            <option value="3">Medical</option>
+            <option value="4">Retail</option>
+            <option value="5">Restaurant</option>
+            <option value="6">Education</option>
+            <option value="7">Non-profit</option>
+            <option value="8">Other</option>
           </Form.Control>
         </Form.Group>
       </Form.Row>

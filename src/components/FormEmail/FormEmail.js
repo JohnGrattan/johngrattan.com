@@ -18,7 +18,7 @@ const FormEmail = ({ formname }) => {
         <span className="lead">
           Receive your{' '}
           <strong className="text-info text-uppercase">
-            <u>FREE SEO Checklist</u>
+            <u>FREE SEO CHECKLIST</u>
           </strong>{' '}
           for business owners!
         </span>
