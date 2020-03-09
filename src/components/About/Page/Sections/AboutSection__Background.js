@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const BackgroundSectionAbout = ({ className }) => {
+const AboutSection__Background = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query BackgroundSectionAboutQ {
+    query AboutSection__BackgroundQ {
       masthead: file(relativePath: { eq: "images/bg-img-fenway-park.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
@@ -24,7 +24,7 @@ const BackgroundSectionAbout = ({ className }) => {
       id="background"
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="john grattan about me background"
+      alt="About John Grattan SEO & Web Design background section - Boston Red Sox World Series Champions Flags at Fenway Park, Boston, MA"
     >
       <div className="text-center pt-5 drop-shadow-dark">
         <i className="fas fa-3x fa-address-card mb-3 text-primary"></i>
@@ -78,4 +78,4 @@ const BackgroundSectionAbout = ({ className }) => {
   );
 };
 
-export default BackgroundSectionAbout;
+export default AboutSection__Background;

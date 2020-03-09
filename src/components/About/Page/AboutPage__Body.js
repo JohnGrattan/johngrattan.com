@@ -1,9 +1,9 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import BackgroundSectionAbout from '../BackgroundSectionAbout/BackgroundSectionAbout';
-import EducationSectionAbout from '../EducationSectionAbout/EducationSectionAbout';
-import CommunitySectionAbout from '../CommunitySectionAbout/CommunitySectionAbout';
+import AboutSection__Background from './Sections/AboutSection__Background';
+import AboutSection__Education from './Sections/AboutSection__Education';
+import AboutSection__Community from './Sections/AboutSection__Community';
 import * as Scroll from 'react-scroll';
 import {
   Link,
@@ -15,9 +15,9 @@ import {
 } from 'react-scroll';
 
 // BG Query
-const AboutSectionPage = ({ className }) => {
+const AboutPage__Body = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query AboutSectionPageQ {
+    query AboutPage__BodyQ {
       texture: file(
         relativePath: { eq: "images/textures/gradient-squares.png" }
       ) {
@@ -38,7 +38,7 @@ const AboutSectionPage = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#fff`}
-      alt="about John Grattan background"
+      alt="About John Grattan SEO & Web Design background design"
     >
       <div className="container">
         <div className="row justify-content-center align-items-center border bg-white shadow rounded position-sticky">
@@ -94,13 +94,13 @@ const AboutSectionPage = ({ className }) => {
               </div>
             </div>
           </div>
-          <BackgroundSectionAbout className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
-          <EducationSectionAbout className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
-          <CommunitySectionAbout className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
+          <AboutSection__Background className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
+          <AboutSection__Education className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
+          <AboutSection__Community className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
         </div>
       </div>
     </BackgroundImage>
   );
 };
 
-export default AboutSectionPage;
+export default AboutPage__Body;

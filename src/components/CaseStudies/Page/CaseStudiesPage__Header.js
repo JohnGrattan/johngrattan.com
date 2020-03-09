@@ -24,7 +24,7 @@ const CaseStudiesPage__Header = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="John Grattan SEO & Web Design Case Studies Background"
+      alt="John Grattan SEO & Web Design Case Studies background section - reports with graphs and charts"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

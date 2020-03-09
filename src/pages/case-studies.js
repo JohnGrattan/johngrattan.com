@@ -8,7 +8,7 @@ const CaseStudiesPage = () => (
   <Layout>
     <SEO
       title="SEO & Web Design Case Studies"
-      description="SEO & Web Design Case Studies"
+      description="Always take the time to analyze in-depth case studies to see how results for your business will be achieved."
       canonicalLink="https://johngrattan.com/case-studies/"
     />
     <CaseStudiesPage__Header

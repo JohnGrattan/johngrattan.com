@@ -25,7 +25,7 @@ const Home__ProcessSection = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="seo process background"
+      alt="John Grattan SEO & Web Design Process section background on homepage - digital connections with arrows"
     >
       <div className="container">
         <StatsSectionHome

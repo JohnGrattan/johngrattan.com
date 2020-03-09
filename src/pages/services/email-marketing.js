@@ -6,7 +6,7 @@ import HeaderEmailMarketing from '../../components/HeaderEmailMarketing/HeaderEm
 const EmailMarketingPage = () => (
   <Layout>
     <SEO
-      title="Email Marketing"
+      title="Email Marketing Services"
       description="Email Marketing"
       canonicalLink="https://johngrattan.com/services/email-marketing/"
     />
@@ -14,7 +14,6 @@ const EmailMarketingPage = () => (
       Tag="header"
       className="bg-img-page-top"
       hOne="Email Marketing"
-      pText="This is a test"
     />
     <section className="page-section">
       <div className="container"></div>

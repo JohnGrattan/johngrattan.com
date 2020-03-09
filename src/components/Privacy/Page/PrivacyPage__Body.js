@@ -36,7 +36,7 @@ const PrivacyPage__Body = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#fff`}
-      alt="John Grattan SEO & Web Design Privacy Policy Page"
+      alt="John Grattan SEO & Web Design Privacy Policy background section"
     >
       <PrivacyPage__Section className="container border rounded shadow bg-img-full-service-seo" />
     </BackgroundImage>

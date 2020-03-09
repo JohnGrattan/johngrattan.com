@@ -15,7 +15,6 @@ const SEOStrategyPage = () => (
       Tag="header"
       className="bg-img-page-top"
       hOne="SEO Strategy"
-      pText="This is a test"
     />
     <SeoStrategyPage__Body className="py-md-5 bg-texture-1" />
   </Layout>

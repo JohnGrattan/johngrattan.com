@@ -30,7 +30,7 @@ const HeaderBlogPost = ({ className, hOne, author, date, timeToRead }) => {
       author={author}
       date={date}
       timeToRead={timeToRead}
-      alt="seo blog post about digital marketing and web design background"
+      alt="John Grattan SEO & Web Design Blog post background in header - light bulb with web development icons and keywords"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

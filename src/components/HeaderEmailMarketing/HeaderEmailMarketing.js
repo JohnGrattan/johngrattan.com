@@ -26,7 +26,7 @@ const HeaderEmailMarketing = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo and web design email marketing services background image"
+      alt="John Grattan SEO & Web Design Email Marketing background section - visual representation of envelopes flying from a computer across the globe"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

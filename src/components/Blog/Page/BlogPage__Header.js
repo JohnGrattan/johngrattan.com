@@ -24,7 +24,7 @@ const BlogPage__Header = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo blog about digital marketing and web design background"
+      alt="John Grattan SEO & Web Design Blog background section on homepage - open notebook with cup of coffee"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

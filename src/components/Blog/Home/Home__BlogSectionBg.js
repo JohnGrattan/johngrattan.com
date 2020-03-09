@@ -47,7 +47,7 @@ const Home__BlogSectionBg = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="seo services background"
+      alt="John Grattan SEO & Web Design Blog background section on homepage - open notebook with cup of coffee"
     >
       <BlogSectionHome />
     </BackgroundImage>

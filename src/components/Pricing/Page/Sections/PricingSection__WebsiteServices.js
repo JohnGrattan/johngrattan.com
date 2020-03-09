@@ -24,7 +24,7 @@ const PricingSection__WebsiteServices = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="website design & development services pricing section"
+      alt="John Grattan SEO & Web Design Pricing background section for Website services - laptop with code editor open showing web development code"
     >
       <div className="container">
         <div id="website-only" className="text-center pt-5 drop-shadow-dark">

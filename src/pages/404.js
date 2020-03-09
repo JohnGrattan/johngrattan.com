@@ -14,7 +14,6 @@ const NotFoundPage = () => (
       Tag="header"
       className="bg-img-page-top"
       hOne="404: Not Found"
-      pText="This is a test"
     />
     <section className="page-section">
       <div className="container"></div>

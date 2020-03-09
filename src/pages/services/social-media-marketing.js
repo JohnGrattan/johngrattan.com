@@ -15,7 +15,6 @@ const SocialMediaMarketingPage = () => (
       Tag="header"
       className="bg-img-page-top"
       hOne="Social Media Marketing"
-      pText="This is a test"
     />
     <section className="page-section">
       <div className="container"></div>

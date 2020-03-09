@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql, useStaticQuery, Link } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const InterestedSectionContact = ({ className }) => {
+const ContactSection__Interested = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query InterestedSectionContactQ {
+    query ContactSection__InterestedQ {
       masthead: file(relativePath: { eq: "images/bg-img-teamwork.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
@@ -24,7 +24,7 @@ const InterestedSectionContact = ({ className }) => {
       id="organic-seo"
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="organic seo digital marketing services background"
+      alt="Contact John Grattan SEO & Web Design background section - teamwork between co-workers and clients"
     >
       <div className="text-center pt-5 drop-shadow-dark">
         <i className="fas fa-3x fa-hands-helping mb-3 text-primary"></i>
@@ -84,4 +84,4 @@ const InterestedSectionContact = ({ className }) => {
   );
 };
 
-export default InterestedSectionContact;
+export default ContactSection__Interested;

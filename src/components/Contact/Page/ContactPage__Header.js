@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const HeaderContact = ({ className, hOne }) => {
+const ContactPage__Header = ({ className, hOne }) => {
   const data = useStaticQuery(graphql`
-    query HeaderContactQ {
+    query ContactPage__HeaderQ {
       masthead: file(relativePath: { eq: "images/bg-img-contact.jpg" }) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
@@ -24,7 +24,7 @@ const HeaderContact = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="contact john grattan background"
+      alt="Contact John Grattan SEO & Web Design header background section - icons for calling, email, social media"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">
@@ -39,4 +39,4 @@ const HeaderContact = ({ className, hOne }) => {
   );
 };
 
-export default HeaderContact;
+export default ContactPage__Header;

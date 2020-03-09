@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, graphql, useStaticQuery } from 'gatsby';
-import ContactSectionHome from '../Contact/ContactSectionHome/ContactSectionHome';
 import { Table } from 'react-bootstrap';
+import Home__ContactSection from '../Contact/Home/Home__ContactSection';
 
 const Footer = () => {
   const data = useStaticQuery(graphql`
@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <section>
       <section className="page-section">
-        <ContactSectionHome className="container bg-img-contact-section rounded shadow p-5" />
+        <Home__ContactSection className="container bg-img-contact-section rounded shadow p-5" />
       </section>
       <section className="bg-purple">
         <div className="container p-5">

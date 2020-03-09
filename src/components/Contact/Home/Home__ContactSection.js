@@ -4,9 +4,9 @@ import BackgroundImage from 'gatsby-background-image';
 
 import FormContact from '../../FormContact/FormContact';
 
-const ContactSectionHome = ({ className }) => {
+const Home__ContactSection = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query ContactSectionHomeQ {
+    query Home__ContactSectionQ {
       masthead: file(
         relativePath: { eq: "images/bg-img-contact-section.jpg" }
       ) {
@@ -27,7 +27,7 @@ const ContactSectionHome = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="full-service seo background"
+      alt="Contact John Grattan SEO & Web Design background section - business meeting at table with clients"
     >
       <div className="row justify-content-center">
         <div className="col-lg-8 text-center text-white">
@@ -79,4 +79,4 @@ const ContactSectionHome = ({ className }) => {
   );
 };
 
-export default ContactSectionHome;
+export default Home__ContactSection;

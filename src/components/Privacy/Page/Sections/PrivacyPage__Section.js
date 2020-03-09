@@ -25,7 +25,7 @@ const PrivacyPage__Section = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="digital marketing process for small business"
+      alt="John Grattan SEO & Web Design Privacy Policy section background - padlock showing digital security"
     >
       <div className="container p-lg-5">
         <div className="row bg-white my-3 p-2 p-lg-5">

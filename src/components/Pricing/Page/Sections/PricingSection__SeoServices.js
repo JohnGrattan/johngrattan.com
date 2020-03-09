@@ -24,7 +24,7 @@ const PricingSection__SeoServices = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="local seo & organic seo services pricing section"
+      alt="John Grattan SEO & Web Design Pricing background section for SEO services - computer screen with SEO stats"
     >
       <div className="container">
         <div id="full-service" className="text-center pt-5 drop-shadow-dark">

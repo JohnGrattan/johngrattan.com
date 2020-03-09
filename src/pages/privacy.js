@@ -8,7 +8,7 @@ const PrivacyPage = () => (
   <Layout>
     <SEO
       title="Privacy Policy"
-      description="Privacy Policy"
+      description="Your privacy is critically important to me. It is my policy to respect your privacy regarding any information I may collect while operating my website."
       canonicalLink="https://johngrattan.com/privacy/"
     />
     <PrivacyPage__Header

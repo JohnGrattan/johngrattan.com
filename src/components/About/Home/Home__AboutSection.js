@@ -1,14 +1,13 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-
 import ImgJgGreen from '../../ImageComps/image-jg-headshot-green';
 import Button from '../../Button/Button';
 import FormEmail from '../../FormEmail/FormEmail';
 
-const AboutSectionHome = ({ className }) => {
+const Home__AboutSection = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query AboutSectionHomeQ {
+    query Home__AboutSectionQ {
       texture: file(
         relativePath: { eq: "images/textures/gradient-squares.png" }
       ) {
@@ -28,8 +27,8 @@ const AboutSectionHome = ({ className }) => {
       Tag="section"
       className={className}
       fluid={imageData}
-      backgroundColor={`#fff`}
-      alt="about John Grattan background"
+      backgroundColor={`#ccc`}
+      alt="About John Grattan SEO & Web Design background design"
     >
       <div className="container mb-md-5">
         <div className="container col-md-7 neg-margin-top-email-form">
@@ -69,4 +68,4 @@ const AboutSectionHome = ({ className }) => {
   );
 };
 
-export default AboutSectionHome;
+export default Home__AboutSection;

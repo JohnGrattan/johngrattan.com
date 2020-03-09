@@ -32,7 +32,7 @@ const ServicesPage__Section = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="digital marketing services for small business"
+      alt="John Grattan SEO & Web Design Services section background on homepage - digital marketing service options"
     >
       <div className="container">
         <div className="px-5 text-white text-center">

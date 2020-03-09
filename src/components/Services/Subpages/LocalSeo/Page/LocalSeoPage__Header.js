@@ -5,7 +5,9 @@ import BackgroundImage from 'gatsby-background-image';
 const LocalSeoPage__Header = ({ className, hOne }) => {
   const data = useStaticQuery(graphql`
     query LocalSeoPage__HeaderQ {
-      masthead: file(relativePath: { eq: "images/bg-img-seo-strategy.jpg" }) {
+      masthead: file(
+        relativePath: { eq: "images/bg-img-local-seo-header-plymouth-ma.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -24,7 +26,7 @@ const LocalSeoPage__Header = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo and web design email marketing services background image"
+      alt="John Grattan SEO & Web Design Local SEO section background - Google maps showing business locations in downtown Plymouth, MA"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

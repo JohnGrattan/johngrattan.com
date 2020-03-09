@@ -38,7 +38,7 @@ const CaseStudiesPage__Body = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#fff`}
-      alt="John Grattan SEO & Web Design Case Studies Background"
+      alt="John Grattan SEO & Web Design Case Studies background section"
     >
       <div className="container">
         <div className="row justify-content-center align-items-center border bg-white shadow rounded position-sticky">

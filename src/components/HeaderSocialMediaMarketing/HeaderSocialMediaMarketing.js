@@ -26,7 +26,7 @@ const HeaderSocialMediaMarketing = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo and web design social media marketing services background image"
+      alt="John Grattan SEO & Web Design Social Media Marketing header background - various social media icons, Facebook, Instagram, LinkedIn"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

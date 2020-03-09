@@ -2,10 +2,12 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const HeaderAbout = ({ className, hOne }) => {
+const AboutPage__Header = ({ className, hOne }) => {
   const data = useStaticQuery(graphql`
-    query HeaderAboutQ {
-      masthead: file(relativePath: { eq: "images/bg-img-about.jpg" }) {
+    query AboutPage__HeaderQ {
+      masthead: file(
+        relativePath: { eq: "images/bg-img-about-plymouth-ma.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -24,7 +26,7 @@ const HeaderAbout = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="about john grattan background"
+      alt="About John Grattan SEO & Web Design header background - Boats in Plymouth, MA Waterfront"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">
@@ -39,4 +41,4 @@ const HeaderAbout = ({ className, hOne }) => {
   );
 };
 
-export default HeaderAbout;
+export default AboutPage__Header;

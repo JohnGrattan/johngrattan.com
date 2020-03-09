@@ -7,8 +7,8 @@ import ProcessPage__Body from '../components/Process/Page/ProcessPage__Body';
 const ProcessPage = () => (
   <Layout>
     <SEO
-      title="SEO & Web Design Process"
-      description="SEO & Web Design Process"
+      title="SEO & Web Design Process for Success"
+      description="My SEO & Web Design process will diligently examine all aspects of your business, customers, goals, and challenges to formulate your marketing strategy."
       canonicalLink="https://johngrattan.com/process/"
     />
     <ProcessPage__Header

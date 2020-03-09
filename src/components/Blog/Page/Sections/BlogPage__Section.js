@@ -48,7 +48,7 @@ const BlogPage__Section = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="seo & web design blog insights for small business owners"
+      alt="John Grattan SEO & Web Design Blog background section - many open books showing text"
     >
       <div className="container">
         <h2 className="text-center mt-0 text-white">Latest Posts</h2>

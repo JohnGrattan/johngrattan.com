@@ -25,7 +25,7 @@ const Home__ServicesSection = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="digital marketing services for small business"
+      alt="John Grattan SEO & Web Design Services section background on homepage - digital marketing service options"
     >
       <div className="container pb-5">
         <StatsSectionHome

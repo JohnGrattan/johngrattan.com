@@ -14,7 +14,6 @@ const PayPerClickPpcPage = () => (
       Tag="header"
       className="bg-img-page-top"
       hOne="Pay-Per-Click (PPC) Ads"
-      pText="This is a test"
     />
     <section className="page-section">
       <div className="container"></div>

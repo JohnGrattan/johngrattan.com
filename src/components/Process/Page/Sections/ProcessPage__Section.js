@@ -24,7 +24,7 @@ const ProcessPage__Section = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="digital marketing process for small business"
+      alt="John Grattan SEO & Web Design Process section background - digital connections with arrows"
     >
       <div className="container">
         <div className="px-5 text-white text-center">

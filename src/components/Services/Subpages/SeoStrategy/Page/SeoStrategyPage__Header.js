@@ -24,7 +24,7 @@ const SeoStrategyPage__Header = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo and web design email marketing services background image"
+      alt="John Grattan SEO & Web Design SEO Strategy section background - chess board and pieces"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

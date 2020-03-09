@@ -26,7 +26,7 @@ const HeaderPayPerClickPpc = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo and web design social media marketing services background image"
+      alt="John Grattan SEO & Web Design PPC Pay-Per-Click header background - computer screen with digital ad stats"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

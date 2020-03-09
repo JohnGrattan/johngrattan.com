@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import InterestedSectionContact from '../InterestedSectionContact/InterestedSectionContact';
+import ContactSection__Interested from './Sections/ContactSection__Interested';
 
 import * as Scroll from 'react-scroll';
 import {
@@ -14,9 +14,9 @@ import {
 } from 'react-scroll';
 
 // BG Query
-const ContactSectionPage = ({ className }) => {
+const ContactPage__Body = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query ContactSectionPageQ {
+    query ContactPage__BodyQ {
       texture: file(
         relativePath: { eq: "images/textures/gradient-squares.png" }
       ) {
@@ -37,7 +37,7 @@ const ContactSectionPage = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#fff`}
-      alt="about John Grattan background"
+      alt="Contact John Grattan SEO & Web Design background section"
     >
       <div className="container">
         <div className="row justify-content-center align-items-center border bg-white shadow rounded position-sticky">
@@ -93,11 +93,11 @@ const ContactSectionPage = ({ className }) => {
               </div>
             </div>
           </div>
-          <InterestedSectionContact className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
+          <ContactSection__Interested className="container my-5 mx-3 border rounded shadow bg-img-gray-gradient" />
         </div>
       </div>
     </BackgroundImage>
   );
 };
 
-export default ContactSectionPage;
+export default ContactPage__Body;

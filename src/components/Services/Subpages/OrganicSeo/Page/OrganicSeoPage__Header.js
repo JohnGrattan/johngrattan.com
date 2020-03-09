@@ -5,7 +5,9 @@ import BackgroundImage from 'gatsby-background-image';
 const OrganicSeoPage__Header = ({ className, hOne }) => {
   const data = useStaticQuery(graphql`
     query OrganicSeoPage__HeaderQ {
-      masthead: file(relativePath: { eq: "images/bg-img-google.jpg" }) {
+      masthead: file(
+        relativePath: { eq: "images/bg-img-organic-seo-google-serps.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -24,7 +26,7 @@ const OrganicSeoPage__Header = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo and web design email marketing services background image"
+      alt="John Grattan SEO & Web Design Organic SEO section background - Google search engine results pages (SERPs)"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

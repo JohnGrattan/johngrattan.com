@@ -24,7 +24,7 @@ const PricingPage__Header = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo blog background"
+      alt="John Grattan SEO & Web Design Pricing header background - business deal with handshake"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

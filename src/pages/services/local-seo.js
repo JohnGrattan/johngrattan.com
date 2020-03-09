@@ -7,7 +7,7 @@ import LocalSeoPage__Body from '../../components/Services/Subpages/LocalSeo/Page
 const LocalSeoPage = () => (
   <Layout>
     <SEO
-      title="Local SEO"
+      title="Local SEO Services"
       description="Local SEO"
       canonicalLink="https://johngrattan.com/services/local-seo/"
     />
@@ -15,7 +15,6 @@ const LocalSeoPage = () => (
       Tag="header"
       className="bg-img-page-top"
       hOne="Local SEO"
-      pText="This is a test"
     />
     <LocalSeoPage__Body className="py-md-5 bg-texture-1" />
   </Layout>

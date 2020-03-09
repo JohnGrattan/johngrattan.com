@@ -24,7 +24,7 @@ const ProcessPage__Header = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo process background"
+      alt="John Grattan SEO & Web Design Process section background - planning board with tasks on sticky notes"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

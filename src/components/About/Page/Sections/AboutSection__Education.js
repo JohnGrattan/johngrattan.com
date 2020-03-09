@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const EducationSectionAbout = ({ className }) => {
+const AboutSection__Education = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query EducationSectionAboutQ {
+    query AboutSection__EducationQ {
       masthead: file(
         relativePath: {
           eq: "images/bg-img-education-bridgewater-state-university.jpg"
@@ -27,7 +27,7 @@ const EducationSectionAbout = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="john grattan education bridgewater state university about me background"
+      alt="About John Grattan SEO & Web Design background section - Bridgewater State University - Boyden Hall in Bridgewater, MA"
     >
       <div id="education" className="text-center pt-5 drop-shadow-dark">
         <i className="fas fa-3x fa-user-graduate mb-3 text-primary"></i>
@@ -88,4 +88,4 @@ const EducationSectionAbout = ({ className }) => {
   );
 };
 
-export default EducationSectionAbout;
+export default AboutSection__Education;

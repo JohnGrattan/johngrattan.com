@@ -37,7 +37,7 @@ const FooterSectionPage = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#fff`}
-      alt="footer contact John Grattan background"
+      alt="Contact John Grattan SEO & Web Design background section in footer"
     >
       <Footer />
     </BackgroundImage>

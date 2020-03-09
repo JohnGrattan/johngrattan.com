@@ -27,7 +27,7 @@ const CaseStudiesPage__Section = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="John Grattan SEO & Web Design Case Studies Background"
+      alt="John Grattan SEO & Web Design Case Studies background section - data, charts, conversion rates"
     >
       <div className="container">
         <div

@@ -26,7 +26,7 @@ const ServicesPage__Header = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="seo and web design services background image"
+      alt="John Grattan SEO & Web Design Services section background - working on Digital Marketing services at desk with client"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

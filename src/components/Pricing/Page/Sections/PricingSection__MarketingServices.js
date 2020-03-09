@@ -6,7 +6,9 @@ import { Table } from 'react-bootstrap';
 const PricingSection__MarketingServices = ({ className }) => {
   const data = useStaticQuery(graphql`
     query PricingSection__MarketingServicesQ {
-      masthead: file(relativePath: { eq: "images/bg-img-coding-website.jpg" }) {
+      masthead: file(
+        relativePath: { eq: "images/bg-img-marketing-section.jpg" }
+      ) {
         childImageSharp {
           fluid(quality: 90, maxWidth: 1920) {
             ...GatsbyImageSharpFluid_withWebp
@@ -24,7 +26,7 @@ const PricingSection__MarketingServices = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="full-service seo background"
+      alt="John Grattan SEO & Web Design Pricing background section for Marketing services - laptop with marketing statistics"
     >
       <div className="container">
         <div

@@ -26,7 +26,7 @@ const BgImgHome = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="john grattan seo and web design homepage background"
+      alt="John Grattan SEO & Web Design homepage background section - computer screen with SEO stats"
     >
       <div className="container h-100">
         <div className="row h-100 align-items-center justify-content-center text-center">

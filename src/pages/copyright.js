@@ -10,12 +10,7 @@ const CopyrightPage = () => (
       description="Copyright"
       canonicalLink="https://johngrattan.com/copyright/"
     />
-    <BgImgPageTop
-      Tag="header"
-      className="bg-img-page-top"
-      hOne="Copyright"
-      pText="This is a test"
-    />
+    <BgImgPageTop Tag="header" className="bg-img-page-top" hOne="Copyright" />
     <section className="page-section">
       <div className="container"></div>
     </section>

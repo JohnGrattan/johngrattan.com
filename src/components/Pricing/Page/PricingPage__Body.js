@@ -38,7 +38,7 @@ const PricingPage__Body = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#fff`}
-      alt="about John Grattan background"
+      alt="John Grattan SEO & Web Design Pricing background section"
     >
       <div className="container">
         <div className="row justify-content-center align-items-center border bg-white shadow rounded position-sticky">

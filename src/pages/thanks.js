@@ -6,15 +6,14 @@ import BgImgPageTop from '../components/BgImgPageTop/BgImgPageTop';
 const ThanksPage = () => (
   <Layout>
     <SEO
-      title="Thank you for submitting"
-      description="Thank you for submitting"
+      title="Thank you for submitting!"
+      description="Thank you for submitting and showing interest! I look forward to working with you and providing value through digital marketing to your business."
       canonicalLink="https://johngrattan.com/thanks/"
     />
     <BgImgPageTop
       Tag="header"
       className="bg-img-page-top"
       hOne="Thank you for submitting!"
-      pText="This is a test"
     />
     <section className="page-section">
       <div className="container"></div>

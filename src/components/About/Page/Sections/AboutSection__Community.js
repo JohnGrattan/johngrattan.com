@@ -2,9 +2,9 @@ import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
 
-const CommunitySectionAbout = ({ className }) => {
+const AboutSection__Community = ({ className }) => {
   const data = useStaticQuery(graphql`
-    query CommunitySectionAboutQ {
+    query AboutSection__CommunityQ {
       masthead: file(
         relativePath: { eq: "images/bg-img-community-plymouth-ma.jpg" }
       ) {
@@ -25,7 +25,7 @@ const CommunitySectionAbout = ({ className }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#040e18`}
-      alt="john grattan about me background"
+      alt="About John Grattan SEO & Web Design community section - Town Hall in Downtown, Plymouth, MA"
     >
       <div id="community" className="text-center pt-5 drop-shadow-dark">
         <i className="fas fa-3x fa-handshake mb-3 text-primary"></i>
@@ -70,4 +70,4 @@ const CommunitySectionAbout = ({ className }) => {
   );
 };
 
-export default CommunitySectionAbout;
+export default AboutSection__Community;

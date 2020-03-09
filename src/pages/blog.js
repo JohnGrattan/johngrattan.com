@@ -7,8 +7,8 @@ import BlogPage__Body from '../components/Blog/Page/BlogPage__Body';
 const SeoBlogPage = ({ data }) => (
   <Layout>
     <SEO
-      title="SEO Blog"
-      description="SEO Blog"
+      title="Blog for SEO, Web Design, Web Development & Marketing"
+      description="Check my blog for SEO tips, web design ideas, and marketing trends."
       canonicalLink="https://johngrattan.com/blog/"
     />
     <BlogPage__Header

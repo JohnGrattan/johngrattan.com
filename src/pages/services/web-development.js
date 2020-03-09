@@ -7,7 +7,7 @@ import BgImgPageTop from '../../components/BgImgPageTop/BgImgPageTop';
 const WebDevelopmentPage = () => (
   <Layout>
     <SEO
-      title="Web Development"
+      title="Web Development Services"
       description="Web Development"
       canonicalLink="https://johngrattan.com/services/web-development/"
     />
@@ -15,7 +15,6 @@ const WebDevelopmentPage = () => (
       Tag="header"
       className="bg-img-page-top"
       hOne="Web Development"
-      pText="This is a test"
     />
     <section className="page-section">
       <div className="container"></div>

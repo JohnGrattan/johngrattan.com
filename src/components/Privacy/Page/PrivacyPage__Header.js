@@ -24,7 +24,7 @@ const PrivacyPage__Header = ({ className, hOne }) => {
       fluid={imageData}
       backgroundColor={`#040e18`}
       hOne={hOne}
-      alt="John Grattan SEO & Web Design Privacy Policy Page"
+      alt="John Grattan SEO & Web Design Privacy Policy header background - padlock showing digital security"
     >
       <div className="container">
         <div className="row align-items-center justify-content-center text-center">

@@ -27,7 +27,7 @@ const BlogPage__Body = ({ className, section }) => {
       className={className}
       fluid={imageData}
       backgroundColor={`#fff`}
-      alt="about John Grattan background"
+      alt="John Grattan SEO & Web Design Blog background section design"
     >
       <div className="container">
         <div className="row justify-content-center align-items-center border bg-white shadow rounded position-sticky">
