@@ -3,6 +3,7 @@ import { graphql, useStaticQuery, Link } from 'gatsby';
 import ImgJohnGrattanLogoGmb from '../../../ImageComps/image-john-grattan-logo-gmb';
 import BackgroundImage from 'gatsby-background-image';
 import { Table } from 'react-bootstrap';
+import JgLogoSvg from '../../../SVGs/john-grattan-logo';
 
 const CaseStudiesPage__Section = ({ className }) => {
   const data = useStaticQuery(graphql`

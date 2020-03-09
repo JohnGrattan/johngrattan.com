@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { Navbar, Nav } from 'react-bootstrap';
+import JgLogoSvg from '../SVGs/john-grattan-logo';
 
 export default class Header extends React.Component {
   render() {
@@ -12,13 +13,15 @@ export default class Header extends React.Component {
           expand="lg"
           collapseOnSelect={true}
         >
-          <div className="container">
+          <div className="container align-content-center">
             <Link
               to="/"
-              className="navbar-brand js-scroll-trigger text-secondary drop-shadow-dark text-uppercase"
+              className="svg-size-logo js-scroll-trigger text-secondary drop-shadow-dark text-uppercase align-content-center"
             >
-              <span className="border border-primary rounded p-2">JG</span> John
-              Grattan
+              {/* <span className="border border-primary rounded p-2">JG</span> John
+              Grattan */}
+
+              <JgLogoSvg />
             </Link>
             <Navbar.Toggle
               aria-label="Toggle navigation"
