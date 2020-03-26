@@ -5,8 +5,8 @@ import { Form, Button, Col, Row } from 'react-bootstrap';
 import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 const FormEmail = ({ formname }) => {
-  const [email, setEmail] = useState('');
-  const [FULLNAME, setFULLNAME] = useState('');
+  const [email, setEmail] = useState(null);
+  const [FULLNAME, setFULLNAME] = useState(null);
 
   const onNameInputChange = event => {
     setFULLNAME(event.target.value);
@@ -18,7 +18,7 @@ const FormEmail = ({ formname }) => {
 
   return (
     <Form
-      onSubmit={() => addToMailchimp({ email }, { FULLNAME })}
+      onSubmit={() => addToMailchimp(email, { FULLNAME })}
       name={formname}
       method="POST"
       action="/thanks/"
