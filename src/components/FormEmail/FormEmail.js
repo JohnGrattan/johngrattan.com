@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Form, Button, Col, Row } from 'react-bootstrap';
+import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 const FormEmail = ({ formname }) => {
+  const [email, setEmail] = useState('');
+  const [FULLNAME, setFULLNAME] = useState('');
+
+  const onNameInputChange = event => {
+    setFULLNAME(event.target.value);
+  };
+
+  const onEmailInputChange = event => {
+    setEmail(event.target.value);
+  };
+
   return (
     <Form
+      onSubmit={() => addToMailchimp({ email }, { FULLNAME })}
       name={formname}
       method="POST"
       action="/thanks/"
@@ -25,7 +38,13 @@ const FormEmail = ({ formname }) => {
       </Form.Text>
       <Form.Row>
         <Col sm="12" md="6" className="mb-2 mb-md-0">
-          <Form.Control name="name" type="text" placeholder="Name" required />
+          <Form.Control
+            name="name"
+            type="text"
+            placeholder="Name"
+            required
+            onChange={onNameInputChange}
+          />
         </Col>
         <Col sm="12" md="6">
           <Form.Control
@@ -33,6 +52,7 @@ const FormEmail = ({ formname }) => {
             type="email"
             placeholder="Business Email"
             required
+            onChange={onEmailInputChange}
           />
         </Col>
       </Form.Row>

@@ -82,11 +82,11 @@ const PricingSection__SeoServices = ({ className }) => {
                 </span>
                 <span className="d-flex ml-3 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Organic SEO</span>
+                  <span className="ml-2">Content SEO</span>
                 </span>
                 <span className="d-flex ml-3 mb-3">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Traffic Analysis</span>
+                  <span className="ml-2">Data & Analytics</span>
                 </span>
               </td>
               <td className="pl-3 pt-3">$500+</td>

@@ -1,9 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
-import PropTypes from 'prop-types';
-import Button from '../Button/Button';
 import BackgroundImage from 'gatsby-background-image';
-import FormEmail from '../FormEmail/FormEmail';
 
 const BgImgHome = ({ className }) => {
   const data = useStaticQuery(graphql`

@@ -25,7 +25,13 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
     'gatsby-plugin-robots-txt',
-
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint:
+          'https://johngrattan.us19.list-manage.com/subscribe/post?u=15d6d54f80db22fad48ed30c5&amp;id=d5ba0314c8',
+      },
+    },
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -50,14 +56,6 @@ module.exports = {
         // gtmAuth: 'JG_GTM_ENV_AUTH_STRING',
         // gtmPreview: 'JG_GTM_ENV_PREVIEW',
         // dataLayerName: 'JG_GTM_DATA_LAYER',
-      },
-    },
-    {
-      resolve: 'gatsby-plugin-hubspot',
-      options: {
-        trackingCode: '7150863',
-        respectDNT: true,
-        productionOnly: true,
       },
     },
     {
