@@ -18,7 +18,7 @@ const FormEmail = ({ formname }) => {
 
   return (
     <Form
-      onSubmit={() => addToMailchimp(email, FULLNAME)}
+      onSubmit={() => addToMailchimp(email, { FULLNAME })}
       name={formname}
       method="POST"
       action="/thanks/"
