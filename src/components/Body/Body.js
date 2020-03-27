@@ -1,40 +1,54 @@
 import React from 'react';
-import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
+import BodyNavBox from '../BodyNavBox/BodyNavBox';
 
-// BG Query
-const Body = ({ className }) => {
-  const data = useStaticQuery(graphql`
-    query BodyQ {
-      masthead: file(relativePath: { eq: "images/bg-img-pricing.jpg" }) {
-        childImageSharp {
-          fluid(quality: 90, maxWidth: 1920) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-      texture: file(
-        relativePath: { eq: "images/textures/gradient-squares.png" }
-      ) {
-        childImageSharp {
-          fluid(quality: 100, maxWidth: 1920) {
-            ...GatsbyImageSharpFluid_withWebp
-          }
-        }
-      }
-    }
-  `);
+import * as Scroll from 'react-scroll';
+import {
+  Link,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from 'react-scroll';
 
-  const imageData = data.texture.childImageSharp.fluid;
-
+const Body = ({
+  className,
+  fluid,
+  hTwo,
+  alt,
+  text,
+  linkTo,
+  scrollTo,
+  icon,
+  label,
+}) => {
   return (
     <BackgroundImage
       Tag="section"
       className={className}
-      fluid={imageData}
+      fluid={fluid}
       backgroundColor={`#fff`}
-      alt="John Grattan SEO & Web Design Pricing background section"
-    ></BackgroundImage>
+      alt={alt}
+    >
+      <div className="container">
+        <div className="row justify-content-center align-items-center border bg-white shadow rounded position-sticky">
+          <div className="container pt-3 pb-5">
+            <div className="py-3 px-5">
+              <h2 className="mt-2 text-center">{hTwo}</h2>
+              <hr className="divider my-4" />
+            </div>
+            <BodyNavBox
+              text={text}
+              linkTo={linkTo}
+              scrollTo={scrollTo}
+              icon={icon}
+              label={label}
+            />
+          </div>
+        </div>
+      </div>
+    </BackgroundImage>
   );
 };
 
