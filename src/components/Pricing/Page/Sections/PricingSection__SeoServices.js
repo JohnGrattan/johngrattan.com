@@ -82,18 +82,26 @@ const PricingSection__SeoServices = ({ className }) => {
                 </span>
                 <span className="d-flex ml-3 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Content SEO</span>
+                  <span className="ml-2">Content Analysis</span>
+                </span>
+                <span className="d-flex ml-3 mb-1">
+                  <i className="far fa-check-square text-info mt-1"></i>
+                  <span className="ml-2">UI/UX Analysis</span>
+                </span>
+                <span className="d-flex ml-3 mb-1">
+                  <i className="far fa-check-square text-info mt-1"></i>
+                  <span className="ml-2">Data & Analytics</span>
                 </span>
                 <span className="d-flex ml-3 mb-3">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Data & Analytics</span>
+                  <span className="ml-2">Prioritization</span>
                 </span>
               </td>
               <td className="pl-3 pt-3">$500+</td>
             </tr>
-            <tr>
+            {/* <tr>
               <td className="pl-3 pt-3">
-                <strong>One-Time SEO</strong>
+                <strong>SEO Site Audit + Fixes</strong>
                 <span className="d-flex ml-3 mt-2 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">SEO Site Audit</span>
@@ -112,7 +120,7 @@ const PricingSection__SeoServices = ({ className }) => {
                 </span>
               </td>
               <td className="pl-3 pt-3">$1,000+</td>
-            </tr>
+            </tr> */}
           </tbody>
         </Table>
         <div className="d-flex pb-5">
@@ -189,9 +197,13 @@ const PricingSection__SeoServices = ({ className }) => {
                   <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">On-Page SEO</span>
                 </span>
-                <span className="d-flex ml-3 mb-3">
+                <span className="d-flex ml-3 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
                   <span className="ml-2">Off-Page SEO</span>
+                </span>
+                <span className="d-flex ml-3 mb-3">
+                  <i className="far fa-check-square text-info mt-1"></i>
+                  <span className="ml-2">Content Management</span>
                 </span>
               </td>
               <td className="pl-3 pt-3">$750+ / mo</td>

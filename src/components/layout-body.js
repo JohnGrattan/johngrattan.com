@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Navbar from './Navbar/Navbar';
+import Body from './Body/Body';
 import FooterSectionPage from './Footer/FooterSectionPage/FooterSectionPage';
 import './layout.scss';
 
@@ -16,7 +17,7 @@ const isScrolled = element => {
   return scrollNode.scrollTop > 0;
 };
 
-export default class LayoutBody extends React.Component {
+export default class Layout extends React.Component {
   constructor(props) {
     super(props);
     this.siteContainer = React.createRef();
@@ -53,14 +54,16 @@ export default class LayoutBody extends React.Component {
     return (
       <div className={className} ref={this.siteContainer} id="page-top">
         <Navbar />
-        <main>{this.props.children}</main>
+        <main>
+          <Body>{this.props.children}</Body>
+        </main>
         <FooterSectionPage className="bg-texture-1" />
       </div>
     );
   }
 }
 
-LayoutBody.propTypes = {
+Layout.propTypes = {
   children: PropTypes.node.isRequired,
   className: PropTypes.string,
 };
