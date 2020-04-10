@@ -64,193 +64,165 @@ const PricingSection__WebsiteServices = ({ className }) => {
             <tr>
               <td className="pl-3 pt-3">
                 <strong>Web Design & Development</strong>
-                <span className="mt-3 mb-2 ml-2 d-flex text-info">Design:</span>
-                <span className="d-flex ml-3 mt-2 mb-1">
+                <span className="d-flex ml-3 mt-3 mb-1 font-weight-bold">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Strategy:</em> User Needs & Business Goals
+                  <span className="ml-2">Design</span>
+                </span>
+                <span className="d-flex ml-4 mt-1 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Strategy: User Needs & Business Goals
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Analysis:</em> Industry & Competition
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Analysis: Industry & Competition
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Architecture:</em> Information & Decision Paths
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Architecture: Information & Decision Paths
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Content:</em> Strategy & Creation
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Content: Strategy & Creation
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Navigation:</em> Primary & Secondary
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Navigation: Primary & Secondary
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Marketing:</em> Call-to-Action (CTA)
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Marketing: Call-to-Action (CTA)
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Responsive:</em> All Devices & Sizes
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Responsive: All Devices & Sizes
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Compatibility:</em> All Browsers
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Compatibility: All Browsers
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Mobile-First:</em> Progressive Enhancement
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Mobile-First: Progressive Enhancement
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Images:</em> Custom & Premium Stock
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Images: Custom & Premium Stock
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Integrations:</em> Social Media & Email Opt-Ins
-                  </span>
-                </span>
-
-                <span className="mt-3 mb-2 ml-2 d-flex text-info">
-                  Development:
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Front-End:</em> GatsbyJS + ReactJS
-                  </span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Back-End:</em> Node.js + GraphQL
-                  </span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Deployment:</em> Netlify
-                  </span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Headless CMS:</em> NetlifyCMS
-                  </span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Version Control:</em> Git + GitHub
+                <span className="d-flex ml-4 mb-3">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Integrations: Social Media & Email Opt-Ins
                   </span>
                 </span>
 
-                <span className="mt-3 mb-2 ml-2 d-flex text-info">
-                  SEO Ready:
-                </span>
-                <span className="d-flex ml-3 mb-1">
+                <span className="d-flex ml-3 mt-2 mb-1 font-weight-bold">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Technical SEO:</em> Speed & Security
+                  <span className="ml-2">Development</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Front-End: GatsbyJS + ReactJS
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>On-Site SEO:</em> Basic tags & structure
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Back-End: Node.js + GraphQL
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Google Analytics:</em> Setup
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Deployment: Netlify</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Headless CMS: NetlifyCMS
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Google Search Console:</em> Setup
+                <span className="d-flex ml-4 mb-3">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Version Control: Git + GitHub
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-1">
+
+                <span className="d-flex ml-3 mt-2 mb-1 font-weight-bold">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Robots.txt File:</em> Setup & Optimize
+                  <span className="ml-2">SEO Ready</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Technical SEO: Speed & Security
                   </span>
                 </span>
-                <span className="d-flex ml-3 mb-3">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>XML Site Map:</em> Setup & Upload
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    On-Site SEO: Basic Tags & Structure
+                  </span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Google Analytics: Setup
+                  </span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Google Search Console: Setup
+                  </span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Robots.txt File: Setup & Optimize
+                  </span>
+                </span>
+                <span className="d-flex ml-4 mb-3">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    XML Site Map: Setup & Upload
                   </span>
                 </span>
               </td>
               <td className="pl-3 pt-3">
-                $2000 base <br />+ <br />
-                $300 / page
+                $1000 base <br />+ <br />
+                $100 / page
               </td>
-            </tr>
-            <tr>
-              <td className="pl-3 pt-3">
-                <strong>Service Retainer</strong>
-                <span className="mt-3 mb-2 ml-2 d-flex text-info">
-                  Options:
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Updates:</em> Website Design
-                  </span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>Changes:</em> Content & Images
-                  </span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>New Features:</em> Design & Develop
-                  </span>
-                </span>
-                <span className="d-flex ml-3 mb-3">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">
-                    <em>New Functions:</em> Design & Develop
-                  </span>
-                </span>
-              </td>
-              <td className="pl-3 pt-3">$50 / hour</td>
             </tr>
           </tbody>
         </Table>
         <div className="d-flex pb-5">
           <small className="text-danger">*</small>
           <small className="text-danger ml-1 drop-shadow-dark font-weight-bold">
-            A professional 5-page business website (Home, About, Contact,
-            Services, Blog) would cost $3,500 ($2,000 base + ($300 * 5-pages)).
+            A professional 5-page business website (example: Home, About,
+            Contact, Services, Blog)
+            <br />
+            would cost $1,500 ($1,000 base + ($100 * 5-pages)).
           </small>
         </div>
         <h4 className="mt-5 bg-info py-3 drop-shadow text-white text-center">
@@ -274,75 +246,63 @@ const PricingSection__WebsiteServices = ({ className }) => {
             <tbody>
               <tr>
                 <td className="pl-3 pt-3">
-                  <strong>Hosting</strong>
-                  <span className="d-flex ml-3 mt-2 mb-1">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">Serverless Cloud Computing</span>
-                  </span>
-                  <span className="d-flex ml-3 mb-1">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">400GB Bandwidth/Month</span>
-                  </span>
-                  <span className="d-flex ml-3 mb-1">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">Continuous Deployment</span>
-                  </span>
-                  <span className="d-flex ml-3 mb-1">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">Password-Protected Sites</span>
-                  </span>
-                  <span className="d-flex ml-3 mb-1">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">7-day Log History</span>
-                  </span>
-                  <span className="d-flex ml-3 mb-1">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">Unlimited Rollbacks</span>
-                  </span>
-                  <span className="d-flex ml-3 mb-1">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">Branch Previews</span>
-                  </span>
-                  <span className="d-flex ml-3 mb-1">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">Global CDN</span>
-                  </span>
-                  <span className="d-flex ml-3 mb-3">
-                    <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">99.99% Uptime SLA</span>
-                  </span>
-                </td>
-                <td className="pl-3 pt-3">$25/mo</td>
-              </tr>
-              <tr>
-                <td className="pl-3 pt-3">
                   <strong>Maintenance Plan</strong>
                   <span className="d-flex ml-3 mt-2 mb-1">
                     <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">
-                      <em>Security:</em> Scans & Updates
+                    <span className="ml-2 font-italic">
+                      Security: Scans & Updates
                     </span>
                   </span>
                   <span className="d-flex ml-3 mb-1">
                     <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">
-                      <em>Backups:</em> Local & Cloud
+                    <span className="ml-2 font-italic">
+                      Backups: Local & Cloud
                     </span>
                   </span>
                   <span className="d-flex ml-3 mb-1">
                     <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">
-                      <em>Restore:</em> Previous States
+                    <span className="ml-2 font-italic">
+                      Restore: Previous States
                     </span>
                   </span>
                   <span className="d-flex ml-3 mb-3">
                     <i className="far fa-check-square text-info mt-1"></i>
-                    <span className="ml-2">
-                      <em>Testing:</em> Pages, Links & Forms
+                    <span className="ml-2 font-italic">
+                      Testing: Pages, Links & Forms
                     </span>
                   </span>
                 </td>
-                <td className="pl-3 pt-3">$25/mo</td>
+                <td className="pl-3 pt-3">$50 / mo</td>
+              </tr>
+              <tr>
+                <td className="pl-3 pt-3">
+                  <strong>Service Retainer Plan</strong>
+                  <span className="d-flex ml-3 mt-2 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2 font-italic">
+                      Updates: Website Design
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2 font-italic">
+                      Changes: Content & Images
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-1">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2 font-italic">
+                      New Features: Design & Develop
+                    </span>
+                  </span>
+                  <span className="d-flex ml-3 mb-3">
+                    <i className="far fa-check-square text-info mt-1"></i>
+                    <span className="ml-2 font-italic">
+                      New Functions: Design & Develop
+                    </span>
+                  </span>
+                </td>
+                <td className="pl-3 pt-3">$50 / hr</td>
               </tr>
             </tbody>
           </Table>

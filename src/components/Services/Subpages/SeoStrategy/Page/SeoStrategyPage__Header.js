@@ -29,23 +29,22 @@ const SeoStrategyPage__Header = ({ className, hOne }) => {
       <div className="container h-100">
         <div className="row h-100 align-items-center justify-content-center text-center">
           <div className="col-lg-10 align-self-end">
-            <h2 className="text-white font-weight-bold border border-primary rounded p-sm-5 p-3 drop-shadow-dark text-lg">
-              Rank your website.
-              <span className="d-block">
+            <h1 className="text-white font-weight-bold border border-primary rounded p-sm-5 p-3 drop-shadow-dark text-lg">
+              SEO Strategy
+              {/* <span className="d-block">
                 Beat your <span className="text-break">competitors.</span>
-              </span>
-            </h2>
+              </span> */}
+            </h1>
           </div>
-          <div className="col-lg-8 align-self-baseline mt-3 drop-shadow-dark">
+          <div className="col-lg-9 align-self-baseline mt-3 drop-shadow-dark">
             <p className="text-white font-weight-light mb-4">
-              Showcase your industry expertise to{' '}
-              <strong className="text-secondary">build an audience</strong> and{' '}
-              <strong className="text-secondary">drive traffic</strong>.
-              <span className="d-block mt-3">
-                Establish trust as a valuable source and{' '}
-                <strong className="text-secondary">convert leads</strong> to{' '}
-                <strong className="text-secondary">paying customers</strong>.
-              </span>
+              Achieve consistent results with{' '}
+              <strong className="text-secondary">an effective approach</strong>{' '}
+              to{' '}
+              <strong className="text-secondary">
+                boost organic search traffic
+              </strong>
+              .
             </p>
           </div>
         </div>

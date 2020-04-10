@@ -255,7 +255,7 @@ const SeoStrategyPage__Section = ({ className }) => {
       alt="organic seo digital marketing services background"
     >
       <div className="text-center pt-5 drop-shadow-dark">
-        <i className="fas fa-3x fa-address-card mb-3 text-primary"></i>
+        <i className="fas fa-3x fa-chess mb-3 text-primary"></i>
         <h2 className="mt-2 text-white">SEO Strategy</h2>
         <hr className="divider mt-4" />
       </div>

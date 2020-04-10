@@ -44,14 +44,12 @@ const SeoStrategyPage__Body = ({ className }) => {
         <div className="row justify-content-center align-items-center border bg-white shadow rounded position-sticky">
           <div className="container py-3">
             <div className="py-3 px-5">
-              <h2 className="mt-2 text-center">
-                Optimize Your Online Presence
-              </h2>
+              <h2 className="mt-2 text-center">Data-Driven SEO Plans</h2>
               <hr className="divider my-4" />
             </div>
             <div className="container col-md-8 py-3 my-2 text-white bg-info rounded drop-shadow">
               <p className="m-3 mb-5 text-center drop-shadow">
-                Learn about my services:
+                Learn about my strategies:
               </p>
               <div className="row justify-content-around align-items-end mt-4">
                 <Link
@@ -65,7 +63,9 @@ const SeoStrategyPage__Body = ({ className }) => {
                 >
                   <i className="fas fa-3x fa-chess mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">SEO Strategy</span>
+                  <span className="text-white-link">
+                    What is an SEO strategy?
+                  </span>
                 </Link>
                 <Link
                   to="organic-seo"
@@ -78,7 +78,9 @@ const SeoStrategyPage__Body = ({ className }) => {
                 >
                   <i className="fas fa-3x fa-seedling mb-3 text-primary wiggle"></i>
                   <br />
-                  <span className="text-white-link">Organic SEO</span>
+                  <span className="text-white-link">
+                    Why is an SEO strategy important?
+                  </span>
                 </Link>
                 <Link
                   to="local-seo"

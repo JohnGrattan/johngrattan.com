@@ -66,61 +66,57 @@ const PricingSection__SeoServices = ({ className }) => {
                 <strong>SEO Site Audit</strong>
                 <span className="d-flex ml-3 mt-2 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Technical SEO</span>
+                  <span className="ml-2 font-italic">Technical SEO</span>
                 </span>
                 <span className="d-flex ml-3 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">On-Page SEO</span>
+                  <span className="ml-2 font-italic">On-Page SEO</span>
                 </span>
                 <span className="d-flex ml-3 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Off-Page SEO</span>
+                  <span className="ml-2 font-italic">Off-Page SEO</span>
                 </span>
                 <span className="d-flex ml-3 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Local SEO</span>
+                  <span className="ml-2 font-italic">Local SEO</span>
                 </span>
                 <span className="d-flex ml-3 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Content Analysis</span>
+                  <span className="ml-2 font-italic">Content Analysis</span>
                 </span>
                 <span className="d-flex ml-3 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">UI/UX Analysis</span>
+                  <span className="ml-2 font-italic">UI/UX Analysis</span>
                 </span>
                 <span className="d-flex ml-3 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Data & Analytics</span>
+                  <span className="ml-2 font-italic">Data & Analytics</span>
+                </span>
+                <span className="d-flex ml-3 mb-1">
+                  <i className="far fa-check-square text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Prioritization</span>
                 </span>
                 <span className="d-flex ml-3 mb-3">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Prioritization</span>
+                  <span className="ml-2 font-italic">Consultation</span>
                 </span>
               </td>
               <td className="pl-3 pt-3">$500+</td>
             </tr>
-            {/* <tr>
+            <tr>
               <td className="pl-3 pt-3">
-                <strong>SEO Site Audit + Fixes</strong>
+                <strong>Google My Business</strong>
                 <span className="d-flex ml-3 mt-2 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">SEO Site Audit</span>
+                  <span className="ml-2 font-italic">Setup</span>
                 </span>
                 <span className="d-flex ml-3 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Technical SEO</span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">On-Page SEO</span>
-                </span>
-                <span className="d-flex ml-3 mb-3">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Consulting</span>
+                  <span className="ml-2 font-italic">Optimization</span>
                 </span>
               </td>
-              <td className="pl-3 pt-3">$1,000+</td>
-            </tr> */}
+              <td className="pl-3 pt-3">$50</td>
+            </tr>
           </tbody>
         </Table>
         <div className="d-flex pb-5">
@@ -154,81 +150,139 @@ const PricingSection__SeoServices = ({ className }) => {
           <tbody>
             <tr>
               <td className="pl-3 pt-3">
-                <strong>Local SEO</strong>
-                <span className="d-flex ml-3 mt-2 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Local SEO Strategy</span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">GMB Optimization</span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Local Citations</span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Site Localization</span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Structured Data</span>
-                </span>
-                <span className="d-flex ml-3 mb-3">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Location Pages</span>
-                </span>
-              </td>
-              <td className="pl-3 pt-3">$250+ / mo</td>
-            </tr>
-            <tr>
-              <td className="pl-3 pt-3">
-                <strong>Organic SEO</strong>
-                <span className="d-flex ml-3 mt-2 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Organic SEO Strategy</span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Technical SEO</span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">On-Page SEO</span>
-                </span>
-                <span className="d-flex ml-3 mb-1">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Off-Page SEO</span>
-                </span>
-                <span className="d-flex ml-3 mb-3">
-                  <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Content Management</span>
-                </span>
-              </td>
-              <td className="pl-3 pt-3">$750+ / mo</td>
-            </tr>
-            <tr>
-              <td className="pl-3 pt-3">
                 <strong>Full-Service SEO</strong>
                 <span className="d-flex ml-3 mt-2 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">SEO Site Audit</span>
+                  <span className="ml-2 font-weight-bold">SEO Site Audit</span>
+                </span>
+                <span className="d-flex ml-4 mt-1 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Technical SEO</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">On-Page SEO</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Off-Page SEO</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Local SEO</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Content Analysis</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">UI/UX Analysis</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Data & Analytics</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Prioritization</span>
+                </span>
+                <span className="d-flex ml-4 mb-3">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Consultation</span>
                 </span>
                 <span className="d-flex ml-3 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">SEO Strategy</span>
+                  <span className="ml-2 font-weight-bold">SEO Strategy</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Local SEO</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Organic SEO</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Keyword Research</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Competitor Research</span>
+                </span>
+                <span className="d-flex ml-4 mb-3">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Content Management</span>
                 </span>
                 <span className="d-flex ml-3 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Local SEO</span>
+                  <span className="ml-2 font-weight-bold">Local SEO</span>
                 </span>
-                <span className="d-flex ml-3 mb-3">
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">GMB Optimization</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Local Citations</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Site Localization</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Structured Data</span>
+                </span>
+                <span className="d-flex ml-4 mb-3">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Location Pages</span>
+                </span>
+                <span className="d-flex ml-3 mb-1">
                   <i className="far fa-check-square text-info mt-1"></i>
-                  <span className="ml-2">Organic SEO</span>
+                  <span className="ml-2 font-weight-bold">Organic SEO</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Technical SEO</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">On-Page SEO</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Off-Page SEO</span>
+                </span>
+                <span className="d-flex ml-4 mb-3">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Social Media Marketing
+                  </span>
+                </span>
+                <span className="d-flex ml-3 mb-1">
+                  <i className="far fa-check-square text-info mt-1"></i>
+                  <span className="ml-2 font-weight-bold">
+                    Reports & Analysis
+                  </span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Site Traffic</span>
+                </span>
+                <span className="d-flex ml-4 mb-1">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">Site Performance</span>
+                </span>
+                <span className="d-flex ml-4 mb-3">
+                  <i className="fas fa-long-arrow-alt-right text-info mt-1"></i>
+                  <span className="ml-2 font-italic">
+                    Keyword Rank Tracking
+                  </span>
                 </span>
               </td>
-              <td className="pl-3 pt-3">$1,250+ / mo</td>
+              <td className="pl-3 pt-3">$1,000+ / mo</td>
             </tr>
           </tbody>
         </Table>

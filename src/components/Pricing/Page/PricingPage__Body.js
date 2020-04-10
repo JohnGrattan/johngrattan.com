@@ -45,7 +45,7 @@ const PricingPage__Body = ({ className }) => {
           <div className="container pt-3 pb-5">
             <div className="py-3 px-5">
               <h2 className="mt-2 text-center">
-                Digital Marketing Service Prices
+                Affordable Investments for Business Growth
               </h2>
               <hr className="divider my-4" />
             </div>

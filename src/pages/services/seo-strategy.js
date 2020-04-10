@@ -13,7 +13,7 @@ const SEOStrategyPage = () => (
     />
     <SeoStrategyPage__Header
       Tag="header"
-      className="bg-img-home"
+      className="bg-img-page-top"
       hOne="SEO Strategy"
     />
     <SeoStrategyPage__Body className="py-md-5 bg-texture-1" />
