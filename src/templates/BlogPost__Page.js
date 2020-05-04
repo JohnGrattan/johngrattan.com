@@ -4,7 +4,7 @@ import Img from 'gatsby-image';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Helmet from 'react-helmet';
 
-import LayoutBody from '../components/layout-body';
+import Layout from '../components/layout';
 import SEO from '../components/seo';
 import HeaderBlogPost from '../components/HeaderBlogPost/HeaderBlogPost';
 import ImgJgBlogPostPic from '../components/ImageComps/image-jg-headshot-green';
@@ -57,7 +57,7 @@ const BlogPostTemplate = ({ data }) => {
   }`;
 
   return (
-    <LayoutBody>
+    <Layout>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description}
@@ -182,7 +182,7 @@ const BlogPostTemplate = ({ data }) => {
           </div>
         </div>
       </section>
-    </LayoutBody>
+    </Layout>
   );
 };
 
