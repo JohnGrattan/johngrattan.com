@@ -44,7 +44,7 @@ const AboutPage__Body = ({ className }) => {
         <div className="row justify-content-center align-items-center border bg-white shadow rounded position-sticky">
           <div className="container py-3">
             <div className="py-3 px-5">
-              <h2 className="mt-2 text-center">Who is John Grattan?</h2>
+              <h2 className="mt-2 text-center">Who is John Grattan??</h2>
               <hr className="divider my-4" />
             </div>
             <div className="container col-md-8 py-3 my-2 text-white bg-info drop-shadow">
