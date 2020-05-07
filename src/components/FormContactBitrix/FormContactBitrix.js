@@ -30,20 +30,40 @@ const FormContactBitrix = ({ formname }) => {
   const handleChange = e =>
     setContact({ ...contact, [e.target.name]: e.target.value });
 
-  const handleSubmit = async e => {
+  // const [firstName, setFirstName] = useState('');
+  // const [lastName, setLastName] = useState('');
+  // const [phoneNumber, setPhoneNumber] = useState('');
+  // const [email, setEmail] = useState('');
+  // const [company, setCompany] = useState('');
+  // const [jobTitle, setJobTitle] = useState('');
+  // const [service, setService] = useState('');
+  // const [budget, setBudget] = useState('');
+
+  // const handleChange = e => {
+  //   setFirstName(e.target.value);
+  //   setLastName(e.target.value);
+  //   setPhoneNumber(e.target.value);
+  //   setEmail(e.target.value);
+  //   setCompany(e.target.value);
+  //   setJobTitle(e.target.value);
+  //   setService(e.target.value);
+  //   setBudget(e.target.value);
+  // };
+
+  const handleSubmit = async (e, contact) => {
     e.preventDefault();
     await axios.post(
       'https://b24-u57qin.bitrix24.com/rest/1/mtja2mf3e2o0r6s9/crm.lead.add',
       {
         data: {
           fields: {
-            TITLE: { firstName } + { lastName },
-            NAME: { firstName } + { lastName },
-            SECOND_NAME: { lastName },
-            PHONE: { phoneNumber },
-            EMAIL: { email },
-            COMPANY_TITLE: { company },
-            POSITION: { jobTitle },
+            TITLE: `${contact.firstName} ${contact.lastName}`,
+            NAME: `${contact.firstName} ${contact.lastName}`,
+            SECOND_NAME: `${contact.lastName}`,
+            PHONE: `${contact.phoneNumber}`,
+            EMAIL: `${contact.email}`,
+            COMPANY_TITLE: `${contact.company}`,
+            POSITION: `${contact.jobTitle}`,
           },
         },
       }
