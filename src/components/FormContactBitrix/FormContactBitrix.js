@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+
 import PropTypes from 'prop-types';
 import { Form, Button, Col } from 'react-bootstrap';
 
@@ -26,16 +27,21 @@ const FormContactBitrix = ({ formname }) => {
     budget,
   } = contact;
 
-  const onChange = e =>
+  const handleChange = e =>
     setContact({ ...contact, [e.target.name]: e.target.value });
 
-  const onSubmit = contact => {
-    axios.post(
-      'https://b24-u57qin.bitrix24.com/rest/1/mtja2mf3e2o0r6s9/crm.lead.add'
-    ),
+  const handleSubmit = async e => {
+    e.preventDefault();
+    const response = await axios.post(
+      'https://b24-u57qin.bitrix24.com/rest/1/mtja2mf3e2o0r6s9/crm.lead.add',
       {
-        params: { fields: { TITLE: { contact } } },
-      };
+        fields: {
+          TITLE: 'Test',
+        },
+      }
+    );
+    console.log(response);
+    console.log('sent');
   };
 
   return (
@@ -47,6 +53,7 @@ const FormContactBitrix = ({ formname }) => {
       data-netlify-honeypot="bot-field"
       className="border border-secondary rounded shadow p-2 p-md-5 bg-texture-2"
       id="footer-contact-form"
+      onSubmit={handleSubmit}
     >
       <input type="hidden" name="form-name" value={formname} />
       <Form.Row>
@@ -58,7 +65,7 @@ const FormContactBitrix = ({ formname }) => {
             name="firstName"
             type="text"
             value={firstName}
-            onChange={onChange}
+            onChange={handleChange}
             required
           />
         </Form.Group>
@@ -71,7 +78,7 @@ const FormContactBitrix = ({ formname }) => {
             name="lastName"
             type="text"
             value={lastName}
-            onChange={onChange}
+            onChange={handleChange}
             required
           />
         </Form.Group>
@@ -85,7 +92,7 @@ const FormContactBitrix = ({ formname }) => {
             name="phoneNumber"
             type="tel"
             value={phoneNumber}
-            onChange={onChange}
+            onChange={handleChange}
             required
           />
         </Form.Group>
@@ -97,7 +104,7 @@ const FormContactBitrix = ({ formname }) => {
             name="email"
             type="email"
             value={email}
-            onChange={onChange}
+            onChange={handleChange}
             required
           />
         </Form.Group>
@@ -112,7 +119,7 @@ const FormContactBitrix = ({ formname }) => {
             name="company"
             type="text"
             value={company}
-            onChange={onChange}
+            onChange={handleChange}
             required
           />
         </Form.Group>
@@ -125,7 +132,7 @@ const FormContactBitrix = ({ formname }) => {
             name="jobTitle"
             type="text"
             value={jobTitle}
-            onChange={onChange}
+            onChange={handleChange}
             required
           />
         </Form.Group>
@@ -139,9 +146,9 @@ const FormContactBitrix = ({ formname }) => {
           <Form.Control
             name="service"
             as="select"
-            defaultValue={''}
+            // defaultValue={''}
             value={service}
-            onChange={onChange}
+            onChange={handleChange}
             required
           >
             <option value="" disabled hidden>
@@ -173,9 +180,9 @@ const FormContactBitrix = ({ formname }) => {
           <Form.Control
             name="budget"
             as="select"
-            defaultValue={''}
+            // defaultValue={''}
             value={budget}
-            onChange={onChange}
+            onChange={handleChange}
             required
           >
             <option value="" disabled hidden>
@@ -203,8 +210,7 @@ const FormContactBitrix = ({ formname }) => {
         className="btn btn-primary btn-xl drop-shadow-dark font-weight-bold mt-3"
         variant="primary"
         type="submit"
-        value="addContact"
-        onSubmit={onSubmit}
+        value="Submit"
       >
         Get More Leads
       </Button>
