@@ -32,16 +32,22 @@ const FormContactBitrix = ({ formname }) => {
 
   const handleSubmit = async e => {
     e.preventDefault();
-    const response = await axios.post(
+    await axios.post(
       'https://b24-u57qin.bitrix24.com/rest/1/mtja2mf3e2o0r6s9/crm.lead.add',
       {
-        fields: {
-          TITLE: 'Test',
+        data: {
+          fields: {
+            TITLE: { firstName } + { lastName },
+            NAME: { firstName } + { lastName },
+            SECOND_NAME: { lastName },
+            PHONE: { phoneNumber },
+            EMAIL: { email },
+            COMPANY_TITLE: { company },
+            POSITION: { jobTitle },
+          },
         },
       }
     );
-    console.log(response);
-    console.log('sent');
   };
 
   return (
