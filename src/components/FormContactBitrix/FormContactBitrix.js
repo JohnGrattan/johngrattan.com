@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Axios from 'axios';
+import axios from 'axios';
 import PropTypes from 'prop-types';
 import { Form, Button, Col } from 'react-bootstrap';
 
@@ -30,7 +30,7 @@ const FormContactBitrix = ({ formname }) => {
     setContact({ ...contact, [e.target.name]: e.target.value });
 
   const onSubmit = contact => {
-    Axios.post(
+    axios.post(
       'https://b24-u57qin.bitrix24.com/rest/1/mtja2mf3e2o0r6s9/crm.lead.add'
     ),
       {
