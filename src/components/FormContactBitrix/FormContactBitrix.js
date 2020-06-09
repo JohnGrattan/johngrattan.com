@@ -72,16 +72,16 @@ const FormContactBitrix = () => {
 
   return (
     <Form
-      name="form-contact-bitrix"
+      name="form-contact-homepage"
       method="POST"
       action="/thanks/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className="border border-secondary rounded shadow p-2 p-md-5 bg-texture-2"
-      id="form-contact-bitrix"
+      id="form-contact-homepage"
       onSubmit={handleSubmit}
     >
-      <input type="hidden" name="form-name" value="form-contact-bitrix" />
+      <input type="hidden" name="form-name" value="form-contact-homepage" />
       <Form.Row>
         <Form.Group as={Col} controlId="formContactBixtrixFirstName">
           <Form.Label>
@@ -245,7 +245,7 @@ const FormContactBitrix = () => {
 };
 
 Form.defaultProps = {
-  formname: `form-contact-bitrix`,
+  formname: `form-contact-homepage`,
 };
 
 Button.propTypes = {
