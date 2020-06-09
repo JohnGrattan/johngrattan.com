@@ -21,15 +21,6 @@ export default function HTML(props) {
           dangerouslySetInnerHTML={{ __html: props.body }}
         />
         {props.postBodyComponents}
-        <script
-          type="text/javascript"
-          src="https://apis.google.com/js/api.js"
-          async
-          defer
-          crossOrigin="anonymous"
-          onLoad="this.onload=function(){};handleClientLoad()"
-          onReadStateChange="if (this.readyState === 'complete') this.onload()"
-        />
       </body>
     </html>
   );
