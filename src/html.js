@@ -27,7 +27,7 @@ export default function HTML(props) {
           async
           defer
           crossOrigin="anonymous"
-          onLoad="this.onLoad=function(){};"
+          onLoad="this.onload=function(){};handleClientLoad()"
           onReadStateChange="if (this.readyState === 'complete') this.onload()"
         />
       </body>

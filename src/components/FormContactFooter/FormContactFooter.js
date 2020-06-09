@@ -7,9 +7,9 @@ import { Form, Button, Col } from 'react-bootstrap';
 const FormContactFooter = ({ formname }) => {
   const SPREADSHEET_ID = '10o2IdQb0kwQ3JCeU7PnVdokEj_1D8j9pcuvMCmqwfek';
   const CLIENT_ID =
-    '406088468654-h36damsf2nopfec0bcjbisgpm8kceeck.apps.googleusercontent.com';
-  // const CLIENT_SECRET = '0WbieTj7pGPr3hLJwByI9AqK';
-  const API_KEY = 'AIzaSyCRRYZ-1G13CVjeaR3dOSCPXfk0nfn4_I8';
+    '264901670832-bbaspac1r7hv2qb0cacucag2upt58le7.apps.googleusercontent.com';
+  // const CLIENT_SECRET = 'TOh7tcE8VEZoFM_eL04NnOuo';
+  const API_KEY = 'AIzaSyA9vjk1EvaDzwAbrY3ct3LmWg-NvhHuk4E';
   const SCOPES = 'https://www.googleapis.com/auth/spreadsheets';
   // const DISCOVERY_DOCS =
   //   'https://sheets.googleapis.com/$discovery/rest?version=v4';
@@ -45,14 +45,16 @@ const FormContactFooter = ({ formname }) => {
     });
 
   // const values = [
-  //   { firstName },
-  //   { lastName },
-  //   { phoneNumber },
-  //   { email },
-  //   { company },
-  //   { jobTitle },
-  //   { service },
-  //   { budget },
+  //   [
+  //     { firstName },
+  //     { lastName },
+  //     { phoneNumber },
+  //     { email },
+  //     { company },
+  //     { jobTitle },
+  //     { service },
+  //     { budget },
+  //   ],
   // ];
 
   useEffect(() => {
@@ -93,7 +95,18 @@ const FormContactFooter = ({ formname }) => {
 
     const valueRangeBody = {
       majorDimension: 'ROWS', //log each entry as a new row (vs column)
-      values: [contact], //convert the object's values to an array
+      values: [
+        [
+          { firstName },
+          { lastName },
+          { phoneNumber },
+          { email },
+          { company },
+          { jobTitle },
+          { service },
+          { budget },
+        ],
+      ], //convert the object's values to an array
     };
 
     let request = gapi.client.sheets.spreadsheets.values.append(
@@ -103,7 +116,8 @@ const FormContactFooter = ({ formname }) => {
     request.then(
       function(response) {
         // TODO: Insert desired response behaviour on submission
-        console.log(response.result);
+        var result = response.result;
+        console.log(`${result.updates.updatedCells} cells appended.`);
       },
       function(reason) {
         console.error('error: ' + reason.result.error.message);
