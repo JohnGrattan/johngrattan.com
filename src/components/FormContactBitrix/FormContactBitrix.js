@@ -244,7 +244,7 @@ const FormContactBitrix = ({ formname }) => {
 };
 
 Form.defaultProps = {
-  formname: `form-contact-bitrix`,
+  formname: `form-contact-homepage`,
 };
 
 Button.propTypes = {

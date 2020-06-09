@@ -72,7 +72,7 @@ const Home__ContactSection = ({ className }) => {
       </div>
       <div className="row">
         <div className="container col-md-8 px-0 my-5">
-          <FormContactBitrix formname="form-contact-bitrix" />
+          <FormContactBitrix formname="form-contact-homepage" />
         </div>
       </div>
     </BackgroundImage>
