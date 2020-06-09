@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-import FormContactBitrix from '../../FormContactBitrix/FormContactBitrix';
+import FormContactFooter from '../../FormContactFooter/FormContactFooter';
 
 const Home__ContactSection = ({ className }) => {
   const data = useStaticQuery(graphql`
@@ -71,7 +71,7 @@ const Home__ContactSection = ({ className }) => {
       </div>
       <div className="row">
         <div className="container col-md-8 px-0 my-5">
-          <FormContactBitrix />
+          <FormContactFooter />
         </div>
       </div>
     </BackgroundImage>
