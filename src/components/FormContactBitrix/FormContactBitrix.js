@@ -4,7 +4,7 @@ import { navigate } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Form, Button, Col } from 'react-bootstrap';
 
-const FormContactBitrix = ({ formname }) => {
+const FormContactBitrix = () => {
   const [contact, setContact] = useState({
     firstName: '',
     lastName: '',
@@ -72,15 +72,16 @@ const FormContactBitrix = ({ formname }) => {
 
   return (
     <Form
-      name={formname}
+      name="form-contact-bitrix"
       method="POST"
+      action="/thanks/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className="border border-secondary rounded shadow p-2 p-md-5 bg-texture-2"
-      id="footer-contact-form"
+      id="form-contact-bitrix"
       onSubmit={handleSubmit}
     >
-      <input type="hidden" name="form-name" value={formname} />
+      <input type="hidden" name="form-name" value="form-contact-bitrix" />
       <Form.Row>
         <Form.Group as={Col} controlId="formContactBixtrixFirstName">
           <Form.Label>
@@ -244,7 +245,7 @@ const FormContactBitrix = ({ formname }) => {
 };
 
 Form.defaultProps = {
-  formname: `contact-form-bitrix`,
+  formname: `form-contact-bitrix`,
 };
 
 Button.propTypes = {
