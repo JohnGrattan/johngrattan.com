@@ -30,45 +30,65 @@ const FormContactBitrix = () => {
   const handleChange = e =>
     setContact({ ...contact, [e.target.name]: e.target.value });
 
-  // const handleSubmit = async e => {
-  //   e.preventDefault();
-  //   await axios.all([
-  //     axios.post(
-  //       'https://b24-u57qin.bitrix24.com/rest/1/mtja2mf3e2o0r6s9/crm.lead.add',
-  //       {
-  //         fields: {
-  //           TITLE: `${company} - ${service}`,
-  //           NAME: `${firstName}`,
-  //           LAST_NAME: `${lastName}`,
-  //           SECOND_NAME: `${firstName}`,
-  //           PHONE: [{ VALUE: `${phoneNumber}`, VALUE_TYPE: 'WORK' }],
-  //           EMAIL: [{ VALUE: `${email}`, VALUE_TYPE: 'WORK' }],
-  //           COMPANY_TITLE: `${company}`,
-  //           POST: `${jobTitle}`,
-  //           CURRENCY_ID: 'USD',
-  //           OPPORTUNITY: `${budget}`,
-  //           COMMENTS: `
-  //           This lead came from my contact form.<br/><br/>
-  //           <strong>Name</strong>: ${firstName} ${lastName}<br/>
-  //           <strong>Phone</strong>: ${phoneNumber}<br/>
-  //           <strong>Email</strong>: ${email}<br/>
-  //           <strong>Company</strong>: ${company}<br/>
-  //           <strong>Job Title</strong>: ${jobTitle}<br/>
-  //           <strong>Service</strong>: ${service}<br/>
-  //           <strong>Budget</strong>: ${budget}<br/><br/><br/>
-  //           <strong>Budget Ranges</strong>:<br/><br/>
-  //           $500 - $1,000<br/>
-  //           $1,000 - $2,000<br/>
-  //           $2,000 - $5,000<br/>
-  //           $5,000 - $10,000<br/>
-  //           $10,000+<br/>
-  //           `,
-  //         },
-  //       }
-  //     ),
-  //   ]);
-  //   navigate('/thanks/');
-  // };
+  const bitrixWebhook = () => {
+    return axios.post(
+      'https://b24-u57qin.bitrix24.com/rest/1/mtja2mf3e2o0r6s9/crm.lead.add',
+      {
+        fields: {
+          TITLE: `${company} - ${service}`,
+          NAME: `${firstName}`,
+          LAST_NAME: `${lastName}`,
+          SECOND_NAME: `${firstName}`,
+          PHONE: [{ VALUE: `${phoneNumber}`, VALUE_TYPE: 'WORK' }],
+          EMAIL: [{ VALUE: `${email}`, VALUE_TYPE: 'WORK' }],
+          COMPANY_TITLE: `${company}`,
+          POST: `${jobTitle}`,
+          CURRENCY_ID: 'USD',
+          OPPORTUNITY: `${budget}`,
+          COMMENTS: `
+          This lead came from my contact form.<br/><br/>
+          <strong>Name</strong>: ${firstName} ${lastName}<br/>
+          <strong>Phone</strong>: ${phoneNumber}<br/>
+          <strong>Email</strong>: ${email}<br/>
+          <strong>Company</strong>: ${company}<br/>
+          <strong>Job Title</strong>: ${jobTitle}<br/>
+          <strong>Service</strong>: ${service}<br/>
+          <strong>Budget</strong>: ${budget}<br/><br/><br/>
+          <strong>Budget Ranges</strong>:<br/><br/>
+          $500 - $1,000<br/>
+          $1,000 - $2,000<br/>
+          $2,000 - $5,000<br/>
+          $5,000 - $10,000<br/>
+          $10,000+<br/>
+          `,
+        },
+      }
+    );
+  };
+
+  const netlifySubmission = () => {
+    return axios({
+      url: '/',
+      method: 'post',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      data: {
+        'First Name': { firstName },
+        'Last Name': { lastName },
+        'Phone Number': { phoneNumber },
+        Email: { email },
+        Company: { company },
+        'Job Title': { jobTitle },
+        Service: { service },
+        Budget: { budget },
+      },
+    });
+  };
+
+  const handleSubmit = async e => {
+    e.preventDefault();
+    await axios.all([bitrixWebhook(), netlifySubmission()]);
+    navigate('/thanks/');
+  };
 
   return (
     <Form
@@ -79,7 +99,7 @@ const FormContactBitrix = () => {
       data-netlify-honeypot="bot-field"
       className="border border-secondary rounded shadow p-2 p-md-5 bg-texture-2"
       id="form-contact-homepage"
-      // onSubmit={handleSubmit}
+      onSubmit={handleSubmit}
     >
       <input type="hidden" name="form-name" value="form-contact-homepage" />
       <Form.Row>
