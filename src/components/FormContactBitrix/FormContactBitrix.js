@@ -74,6 +74,7 @@ const FormContactBitrix = ({ formname }) => {
     <Form
       name={formname}
       method="POST"
+      action="/thanks/"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className="border border-secondary rounded shadow p-2 p-md-5 bg-texture-2"
