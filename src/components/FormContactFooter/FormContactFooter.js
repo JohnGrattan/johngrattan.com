@@ -1,10 +1,21 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { navigate } from 'gatsby';
 import PropTypes from 'prop-types';
 import { Form, Button, Col } from 'react-bootstrap';
 
-const FormContactBitrix = ({ formname }) => {
+const FormContactFooter = ({ formname }) => {
+  const SPREADSHEET_ID = '10o2IdQb0kwQ3JCeU7PnVdokEj_1D8j9pcuvMCmqwfek';
+  const CLIENT_ID =
+    '264901670832-bbaspac1r7hv2qb0cacucag2upt58le7.apps.googleusercontent.com';
+  // const CLIENT_SECRET = 'TOh7tcE8VEZoFM_eL04NnOuo';
+  const API_KEY = 'AIzaSyA9vjk1EvaDzwAbrY3ct3LmWg-NvhHuk4E';
+  const SCOPES = 'https://www.googleapis.com/auth/spreadsheets';
+  // const DISCOVERY_DOCS =
+  //   'https://sheets.googleapis.com/$discovery/rest?version=v4';
+  // const SCRIPT_URL =
+  //   'https://script.google.com/macros/s/AKfycbxR9dIuMrJw0bFIkehc7yk-_ZhUENwUy0CvbfxGVnja_k4PNgY/exec';
+
   const [contact, setContact] = useState({
     firstName: '',
     lastName: '',
@@ -28,51 +39,95 @@ const FormContactBitrix = ({ formname }) => {
   } = contact;
 
   const handleChange = e =>
-    setContact({ ...contact, [e.target.name]: e.target.value });
+    setContact({
+      ...contact,
+      [e.target.name]: e.target.value,
+    });
 
-  const handleSubmit = async e => {
+  // const values = [
+  //   [
+  //     { firstName },
+  //     { lastName },
+  //     { phoneNumber },
+  //     { email },
+  //     { company },
+  //     { jobTitle },
+  //     { service },
+  //     { budget },
+  //   ],
+  // ];
+
+  useEffect(() => {
+    handleClientLoad();
+  });
+
+  const handleClientLoad = () => {
+    gapi.load('client:auth2', initClient);
+  };
+
+  const initClient = () => {
+    gapi.client.init({
+      apiKey: API_KEY,
+      clientId: CLIENT_ID,
+      scope: SCOPES,
+      discoveryDocs: [
+        'https://sheets.googleapis.com/$discovery/rest?version=v4',
+      ],
+    });
+    // .then(() => {
+    //   gapi.auth2.getAuthInstance().isSignedIn.listen(this.updateSignInStatus);
+    //   this.updateSignInStatus(gapi.auth2.getAuthInstance().isSignedIn.get());
+    // });
+  };
+
+  const handleSubmit = e => {
     e.preventDefault();
-    await axios.all([
-      axios.post(
-        'https://b24-u57qin.bitrix24.com/rest/1/mtja2mf3e2o0r6s9/crm.lead.add',
-        {
-          fields: {
-            TITLE: `${company} - ${service}`,
-            NAME: `${firstName}`,
-            LAST_NAME: `${lastName}`,
-            SECOND_NAME: `${firstName}`,
-            PHONE: [{ VALUE: `${phoneNumber}`, VALUE_TYPE: 'WORK' }],
-            EMAIL: [{ VALUE: `${email}`, VALUE_TYPE: 'WORK' }],
-            COMPANY_TITLE: `${company}`,
-            POST: `${jobTitle}`,
-            CURRENCY_ID: 'USD',
-            OPPORTUNITY: `${budget}`,
-            COMMENTS: `
-            This lead came from my contact form.<br/><br/>
-            <strong>Name</strong>: ${firstName} ${lastName}<br/>
-            <strong>Phone</strong>: ${phoneNumber}<br/>
-            <strong>Email</strong>: ${email}<br/>
-            <strong>Company</strong>: ${company}<br/>
-            <strong>Job Title</strong>: ${jobTitle}<br/>
-            <strong>Service</strong>: ${service}<br/>
-            <strong>Budget</strong>: ${budget}<br/><br/><br/>
-            <strong>Budget Ranges</strong>:<br/><br/>
-            $500 - $1,000<br/>
-            $1,000 - $2,000<br/>
-            $2,000 - $5,000<br/>
-            $5,000 - $10,000<br/>
-            $10,000+<br/>
-            `,
-          },
-        }
-      ),
-    ]);
-    navigate('/thanks/');
+    const params = {
+      // The ID of the spreadsheet to update.
+      spreadsheetId: SPREADSHEET_ID,
+      // The A1 notation of a range to search for a logical table of data.Values will be appended after the last row of the table.
+      range: 'Sheet1', //this is the default spreadsheet name, so unless you've changed it, or are submitting to multiple sheets, you can leave this
+      // How the input data should be interpreted.
+      valueInputOption: 'RAW', //RAW = if no conversion or formatting of submitted data is needed. Otherwise USER_ENTERED
+      // How the input data should be inserted.
+      insertDataOption: 'INSERT_ROWS', //Choose OVERWRITE OR INSERT_ROWS
+    };
+
+    const valueRangeBody = {
+      majorDimension: 'ROWS', //log each entry as a new row (vs column)
+      values: [
+        [
+          { firstName },
+          { lastName },
+          { phoneNumber },
+          { email },
+          { company },
+          { jobTitle },
+          { service },
+          { budget },
+        ],
+      ], //convert the object's values to an array
+    };
+
+    let request = gapi.client.sheets.spreadsheets.values.append(
+      params,
+      valueRangeBody
+    );
+    request.then(
+      function(response) {
+        // TODO: Insert desired response behaviour on submission
+        var result = response.result;
+        console.log(`${result.updates.updatedCells} cells appended.`);
+      },
+      function(reason) {
+        console.error('error: ' + reason.result.error.message);
+      }
+    );
   };
 
   return (
     <Form
-      name={formname}
+      name="contact-form-footer"
       method="POST"
       data-netlify="true"
       data-netlify-honeypot="bot-field"
@@ -82,7 +137,7 @@ const FormContactBitrix = ({ formname }) => {
     >
       <input type="hidden" name="form-name" value={formname} />
       <Form.Row>
-        <Form.Group as={Col} controlId="formContactBixtrixFirstName">
+        <Form.Group as={Col} controlId="formContactFooterFirstName">
           <Form.Label>
             First Name <span className="text-danger">*</span>
           </Form.Label>
@@ -94,7 +149,7 @@ const FormContactBitrix = ({ formname }) => {
             required
           />
         </Form.Group>
-        <Form.Group as={Col} controlId="formContactBixtrixLastName">
+        <Form.Group as={Col} controlId="formContactFooterLastName">
           <Form.Label>
             Last Name <span className="text-danger">*</span>
           </Form.Label>
@@ -109,7 +164,7 @@ const FormContactBitrix = ({ formname }) => {
       </Form.Row>
 
       <Form.Row>
-        <Form.Group as={Col} controlId="formContactBixtrixPhone">
+        <Form.Group as={Col} controlId="formContactFooterPhone">
           <Form.Label>
             Phone Number <span className="text-danger">*</span>
           </Form.Label>
@@ -121,7 +176,7 @@ const FormContactBitrix = ({ formname }) => {
             required
           />
         </Form.Group>
-        <Form.Group as={Col} controlId="formContactBixtrixEmail">
+        <Form.Group as={Col} controlId="formContactFooterEmail">
           <Form.Label>
             Business Email <span className="text-danger">*</span>
           </Form.Label>
@@ -136,7 +191,7 @@ const FormContactBitrix = ({ formname }) => {
       </Form.Row>
 
       <Form.Row>
-        <Form.Group as={Col} controlId="formContactBixtrixCompanyName">
+        <Form.Group as={Col} controlId="formContactFooterCompanyName">
           <Form.Label>
             Company <span className="text-danger">*</span>
           </Form.Label>
@@ -148,7 +203,7 @@ const FormContactBitrix = ({ formname }) => {
             required
           />
         </Form.Group>
-        <Form.Group as={Col} controlId="formContactBixtrixJobTitle">
+        <Form.Group as={Col} controlId="formContactFooterJobTitle">
           <Form.Label>
             Job Title <span className="text-danger">*</span>
           </Form.Label>
@@ -163,7 +218,7 @@ const FormContactBitrix = ({ formname }) => {
       </Form.Row>
 
       <Form.Row>
-        <Form.Group as={Col} controlId="formContactBixtrixService">
+        <Form.Group as={Col} controlId="formContactFooterService">
           <Form.Label>
             Service of Interest <span className="text-danger">*</span>
           </Form.Label>
@@ -198,7 +253,7 @@ const FormContactBitrix = ({ formname }) => {
           </Form.Control>
         </Form.Group>
 
-        <Form.Group as={Col} controlId="formContactBixtrixIndustry">
+        <Form.Group as={Col} controlId="formContactFooterIndustry">
           <Form.Label>
             Budget <span className="text-danger">*</span>
           </Form.Label>
@@ -244,11 +299,11 @@ const FormContactBitrix = ({ formname }) => {
 };
 
 Form.defaultProps = {
-  formname: `form-contact-bitrix`,
+  formname: `contact-form-footer`,
 };
 
 Button.propTypes = {
   formname: PropTypes.string,
 };
 
-export default FormContactBitrix;
+export default FormContactFooter;
