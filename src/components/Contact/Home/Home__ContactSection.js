@@ -1,7 +1,6 @@
 import React from 'react';
 import { graphql, useStaticQuery } from 'gatsby';
 import BackgroundImage from 'gatsby-background-image';
-
 import FormContactFooter from '../../FormContactFooter/FormContactFooter';
 
 const Home__ContactSection = ({ className }) => {
