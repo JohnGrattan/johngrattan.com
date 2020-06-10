@@ -14,6 +14,8 @@ exports.handler = async (event, context, callback) => {
     const data = JSON.parse(event.body).payload;
     const addedRow = await sheet.addRow(data);
 
+    console.log(data);
+
     return callback(null, {
       statusCode: 200,
       body: JSON.stringify({
