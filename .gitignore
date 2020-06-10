@@ -72,5 +72,4 @@ yarn-error.log
 .idea/
 
 # Netlify Functions
-functions/
 lambda/
