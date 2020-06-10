@@ -11,7 +11,7 @@ exports.handler = async (event, context, callback) => {
     await doc.loadInfo();
     const sheet = doc.sheetsByIndex[0];
 
-    const data = JSON.parse(event.body);
+    const data = JSON.parse(event.body).payload;
     const addedRow = await sheet.addRow(data);
 
     return callback(null, {
