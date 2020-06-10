@@ -6,23 +6,22 @@ exports.handler = async (event, context, callback) => {
       '10o2IdQb0kwQ3JCeU7PnVdokEj_1D8j9pcuvMCmqwfek'
     );
     await doc.useServiceAccountAuth(
-      require('../lambda/jg-contact-form-sheets-ff518dde83ce.json')
+      require('../lambda/jg-contact-form-sheets-f766dbfea214.json')
     );
     await doc.loadInfo();
     const sheet = doc.sheetsByIndex[0];
 
     const data = JSON.parse(event.body).payload;
-    const addedRow = await sheet.addRow(data);
-
     console.log(data);
+
+    const addedRow = await sheet.addRow(data);
 
     return callback(null, {
       statusCode: 200,
-      body: JSON.stringify({
-        message: `row added`,
-      }),
+      body: JSON.stringify(data),
     });
   } catch (error) {
+    console.log(error);
     return callback(null, {
       statusCode: 500,
       body: error.toString(),
