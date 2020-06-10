@@ -27,6 +27,7 @@
     "gatsby-plugin-web-font-loader": "^1.0.4",
     "gatsby-source-filesystem": "^2.1.56",
     "gatsby-transformer-sharp": "^2.3.19",
+    "google-spreadsheet": "^3.0.11",
     "jquery": "^3.4.1",
     "node-sass": "^4.13.1",
     "prop-types": "^15.7.2",
