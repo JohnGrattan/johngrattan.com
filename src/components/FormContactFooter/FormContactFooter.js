@@ -150,7 +150,7 @@ const FormContactFooter = () => {
             <option value="Marketing: Email Automation">
               Marketing: Email Automation
             </option>
-            <option value="SEO + Website + Marketing" className="bg-light">
+            <option value="SEO & Website & Marketing" className="bg-light">
               SEO + Website + Marketing
             </option>
           </Form.Control>
