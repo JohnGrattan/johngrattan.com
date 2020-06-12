@@ -170,15 +170,15 @@ const FormContactFooter = () => {
             <option value="" disabled hidden>
               Choose One...
             </option>
-            <option value="500 - 1000">$500 - $1,000</option>
-            <option value="1000 - 2000" className="bg-light">
+            <option value="$500 - $1,000">$500 - $1,000</option>
+            <option value="$1,000 - $2,000" className="bg-light">
               $1,000 - $2,000
             </option>
-            <option value="2000 - 5000">$2,000 - $5,000</option>
-            <option value="5000 - 10000" className="bg-light">
+            <option value="$2,000 - $5,000">$2,000 - $5,000</option>
+            <option value="$5,000 - $10,000" className="bg-light">
               $5,000 - $10,000
             </option>
-            <option value="10000 - 20000">$10,000+</option>
+            <option value="$10,000+">$10,000+</option>
           </Form.Control>
         </Form.Group>
       </Form.Row>
