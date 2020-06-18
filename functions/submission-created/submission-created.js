@@ -7,7 +7,7 @@ const {
 
 exports.handler = async (event, context, callback) => {
   try {
-    console.log(`Received a submission: ${data}`);
+    console.log(`Received a submission: ${formData}`);
 
     const doc = new GoogleSpreadsheet({
       GATSBY_GOOGLE_SPREADSHEET_ID_FROM_URL,
