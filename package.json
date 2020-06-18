@@ -29,7 +29,6 @@
     "gatsby-transformer-sharp": "^2.3.19",
     "google-spreadsheet": "^3.0.11",
     "jquery": "^3.5.1",
-    "netlify-lambda": "^1.6.3",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
