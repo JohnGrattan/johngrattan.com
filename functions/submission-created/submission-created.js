@@ -77,10 +77,10 @@ exports.handler = async (event, context, callback) => {
     await doc.loadInfo();
     const sheet = doc.sheetsByIndex[0];
 
-    const data = JSON.parse(event.body).payload;
-    console.log(`Submission Info:\n ${data}`);
+    const data = JSON.parse(event.body).payload.email;
+    console.log(`Submission Info:\n ${email}`);
 
-    const addedRow = await sheet.addRow(data);
+    const addedRow = await sheet.addRow(email);
 
     return callback(null, {
       statusCode: 200,
