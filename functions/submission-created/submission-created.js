@@ -19,10 +19,34 @@ exports.handler = async (event, context, callback) => {
     await doc.loadInfo();
     const sheet = doc.sheetsByIndex[0];
 
-    console.log(`Submission Info: ${data}`);
+    console.log(`Submission Info: ${submission}`);
 
-    const data = JSON.parse(event.body);
-    const addedRow = await sheet.addRow(data);
+    const formData = JSON.parse(event.data);
+
+    const { formData } = JSON.parse(event.data);
+    const {
+      firstName = '',
+      lastName = '',
+      phoneNumber = '',
+      email = '',
+      company = '',
+      jobTitle = '',
+      service = '',
+      budget = '',
+    } = formData;
+    // construct the sms text message body
+    const submission = `
+    \nFirst Name: ${firstName}
+    \nLast Name: ${lastName}
+    \nPhone Number: ${phoneNumber}
+    \nEmail: ${email}
+    \nCompany: ${company}
+    \nJob Title: ${jobTitle}
+    \nService: ${service}
+    \nBudget: ${budget}
+    `;
+
+    const addedRow = await sheet.addRow(formData);
 
     return {
       statusCode: 200,
