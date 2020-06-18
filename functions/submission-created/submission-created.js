@@ -21,8 +21,6 @@ exports.handler = async (event, context, callback) => {
 
     console.log(`Submission Info: ${submission}`);
 
-    const formData = JSON.parse(event.data);
-
     const { formData } = JSON.parse(event.data);
     const {
       firstName = '',
@@ -34,7 +32,7 @@ exports.handler = async (event, context, callback) => {
       service = '',
       budget = '',
     } = formData;
-    // construct the sms text message body
+
     const submission = `
     \nFirst Name: ${firstName}
     \nLast Name: ${lastName}
