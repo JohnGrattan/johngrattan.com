@@ -6,56 +6,59 @@ const {
 } = process.env;
 
 exports.handler = async (event, context, callback) => {
+  const doc = new GoogleSpreadsheet({
+    GATSBY_GOOGLE_SPREADSHEET_ID_FROM_URL,
+  });
+  await doc.useServiceAccountAuth({
+    client_email: { GATSBY_GOOGLE_SERVICE_ACCOUNT_EMAIL },
+    private_key: { GATSBY_GOOGLE_PRIVATE_KEY },
+  });
+  await doc.loadInfo();
+  const sheet = doc.sheetsByIndex[0];
+
   try {
-    console.log(`Received a submission: ${formData}`);
+    const data = JSON.parse(event.body).payload;
+    const firstName = JSON.parse(event.body).payload.data.firstName;
+    console.log(`Received a submission: ${firstName}`);
+    const addedRow = await sheet.addRow(firstName);
+    console.log(`Added Row: ${addedRow}`);
 
-    const doc = new GoogleSpreadsheet({
-      GATSBY_GOOGLE_SPREADSHEET_ID_FROM_URL,
-    });
-    await doc.useServiceAccountAuth({
-      client_email: { GATSBY_GOOGLE_SERVICE_ACCOUNT_EMAIL },
-      private_key: { GATSBY_GOOGLE_PRIVATE_KEY },
-    });
-    await doc.loadInfo();
-    const sheet = doc.sheetsByIndex[0];
+    // const { formData } = JSON.parse(event.data);
+    // const {
+    //   firstName = '',
+    //   lastName = '',
+    //   phoneNumber = '',
+    //   email = '',
+    //   company = '',
+    //   jobTitle = '',
+    //   service = '',
+    //   budget = '',
+    // } = formData;
 
-    console.log(`Submission Info: ${submission}`);
-
-    const { formData } = JSON.parse(event.data);
-    const {
-      firstName = '',
-      lastName = '',
-      phoneNumber = '',
-      email = '',
-      company = '',
-      jobTitle = '',
-      service = '',
-      budget = '',
-    } = formData;
-
-    const submission = `
-    \nFirst Name: ${firstName}
-    \nLast Name: ${lastName}
-    \nPhone Number: ${phoneNumber}
-    \nEmail: ${email}
-    \nCompany: ${company}
-    \nJob Title: ${jobTitle}
-    \nService: ${service}
-    \nBudget: ${budget}
-    `;
-
-    const addedRow = await sheet.addRow(formData);
+    // const submission = `
+    // \nFirst Name: ${firstName}
+    // \nLast Name: ${lastName}
+    // \nPhone Number: ${phoneNumber}
+    // \nEmail: ${email}
+    // \nCompany: ${company}
+    // \nJob Title: ${jobTitle}
+    // \nService: ${service}
+    // \nBudget: ${budget}
+    // `;
 
     return {
       statusCode: 200,
       body: JSON.stringify({
-        message: `row added`,
+        message: `POST Success - added row ${addedRow._rowNumber - 1}`,
+        rowNumber: addedRow._rowNumber - 1, // minus the header row
       }),
     };
-  } catch (e) {
+  } catch (err) {
+    console.error('error ocurred in processing ', event);
+    console.error(err);
     return {
       statusCode: 500,
-      body: e.toString(),
+      body: err.toString(),
     };
   }
 };
