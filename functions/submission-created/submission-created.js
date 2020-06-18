@@ -64,8 +64,17 @@ const {
 
 exports.handler = async (event, context, callback) => {
   try {
+    const firstName = JSON.parse(event.body).payload.firstName;
+    const lastName = JSON.parse(event.body).payload.lastName;
+    const phoneNumber = JSON.parse(event.body).payload.phoneNumber;
     const email = JSON.parse(event.body).payload.email;
-    console.log(`Received a submission: ${email}`);
+    const company = JSON.parse(event.body).payload.company;
+    const jobTitle = JSON.parse(event.body).payload.jobTitle;
+    const service = JSON.parse(event.body).payload.service;
+    const budget = JSON.parse(event.body).payload.budget;
+    console.log(
+      `Received a submission: ${firstName}, ${lastName}, ${phoneNumber}, ${email}, ${company}, ${jobTitle}, ${service}, ${budget}`
+    );
 
     const doc = new GoogleSpreadsheet({
       GATSBY_GOOGLE_SPREADSHEET_ID_FROM_URL,
@@ -77,14 +86,25 @@ exports.handler = async (event, context, callback) => {
     await doc.loadInfo();
     const sheet = doc.sheetsByIndex[0];
 
-    const data = JSON.parse(event.body).payload.email;
-    console.log(`Submission Info:\n ${email}`);
+    // const data = JSON.parse(event.body).payload.email;
+    console.log(
+      `Submission Info:\n ${firstName}, ${lastName}, ${phoneNumber}, ${email}, ${company}, ${jobTitle}, ${service}, ${budget}`
+    );
 
-    const addedRow = await sheet.addRow(email);
+    const addedRow = await sheet.addRow([
+      { firstName: { firstName } },
+      { lastName: { lastName } },
+      { phoneNumber: { phoneNumber } },
+      { email: { email } },
+      { company: { company } },
+      { jobTitle: { jobTitle } },
+      { service: { service } },
+      { budget: { budget } },
+    ]);
 
     return callback(null, {
       statusCode: 200,
-      body: JSON.stringify(data),
+      body: JSON.stringify(firstName),
     });
   } catch (error) {
     console.log(error);
