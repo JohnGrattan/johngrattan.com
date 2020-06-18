@@ -5,9 +5,10 @@ exports.handler = async (event, context, callback) => {
     const doc = new GoogleSpreadsheet(
       '10o2IdQb0kwQ3JCeU7PnVdokEj_1D8j9pcuvMCmqwfek'
     );
-    await doc.useServiceAccountAuth(
-      require('../lambda/jg-contact-form-sheets-f766dbfea214.json')
-    );
+    await doc.useServiceAccountAuth({
+      client_email: process.env.GOOGLE_SERVICE_ACCOUNT_EMAIL,
+      private_key: process.env.GOOGLE_PRIVATE_KEY,
+    });
     await doc.loadInfo();
     const sheet = doc.sheetsByIndex[0];
 
