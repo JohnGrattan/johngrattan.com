@@ -4,7 +4,7 @@ import { Form, Button, Col } from 'react-bootstrap';
 
 const FormContactFooter = () => {
   const [contact, setContact] = useState({
-    firstname: '',
+    firstName: '',
     lastName: '',
     phoneNumber: '',
     email: '',
@@ -15,7 +15,7 @@ const FormContactFooter = () => {
   });
 
   const {
-    firstname,
+    firstName,
     lastName,
     phoneNumber,
     email,
@@ -45,9 +45,9 @@ const FormContactFooter = () => {
             First Name <span className="text-danger">*</span>
           </Form.Label>
           <Form.Control
-            name="firstname"
+            name="firstName"
             type="text"
-            value={firstname}
+            value={firstName}
             onChange={handleChange}
             required
           />
