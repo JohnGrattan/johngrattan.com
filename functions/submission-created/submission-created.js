@@ -13,38 +13,48 @@ exports.handler = async (event, context, callback) => {
     client_email: { GATSBY_GOOGLE_SERVICE_ACCOUNT_EMAIL },
     private_key: { GATSBY_GOOGLE_PRIVATE_KEY },
   });
+
   await doc.loadInfo();
+  console.log(doc.title);
+
   const sheet = doc.sheetsByIndex[0];
+  console.log(sheet.title);
+  console.log(sheet.rowCount);
 
   try {
-    const data = JSON.parse(event.body).payload;
-    const firstName = JSON.parse(event.body).payload.data.firstName;
-    console.log(`Received a submission: ${firstName}`);
-    const addedRow = await sheet.addRow(firstName);
+    const {
+      firstName,
+      lastName,
+      phoneNumber,
+      email,
+      company,
+      jobTitle,
+      service,
+      budget,
+    } = JSON.parse(event.body).payload.data;
+
+    console.log(`Received a submission:
+    \n${firstName}
+    \n${lastName}
+    \n${phoneNumber}
+    \n${email}
+    \n${company}
+    \n${jobTitle}
+    \n${service}
+    \n${budget}
+    `);
+
+    const addedRow = await sheet.addRow({
+      firstName: { firstName },
+      lastName: { lastName },
+      phoneNumber: { phoneNumber },
+      email: { email },
+      company: { company },
+      jobTitle: { jobTitle },
+      service: { service },
+      budget: { budget },
+    });
     console.log(`Added Row: ${addedRow}`);
-
-    // const { formData } = JSON.parse(event.data);
-    // const {
-    //   firstName = '',
-    //   lastName = '',
-    //   phoneNumber = '',
-    //   email = '',
-    //   company = '',
-    //   jobTitle = '',
-    //   service = '',
-    //   budget = '',
-    // } = formData;
-
-    // const submission = `
-    // \nFirst Name: ${firstName}
-    // \nLast Name: ${lastName}
-    // \nPhone Number: ${phoneNumber}
-    // \nEmail: ${email}
-    // \nCompany: ${company}
-    // \nJob Title: ${jobTitle}
-    // \nService: ${service}
-    // \nBudget: ${budget}
-    // `;
 
     return {
       statusCode: 200,
