@@ -73,7 +73,7 @@ yarn-error.log
 .idea/
 
 # Netlify Functions
-lambda/
+functions/
 
 # Local Netlify folder
 .netlify
