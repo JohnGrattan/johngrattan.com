@@ -72,8 +72,8 @@ yarn-error.log
 # JetBrains
 .idea/
 
-# Netlify Functions
-functions/
-
 # Local Netlify folder
 .netlify
+
+# Google Service Account file
+functions/
