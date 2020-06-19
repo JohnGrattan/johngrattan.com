@@ -73,7 +73,7 @@ yarn-error.log
 .idea/
 
 # Netlify Functions
-functions/
+functions/submission-created/jg-form-to-sheets-ffecb776b819.json
 
 # Local Netlify folder
 .netlify
