@@ -1,3 +1,4 @@
+const credential = require('./jg-form-to-sheets-ffecb776b819.json');
 const { GoogleSpreadsheet } = require('google-spreadsheet');
 const { GATSBY_GOOGLE_SPREADSHEET_ID_FROM_URL } = process.env;
 
@@ -6,9 +7,7 @@ exports.handler = async (event, context, callback) => {
     '10o2IdQb0kwQ3JCeU7PnVdokEj_1D8j9pcuvMCmqwfek'
   );
 
-  await doc.useServiceAccountAuth(
-    require('./jg-form-to-sheets-ffecb776b819.json')
-  );
+  await doc.useServiceAccountAuth(require(credential));
 
   await doc.loadInfo();
   console.log(doc.title);
