@@ -8,8 +8,10 @@
     "@fortawesome/fontawesome-free": "^5.12.1",
     "@mdx-js/mdx": "^1.5.7",
     "@mdx-js/react": "^1.5.7",
+    "@netlify/zip-it-and-ship-it": "^1.2.0",
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
+    "dotenv": "^8.2.0",
     "gatsby": "^2.23.3",
     "gatsby-background-image": "^0.10.2",
     "gatsby-image": "^2.2.44",
@@ -29,7 +31,6 @@
     "gatsby-transformer-sharp": "^2.3.19",
     "google-spreadsheet": "^3.0.11",
     "jquery": "^3.5.1",
-    "netlify-lambda": "^1.6.3",
     "node-sass": "^4.14.1",
     "prop-types": "^15.7.2",
     "react": "^16.13.0",
@@ -60,13 +61,11 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "env-cmd -f .env.development gatsby develop",
-    "prod": "npm run build; npm run build:lambda",
+    "prod": "npm run build",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\"",
-    "start:lambda": "netlify-lambda serve functions",
-    "build:lambda": "netlify-lambda build functions"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\""
   },
   "repository": {
     "type": "git",

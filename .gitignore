@@ -52,7 +52,7 @@ typings/
 *.tgz
 
 # dotenv environment variables file
-.env
+.env*
 
 # gatsby files
 .cache/
@@ -71,5 +71,5 @@ yarn-error.log
 # JetBrains
 .idea/
 
-# Netlify Functions
-lambda/
+# Local Netlify folder
+.netlify
