@@ -20,15 +20,15 @@ exports.handler = async (event, context, callback) => {
   console.log(sheet.rowCount);
 
   try {
-    const created_at = JSON.parse(event.body).created_at;
-    const firstName = JSON.parse(event.body).data.firstName;
-    const lastName = JSON.parse(event.body).data.lastName;
-    const phoneNumber = JSON.parse(event.body).data.phoneNumber;
-    const email = JSON.parse(event.body).data.email;
-    const company = JSON.parse(event.body).data.company;
-    const jobTitle = JSON.parse(event.body).data.jobTitle;
-    const service = JSON.parse(event.body).data.service;
-    const budget = JSON.parse(event.body).data.budget;
+    const created_at = JSON.parse(event.body).payload.created_at;
+    const firstName = JSON.parse(event.body).payload.data.firstName;
+    const lastName = JSON.parse(event.body).payload.data.lastName;
+    const phoneNumber = JSON.parse(event.body).payload.data.phoneNumber;
+    const email = JSON.parse(event.body).payload.data.email;
+    const company = JSON.parse(event.body).payload.data.company;
+    const jobTitle = JSON.parse(event.body).payload.data.jobTitle;
+    const service = JSON.parse(event.body).payload.data.service;
+    const budget = JSON.parse(event.body).payload.data.budget;
 
     const addedRow = await sheet.addRow([
       created_at,
