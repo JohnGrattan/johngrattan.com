@@ -9,7 +9,7 @@
     "@mdx-js/mdx": "^1.5.7",
     "@mdx-js/react": "^1.5.7",
     "@netlify/zip-it-and-ship-it": "^1.2.0",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "dotenv": "^8.2.0",
     "gatsby": "^2.23.3",
