@@ -69,21 +69,23 @@ function SEO({ description, lang, meta, title, canonicalLink }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
     >
       <link rel="canonical" href={canonicalLink} />
-
       <meta name="description" content={metaDescription} />
-
       {/* Open Graph tags */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={metaDescription} />
       <meta property="og:type" content="website" />
-
       {/* Twitter Card tags */}
       <meta name="twitter:card" content="summary" />
       <meta name="twitter:creator" content={site.siteMetadata.author} />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={metaDescription} />
-
       <script type="application/ld+json">{structuredDataLocalBusiness}</script>
+      <script
+        async
+        data-apikey="2b184fa2fbb059600f736c7804aa00"
+        data-cookieless
+        src="https://cdn.jsdelivr.net/npm/hockeystack@latest/hockeystack.min.js"
+      ></script>
     </Helmet>
   );
 }
