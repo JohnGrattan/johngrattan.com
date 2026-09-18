@@ -5,5 +5,8 @@
   functions = "functions/"
   publish = "public"
 
+[build.environment]
+  GATSBY_TELEMETRY_DISABLED = "1"
+
 [[plugins]]
   package = "netlify-plugin-gatsby-cache"

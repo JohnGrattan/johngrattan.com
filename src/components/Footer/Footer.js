@@ -51,6 +51,9 @@ const Footer = () => {
               <Link className="d-flex footer-link" to="/privacy">
                 Privacy Policy
               </Link>
+              <Link className="d-flex footer-link" to="/terms/">
+                Terms of Use
+              </Link>
             </div>
             <div className="col-md-6 col-lg-3 text-left text-md-left mb-5 mb-lg-0 drop-shadow-dark">
               <h5 className="text-uppercase text-secondary mb-4">Services</h5>
