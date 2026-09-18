@@ -28,7 +28,12 @@ module.exports = {
         implementation: require('sass'),
       },
     },
-    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['/agency-gbp-hub/'],
+      },
+    },
     'gatsby-plugin-robots-txt',
     {
       resolve: 'gatsby-plugin-mailchimp',
