@@ -49,17 +49,98 @@ const PrivacyPage__Section = ({ className }) => {
             have adopted this privacy policy ("Privacy Policy") to explain what
             information may be collected on my Website, how I use this
             information, and under what circumstances I may disclose the
-            information to third parties. This Privacy Policy applies only to
-            information I collect through the Website and does not apply to my
-            collection of information from other sources.
+            information to third parties. This policy covers information
+            collected through the Website. The Agency GBP Hub and connected
+            Google accounts section below also covers information accessed when
+            you authorize the agency's Google Business Profile management
+            connection.
           </p>
           <p>
-            This Privacy Policy, together with the Terms and conditions posted
-            on my Website, set forth the general rules and policies governing
-            your use of my Website. Depending on your activities when visiting
-            my Website, you may be required to agree to additional terms and
-            conditions.
+            This Privacy Policy, together with the{' '}
+            <Link className="text-link-on-white" to="/terms/">
+              Terms of use
+            </Link>{' '}
+            posted on my Website, set forth the general rules and policies
+            governing your use of my Website. Depending on your activities when
+            visiting my Website, you may be required to agree to additional
+            terms and conditions.
           </p>
+          <section id="agency-gbp-hub" className="col-12 px-0">
+            <h3 className="pt-5 pb-4">
+              Agency GBP Hub and connected Google accounts
+            </h3>
+            <p>Effective September 18, 2026.</p>
+            <h4>Information accessed and why</h4>
+            <p>
+              Agency GBP Hub is operated by John Grattan. When you authorize a
+              connection, the app accesses your Google account email and basic
+              identity information to confirm the intended account. It receives
+              authorization credentials so it can maintain that connection.
+              Through Google's Business Profile APIs, it can read the business
+              accounts and locations you manage, their business information and
+              services, and carry out the profile-management work you authorize.
+              This app does not request Gmail, Drive or Analytics access.
+            </p>
+            <h4>Use, storage and sharing</h4>
+            <p>
+              I use this information to identify the correct client and
+              location, maintain your connection, review business information
+              and carry out agreed updates. Connection credentials are stored in
+              private configuration on agency-controlled systems and excluded
+              from tracked source code. Account and location identifiers,
+              information needed for the work and records of completed changes
+              may be kept in agency operational records.
+            </p>
+            <p>
+              Authorized agency personnel and the technology providers used to
+              deliver these services may process this information for that work.
+              Requests and approved updates are transmitted to Google. Google
+              account data obtained through this app is not sold, used for
+              advertising targeting or used to train generalized AI models. The
+              website cookie and remarketing descriptions below do not authorize
+              those uses of data obtained through this connection.
+            </p>
+            <p>
+              Agency GBP Hub's use and transfer of information received from
+              Google APIs will adhere to the{' '}
+              <a
+                className="text-link-on-white"
+                href="https://developers.google.com/terms/api-services-user-data-policy"
+              >
+                Google API Services User Data Policy
+              </a>
+              , including its Limited Use requirements.
+            </p>
+            <h4>Retention, disconnection and deletion</h4>
+            <p>
+              Connection information is retained while needed for your
+              authorized service. You can revoke access in your{' '}
+              <a
+                className="text-link-on-white"
+                href="https://myaccount.google.com/connections"
+              >
+                Google Account's third-party connections
+              </a>{' '}
+              or email{' '}
+              <a
+                className="text-link-on-white"
+                href="mailto:contact@johngrattan.com"
+              >
+                contact@johngrattan.com
+              </a>{' '}
+              to request disconnection and deletion of stored connection and
+              profile information. I may verify your authority over the account
+              before fulfilling a request. Records needed to document completed
+              work or meet applicable obligations may be retained for those
+              purposes. Revoking access stops future API access; it does not
+              reverse updates already made to a public Business Profile.
+            </p>
+            <p>
+              This section will be updated if the app's data practices change.
+              Contact me at the email above with questions about your
+              information.
+            </p>
+          </section>
           <h3 className="pt-5 pb-4">Website Visitors</h3>
           <p>
             Like most website operators, John Grattan SEO & Web Design collects

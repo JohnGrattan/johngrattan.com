@@ -8,7 +8,7 @@ const PrivacyPage = () => (
   <Layout>
     <SEO
       title="Privacy Policy"
-      description="Your privacy is critically important to me. It is my policy to respect your privacy regarding any information I may collect while operating my website."
+      description="How John Grattan SEO & Web Design handles website information and Google account data connected through Agency GBP Hub, including access, use and deletion."
       canonicalLink="https://johngrattan.com/privacy/"
     />
     <PrivacyPage__Header
