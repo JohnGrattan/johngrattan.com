@@ -6,7 +6,6 @@ import Home__AboutSection from '../components/About/Home/Home__AboutSection';
 import Home__BlogSectionBG from '../components/Blog/Home/Home__BlogSectionBg';
 import Home__ServicesSection from '../components/Services/Home/Home__ServicesSection';
 import Home__ProcessSection from '../components/Process/Home/Home__ProcessSection';
-import AgencyGbpHubSection from '../components/AgencyGbpHub/AgencyGbpHubSection';
 
 const IndexPage = () => {
   return (
@@ -21,7 +20,6 @@ const IndexPage = () => {
       <Home__ServicesSection className="page-section border-bottom border-secondary bg-img-services" />
       <Home__ProcessSection className="page-section border-bottom border-secondary bg-img-process" />
       <Home__BlogSectionBG className="page-section border-bottom border-secondary bg-img-blog" />
-      <AgencyGbpHubSection />
     </Layout>
   );
 };

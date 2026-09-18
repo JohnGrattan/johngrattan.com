@@ -9,7 +9,7 @@ const AgencyGbpHubSection = () => (
     <div className="container">
       <div className="row justify-content-center">
         <div className="col-lg-9">
-          <h2 className="text-center">Agency GBP Hub</h2>
+          <h2 className="text-center">How the connection works</h2>
           <hr className="divider my-4" />
           <p>
             Agency GBP Hub is John Grattan's tool for managing clients' Google
@@ -36,7 +36,7 @@ const AgencyGbpHubSection = () => (
             .
           </p>
           <p className="mb-0">
-            <Link className="text-link-on-white" to="/privacy/#agency-gbp-hub">
+            <Link className="text-link-on-white" to="/privacy/">
               Privacy policy
             </Link>
             {' · '}
