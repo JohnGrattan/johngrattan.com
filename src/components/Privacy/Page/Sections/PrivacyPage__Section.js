@@ -53,7 +53,9 @@ const PrivacyPage__Section = ({ className }) => {
             collected through the Website. The Agency GBP Hub and connected
             Google accounts section below also covers information accessed when
             you authorize the agency's Google Business Profile management
-            connection.
+            connection, and the Agency OS and Meta advertising accounts section
+            covers information received from Meta when you grant the agency
+            access to your Meta business assets.
           </p>
           <p>
             This Privacy Policy, together with the{' '}
@@ -139,6 +141,71 @@ const PrivacyPage__Section = ({ className }) => {
               This section will be updated if the app's data practices change.
               Contact me at the email above with questions about your
               information.
+            </p>
+          </section>
+          <section id="agency-os-meta" className="col-12 px-0">
+            <h3 className="pt-5 pb-4">
+              Agency OS and Meta advertising accounts
+            </h3>
+            <p>Effective October 11, 2026.</p>
+            <h4>Information accessed and why</h4>
+            <p>
+              Agency OS is the internal system John Grattan SEO & Web Design uses
+              to manage advertising for its clients. When a client grants the
+              agency's Business Portfolio partner access to an ad account, Page
+              or related business asset, Agency OS uses Meta's Marketing API
+              through a server-to-server system user. It reads campaign, ad set,
+              ad, budget, creative and performance data for those shared assets,
+              and creates, edits, pauses and optimizes campaigns the client has
+              asked the agency to run. It also reads the list of Pages and
+              assets shared with the agency so ads can be attached to the
+              correct Page. Agency OS has no consumer login and does not access
+              personal Facebook or Instagram profiles, friends, messages or
+              data from assets that have not been shared with the agency.
+            </p>
+            <h4>Use, storage and sharing</h4>
+            <p>
+              Data received from Meta ("Platform Data") is used only to deliver
+              and report on advertising services for the client who shared the
+              asset: building and managing campaigns, measuring results and
+              preparing that client's reports. Access tokens are stored in
+              private configuration on agency-controlled systems and excluded
+              from tracked source code. Campaign settings, performance figures
+              and records of changes may be kept in agency operational records
+              for the client's account.
+            </p>
+            <p>
+              Authorized agency personnel and the technology providers used to
+              deliver these services may process this information for that
+              work. Platform Data is not sold, licensed, shared with data
+              brokers, combined across clients, used to build user profiles or
+              used for any purpose other than the client's own services. Use of
+              Platform Data follows the{' '}
+              <a
+                className="text-link-on-white"
+                href="https://developers.facebook.com/terms/"
+              >
+                Meta Platform Terms
+              </a>{' '}
+              and Meta's developer policies.
+            </p>
+            <h4>Retention, disconnection and deletion</h4>
+            <p>
+              Platform Data is retained while needed for the client's active
+              service. A client can remove the agency's partner access at any
+              time in Meta Business Settings, which stops all further access.
+              To request deletion of Platform Data the agency holds, email{' '}
+              <a
+                className="text-link-on-white"
+                href="mailto:contact@johngrattan.com"
+              >
+                contact@johngrattan.com
+              </a>
+              . I will confirm your authority over the business asset, delete
+              the data within 30 days and confirm by email. Records needed to
+              document completed work or meet legal obligations may be retained
+              for those purposes. Removing access does not undo campaigns or
+              changes already published to the ad account.
             </p>
           </section>
           <h3 className="pt-5 pb-4">Website Visitors</h3>

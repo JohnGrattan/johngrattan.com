@@ -27,8 +27,8 @@ const TermsPage = () => (
           <div className="col-lg-9">
             <p>Effective September 18, 2026.</p>
             <p>
-              These terms cover the John Grattan SEO & Web Design website and
-              Agency GBP Hub, operated by John Grattan. Contact{' '}
+              These terms cover the John Grattan SEO & Web Design website,
+              Agency GBP Hub and Agency OS, operated by John Grattan. Contact{' '}
               <a
                 className="text-link-on-white"
                 href="mailto:contact@johngrattan.com"
@@ -66,6 +66,19 @@ const TermsPage = () => (
               verification of a listing or uninterrupted access. Use of Google's
               services remains subject to Google's applicable terms.
             </p>
+            <h2 className="h3 mt-5">Agency OS and Meta advertising</h2>
+            <p>
+              Agency OS is the agency's internal system for managing Meta
+              (Facebook and Instagram) advertising. By granting the agency's
+              Business Portfolio partner access to an ad account, Page or other
+              business asset, you authorize the agency to read its data and to
+              create, edit, pause and optimize campaigns for your agreed
+              services. Share only assets you are authorized to manage. You can
+              remove partner access at any time in Meta Business Settings,
+              which stops future access but does not undo campaigns or changes
+              already published. Meta controls its platform and APIs; use of
+              Meta's services remains subject to Meta's applicable terms.
+            </p>
             <h2 className="h3 mt-5">Disconnection and privacy</h2>
             <p>
               You may revoke the connection through your Google Account's
@@ -79,8 +92,9 @@ const TermsPage = () => (
               <Link className="text-link-on-white" to="/privacy/">
                 privacy policy
               </Link>{' '}
-              explains how website information and connected Google account data
-              are handled, including retention and deletion requests.
+              explains how website information, connected Google account data and
+              Meta Platform Data are handled, including retention and deletion
+              requests.
             </p>
           </div>
         </div>
